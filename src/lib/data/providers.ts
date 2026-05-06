@@ -1,24 +1,12 @@
 import { Provider, Stats, CommunityPost } from "@/lib/types";
+import * as fs from "fs";
+import * as path from "path";
 
-// 动态导入 fs 模块（仅在服务端）
-async function getFsModule() {
-  if (typeof window === "undefined") {
-    const fs = await import("fs");
-    const path = await import("path");
-    return { fs, path };
-  }
-  return null;
-}
+const DATA_DIR = path.join(process.cwd(), "data");
+const PROVIDERS_FILE = path.join(DATA_DIR, "providers.json");
+const STATS_FILE = path.join(DATA_DIR, "stats.json");
 
-// 运行时动态读取 providers.json
-async function readProvidersFile(): Promise<Provider[]> {
-  const modules = await getFsModule();
-  if (!modules) return [];
-
-  const { fs, path } = modules;
-  const DATA_DIR = path.join(process.cwd(), "data");
-  const PROVIDERS_FILE = path.join(DATA_DIR, "providers.json");
-
+function readProvidersFile(): Provider[] {
   try {
     if (fs.existsSync(PROVIDERS_FILE)) {
       const data = fs.readFileSync(PROVIDERS_FILE, "utf-8");
@@ -30,26 +18,7 @@ async function readProvidersFile(): Promise<Provider[]> {
   return [];
 }
 
-// 运行时动态读取 stats.json
-async function readStatsFile(): Promise<Stats> {
-  const modules = await getFsModule();
-  if (!modules) {
-    return {
-      totalProviders: 0,
-      onlineProviders: 0,
-      todayNew: 0,
-      lowestPrice: { model: "", price: 0, provider: "" },
-      modelCoverage: [],
-      priceDistribution: [],
-      sourceDistribution: [],
-      dailyTrend: [],
-    };
-  }
-
-  const { fs, path } = modules;
-  const DATA_DIR = path.join(process.cwd(), "data");
-  const STATS_FILE = path.join(DATA_DIR, "stats.json");
-
+function readStatsFile(): Stats {
   try {
     if (fs.existsSync(STATS_FILE)) {
       const data = fs.readFileSync(STATS_FILE, "utf-8");
@@ -58,7 +27,6 @@ async function readStatsFile(): Promise<Stats> {
   } catch (error) {
     console.error("[Data] Error reading stats.json:", error);
   }
-
   return {
     totalProviders: 0,
     onlineProviders: 0,
@@ -71,31 +39,20 @@ async function readStatsFile(): Promise<Stats> {
   };
 }
 
-// 缓存数据（构建时读取一次）
-let cachedProviders: Provider[] | null = null;
-let cachedStats: Stats | null = null;
-
-export async function getProviders(): Promise<Provider[]> {
-  if (!cachedProviders) {
-    cachedProviders = await readProvidersFile();
-  }
-  return cachedProviders;
+export function getProviders(): Provider[] {
+  return readProvidersFile();
 }
 
-export async function getProviderById(id: string): Promise<Provider | undefined> {
-  const providers = await getProviders();
-  return providers.find((p) => p.id === id);
+export function getProviderById(id: string): Provider | undefined {
+  return readProvidersFile().find((p) => p.id === id);
 }
 
-export async function getStats(): Promise<Stats> {
-  if (!cachedStats) {
-    cachedStats = await readStatsFile();
-  }
-  return cachedStats;
+export function getStats(): Stats {
+  return readStatsFile();
 }
 
-export async function getCommunityPosts(): Promise<CommunityPost[]> {
-  const providers = await getProviders();
+export function getCommunityPosts(): CommunityPost[] {
+  const providers = getProviders();
   const posts: CommunityPost[] = [];
   providers.forEach((p) => {
     p.sources.forEach((s) => {
@@ -115,10 +72,9 @@ export async function getCommunityPosts(): Promise<CommunityPost[]> {
   );
 }
 
-export async function searchProviders(query: string): Promise<Provider[]> {
+export function searchProviders(query: string): Provider[] {
   const q = query.toLowerCase();
-  const providers = await getProviders();
-  return providers.filter(
+  return getProviders().filter(
     (p) =>
       p.name.toLowerCase().includes(q) ||
       p.models.some((m) => m.model.toLowerCase().includes(q)) ||
@@ -126,15 +82,15 @@ export async function searchProviders(query: string): Promise<Provider[]> {
   );
 }
 
-export async function filterProviders(options: {
+export function filterProviders(options: {
   model?: string;
   billingType?: string;
   status?: string;
   platform?: string;
   minPrice?: number;
   maxPrice?: number;
-}): Promise<Provider[]> {
-  let result = await getProviders();
+}): Provider[] {
+  let result = getProviders();
   if (options.model) {
     result = result.filter((p) =>
       p.models.some((m) =>

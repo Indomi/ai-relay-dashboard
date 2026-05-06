@@ -1,21 +1,29 @@
 "use client";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { ProviderCard } from "@/components/provider/ProviderCard";
 import { ProviderFilter } from "@/components/provider/ProviderFilter";
-import providersData from "../../../data/providers.json";
 import { Provider } from "@/lib/types";
 
-// 直接导入数据（构建时嵌入）
-const allProviders: Provider[] = providersData as Provider[];
-
 export default function ProvidersPage() {
+  const [providers, setProviders] = useState<Provider[]>([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [billingType, setBillingType] = useState("all");
   const [status, setStatus] = useState("all");
   const [sortBy, setSortBy] = useState("heat");
 
+  useEffect(() => {
+    fetch("/api/providers")
+      .then((res) => res.json())
+      .then((data) => {
+        setProviders(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
   const filtered = useMemo(() => {
-    let result = [...allProviders];
+    let result = [...providers];
 
     if (search) {
       const q = search.toLowerCase();
@@ -64,7 +72,17 @@ export default function ProvidersPage() {
     }
 
     return result;
-  }, [search, billingType, status, sortBy]);
+  }, [providers, search, billingType, status, sortBy]);
+
+  if (loading) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="text-center py-16">
+          <p className="text-muted-foreground">加载中...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

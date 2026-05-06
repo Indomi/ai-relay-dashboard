@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { BillingBadge } from "@/components/shared/BillingBadge";
-import providersData from "../../../../data/providers.json";
+import { getProviderById, getProviders } from "@/lib/data/providers";
 import {
   formatPrice,
   formatModelName,
@@ -30,22 +30,8 @@ import {
 } from "lucide-react";
 import { Provider } from "@/lib/types";
 
-// 直接导入数据
-const allProviders: Provider[] = providersData as Provider[];
-
-function getProviderById(id: string): Provider | undefined {
-  return allProviders.find((p) => p.id === id);
-}
-
 interface PageProps {
   params: Promise<{ id: string }>;
-}
-
-// 生成静态参数
-export async function generateStaticParams() {
-  return allProviders.map((provider) => ({
-    id: provider.id,
-  }));
 }
 
 export default async function ProviderDetailPage({ params }: PageProps) {
@@ -53,6 +39,7 @@ export default async function ProviderDetailPage({ params }: PageProps) {
   const provider = getProviderById(id);
   if (!provider) notFound();
 
+  const allProviders = getProviders();
   const similarProviders = allProviders
     .filter(
       (p) =>
