@@ -3,7 +3,7 @@ import { Provider } from "../../src/lib/types";
 import { crawlerConfigs } from "./config";
 import { extractProviderFromPost } from "./ai-extractor";
 import { deduplicateAndMerge } from "./deduplicator";
-import { generateMockV2EXPosts } from "./extractors/v2ex";
+import { crawlV2EX, generateMockV2EXPosts } from "./extractors/v2ex";
 import { generateMockNodeSeekPosts } from "./extractors/nodeseek";
 import { generateMockLinuxDoPosts } from "./extractors/linuxdo";
 import { generateMockJuejinPosts } from "./extractors/juejin";
@@ -50,12 +50,17 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
   console.log(`[Scheduler] Starting crawler for ${platform}...`);
 
   try {
-    // 获取模拟帖子数据
+    // 获取帖子数据（优先真实爬取，失败则用模拟数据）
     let posts: RawPost[] = [];
 
     switch (platform) {
       case "v2ex":
-        posts = generateMockV2EXPosts();
+        // 尝试真实爬取
+        posts = await crawlV2EX();
+        if (posts.length === 0) {
+          console.log("[V2EX] Real crawl failed, using mock data");
+          posts = generateMockV2EXPosts();
+        }
         break;
       case "nodeseek":
         posts = generateMockNodeSeekPosts();
