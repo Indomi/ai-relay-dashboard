@@ -14,10 +14,14 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
       
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -38,16 +42,19 @@ jobs:
         if [ "$PLATFORM" = "all" ]; then
           npx tsx crawler/run.ts
         else
-          npx tsx crawler/run.ts "$PLATFORM"
+          npx tsx tsx crawler/run.ts "$PLATFORM"
         fi
         
     - name: Check for changes
       id: check_changes
       run: |
-        if git diff --quiet data/providers.json; then
+        git status
+        if git diff --quiet data/; then
           echo "changed=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
         else
           echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Changes detected"
         fi
         
     - name: Commit and push changes
@@ -55,6 +62,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/providers.json data/stats.json
+        git add data/
         git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M') 爬虫数据"
         git push
