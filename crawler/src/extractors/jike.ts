@@ -14,7 +14,7 @@ export function generateMockJikePosts(): RawPost[] {
   const now = new Date();
   return [
     {
-      id: "jike-001",
+      url: "https://web.okjike.com/originalPost/123456789",
       platform: "jike",
       title: "发现一个超便宜的API中转站",
       content: `最近发现一个叫"极速API"的中转站，价格真的很便宜：
@@ -28,11 +28,11 @@ TG: @jsapi_admin
 
 分享给大家，有需要的可以试试。`,
       author: "AI探索者",
-      url: "https://web.okjike.com/originalPost/123456789",
-      publishedAt: new Date(now.getTime() - 4 * 60 * 60 * 1000).toISOString(), // 4小时前
+      publishedAt: new Date(now.getTime() - 4 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
     {
-      id: "jike-002",
+      url: "https://web.okjike.com/originalPost/987654321",
       platform: "jike",
       title: "API中转站避坑指南",
       content: `用了半年各种API中转站，总结一些经验：
@@ -52,8 +52,8 @@ TG: @jsapi_admin
 2. 不要一次充太多
 3. 选择有社区的`,
       author: "老司机带路",
-      url: "https://web.okjike.com/originalPost/987654321",
-      publishedAt: new Date(now.getTime() - 12 * 60 * 60 * 1000).toISOString(), // 12小时前
+      publishedAt: new Date(now.getTime() - 12 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
   ];
 }

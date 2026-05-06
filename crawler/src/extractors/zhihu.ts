@@ -11,7 +11,7 @@ export function generateMockZhihuPosts(): RawPost[] {
   const now = new Date();
   return [
     {
-      id: "zhihu-001",
+      
       platform: "zhihu",
       title: "国内有哪些靠谱的AI API中转站推荐？",
       content: `作为一个长期使用AI API的开发者，我来分享一下我的经验：
@@ -46,7 +46,7 @@ export function generateMockZhihuPosts(): RawPost[] {
       publishedAt: new Date(now.getTime() - 8 * 60 * 60 * 1000).toISOString(), // 8小时前
     },
     {
-      id: "zhihu-002",
+      
       platform: "zhihu",
       title: "OpenAI API 国内调用方案全解析",
       content: `本文详细介绍在国内调用 OpenAI API 的几种方案：

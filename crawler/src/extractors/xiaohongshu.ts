@@ -19,7 +19,7 @@ export function generateMockXiaohongshuPosts(): RawPost[] {
   const now = new Date();
   return [
     {
-      id: "xhs-001",
+      
       platform: "xiaohongshu",
       title: "真心求推API中转站！之前的api站跑路了😭",
       content: `姐妹们，我之前用的API中转站突然跑路了，还剩好几百余额没退...
@@ -44,7 +44,7 @@ export function generateMockXiaohongshuPosts(): RawPost[] {
       fetchedAt: new Date().toISOString(),
     },
     {
-      id: "xhs-002",
+      
       platform: "xiaohongshu",
       title: "程序员必备的AI API平台推荐🚀",
       content: `作为程序员，分享几个我常用的API中转站：
@@ -80,7 +80,7 @@ export function generateMockXiaohongshuPosts(): RawPost[] {
       fetchedAt: new Date().toISOString(),
     },
     {
-      id: "xhs-003",
+      
       platform: "xiaohongshu",
       title: "避坑！这些API中转站不要用❌",
       content: `分享一下我踩过的坑，大家避雷：

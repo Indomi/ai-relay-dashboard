@@ -79,7 +79,7 @@ export function generateMockRSSPosts(): RawPost[] {
   const now = new Date();
   return [
     {
-      id: "rss-001",
+      
       platform: "rss",
       title: "AI API 中转站技术选型指南",
       content: `随着 AI 应用的普及，越来越多的开发者需要调用 OpenAI、Claude 等 API。
