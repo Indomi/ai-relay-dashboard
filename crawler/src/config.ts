@@ -1,0 +1,119 @@
+import { CrawlerConfig } from "./types";
+
+export const crawlerConfigs: CrawlerConfig[] = [
+  {
+    name: "V2EX AI中转",
+    platform: "v2ex",
+    keywords: [
+      "API中转",
+      "OpenAI代理",
+      "GPT充值",
+      "Claude中转",
+      "AI API",
+      "API代理",
+      "模型中转",
+    ],
+    schedule: "0 */2 * * *", // 每2小时
+    enabled: true,
+    maxConcurrency: 3,
+    requestInterval: 2000,
+  },
+  {
+    name: "NodeSeek AI服务",
+    platform: "nodeseek",
+    keywords: [
+      "API",
+      "中转",
+      "key",
+      "token",
+      "OpenAI",
+      "Claude",
+      "GPT",
+      "模型",
+    ],
+    schedule: "0 */2 * * *", // 每2小时
+    enabled: true,
+    maxConcurrency: 2,
+    requestInterval: 3000,
+  },
+  {
+    name: "Linux.do AI讨论",
+    platform: "linux.do",
+    keywords: [
+      "AI API",
+      "中转站",
+      "模型服务",
+      "OpenAI",
+      "Claude",
+      "API代理",
+    ],
+    schedule: "0 */3 * * *", // 每3小时
+    enabled: true,
+    maxConcurrency: 2,
+    requestInterval: 2500,
+  },
+  {
+    name: "即刻 AI话题",
+    platform: "jike",
+    keywords: [
+      "API中转",
+      "AI服务",
+      "OpenAI",
+      "GPT",
+      "模型API",
+    ],
+    schedule: "0 */4 * * *", // 每4小时
+    enabled: false, // 需要登录，暂禁用
+    maxConcurrency: 2,
+    requestInterval: 3000,
+  },
+  {
+    name: "知乎 AI代理",
+    platform: "zhihu",
+    keywords: [
+      "AI中转",
+      "API代理",
+      "OpenAI国内",
+      "GPT访问",
+    ],
+    schedule: "0 */6 * * *", // 每6小时
+    enabled: false, // 需要登录，暂禁用
+    maxConcurrency: 2,
+    requestInterval: 4000,
+  },
+  {
+    name: "小红书 AI推荐",
+    platform: "xiaohongshu",
+    keywords: [
+      "API中转",
+      "API站",
+      "中转站",
+      "GPT",
+      "OpenAI",
+      "Claude",
+      "AI推荐",
+      "真心求推",
+    ],
+    schedule: "0 */6 * * *", // 每6小时
+    enabled: true,
+    maxConcurrency: 2,
+    requestInterval: 4000,
+  },
+];
+
+// AI API 配置 - 从环境变量读取
+export const aiConfig = {
+  apiKey: process.env.AI_API_KEY || "",
+  baseUrl: process.env.AI_BASE_URL || "https://api.deepseek.com/v1",
+  model: process.env.AI_MODEL || "deepseek-chat",
+  maxRetries: 3,
+  timeout: 30000,
+};
+
+// 数据存储路径
+export const dataPaths = {
+  providers: "./data/providers.json",
+  stats: "./data/stats.json",
+  rawPosts: "./data/raw",
+  logs: "./data/logs",
+};

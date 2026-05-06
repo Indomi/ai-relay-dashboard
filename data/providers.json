@@ -1,0 +1,1137 @@
+[
+  {
+    "id": "p001",
+    "name": "极速API",
+    "website": "https://jsapi.example.com",
+    "contact": "TG: @jsapi_admin",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 8,
+        "outputPrice": 8,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 1.5,
+        "outputPrice": 4.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 12,
+        "outputPrice": 12,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "inputPrice": 3,
+        "outputPrice": 3,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude 3.5",
+        "inputPrice": 12,
+        "outputPrice": 12,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "concurrencyLimit": 10,
+    "rateLimit": "50 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T10:00:00Z",
+    "responseTime": 320,
+    "heatScore": 100,
+    "mentionCount": 160,
+    "priceHistory": [
+      {
+        "date": "2026-04-01",
+        "model": "gpt-4o",
+        "price": 10
+      },
+      {
+        "date": "2026-04-15",
+        "model": "gpt-4o",
+        "price": 9
+      },
+      {
+        "date": "2026-05-01",
+        "model": "gpt-4o",
+        "price": 8
+      }
+    ],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/123456",
+        "title": "推荐一个稳定快速的API中转站",
+        "author": "techfan01",
+        "publishedAt": "2026-03-15T08:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "nodeseek",
+        "url": "https://www.nodeseek.com/post-78901",
+        "title": "用了半年的API中转，分享体验",
+        "author": "api_user",
+        "publishedAt": "2026-04-20T14:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2026-02-10T00:00:00Z",
+    "lastUpdated": "2026-05-06T13:22:29.477Z",
+    "tags": [
+      "稳定运营",
+      "速度快",
+      "支持多模型",
+      "稳定",
+      "快速"
+    ],
+    "subscription": {
+      "plans": []
+    }
+  },
+  {
+    "id": "p002",
+    "name": "CloudBridge AI",
+    "website": "https://cloudbridge.example.com",
+    "contact": "微信: cloudbridge_kefu",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 1,
+        "outputPrice": 3,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3-opus",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "deepseek-v3",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "Gemini 2.5 Pro",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "基础版",
+          "price": 49,
+          "period": "月",
+          "features": [
+            "GPT-4o 100万token",
+            "Claude 50万token",
+            "基础客服"
+          ]
+        },
+        {
+          "name": "专业版",
+          "price": 149,
+          "period": "月",
+          "features": [
+            "GPT-4o 500万token",
+            "Claude 300万token",
+            "所有模型",
+            "优先客服"
+          ]
+        },
+        {
+          "name": "企业版",
+          "price": 499,
+          "period": "月",
+          "features": [
+            "无限token",
+            "SLA保障"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
+    "concurrencyLimit": 20,
+    "rateLimit": "100 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T09:30:00Z",
+    "responseTime": 180,
+    "heatScore": 94,
+    "mentionCount": 206,
+    "priceHistory": [
+      {
+        "date": "2026-03-01",
+        "model": "gpt-4o",
+        "price": 8
+      },
+      {
+        "date": "2026-04-01",
+        "model": "gpt-4o",
+        "price": 7
+      },
+      {
+        "date": "2026-05-01",
+        "model": "gpt-4o",
+        "price": 6
+      }
+    ],
+    "sources": [
+      {
+        "platform": "linux.do",
+        "url": "https://linux.do/t/456789",
+        "title": "CloudBridge AI 订阅制体验分享",
+        "author": "linux_fan",
+        "publishedAt": "2026-04-01T10:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/234567",
+        "title": "推荐CloudBridge，价格便宜模型全",
+        "author": "dev_master",
+        "publishedAt": "2026-04-10T16:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "zhihu",
+        "url": "https://zhihu.com/question/123456",
+        "title": "国内AI API中转站哪个好？",
+        "author": "知乎用户",
+        "publishedAt": "2026-04-25T09:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/123457",
+        "title": "CloudBridge AI 订阅制体验分享",
+        "author": "dev_master",
+        "publishedAt": "2026-05-06T08:21:49.703Z",
+        "fetchedAt": "2026-05-06T13:21:58.323Z"
+      }
+    ],
+    "firstSeen": "2026-01-20T00:00:00Z",
+    "lastUpdated": "2026-05-06T13:22:44.052Z",
+    "tags": [
+      "老牌商家",
+      "订阅制",
+      "模型最全",
+      "全模型",
+      "多模型"
+    ]
+  },
+  {
+    "id": "p003",
+    "name": "小白的AI铺子",
+    "website": "https://xiaobai-ai.example.com",
+    "contact": "TG: @xiaobai_ai",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 0.8,
+        "outputPrice": 0.8,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 0.8,
+        "outputPrice": 2.4,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 8,
+        "outputPrice": 24,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude 3.5",
+        "inputPrice": 8,
+        "outputPrice": 8,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "paymentMethods": [],
+    "concurrencyLimit": 5,
+    "rateLimit": "30 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T08:00:00Z",
+    "responseTime": 450,
+    "heatScore": 67,
+    "mentionCount": 79,
+    "priceHistory": [
+      {
+        "date": "2026-04-10",
+        "model": "gpt-4o",
+        "price": 5
+      },
+      {
+        "date": "2026-05-01",
+        "model": "gpt-4o",
+        "price": 5
+      }
+    ],
+    "sources": [
+      {
+        "platform": "nodeseek",
+        "url": "https://www.nodeseek.com/post-112233",
+        "title": "个人搭建的API中转站，价格便宜",
+        "author": "xiaobai",
+        "publishedAt": "2026-04-10T12:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "nodeseek",
+        "url": "https://www.nodeseek.com/post-78902",
+        "title": "个人搭建的API中转站，价格便宜",
+        "author": "xiaobai",
+        "publishedAt": "2026-05-06T03:22:23.052Z",
+        "fetchedAt": "2026-05-06T13:22:29.477Z"
+      }
+    ],
+    "firstSeen": "2026-04-10T00:00:00Z",
+    "lastUpdated": "2026-05-06T13:22:29.477Z",
+    "tags": [
+      "个人卖家",
+      "低价",
+      "新商家",
+      "个人运营",
+      "价格便宜"
+    ],
+    "subscription": {
+      "plans": []
+    }
+  },
+  {
+    "id": "p004",
+    "name": "AI Hub Pro",
+    "website": "https://aihubpro.example.com",
+    "contact": "邮箱: support@aihubpro.example.com",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 12,
+        "outputPrice": 12,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4-turbo",
+        "inputPrice": 15,
+        "outputPrice": 45,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 15,
+        "outputPrice": 45,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3-opus",
+        "inputPrice": 40,
+        "outputPrice": 120,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "inputPrice": 5,
+        "outputPrice": 15,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "inputPrice": 20,
+        "outputPrice": 20,
+        "currency": "CNY"
+      },
+      {
+        "model": "deepseek-v3",
+        "inputPrice": 2,
+        "outputPrice": 4,
+        "currency": "CNY"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "inputPrice": 4,
+        "outputPrice": 12,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude 3.5",
+        "inputPrice": 15,
+        "outputPrice": 15,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "体验版",
+          "price": 29,
+          "period": "月",
+          "features": [
+            "100万token"
+          ]
+        },
+        {
+          "name": "标准版",
+          "price": 99,
+          "period": "月",
+          "features": [
+            "500万token"
+          ]
+        },
+        {
+          "name": "旗舰版",
+          "price": 299,
+          "period": "月",
+          "features": [
+            "2000万token"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 2,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "信用卡"
+    ],
+    "concurrencyLimit": 50,
+    "rateLimit": "响应速度：120ms",
+    "status": "online",
+    "lastChecked": "2026-05-06T10:30:00Z",
+    "responseTime": 120,
+    "heatScore": 97,
+    "mentionCount": 313,
+    "priceHistory": [
+      {
+        "date": "2026-01-01",
+        "model": "gpt-4o",
+        "price": 15
+      },
+      {
+        "date": "2026-02-15",
+        "model": "gpt-4o",
+        "price": 13
+      },
+      {
+        "date": "2026-04-01",
+        "model": "gpt-4o",
+        "price": 12
+      }
+    ],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/345678",
+        "title": "AI Hub Pro 体验半年总结",
+        "author": "ai_enthusiast",
+        "publishedAt": "2026-01-15T09:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "linux.do",
+        "url": "https://linux.do/t/567890",
+        "title": "最稳定的AI API中转站推荐",
+        "author": "linux_pro",
+        "publishedAt": "2026-03-01T11:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "jike",
+        "url": "https://jike.example.com/post/abc123",
+        "title": "AI Hub Pro 订阅了一年，很稳",
+        "author": "jike_user",
+        "publishedAt": "2026-04-15T20:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "xiaohongshu",
+        "url": "https://xiaohongshu.example.com/note/def456",
+        "title": "程序员必备的AI API平台",
+        "author": "小红书用户",
+        "publishedAt": "2026-04-20T15:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2025-11-01T00:00:00Z",
+    "lastUpdated": "2026-05-06T13:22:44.052Z",
+    "tags": [
+      "老牌商家",
+      "企业级",
+      "SLA保障",
+      "模型最全",
+      "稳定"
+    ]
+  },
+  {
+    "id": "p005",
+    "name": "闪电Key",
+    "website": "https://shandiankey.example.com",
+    "contact": "TG: @sdkey_bot",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 7,
+        "outputPrice": 21,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 1.2,
+        "outputPrice": 3.6,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 11,
+        "outputPrice": 33,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "paymentMethods": [
+      "USDT",
+      "支付宝"
+    ],
+    "concurrencyLimit": 8,
+    "rateLimit": "40 RPM",
+    "status": "offline",
+    "lastChecked": "2026-05-06T06:00:00Z",
+    "responseTime": null,
+    "heatScore": 45,
+    "mentionCount": 52,
+    "priceHistory": [
+      {
+        "date": "2026-03-20",
+        "model": "gpt-4o",
+        "price": 7
+      }
+    ],
+    "sources": [
+      {
+        "platform": "telegram",
+        "url": "https://t.me/sdkey_channel/123",
+        "title": "闪电Key开业优惠",
+        "author": "sdkey_admin",
+        "publishedAt": "2026-03-20T18:00:00Z",
+        "fetchedAt": "2026-05-06T06:00:00Z"
+      }
+    ],
+    "firstSeen": "2026-03-20T00:00:00Z",
+    "lastUpdated": "2026-05-06T06:00:00Z",
+    "tags": [
+      "个人卖家",
+      "新商家",
+      "暂时离线"
+    ]
+  },
+  {
+    "id": "p006",
+    "name": "万能API",
+    "website": "https://wnapi.example.com",
+    "contact": "QQ群: 123456789",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 9,
+        "outputPrice": 27,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 1.8,
+        "outputPrice": 5.4,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 13,
+        "outputPrice": 39,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "inputPrice": 4,
+        "outputPrice": 12,
+        "currency": "CNY"
+      },
+      {
+        "model": "deepseek-v3",
+        "inputPrice": 1.5,
+        "outputPrice": 3,
+        "currency": "CNY"
+      },
+      {
+        "model": "qwen-max",
+        "inputPrice": 2,
+        "outputPrice": 6,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "月卡",
+          "price": 69,
+          "period": "月",
+          "features": [
+            "GPT-4o 200万token",
+            "Claude 100万token"
+          ]
+        },
+        {
+          "name": "季卡",
+          "price": 179,
+          "period": "季",
+          "features": [
+            "GPT-4o 700万token",
+            "Claude 350万token",
+            "9折优惠"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 3,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "QQ钱包"
+    ],
+    "concurrencyLimit": 15,
+    "rateLimit": "60 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T11:00:00Z",
+    "responseTime": 280,
+    "heatScore": 78,
+    "mentionCount": 134,
+    "priceHistory": [
+      {
+        "date": "2026-02-01",
+        "model": "gpt-4o",
+        "price": 12
+      },
+      {
+        "date": "2026-03-15",
+        "model": "gpt-4o",
+        "price": 10
+      },
+      {
+        "date": "2026-05-01",
+        "model": "gpt-4o",
+        "price": 9
+      }
+    ],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/456789",
+        "title": "万能API中转站推荐",
+        "author": "v2ex_user",
+        "publishedAt": "2026-02-01T14:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "nodeseek",
+        "url": "https://www.nodeseek.com/post-334455",
+        "title": "万能API半年使用体验",
+        "author": "ns_fan",
+        "publishedAt": "2026-04-05T10:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "linux.do",
+        "url": "https://linux.do/t/678901",
+        "title": "万能API vs CloudBridge 对比",
+        "author": "compare_guy",
+        "publishedAt": "2026-04-28T16:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2026-01-15T00:00:00Z",
+    "lastUpdated": "2026-05-06T11:00:00Z",
+    "tags": [
+      "稳定运营",
+      "混合计费",
+      "国产模型"
+    ]
+  },
+  {
+    "id": "p007",
+    "name": "OpenKey",
+    "website": "https://openkey.example.com",
+    "contact": "微信: openkey_service",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 4.5,
+        "outputPrice": 13.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 0.5,
+        "outputPrice": 1.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 7,
+        "outputPrice": 21,
+        "currency": "CNY"
+      },
+      {
+        "model": "deepseek-v3",
+        "inputPrice": 0.8,
+        "outputPrice": 1.6,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": {
+      "amount": 1,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "concurrencyLimit": 12,
+    "rateLimit": "80 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T11:30:00Z",
+    "responseTime": 200,
+    "heatScore": 85,
+    "mentionCount": 189,
+    "priceHistory": [
+      {
+        "date": "2026-01-10",
+        "model": "gpt-4o",
+        "price": 6
+      },
+      {
+        "date": "2026-03-01",
+        "model": "gpt-4o",
+        "price": 5
+      },
+      {
+        "date": "2026-04-15",
+        "model": "gpt-4o",
+        "price": 4.5
+      }
+    ],
+    "sources": [
+      {
+        "platform": "jike",
+        "url": "https://jike.example.com/post/xyz789",
+        "title": "OpenKey价格又降了！",
+        "author": "jike_ai",
+        "publishedAt": "2026-04-15T22:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/567890",
+        "title": "OpenKey 低价策略分析",
+        "author": "price_watcher",
+        "publishedAt": "2026-04-20T08:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2025-12-20T00:00:00Z",
+    "lastUpdated": "2026-05-06T11:30:00Z",
+    "tags": [
+      "低价",
+      "稳定运营",
+      "降价频繁"
+    ]
+  },
+  {
+    "id": "p008",
+    "name": "智联AI",
+    "website": "https://zhilianai.example.com",
+    "contact": "邮箱: hi@zhilianai.example.com",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 10,
+        "outputPrice": 30,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 14,
+        "outputPrice": 42,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "inputPrice": 18,
+        "outputPrice": 54,
+        "currency": "CNY"
+      },
+      {
+        "model": "qwen-max",
+        "inputPrice": 3,
+        "outputPrice": 9,
+        "currency": "CNY"
+      },
+      {
+        "model": "deepseek-v3",
+        "inputPrice": 1.5,
+        "outputPrice": 3,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "入门版",
+          "price": 39,
+          "period": "月",
+          "features": [
+            "全部模型",
+            "每月200万token"
+          ]
+        },
+        {
+          "name": "进阶版",
+          "price": 129,
+          "period": "月",
+          "features": [
+            "全部模型",
+            "每月1000万token",
+            "优先支持"
+          ]
+        },
+        {
+          "name": "无限版",
+          "price": 399,
+          "period": "月",
+          "features": [
+            "全部模型",
+            "无限token",
+            "专属客服",
+            "API优先"
+          ]
+        }
+      ]
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "对公转账"
+    ],
+    "concurrencyLimit": 30,
+    "rateLimit": "150 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T10:00:00Z",
+    "responseTime": 250,
+    "heatScore": 72,
+    "mentionCount": 98,
+    "priceHistory": [
+      {
+        "date": "2026-02-20",
+        "model": "gpt-4o",
+        "price": 12
+      },
+      {
+        "date": "2026-04-01",
+        "model": "gpt-4o",
+        "price": 10
+      }
+    ],
+    "sources": [
+      {
+        "platform": "zhihu",
+        "url": "https://zhihu.com/question/789012",
+        "title": "智联AI订阅制值得吗？",
+        "author": "知乎大V",
+        "publishedAt": "2026-03-15T10:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "xiaohongshu",
+        "url": "https://xiaohongshu.example.com/note/ghi789",
+        "title": "智联AI无限版体验报告",
+        "author": "AI测评师",
+        "publishedAt": "2026-04-10T14:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2026-02-20T00:00:00Z",
+    "lastUpdated": "2026-05-06T10:00:00Z",
+    "tags": [
+      "企业级",
+      "订阅制",
+      "国产模型支持好"
+    ]
+  },
+  {
+    "id": "p009",
+    "name": "极客API站",
+    "website": "https://geekapi.example.com",
+    "contact": "TG: @geekapi",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 6.5,
+        "outputPrice": 19.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 1,
+        "outputPrice": 3,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 9,
+        "outputPrice": 27,
+        "currency": "CNY"
+      },
+      {
+        "model": "llama-3.1-70b",
+        "inputPrice": 3,
+        "outputPrice": 9,
+        "currency": "CNY"
+      },
+      {
+        "model": "mixtral-8x22b",
+        "inputPrice": 2.5,
+        "outputPrice": 7.5,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "paymentMethods": [
+      "USDT",
+      "支付宝"
+    ],
+    "concurrencyLimit": 10,
+    "rateLimit": "50 RPM",
+    "status": "unknown",
+    "lastChecked": "2026-05-05T22:00:00Z",
+    "responseTime": null,
+    "heatScore": 38,
+    "mentionCount": 29,
+    "priceHistory": [
+      {
+        "date": "2026-04-25",
+        "model": "gpt-4o",
+        "price": 6.5
+      }
+    ],
+    "sources": [
+      {
+        "platform": "github",
+        "url": "https://github.com/geekapi/awesome-ai-api",
+        "title": "awesome-ai-api 列表收录",
+        "author": "geekapi_dev",
+        "publishedAt": "2026-04-25T08:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2026-04-25T00:00:00Z",
+    "lastUpdated": "2026-05-05T22:00:00Z",
+    "tags": [
+      "个人卖家",
+      "开源模型",
+      "新商家"
+    ]
+  },
+  {
+    "id": "p010",
+    "name": "星辰API",
+    "website": "https://xingchenapi.example.com",
+    "contact": "微信: xcapi_kefu",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 7.5,
+        "outputPrice": 22.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o-mini",
+        "inputPrice": 1.3,
+        "outputPrice": 3.9,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 11,
+        "outputPrice": 33,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3-opus",
+        "inputPrice": 35,
+        "outputPrice": 105,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "inputPrice": 3.5,
+        "outputPrice": 10.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "deepseek-v3",
+        "inputPrice": 1.2,
+        "outputPrice": 2.4,
+        "currency": "CNY"
+      },
+      {
+        "model": "qwen-max",
+        "inputPrice": 2.5,
+        "outputPrice": 7.5,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "轻量版",
+          "price": 59,
+          "period": "月",
+          "features": [
+            "主流模型",
+            "每月300万token"
+          ]
+        },
+        {
+          "name": "全能版",
+          "price": 199,
+          "period": "月",
+          "features": [
+            "全部模型",
+            "每月1500万token",
+            "优先支持"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "concurrencyLimit": 25,
+    "rateLimit": "100 RPM",
+    "status": "online",
+    "lastChecked": "2026-05-06T11:00:00Z",
+    "responseTime": 210,
+    "heatScore": 82,
+    "mentionCount": 167,
+    "priceHistory": [
+      {
+        "date": "2026-02-10",
+        "model": "gpt-4o",
+        "price": 9
+      },
+      {
+        "date": "2026-03-20",
+        "model": "gpt-4o",
+        "price": 8
+      },
+      {
+        "date": "2026-05-01",
+        "model": "gpt-4o",
+        "price": 7.5
+      }
+    ],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://v2ex.com/t/678901",
+        "title": "星辰API 全模型覆盖",
+        "author": "star_fan",
+        "publishedAt": "2026-02-10T09:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "linux.do",
+        "url": "https://linux.do/t/789012",
+        "title": "星辰API vs AI Hub Pro 对比评测",
+        "author": "benchmark_guy",
+        "publishedAt": "2026-04-01T15:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "nodeseek",
+        "url": "https://www.nodeseek.com/post-445566",
+        "title": "星辰API免费额度体验",
+        "author": "free_trial",
+        "publishedAt": "2026-04-18T11:00:00Z",
+        "fetchedAt": "2026-05-06T08:00:00Z"
+      }
+    ],
+    "firstSeen": "2026-02-10T00:00:00Z",
+    "lastUpdated": "2026-05-06T11:00:00Z",
+    "tags": [
+      "稳定运营",
+      "混合计费",
+      "免费额度大"
+    ]
+  }
+]

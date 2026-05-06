@@ -1,0 +1,60 @@
+name: Crawler - 定时抓取AI中转商数据
+
+on:
+  schedule:
+    # 每2小时运行一次
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: '指定爬虫平台 (v2ex/nodeseek/linux.do/xiaohongshu/all)'
+        required: false
+        default: 'all'
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run crawler
+      env:
+        AI_API_KEY: ${{ secrets.AI_API_KEY }}
+        AI_BASE_URL: ${{ secrets.AI_BASE_URL }}
+        AI_MODEL: ${{ secrets.AI_MODEL }}
+      run: |
+        PLATFORM="${{ github.event.inputs.platform || 'all' }}"
+        if [ "$PLATFORM" = "all" ]; then
+          npx tsx crawler/run.ts
+        else
+          npx tsx crawler/run.ts "$PLATFORM"
+        fi
+        
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if git diff --quiet data/providers.json; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/providers.json data/stats.json
+        git commit -m "🤖 自动更新: $(date +'%Y-%m-%d %H:%M') 爬虫数据"
+        git push
