@@ -1,38 +1,36 @@
 import { RawPost } from "../types";
 
 const BASE_URL = "https://www.v2ex.com";
-const API_URL = `${BASE_URL}/api`;
-const KEYWORDS = [
-  "API中转站",
-  "OpenAI 中转",
-  "GPT 中转",
-  "Claude 中转",
-  "AI API 中转",
-  "API 代理",
-  "中转站 推荐",
+const API_URL = `${BASE_URL}/api";
+
+// 内容预过滤关键词
+const RELEVANT_KEYWORDS = [
+  "中转站", "API中转", "OpenAI 中转", "GPT 中转", "Claude 中转",
+  "API 代理", "AI API", "api relay", "openai proxy",
+  "token 充值", "key 充值", "额度",
+  "new-api", "one-api", "chat-api",
 ];
 
-// 内容预过滤 - 帖子必须包含这些关键词才处理
-const CONTENT_FILTER = [
-  "中转", "代理", "API key", "token", "充值",
-  "openai", "claude", "gpt", "模型",
-  "按量计费", "订阅", "官网",
+// 必须包含的核心关键词（至少匹配一个）
+const CORE_KEYWORDS = [
+  "中转", "api key", "openai", "claude", "gpt-4", "gpt-3",
+  "token", "proxy", "relay", "one-api", "new-api",
 ];
 
-// 真实爬取 - 使用 V2EX API
+// 真实爬取 - 遍历 V2EX 最新帖子
 export async function crawlV2EX(): Promise<RawPost[]> {
   console.log("[V2EX] Starting real crawler...");
   const posts: RawPost[] = [];
+  const seenIds = new Set<number>();
 
-  // 方式1: 使用 V2EX 最新主题 API，按节点筛选
-  const relevantNodes = ["share", "create", "programmer", "macos", "apple", "android", "windows"];
+  // 获取最新帖子（V2EX API 返回最近的帖子）
+  const maxPages = 5; // 最多遍历 5 页
 
-  for (const node of relevantNodes) {
+  for (let page = 1; page <= maxPages; page++) {
     try {
-      const url = `${API_URL}/topics/hot/${node}.json`;
-      console.log(`[V2EX] Fetching node: ${node}`);
+      console.log(`[V2EX] Fetching latest topics, page ${page}`);
 
-      const response = await fetch(url, {
+      const response = await fetch(`${API_URL}/topics/latest.json?p=${page}`, {
         headers: {
           "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
           "Accept": "application/json",
@@ -40,81 +38,49 @@ export async function crawlV2EX(): Promise<RawPost[]> {
       });
 
       if (!response.ok) {
-        console.error(`[V2EX] Node API error: ${response.status}`);
-        continue;
+        console.error(`[V2EX] API error: ${response.status}`);
+        break;
       }
 
       const topics = (await response.json()) as V2exTopic[];
+      if (!topics || topics.length === 0) break;
+
+      let relevantCount = 0;
 
       for (const topic of topics) {
-        const text = `${topic.title} ${topic.content || ""}`.toLowerCase();
-        const isRelevant = KEYWORDS.some((kw) => text.includes(kw.toLowerCase()));
+        if (seenIds.has(topic.id)) continue;
+        seenIds.add(topic.id);
 
-        if (isRelevant && topic.content) {
-          // 获取帖子详情（含评论）
-          const detail = await fetchTopicDetail(topic.id);
-          posts.push(detail || {
-            url: `${BASE_URL}/t/${topic.id}`,
-            platform: "v2ex",
-            title: topic.title,
-            content: topic.content || "",
-            author: topic.member?.username || "unknown",
-            publishedAt: new Date(topic.created * 1000).toISOString(),
-            fetchedAt: new Date().toISOString(),
-          });
+        // 快速预过滤：标题或内容必须包含核心关键词
+        const text = `${topic.title} ${topic.content_rendered || topic.content || ""}`.toLowerCase();
+        const coreMatch = CORE_KEYWORDS.some((kw) => text.includes(kw.toLowerCase()));
+
+        if (!coreMatch) continue;
+
+        // 详细过滤：必须包含至少2个相关关键词
+        const relevantCount2 = RELEVANT_KEYWORDS.filter((kw) => text.includes(kw.toLowerCase())).length;
+        if (relevantCount2 < 1) continue;
+
+        console.log(`[V2EX] Relevant topic: ${topic.title} (${relevantCount2} keywords)`);
+
+        // 获取帖子详情（含评论）
+        const detail = await fetchTopicDetail(topic.id);
+        if (detail) {
+          posts.push(detail);
+          relevantCount++;
         }
+
+        // 控制请求数量
+        if (relevantCount >= 5) break;
       }
 
       await new Promise((r) => setTimeout(r, 2000));
+
+      // 如果已经找到足够的帖子，停止遍历
+      if (posts.length >= 10) break;
     } catch (error) {
-      console.error(`[V2EX] Error fetching node ${node}:`, error);
-    }
-  }
-
-  // 方式2: 搜索 API
-  for (const keyword of KEYWORDS.slice(0, 2)) {
-    try {
-      const searchUrl = `${BASE_URL}/search?q=${encodeURIComponent(keyword)}&type=topic`;
-      console.log(`[V2EX] Searching: ${keyword}`);
-
-      const response = await fetch(searchUrl, {
-        headers: {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-          "Accept": "text/html",
-        },
-      });
-
-      if (!response.ok) continue;
-
-      const html = await response.text();
-      const topicIds = extractTopicIds(html);
-      console.log(`[V2EX] Found ${topicIds.length} topic IDs for "${keyword}"`);
-
-      // 去重
-      const existingIds = new Set(posts.map((p) => p.url));
-      for (const topicId of topicIds) {
-        const url = `${BASE_URL}/t/${topicId}`;
-        if (existingIds.has(url)) continue;
-
-        const detail = await fetchTopicDetail(topicId);
-        if (detail) {
-          // 内容预过滤：必须包含至少2个相关关键词
-          const text = `${detail.title} ${detail.content}`.toLowerCase();
-          const matchCount = CONTENT_FILTER.filter((kw) => text.includes(kw.toLowerCase())).length;
-          if (matchCount >= 2) {
-            posts.push(detail);
-            existingIds.add(url);
-            console.log(`[V2EX] Relevant post: ${detail.title.substring(0, 50)} (${matchCount} keywords)`);
-          } else {
-            console.log(`[V2EX] Skipping irrelevant post: ${detail.title.substring(0, 50)} (${matchCount} keywords)`);
-          }
-        }
-        await new Promise((r) => setTimeout(r, 2000));
-      }
-
-      await new Promise((r) => setTimeout(r, 3000));
-    } catch (error) {
-      console.error(`[V2EX] Error searching "${keyword}":`, error);
+      console.error(`[V2EX] Error fetching page ${page}:`, error);
+      break;
     }
   }
 
@@ -131,6 +97,9 @@ interface V2exTopic {
   member: {
     username: string;
   };
+  node: {
+    name: string;
+  };
   replies: number;
 }
 
@@ -144,12 +113,10 @@ interface V2exReply {
   created: number;
 }
 
-// 通过 API 获取帖子详情（含评论）
 async function fetchTopicDetail(topicId: number): Promise<RawPost | null> {
   try {
     console.log(`[V2EX] Fetching topic detail: ${topicId}`);
 
-    // 获取帖子详情
     const topicResponse = await fetch(`${API_URL}/topics/show.json?id=${topicId}`, {
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -163,7 +130,7 @@ async function fetchTopicDetail(topicId: number): Promise<RawPost | null> {
     if (!topicData || topicData.length === 0) return null;
 
     const topic = topicData[0];
-    if (!topic.title || !topic.content) return null;
+    if (!topic.title) return null;
 
     // 获取评论
     let comments = "";
@@ -189,11 +156,13 @@ async function fetchTopicDetail(topicId: number): Promise<RawPost | null> {
       // 评论获取失败不影响主流程
     }
 
+    const content = stripHtml(topic.content_rendered || topic.content || "");
+
     return {
       url: `${BASE_URL}/t/${topicId}`,
       platform: "v2ex",
       title: topic.title,
-      content: topic.content + (comments ? `\n\n【评论】\n${comments}` : ""),
+      content: content + (comments ? `\n\n【评论】\n${comments}` : ""),
       author: topic.member?.username || "unknown",
       publishedAt: new Date(topic.created * 1000).toISOString(),
       fetchedAt: new Date().toISOString(),
@@ -204,19 +173,6 @@ async function fetchTopicDetail(topicId: number): Promise<RawPost | null> {
   }
 }
 
-// 从搜索页面提取帖子 ID
-function extractTopicIds(html: string): number[] {
-  const ids: number[] = [];
-  const regex = /href="\/t\/(\d+)(?:[^"]*)?"/g;
-  let match;
-  while ((match = regex.exec(html)) !== null) {
-    const id = parseInt(match[1]);
-    if (!ids.includes(id)) ids.push(id);
-  }
-  return ids;
-}
-
-// 移除 HTML 标签
 function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, "").trim();
 }
