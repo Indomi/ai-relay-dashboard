@@ -8,6 +8,8 @@ import { generateMockNodeSeekPosts } from "./extractors/nodeseek";
 import { generateMockLinuxDoPosts } from "./extractors/linuxdo";
 import { generateMockJuejinPosts } from "./extractors/juejin";
 import { generateMockRSSPosts } from "./extractors/rss";
+import { generateMockZhihuPosts } from "./extractors/zhihu";
+import { generateMockJikePosts } from "./extractors/jike";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -65,6 +67,12 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
         break;
       case "rss":
         posts = generateMockRSSPosts();
+        break;
+      case "zhihu":
+        posts = generateMockZhihuPosts();
+        break;
+      case "jike":
+        posts = generateMockJikePosts();
         break;
       default:
         console.log(`[Scheduler] No crawler implemented for ${platform}`);
