@@ -1,7 +1,7 @@
-import { RawPost, CrawlerResult } from "./types";
+import { RawPost, CrawlerResult, ExtractedProvider } from "./types";
 import { Provider } from "../../src/lib/types";
 import { crawlerConfigs } from "./config";
-import { extractProviderFromPost } from "./ai-extractor";
+import { extractProviderFromPost, extractProviderWithDeepCrawl } from "./ai-extractor";
 import { deduplicateAndMerge } from "./deduplicator";
 import { crawlV2EX, generateMockV2EXPosts } from "./extractors/v2ex";
 import { generateMockNodeSeekPosts } from "./extractors/nodeseek";
@@ -96,27 +96,49 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
 
     console.log(`[Scheduler] ${platform}: Found ${posts.length} posts`);
 
-    // AI 提取
+    // AI 提取（两步流程：先提取链接，再访问网站获取详情）
     const extractedList: {
-      extracted: Awaited<ReturnType<typeof extractProviderFromPost>>;
+      extracted: ExtractedProvider | null;
       source: { platform: string; url: string; title: string; author: string; publishedAt: string };
     }[] = [];
 
     for (const post of posts) {
-      const extracted = await extractProviderFromPost(post.title, post.content);
-      extractedList.push({
-        extracted,
-        source: {
-          platform: post.platform,
-          url: post.url,
-          title: post.title,
-          author: post.author,
-          publishedAt: post.publishedAt,
-        },
-      });
+      console.log(`[Scheduler] Processing post: ${post.title.substring(0, 50)}...`);
+
+      // 使用两步提取流程
+      const providers = await extractProviderWithDeepCrawl(post.title, post.content);
+
+      if (providers.length > 0) {
+        // 可能有多个商家
+        for (const provider of providers) {
+          extractedList.push({
+            extracted: provider,
+            source: {
+              platform: post.platform,
+              url: post.url,
+              title: post.title,
+              author: post.author,
+              publishedAt: post.publishedAt,
+            },
+          });
+        }
+      } else {
+        // 如果两步提取失败，尝试单步提取
+        const extracted = await extractProviderFromPost(post.title, post.content);
+        extractedList.push({
+          extracted,
+          source: {
+            platform: post.platform,
+            url: post.url,
+            title: post.title,
+            author: post.author,
+            publishedAt: post.publishedAt,
+          },
+        });
+      }
 
       // 避免速率限制
-      await new Promise((r) => setTimeout(r, 500));
+      await new Promise((r) => setTimeout(r, 1000));
     }
 
     // 去重合并
