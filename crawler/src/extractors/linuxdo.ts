@@ -1,4 +1,5 @@
 import { RawPost } from "../types";
+import * as cheerio from "cheerio";
 
 var BASE_URL = "https://linux.do";
 
@@ -30,6 +31,15 @@ var CONTENT_FILTER_KEYWORDS = [
 var REQUEST_DELAY = 2000;
 var MAX_TOPICS_PER_KEYWORD = 5;
 var MAX_POSTS_PER_TOPIC = 1;
+
+// 多种 User-Agent 备选
+var USER_AGENTS = [
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
+  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+];
 
 // Discourse search API 接口类型
 interface DiscourseTopic {
@@ -150,7 +160,33 @@ function delay(ms: number): Promise<void> {
   });
 }
 
-// 带重试的 fetch，处理 429 限流
+// 构建公共请求头（多种策略）
+function buildHeaders(uaIndex: number): { [key: string]: string } {
+  return {
+    "User-Agent": USER_AGENTS[uaIndex % USER_AGENTS.length],
+    "Accept": "application/json",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    Connection: "keep-alive",
+  };
+}
+
+// 构建 HTML 页面请求头
+function buildHtmlHeaders(uaIndex: number): { [key: string]: string } {
+  return {
+    "User-Agent": USER_AGENTS[uaIndex % USER_AGENTS.length],
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    Connection: "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+  };
+}
+
+// 带重试的 fetch，处理 429 限流和 403
 async function fetchWithRetry(
   url: string,
   maxRetries: number,
@@ -170,6 +206,25 @@ async function fetchWithRetry(
         continue;
       }
 
+      if (response.status === 403) {
+        console.log(
+          "[Linux.do] 403 Forbidden for " + url + " (attempt " + (attempt + 1) + "/" + maxRetries + ")"
+        );
+        if (attempt < maxRetries - 1) {
+          // 尝试换 User-Agent 重试
+          var newHeaders: { [key: string]: string } = {};
+          for (var key in headers) {
+            newHeaders[key] = headers[key];
+          }
+          newHeaders["User-Agent"] = USER_AGENTS[(attempt + 1) % USER_AGENTS.length];
+          // 添加 cookie-like headers
+          newHeaders["Cookie"] = "_forum_session=linux-do-crawler-session";
+          headers = newHeaders;
+          await delay((attempt + 1) * 3000);
+          continue;
+        }
+      }
+
       return response;
     } catch (error) {
       console.error("[Linux.do] Fetch error (attempt " + (attempt + 1) + "/" + maxRetries + "):", error);
@@ -179,15 +234,6 @@ async function fetchWithRetry(
     }
   }
   return null;
-}
-
-// 构建公共请求头
-function buildHeaders(): { [key: string]: string } {
-  return {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept": "application/json",
-    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-  };
 }
 
 // 去除 HTML 标签
@@ -218,23 +264,45 @@ async function searchByKeyword(keyword: string): Promise<DiscourseTopic[]> {
   var searchUrl = BASE_URL + "/search.json?q=" + encodeURIComponent(keyword) + "&page=1";
   console.log("[Linux.do] Searching keyword: " + keyword);
 
-  var response = await fetchWithRetry(searchUrl, 3, buildHeaders());
-  if (!response || !response.ok) {
-    console.error("[Linux.do] Search API error: " + (response ? response.status : "no response") + " for keyword: " + keyword);
-    return [];
+  // 策略1: 标准 Accept: application/json
+  var response = await fetchWithRetry(searchUrl, 3, buildHeaders(0));
+  if (response && response.ok) {
+    try {
+      var data: DiscourseSearchResult = await response.json();
+      var topics = data.topics || [];
+      if (topics.length > 0) {
+        console.log("[Linux.do] Found " + topics.length + " topics for keyword: " + keyword + " (strategy 1)");
+        return topics;
+      }
+    } catch (e) {
+      console.error("[Linux.do] Failed to parse search JSON for keyword: " + keyword + " (strategy 1)");
+    }
   }
 
-  var data: DiscourseSearchResult;
-  try {
-    data = await response.json();
-  } catch (e) {
-    console.error("[Linux.do] Failed to parse search JSON for keyword: " + keyword);
-    return [];
+  await delay(2000);
+
+  // 策略2: 不同 User-Agent + cookie headers
+  for (var uaIdx = 1; uaIdx < USER_AGENTS.length; uaIdx++) {
+    var headers2 = buildHeaders(uaIdx);
+    headers2["Cookie"] = "_forum_session=linux-do-crawler-session";
+    response = await fetchWithRetry(searchUrl, 1, headers2);
+    if (response && response.ok) {
+      try {
+        var data2: DiscourseSearchResult = await response.json();
+        var topics2 = data2.topics || [];
+        if (topics2.length > 0) {
+          console.log("[Linux.do] Found " + topics2.length + " topics for keyword: " + keyword + " (strategy 2, UA " + uaIdx + ")");
+          return topics2;
+        }
+      } catch (e) {
+        // 继续尝试
+      }
+    }
+    await delay(2000);
   }
 
-  var topics = data.topics || [];
-  console.log("[Linux.do] Found " + topics.length + " topics for keyword: " + keyword);
-  return topics;
+  console.error("[Linux.do] Search API failed for keyword: " + keyword);
+  return [];
 }
 
 // 获取帖子详情（通过 Discourse JSON API）
@@ -242,19 +310,34 @@ async function fetchTopicDetail(topicId: number): Promise<DiscourseTopicDetail |
   var topicUrl = BASE_URL + "/t/" + topicId + ".json";
   console.log("[Linux.do] Fetching topic detail: " + topicId);
 
-  var response = await fetchWithRetry(topicUrl, 3, buildHeaders());
-  if (!response || !response.ok) {
-    console.error("[Linux.do] Topic detail API error: " + (response ? response.status : "no response") + " for topic: " + topicId);
-    return null;
+  // 策略1: 标准 JSON 请求
+  var response = await fetchWithRetry(topicUrl, 3, buildHeaders(0));
+  if (response && response.ok) {
+    try {
+      var data: DiscourseTopicDetail = await response.json();
+      return data;
+    } catch (e) {
+      console.error("[Linux.do] Failed to parse topic detail JSON for topic: " + topicId);
+    }
   }
 
-  try {
-    var data: DiscourseTopicDetail = await response.json();
-    return data;
-  } catch (e) {
-    console.error("[Linux.do] Failed to parse topic detail JSON for topic: " + topicId);
-    return null;
+  await delay(2000);
+
+  // 策略2: 带 cookie headers
+  var headers2 = buildHeaders(1);
+  headers2["Cookie"] = "_forum_session=linux-do-crawler-session";
+  response = await fetchWithRetry(topicUrl, 2, headers2);
+  if (response && response.ok) {
+    try {
+      var data2: DiscourseTopicDetail = await response.json();
+      return data2;
+    } catch (e) {
+      console.error("[Linux.do] Failed to parse topic detail JSON for topic: " + topicId + " (strategy 2)");
+    }
   }
+
+  console.error("[Linux.do] Topic detail API failed for topic: " + topicId);
+  return null;
 }
 
 // 从 topic 详情中提取 RawPost
@@ -309,21 +392,45 @@ async function fetchLatestTopics(): Promise<DiscourseLatestTopic[]> {
   var latestUrl = BASE_URL + "/latest.json";
   console.log("[Linux.do] Fetching latest topics as fallback...");
 
-  var response = await fetchWithRetry(latestUrl, 3, buildHeaders());
-  if (!response || !response.ok) {
-    console.error("[Linux.do] Latest API error: " + (response ? response.status : "no response"));
-    return [];
+  // 策略1: 标准 JSON 请求
+  var response = await fetchWithRetry(latestUrl, 3, buildHeaders(0));
+  if (response && response.ok) {
+    try {
+      var data: DiscourseLatestResult = await response.json();
+      var topics = data.topic_list ? data.topic_list.topics : [];
+      if (topics.length > 0) {
+        console.log("[Linux.do] Found " + topics.length + " latest topics (strategy 1)");
+        return topics;
+      }
+    } catch (e) {
+      console.error("[Linux.do] Failed to parse latest topics JSON (strategy 1)");
+    }
   }
 
-  try {
-    var data: DiscourseLatestResult = await response.json();
-    var topics = data.topic_list ? data.topic_list.topics : [];
-    console.log("[Linux.do] Found " + topics.length + " latest topics");
-    return topics;
-  } catch (e) {
-    console.error("[Linux.do] Failed to parse latest topics JSON");
-    return [];
+  await delay(2000);
+
+  // 策略2: 不同 User-Agent + cookie
+  for (var uaIdx = 1; uaIdx < USER_AGENTS.length; uaIdx++) {
+    var headers2 = buildHeaders(uaIdx);
+    headers2["Cookie"] = "_forum_session=linux-do-crawler-session";
+    response = await fetchWithRetry(latestUrl, 1, headers2);
+    if (response && response.ok) {
+      try {
+        var data2: DiscourseLatestResult = await response.json();
+        var topics2 = data2.topic_list ? data2.topic_list.topics : [];
+        if (topics2.length > 0) {
+          console.log("[Linux.do] Found " + topics2.length + " latest topics (strategy 2, UA " + uaIdx + ")");
+          return topics2;
+        }
+      } catch (e) {
+        // 继续
+      }
+    }
+    await delay(2000);
   }
+
+  console.error("[Linux.do] Latest API failed");
+  return [];
 }
 
 // 从 latest topics 中按关键词过滤
@@ -341,19 +448,214 @@ function filterLatestTopicsByKeywords(topics: DiscourseLatestTopic[]): Discourse
 }
 
 // ========================
+// Approach 3: HTML 搜索页面解析（sov2ex 风格）
+// ========================
+async function searchViaHtml(keyword: string): Promise<DiscourseTopic[]> {
+  var searchUrl = BASE_URL + "/search?q=" + encodeURIComponent(keyword);
+  console.log("[Linux.do] 尝试 HTML 搜索页面: " + searchUrl);
+
+  for (var uaIdx = 0; uaIdx < USER_AGENTS.length; uaIdx++) {
+    try {
+      var headers = buildHtmlHeaders(uaIdx);
+      headers["Cookie"] = "_forum_session=linux-do-crawler-session";
+      var response = await fetch(searchUrl, { headers: headers });
+
+      if (response && response.ok) {
+        var html = await response.text();
+        var topics = parseSearchHtml(html);
+        if (topics.length > 0) {
+          console.log("[Linux.do] HTML 搜索解析到 " + topics.length + " 条 (UA " + uaIdx + ")");
+          return topics;
+        }
+      }
+    } catch (err) {
+      console.log("[Linux.do] HTML 搜索异常 (UA " + uaIdx + "): " + (err instanceof Error ? err.message : String(err)));
+    }
+    await delay(2000);
+  }
+
+  console.log("[Linux.do] HTML 搜索页面未获取到结果");
+  return [];
+}
+
+// 解析 HTML 搜索结果页面
+function parseSearchHtml(html: string): DiscourseTopic[] {
+  var topics: DiscourseTopic[] = [];
+  var $ = cheerio.load(html);
+
+  // Discourse 搜索结果通常在 .fps-result 或 .search-result 中
+  $(".fps-result, .search-result, .topic-list-item").each(function (_, element) {
+    var $el = $(element);
+    var $link = $el.find("a.title, a[href*='/t/']").first();
+    var href = $link.attr("href") || "";
+    var title = $link.text().trim();
+
+    if (!title) {
+      title = $el.find(".title, .topic-title").first().text().trim();
+    }
+
+    if (!title || title.length < 4) {
+      return;
+    }
+
+    // 从 href 中提取 topic id
+    var topicId = 0;
+    var match = href.match(/\/t\/[^\/]*\/(\d+)/);
+    if (match) {
+      topicId = parseInt(match[1], 10);
+    } else {
+      match = href.match(/\/t\/(\d+)/);
+      if (match) {
+        topicId = parseInt(match[1], 10);
+      }
+    }
+
+    if (topicId === 0) {
+      return;
+    }
+
+    // 提取摘要
+    var excerpt = $el.find(".blurb, .excerpt, .summary, .topic-excerpt").first().text().trim();
+
+    topics.push({
+      id: topicId,
+      title: title,
+      slug: "",
+      excerpt: excerpt,
+      created_at: new Date().toISOString(),
+      last_posted_at: new Date().toISOString(),
+      posts_count: 0,
+      like_count: 0,
+      views: 0,
+      category_id: 0,
+    });
+  });
+
+  // 去重
+  var seen = new Set<number>();
+  var unique: DiscourseTopic[] = [];
+  for (var i = 0; i < topics.length; i++) {
+    if (!seen.has(topics[i].id)) {
+      seen.add(topics[i].id);
+      unique.push(topics[i]);
+    }
+  }
+
+  return unique;
+}
+
+// ========================
+// Approach 4: 直接抓取单个 topic HTML 页面
+// ========================
+async function fetchTopicViaHtml(topicId: number): Promise<RawPost | null> {
+  var topicUrl = BASE_URL + "/t/" + topicId;
+  console.log("[Linux.do] 尝试 HTML 方式抓取 topic: " + topicId);
+
+  for (var uaIdx = 0; uaIdx < USER_AGENTS.length; uaIdx++) {
+    try {
+      var headers = buildHtmlHeaders(uaIdx);
+      headers["Cookie"] = "_forum_session=linux-do-crawler-session";
+      var response = await fetch(topicUrl, { headers: headers });
+
+      if (response && response.ok) {
+        var html = await response.text();
+        var post = parseTopicHtml(topicId, html);
+        if (post) {
+          return post;
+        }
+      }
+    } catch (err) {
+      console.log("[Linux.do] HTML topic 抓取异常 (UA " + uaIdx + "): " + (err instanceof Error ? err.message : String(err)));
+    }
+    await delay(2000);
+  }
+
+  return null;
+}
+
+// 解析 topic HTML 页面
+function parseTopicHtml(topicId: number, html: string): RawPost | null {
+  var $ = cheerio.load(html);
+
+  // 提取标题
+  var title = $("#topic-title, .fancy-title, h1").first().text().trim();
+  if (!title) {
+    title = $("title").text().trim();
+  }
+
+  // 提取正文内容（第一个帖子）
+  var content = "";
+  var $post = $(".topic-post, .cooked, article").first();
+  if ($post.length > 0) {
+    content = $post.text().trim();
+  }
+  // 备用：尝试更宽泛的选择器
+  if (!content) {
+    var $body = $(".post-body, .topic-body, .item, .contents").first();
+    if ($body.length > 0) {
+      content = $body.text().trim();
+    }
+  }
+
+  // 提取作者
+  var author = "";
+  var $author = $(".username, .names .username, .first-post .username").first();
+  if ($author.length > 0) {
+    author = $author.text().trim();
+  }
+
+  // 提取时间
+  var publishedAt = "";
+  var $time = $("time, .post-date, .created-at").first();
+  if ($time.length > 0) {
+    var datetime = $time.attr("datetime") || $time.text().trim();
+    if (datetime) {
+      publishedAt = new Date(datetime).toISOString();
+    }
+  }
+  if (!publishedAt) {
+    publishedAt = new Date().toISOString();
+  }
+
+  if (!title || !content) {
+    return null;
+  }
+
+  // 内容预过滤
+  if (!passesContentFilter(title + " " + content)) {
+    return null;
+  }
+
+  return {
+    url: BASE_URL + "/t/" + topicId,
+    platform: "linux.do",
+    title: title,
+    content: content,
+    author: author || "unknown",
+    publishedAt: publishedAt,
+    fetchedAt: new Date().toISOString(),
+  };
+}
+
+// ========================
 // 主函数：crawlLinuxDo
 // ========================
 export async function crawlLinuxDo(): Promise<RawPost[]> {
-  console.log("[Linux.do] Starting crawler with Discourse Search API...");
+  console.log("[Linux.do] Starting crawler with multiple strategies...");
   var posts: RawPost[] = [];
   processedTopicIds = {};
 
   // ---- Approach 1: Discourse Search API ----
+  var searchApiWorked = false;
   for (var k = 0; k < SEARCH_KEYWORDS.length; k++) {
     var keyword = SEARCH_KEYWORDS[k];
 
     try {
       var topics = await searchByKeyword(keyword);
+
+      if (topics.length > 0) {
+        searchApiWorked = true;
+      }
 
       for (var t = 0; t < topics.length && t < MAX_TOPICS_PER_KEYWORD; t++) {
         var topic = topics[t];
@@ -429,6 +731,64 @@ export async function crawlLinuxDo(): Promise<RawPost[]> {
       }
     } catch (error) {
       console.error("[Linux.do] Error fetching latest topics:", error);
+    }
+  }
+
+  console.log("[Linux.do] After latest topics: " + posts.length + " posts");
+
+  // ---- Approach 3: HTML 搜索页面 (补充) ----
+  // 如果以上方式结果仍然较少，尝试 HTML 搜索页面
+  if (posts.length < 10) {
+    console.log("[Linux.do] Supplementing with HTML search pages...");
+    var htmlKeywords = SEARCH_KEYWORDS.slice(0, 3);
+    for (var hk = 0; hk < htmlKeywords.length && posts.length < 30; hk++) {
+      try {
+        var htmlTopics = await searchViaHtml(htmlKeywords[hk]);
+
+        for (var ht = 0; ht < htmlTopics.length && ht < MAX_TOPICS_PER_KEYWORD; ht++) {
+          var htmlTopic = htmlTopics[ht];
+
+          if (processedTopicIds[String(htmlTopic.id)]) {
+            continue;
+          }
+          processedTopicIds[String(htmlTopic.id)] = true;
+
+          var htmlPreview = (htmlTopic.title || "") + " " + (htmlTopic.excerpt || "");
+          if (!passesContentFilter(htmlPreview)) {
+            continue;
+          }
+
+          // 先尝试 JSON API 获取详情
+          try {
+            var htmlDetail = await fetchTopicDetail(htmlTopic.id);
+            if (htmlDetail) {
+              var htmlExtracted = extractPostsFromTopicDetail(htmlDetail, htmlTopic.slug);
+              for (var hp = 0; hp < htmlExtracted.length; hp++) {
+                posts.push(htmlExtracted[hp]);
+              }
+              continue;
+            }
+          } catch (e) {
+            // JSON API 失败，尝试 HTML 方式
+          }
+
+          // 备用：直接抓取 HTML 页面
+          try {
+            var htmlPost = await fetchTopicViaHtml(htmlTopic.id);
+            if (htmlPost) {
+              posts.push(htmlPost);
+            }
+          } catch (e) {
+            console.error("[Linux.do] Error fetching topic HTML for id " + htmlTopic.id + ":", e);
+          }
+
+          await delay(REQUEST_DELAY);
+        }
+
+        await delay(REQUEST_DELAY);
+      } catch (error) {
+        console.error("[Linux.do] Error in HTML search for keyword \"" + htmlKeywords[hk] + "\":", error);
+      }
     }
   }
 
