@@ -7,8 +7,8 @@
     "models": [
       {
         "model": "gpt-4o",
-        "inputPrice": 1.5,
-        "outputPrice": 1.5,
+        "inputPrice": 8,
+        "outputPrice": 8,
         "currency": "CNY"
       },
       {
@@ -44,7 +44,7 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": 5,
+      "amount": 10,
       "unit": "USD"
     },
     "paymentMethods": [],
@@ -54,7 +54,7 @@
     "lastChecked": "2026-05-06T10:00:00Z",
     "responseTime": 320,
     "heatScore": 100,
-    "mentionCount": 176,
+    "mentionCount": 178,
     "priceHistory": [
       {
         "date": "2026-04-01",
@@ -136,10 +136,26 @@
         "author": "技术博主",
         "publishedAt": "2026-05-05T14:54:41.032Z",
         "fetchedAt": "2026-05-06T14:54:44.860Z"
+      },
+      {
+        "platform": "xiaohongshu",
+        "url": "https://www.xiaohongshu.com/explore/123456789",
+        "title": "真心求推API中转站！之前的api站跑路了😭",
+        "author": "求推荐的小白",
+        "publishedAt": "2026-05-06T13:58:22.671Z",
+        "fetchedAt": "2026-05-06T14:58:30.009Z"
+      },
+      {
+        "platform": "xiaohongshu",
+        "url": "https://www.xiaohongshu.com/explore/987654321",
+        "title": "程序员必备的AI API平台推荐🚀",
+        "author": "技术博主",
+        "publishedAt": "2026-05-06T11:58:22.671Z",
+        "fetchedAt": "2026-05-06T14:58:30.009Z"
       }
     ],
     "firstSeen": "2026-02-10T00:00:00Z",
-    "lastUpdated": "2026-05-06T14:56:12.434Z",
+    "lastUpdated": "2026-05-06T14:58:30.009Z",
     "tags": [
       "稳定运营",
       "速度快",
@@ -461,49 +477,20 @@
     ],
     "billingType": "hybrid",
     "subscription": {
-      "plans": [
-        {
-          "name": "体验版",
-          "price": 29,
-          "period": "月",
-          "features": [
-            "100万token"
-          ]
-        },
-        {
-          "name": "标准版",
-          "price": 99,
-          "period": "月",
-          "features": [
-            "500万token"
-          ]
-        },
-        {
-          "name": "旗舰版",
-          "price": 299,
-          "period": "月",
-          "features": [
-            "2000万token"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 2,
-      "unit": "USD"
+      "amount": 0,
+      "unit": ""
     },
-    "paymentMethods": [
-      "支付宝",
-      "微信",
-      "信用卡"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": 50,
     "rateLimit": "响应速度：120ms",
     "status": "online",
     "lastChecked": "2026-05-06T10:30:00Z",
     "responseTime": 120,
     "heatScore": 100,
-    "mentionCount": 316,
+    "mentionCount": 317,
     "priceHistory": [
       {
         "date": "2026-01-01",
@@ -553,10 +540,18 @@
         "author": "小红书用户",
         "publishedAt": "2026-04-20T15:00:00Z",
         "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "xiaohongshu",
+        "url": "https://www.xiaohongshu.com/explore/111222333",
+        "title": "避坑！这些API中转站不要用❌",
+        "author": "避坑指南",
+        "publishedAt": "2026-05-06T08:58:22.671Z",
+        "fetchedAt": "2026-05-06T14:58:30.010Z"
       }
     ],
     "firstSeen": "2025-11-01T00:00:00Z",
-    "lastUpdated": "2026-05-06T14:54:20.547Z",
+    "lastUpdated": "2026-05-06T14:58:30.010Z",
     "tags": [
       "老牌商家",
       "企业级",

@@ -10,6 +10,7 @@ import { generateMockJuejinPosts } from "./extractors/juejin";
 import { generateMockRSSPosts } from "./extractors/rss";
 import { generateMockZhihuPosts } from "./extractors/zhihu";
 import { generateMockJikePosts } from "./extractors/jike";
+import { generateMockXiaohongshuPosts } from "./extractors/xiaohongshu";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -73,6 +74,9 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
         break;
       case "jike":
         posts = generateMockJikePosts();
+        break;
+      case "xiaohongshu":
+        posts = generateMockXiaohongshuPosts();
         break;
       default:
         console.log(`[Scheduler] No crawler implemented for ${platform}`);
