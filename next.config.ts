@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // GitHub Pages 部署在子路径 /ai-relay-dashboard/
+  basePath: '/ai-relay-dashboard',
+  assetPrefix: '/ai-relay-dashboard/',
 };
 
 export default nextConfig;
