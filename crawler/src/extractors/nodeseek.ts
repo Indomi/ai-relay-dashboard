@@ -1,60 +1,104 @@
-import { CheerioCrawler } from "crawlee";
 import { RawPost } from "../types";
 
 const BASE_URL = "https://www.nodeseek.com";
+const KEYWORDS = ["API", "中转", "key", "token", "OpenAI", "Claude", "GPT", "模型"];
 
+// 真实爬取
 export async function crawlNodeSeek(): Promise<RawPost[]> {
-  console.log("[NodeSeek] Crawler initialized (using mock data for demo)");
-  return generateMockNodeSeekPosts();
+  console.log("[NodeSeek] Starting real crawler...");
+  const posts: RawPost[] = [];
+
+  for (const keyword of KEYWORDS.slice(0, 3)) {
+    try {
+      const searchUrl = `${BASE_URL}/api/posts?keyword=${encodeURIComponent(keyword)}&page=1&pageSize=10`;
+      console.log(`[NodeSeek] Searching: ${keyword}`);
+
+      const response = await fetch(searchUrl, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Accept": "application/json",
+          "Referer": BASE_URL,
+        },
+      });
+
+      if (!response.ok) {
+        console.error(`[NodeSeek] API error: ${response.status}`);
+        continue;
+      }
+
+      const data = await response.json();
+      const items = data?.data?.list || data?.result?.list || [];
+
+      for (const item of items.slice(0, 5)) {
+        try {
+          const postId = item.id || item._id;
+          const postUrl = `${BASE_URL}/post-${postId}`;
+          const post = await fetchPostDetail(postUrl, postId);
+          if (post) {
+            posts.push(post);
+          }
+          await new Promise((r) => setTimeout(r, 2000));
+        } catch (error) {
+          console.error(`[NodeSeek] Error fetching post:`, error);
+        }
+      }
+
+      await new Promise((r) => setTimeout(r, 3000));
+    } catch (error) {
+      console.error(`[NodeSeek] Error searching "${keyword}":`, error);
+    }
+  }
+
+  console.log(`[NodeSeek] Total posts fetched: ${posts.length}`);
+  return posts;
 }
 
-export function generateMockNodeSeekPosts(): RawPost[] {
-  return [
-    {
-      url: "https://www.nodeseek.com/post-78901",
-      platform: "nodeseek",
-      title: "用了半年的API中转，分享体验",
-      content: `极速API用了半年了，来分享一下体验。
+async function fetchPostDetail(url: string, postId: string): Promise<RawPost | null> {
+  try {
+    console.log(`[NodeSeek] Fetching: ${url}`);
 
-价格：
-- GPT-4o: ¥8/1M
-- Claude 3.5: ¥12/1M
-- Gemini: ¥3/1M
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "text/html",
+      },
+    });
 
-稳定性：99%以上，很少遇到不可用的情况
-响应速度：平均320ms
+    if (!response.ok) return null;
 
-免费额度：$5
-支付方式：支付宝、微信、USDT
+    const html = await response.text();
 
-总体推荐，适合个人和小团队使用。
-TG: @jsapi_admin`,
-      author: "api_user",
-      publishedAt: new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    },
-    {
-      url: "https://www.nodeseek.com/post-78902",
-      platform: "nodeseek",
-      title: "个人搭建的API中转站，价格便宜",
-      content: `自己搭了个小站，佛系运营。
+    const title = extractText(html, '<h1', '</h1>');
+    const content = extractText(html, '<div class="post-content', '</div>');
+    const author = extractText(html, '<a class="username', '</a>');
 
-模型：
-- GPT-4o: ¥5/1M（应该是全网最低了）
-- GPT-4o-mini: ¥0.8/1M
-- Claude 3.5: ¥8/1M
+    if (title && content) {
+      return {
+        url,
+        platform: "nodeseek",
+        title,
+        content,
+        author: author || "unknown",
+        publishedAt: new Date().toISOString(),
+        fetchedAt: new Date().toISOString(),
+      };
+    }
 
-限制：
-- 并发：5
-- 速率：30 RPM
+    return null;
+  } catch (error) {
+    console.error(`[NodeSeek] Error parsing ${url}:`, error);
+    return null;
+  }
+}
 
-联系方式：TG @xiaobai_ai
-适合轻度使用的同学。
+function extractText(html: string, startPattern: string, endPattern: string): string {
+  const startIndex = html.indexOf(startPattern);
+  if (startIndex === -1) return "";
 
-⚠️ 个人运营，不保证 SLA`,
-      author: "xiaobai",
-      publishedAt: new Date(Date.now() - 10 * 60 * 60 * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    },
-  ];
+  const contentStart = html.indexOf(">", startIndex) + 1;
+  const endIndex = html.indexOf(endPattern, contentStart);
+
+  if (endIndex === -1) return "";
+
+  return html.substring(contentStart, endIndex).replace(/<[^>]*>/g, "").trim();
 }

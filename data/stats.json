@@ -1,52 +1,10 @@
 {
-  "totalProviders": 10,
-  "onlineProviders": 7,
-  "todayNew": 2,
-  "lowestPrice": {
-    "model": "gpt-4o-mini",
-    "price": 0.5,
-    "provider": "OpenKey"
-  },
-  "modelCoverage": [
-    { "model": "GPT-4o", "count": 10 },
-    { "model": "GPT-4o Mini", "count": 8 },
-    { "model": "Claude 3.5 Sonnet", "count": 9 },
-    { "model": "Claude 3 Opus", "count": 3 },
-    { "model": "Gemini 2.0 Flash", "count": 5 },
-    { "model": "Gemini 2.5 Pro", "count": 2 },
-    { "model": "DeepSeek V3", "count": 6 },
-    { "model": "Qwen Max", "count": 3 },
-    { "model": "Llama 3.1 70B", "count": 2 },
-    { "model": "Mixtral 8x22B", "count": 1 }
-  ],
-  "priceDistribution": [
-    { "range": "0-5元/1M", "count": 2 },
-    { "range": "5-10元/1M", "count": 5 },
-    { "range": "10-15元/1M", "count": 2 },
-    { "range": "15-20元/1M", "count": 1 }
-  ],
-  "sourceDistribution": [
-    { "platform": "V2EX", "count": 8 },
-    { "platform": "NodeSeek", "count": 5 },
-    { "platform": "Linux.do", "count": 5 },
-    { "platform": "即刻", "count": 2 },
-    { "platform": "知乎", "count": 3 },
-    { "platform": "小红书", "count": 2 },
-    { "platform": "Telegram", "count": 1 },
-    { "platform": "GitHub", "count": 1 }
-  ],
-  "dailyTrend": [
-    { "date": "04-25", "newProviders": 1, "priceChanges": 3 },
-    { "date": "04-26", "newProviders": 0, "priceChanges": 1 },
-    { "date": "04-27", "newProviders": 2, "priceChanges": 2 },
-    { "date": "04-28", "newProviders": 1, "priceChanges": 4 },
-    { "date": "04-29", "newProviders": 0, "priceChanges": 2 },
-    { "date": "04-30", "newProviders": 1, "priceChanges": 5 },
-    { "date": "05-01", "newProviders": 2, "priceChanges": 8 },
-    { "date": "05-02", "newProviders": 1, "priceChanges": 3 },
-    { "date": "05-03", "newProviders": 0, "priceChanges": 1 },
-    { "date": "05-04", "newProviders": 1, "priceChanges": 2 },
-    { "date": "05-05", "newProviders": 0, "priceChanges": 1 },
-    { "date": "05-06", "newProviders": 2, "priceChanges": 4 }
-  ]
+  "totalProviders": 0,
+  "onlineProviders": 0,
+  "todayNew": 0,
+  "lowestPrice": { "model": "", "price": 0, "provider": "" },
+  "modelCoverage": [],
+  "priceDistribution": [],
+  "sourceDistribution": [],
+  "dailyTrend": []
 }

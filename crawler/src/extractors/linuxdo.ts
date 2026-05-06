@@ -1,82 +1,104 @@
-import { CheerioCrawler } from "crawlee";
 import { RawPost } from "../types";
 
 const BASE_URL = "https://linux.do";
+const KEYWORDS = ["AI API", "中转站", "模型服务", "OpenAI", "Claude", "API代理"];
 
+// 真实爬取
 export async function crawlLinuxDo(): Promise<RawPost[]> {
-  console.log("[Linux.do] Crawler initialized (using mock data for demo)");
-  return generateMockLinuxDoPosts();
+  console.log("[Linux.do] Starting real crawler...");
+  const posts: RawPost[] = [];
+
+  for (const keyword of KEYWORDS.slice(0, 3)) {
+    try {
+      const searchUrl = `${BASE_URL}/search.json?q=${encodeURIComponent(keyword)}&page=1`;
+      console.log(`[Linux.do] Searching: ${keyword}`);
+
+      const response = await fetch(searchUrl, {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Accept": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        console.error(`[Linux.do] API error: ${response.status}`);
+        continue;
+      }
+
+      const data = await response.json();
+      const topics = data?.topics || data?.posts || [];
+
+      for (const topic of topics.slice(0, 5)) {
+        try {
+          const topicId = topic.id || topic.slug;
+          const postUrl = `${BASE_URL}/t/${topicId}`;
+          const post = await fetchPostDetail(postUrl);
+          if (post) {
+            posts.push(post);
+          }
+          await new Promise((r) => setTimeout(r, 2000));
+        } catch (error) {
+          console.error(`[Linux.do] Error fetching post:`, error);
+        }
+      }
+
+      await new Promise((r) => setTimeout(r, 3000));
+    } catch (error) {
+      console.error(`[Linux.do] Error searching "${keyword}":`, error);
+    }
+  }
+
+  console.log(`[Linux.do] Total posts fetched: ${posts.length}`);
+  return posts;
 }
 
-export function generateMockLinuxDoPosts(): RawPost[] {
-  return [
-    {
-      url: "https://linux.do/t/456789",
-      platform: "linux.do",
-      title: "CloudBridge AI 订阅制体验分享",
-      content: `从按量计费转到订阅制一个月了，来分享一下。
+async function fetchPostDetail(url: string): Promise<RawPost | null> {
+  try {
+    console.log(`[Linux.do] Fetching: ${url}`);
 
-CloudBridge 的订阅方案：
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "text/html",
+      },
+    });
 
-基础版 ¥49/月：
-- GPT-4o 100万token
-- Claude 50万token
-- 基础客服
+    if (!response.ok) return null;
 
-专业版 ¥149/月：
-- GPT-4o 500万token
-- Claude 300万token
-- 所有模型
-- 优先客服
+    const html = await response.text();
 
-企业版 ¥499/月：
-- 无限token
-- SLA保障
+    // Discourse 论坛的标题和内容提取
+    const title = extractText(html, '<title>', '</title>');
+    const content = extractText(html, '<div class="cooked"', '</div>');
+    const author = extractText(html, '<a class="username', '</a>');
 
-模型覆盖很全：GPT-4o、Claude 3.5 Sonnet、Claude 3 Opus、Gemini系列、DeepSeek
+    if (title && content) {
+      return {
+        url,
+        platform: "linux.do",
+        title: title.replace(" - LINUX DO", "").trim(),
+        content,
+        author: author || "unknown",
+        publishedAt: new Date().toISOString(),
+        fetchedAt: new Date().toISOString(),
+      };
+    }
 
-免费额度：$10
-支付方式：支付宝、微信
+    return null;
+  } catch (error) {
+    console.error(`[Linux.do] Error parsing ${url}:`, error);
+    return null;
+  }
+}
 
-官网：https://cloudbridge.example.com
-微信：cloudbridge_kefu
+function extractText(html: string, startPattern: string, endPattern: string): string {
+  const startIndex = html.indexOf(startPattern);
+  if (startIndex === -1) return "";
 
-适合用量稳定的场景，比按量计费省30%左右。`,
-      author: "linux_fan",
-      publishedAt: new Date(Date.now() - 8 * 60 * 60 * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    },
-    {
-      url: "https://linux.do/t/567890",
-      platform: "linux.do",
-      title: "最稳定的AI API中转站推荐",
-      content: `用过好几家中转，目前最稳的是 AI Hub Pro。
+  const contentStart = html.indexOf(">", startIndex) + 1;
+  const endIndex = html.indexOf(endPattern, contentStart);
 
-用了快一年了，几乎没遇到过故障。
+  if (endIndex === -1) return "";
 
-价格虽然不算最低，但稳定性值得：
-- GPT-4o: ¥12/1M
-- Claude 3.5: ¥15/1M
-- Gemini 2.5 Pro: ¥20/1M
-
-订阅制：
-- 体验版 ¥29/月：100万token
-- 标准版 ¥99/月：500万token
-- 旗舰版 ¥299/月：2000万token
-
-响应速度：120ms（非常快）
-并发：50
-
-免费额度：$2
-支付方式：支付宝、微信、信用卡
-
-官网：https://aihubpro.example.com
-邮箱：support@aihubpro.example.com
-
-企业级用户强烈推荐。`,
-      author: "linux_pro",
-      publishedAt: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    },
-  ];
+  return html.substring(contentStart, endIndex).replace(/<[^>]*>/g, "").trim();
 }

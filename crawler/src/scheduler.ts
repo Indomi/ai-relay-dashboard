@@ -3,14 +3,14 @@ import { Provider } from "../../src/lib/types";
 import { crawlerConfigs } from "./config";
 import { extractProviderFromPost, extractProviderWithDeepCrawl } from "./ai-extractor";
 import { deduplicateAndMerge } from "./deduplicator";
-import { crawlV2EX, generateMockV2EXPosts } from "./extractors/v2ex";
-import { generateMockNodeSeekPosts } from "./extractors/nodeseek";
-import { generateMockLinuxDoPosts } from "./extractors/linuxdo";
-import { generateMockJuejinPosts } from "./extractors/juejin";
-import { generateMockRSSPosts } from "./extractors/rss";
-import { generateMockZhihuPosts } from "./extractors/zhihu";
-import { generateMockJikePosts } from "./extractors/jike";
-import { generateMockXiaohongshuPosts } from "./extractors/xiaohongshu";
+import { crawlV2EX } from "./extractors/v2ex";
+import { crawlNodeSeek } from "./extractors/nodeseek";
+import { crawlLinuxDo } from "./extractors/linuxdo";
+import { crawlJuejin } from "./extractors/juejin";
+import { crawlRSS } from "./extractors/rss";
+import { crawlZhihu } from "./extractors/zhihu";
+import { crawlJike } from "./extractors/jike";
+import { crawlXiaohongshu } from "./extractors/xiaohongshu";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -50,38 +50,33 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
   console.log(`[Scheduler] Starting crawler for ${platform}...`);
 
   try {
-    // 获取帖子数据（优先真实爬取，失败则用模拟数据）
+    // 只使用真实爬取，不使用模拟数据
     let posts: RawPost[] = [];
 
     switch (platform) {
       case "v2ex":
-        // 尝试真实爬取
         posts = await crawlV2EX();
-        if (posts.length === 0) {
-          console.log("[V2EX] Real crawl failed, using mock data");
-          posts = generateMockV2EXPosts();
-        }
         break;
       case "nodeseek":
-        posts = generateMockNodeSeekPosts();
+        posts = await crawlNodeSeek();
         break;
       case "linux.do":
-        posts = generateMockLinuxDoPosts();
+        posts = await crawlLinuxDo();
         break;
       case "juejin":
-        posts = generateMockJuejinPosts();
+        posts = await crawlJuejin();
         break;
       case "rss":
-        posts = generateMockRSSPosts();
+        posts = await crawlRSS();
         break;
       case "zhihu":
-        posts = generateMockZhihuPosts();
+        posts = await crawlZhihu();
         break;
       case "jike":
-        posts = generateMockJikePosts();
+        posts = await crawlJike();
         break;
       case "xiaohongshu":
-        posts = generateMockXiaohongshuPosts();
+        posts = await crawlXiaohongshu();
         break;
       default:
         console.log(`[Scheduler] No crawler implemented for ${platform}`);
@@ -92,6 +87,17 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
           errors: ["No crawler implemented"],
           duration: Date.now() - startTime,
         };
+    }
+
+    if (posts.length === 0) {
+      console.log(`[Scheduler] ${platform}: No posts found, skipping AI extraction`);
+      return {
+        platform,
+        postsFound: 0,
+        postsNew: 0,
+        errors: ["No posts found"],
+        duration: Date.now() - startTime,
+      };
     }
 
     console.log(`[Scheduler] ${platform}: Found ${posts.length} posts`);
@@ -109,7 +115,6 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
       const providers = await extractProviderWithDeepCrawl(post.title, post.content);
 
       if (providers.length > 0) {
-        // 可能有多个商家
         for (const provider of providers) {
           extractedList.push({
             extracted: provider,

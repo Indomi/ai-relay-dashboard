@@ -73,90 +73,31 @@ function filterRelevantArticles(articles: JuejinArticle[]): JuejinArticle[] {
   });
 }
 
-// 生成模拟数据（用于演示）
-export function generateMockJuejinPosts(): RawPost[] {
-  const now = new Date();
-  const posts: RawPost[] = [
-    {
-      url: "https://juejin.cn/post/7380000000000000001",
-      platform: "juejin",
-      title: "【推荐】国内好用的AI API中转站盘点，稳定又便宜",
-      content: `最近测试了几个国内AI API中转站，分享一下体验：
-
-1. 极速API - 价格便宜，支持GPT-4o、Claude 3.5等主流模型
-   - 输入 ¥8/1M tokens，输出 ¥8/1M tokens
-   - 支持支付宝、微信支付
-   - TG: @jsapi_admin
-
-2. CloudBridge - 稳定性好，企业级服务
-   - 订阅制，月付 ¥99 起
-   - 官网: cloudbridge.example.com
-   - 微信: cloudbridge_kefu
-
-3. AI Hub Pro - 模型最全
-   - 支持 50+ 模型
-   - 输入 ¥12/1M tokens 起
-   - 官网: aihubpro.example.com
-
-大家有什么推荐的吗？欢迎评论区分享！`,
-      author: "AI探索者",
-      publishedAt: new Date(now.getTime() - 2 * 60 * 60 * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    },
-    {
-      url: "https://juejin.cn/post/7380000000000000002",
-      platform: "juejin",
-      title: "OpenAI API 国内调用方案对比：中转站 vs 代理 vs Azure",
-      content: `作为开发者，在国内调用 OpenAI API 一直是个痛点。今天对比几种方案：
-
-## 方案一：API中转站
-优点：价格便宜，无需配置
-缺点：需要信任第三方
-
-推荐几个我用过的：
-- 极速API: 速度快，价格透明
-- 小白的AI铺子: 个人卖家，价格最低
-
-## 方案二：Azure OpenAI
-优点：官方支持，稳定可靠
-缺点：需要企业认证，价格较高
-
-## 方案三：自建代理
-优点：完全掌控
-缺点：需要技术能力和服务器
-
-综合推荐：个人开发者选中转站，企业选Azure`,
-      author: "前端架构师",
-      publishedAt: new Date(now.getTime() - 5 * 60 * 60 * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    },
-  ];
-
-  return posts;
-}
-
 // 主爬虫函数
 export async function crawlJuejin(): Promise<RawPost[]> {
   console.log("[Juejin] Starting crawler...");
 
-  // 尝试真实爬取
-  const articles = await fetchJuejinArticles();
-  const relevant = filterRelevantArticles(articles);
+  try {
+    const articles = await fetchJuejinArticles();
+    const relevant = filterRelevantArticles(articles);
 
-  if (relevant.length > 0) {
-    console.log(`[Juejin] Found ${relevant.length} relevant articles`);
-    return relevant.map((article) => ({
-      url: `https://juejin.cn/post/${article.article_id}`,
-      platform: "juejin",
-      title: article.article_info.title,
-      content: article.article_info.brief_content,
-      author: article.author_user_info.user_name,
-      publishedAt: new Date(parseInt(article.article_info.ctime) * 1000).toISOString(),
-      fetchedAt: new Date().toISOString(),
-    }));
+    if (relevant.length > 0) {
+      console.log(`[Juejin] Found ${relevant.length} relevant articles`);
+      return relevant.map((article) => ({
+        url: `https://juejin.cn/post/${article.article_id}`,
+        platform: "juejin",
+        title: article.article_info.title,
+        content: article.article_info.brief_content,
+        author: article.author_user_info.user_name,
+        publishedAt: new Date(parseInt(article.article_info.ctime) * 1000).toISOString(),
+        fetchedAt: new Date().toISOString(),
+      }));
+    }
+
+    console.log("[Juejin] No relevant articles found");
+    return [];
+  } catch (error) {
+    console.error("[Juejin] Crawl error:", error);
+    return [];
   }
-
-  // 如果没有真实数据，返回模拟数据
-  console.log("[Juejin] No relevant articles found, using mock data");
-  return generateMockJuejinPosts();
 }
