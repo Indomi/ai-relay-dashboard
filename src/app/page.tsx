@@ -5,11 +5,35 @@ import { RecentProviders } from "@/components/dashboard/RecentProviders";
 import { CommunityFeed } from "@/components/dashboard/CommunityFeed";
 import { DailyTrend } from "@/components/dashboard/DailyTrend";
 import { SourceDistribution } from "@/components/dashboard/SourceDistribution";
-import { getProviders, getStats, getCommunityPosts } from "@/lib/data/providers";
+import providersData from "../../data/providers.json";
+import statsData from "../../data/stats.json";
+import { Provider, Stats, CommunityPost } from "@/lib/types";
+
+// 直接导入数据（构建时嵌入）
+const providers: Provider[] = providersData as Provider[];
+const stats: Stats = statsData as Stats;
+
+function getCommunityPosts(): CommunityPost[] {
+  const posts: CommunityPost[] = [];
+  providers.forEach((p) => {
+    p.sources.forEach((s) => {
+      posts.push({
+        platform: s.platform,
+        title: s.title,
+        author: s.author,
+        publishedAt: s.publishedAt,
+        url: s.url,
+        snippet: `来自 ${p.name} 的相关讨论`,
+      });
+    });
+  });
+  return posts.sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+}
 
 export default function DashboardPage() {
-  const stats = getStats();
-  const providers = getProviders();
   const posts = getCommunityPosts();
 
   return (
