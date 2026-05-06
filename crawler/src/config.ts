@@ -13,7 +13,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "API代理",
       "模型中转",
     ],
-    schedule: "0 */2 * * *", // 每2小时
+    schedule: "0 */2 * * *",
     enabled: true,
     maxConcurrency: 3,
     requestInterval: 2000,
@@ -31,7 +31,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "GPT",
       "模型",
     ],
-    schedule: "0 */2 * * *", // 每2小时
+    schedule: "0 */2 * * *",
     enabled: true,
     maxConcurrency: 2,
     requestInterval: 3000,
@@ -47,10 +47,42 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "Claude",
       "API代理",
     ],
-    schedule: "0 */3 * * *", // 每3小时
+    schedule: "0 */3 * * *",
     enabled: true,
     maxConcurrency: 2,
     requestInterval: 2500,
+  },
+  {
+    name: "掘金 AI技术",
+    platform: "juejin",
+    keywords: [
+      "API中转",
+      "OpenAI",
+      "GPT",
+      "Claude",
+      "AI API",
+      "中转站",
+      "API代理",
+    ],
+    schedule: "0 */4 * * *",
+    enabled: true,
+    maxConcurrency: 2,
+    requestInterval: 3000,
+  },
+  {
+    name: "RSS 技术博客",
+    platform: "rss",
+    keywords: [
+      "API中转",
+      "OpenAI",
+      "GPT",
+      "Claude",
+      "AI API",
+    ],
+    schedule: "0 */6 * * *",
+    enabled: true,
+    maxConcurrency: 2,
+    requestInterval: 2000,
   },
   {
     name: "即刻 AI话题",
@@ -62,8 +94,8 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "GPT",
       "模型API",
     ],
-    schedule: "0 */4 * * *", // 每4小时
-    enabled: false, // 需要登录，暂禁用
+    schedule: "0 */4 * * *",
+    enabled: false,
     maxConcurrency: 2,
     requestInterval: 3000,
   },
@@ -76,8 +108,8 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "OpenAI国内",
       "GPT访问",
     ],
-    schedule: "0 */6 * * *", // 每6小时
-    enabled: false, // 需要登录，暂禁用
+    schedule: "0 */6 * * *",
+    enabled: false,
     maxConcurrency: 2,
     requestInterval: 4000,
   },
@@ -94,7 +126,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "AI推荐",
       "真心求推",
     ],
-    schedule: "0 */6 * * *", // 每6小时
+    schedule: "0 */6 * * *",
     enabled: true,
     maxConcurrency: 2,
     requestInterval: 4000,

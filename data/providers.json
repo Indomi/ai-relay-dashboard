@@ -31,28 +31,30 @@
       },
       {
         "model": "Claude 3.5",
-        "inputPrice": 12,
-        "outputPrice": 12,
+        "inputPrice": 8,
+        "outputPrice": 8,
+        "currency": "CNY"
+      },
+      {
+        "model": "通用模型",
+        "inputPrice": 8,
+        "outputPrice": 8,
         "currency": "CNY"
       }
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": 5,
-      "unit": "USD"
+      "amount": 0,
+      "unit": "CNY"
     },
-    "paymentMethods": [
-      "支付宝",
-      "微信",
-      "USDT"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": 10,
     "rateLimit": "50 RPM",
     "status": "online",
     "lastChecked": "2026-05-06T10:00:00Z",
     "responseTime": 320,
     "heatScore": 100,
-    "mentionCount": 162,
+    "mentionCount": 167,
     "priceHistory": [
       {
         "date": "2026-04-01",
@@ -86,10 +88,34 @@
         "author": "api_user",
         "publishedAt": "2026-04-20T14:00:00Z",
         "fetchedAt": "2026-05-06T08:00:00Z"
+      },
+      {
+        "platform": "juejin",
+        "url": "https://juejin.cn/post/7380000000000000001",
+        "title": "【推荐】国内好用的AI API中转站盘点，稳定又便宜",
+        "author": "AI探索者",
+        "publishedAt": "2026-05-06T12:50:54.941Z",
+        "fetchedAt": "2026-05-06T14:50:59.358Z"
+      },
+      {
+        "platform": "juejin",
+        "url": "https://juejin.cn/post/7380000000000000002",
+        "title": "OpenAI API 国内调用方案对比：中转站 vs 代理 vs Azure",
+        "author": "前端架构师",
+        "publishedAt": "2026-05-06T09:50:54.941Z",
+        "fetchedAt": "2026-05-06T14:50:59.358Z"
+      },
+      {
+        "platform": "rss",
+        "url": "https://example.com/blog/ai-api-guide",
+        "title": "AI API 中转站技术选型指南",
+        "author": "技术博主",
+        "publishedAt": "2026-05-06T11:51:01.359Z",
+        "fetchedAt": "2026-05-06T14:51:04.342Z"
       }
     ],
     "firstSeen": "2026-02-10T00:00:00Z",
-    "lastUpdated": "2026-05-06T14:45:26.879Z",
+    "lastUpdated": "2026-05-06T14:51:04.342Z",
     "tags": [
       "稳定运营",
       "速度快",
@@ -148,6 +174,12 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "Gemini系列",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "subscription",
@@ -198,8 +230,8 @@
     "status": "online",
     "lastChecked": "2026-05-06T09:30:00Z",
     "responseTime": 180,
-    "heatScore": 98,
-    "mentionCount": 208,
+    "heatScore": 100,
+    "mentionCount": 210,
     "priceHistory": [
       {
         "date": "2026-03-01",
@@ -252,7 +284,7 @@
       }
     ],
     "firstSeen": "2026-01-20T00:00:00Z",
-    "lastUpdated": "2026-05-06T14:45:38.780Z",
+    "lastUpdated": "2026-05-06T14:50:52.938Z",
     "tags": [
       "老牌商家",
       "订阅制",
@@ -299,8 +331,8 @@
     "status": "online",
     "lastChecked": "2026-05-06T08:00:00Z",
     "responseTime": 450,
-    "heatScore": 69,
-    "mentionCount": 80,
+    "heatScore": 71,
+    "mentionCount": 81,
     "priceHistory": [
       {
         "date": "2026-04-10",
@@ -332,7 +364,7 @@
       }
     ],
     "firstSeen": "2026-04-10T00:00:00Z",
-    "lastUpdated": "2026-05-06T14:45:26.880Z",
+    "lastUpdated": "2026-05-06T14:50:41.088Z",
     "tags": [
       "个人卖家",
       "低价",
@@ -452,8 +484,8 @@
     "status": "online",
     "lastChecked": "2026-05-06T10:30:00Z",
     "responseTime": 120,
-    "heatScore": 99,
-    "mentionCount": 314,
+    "heatScore": 100,
+    "mentionCount": 315,
     "priceHistory": [
       {
         "date": "2026-01-01",
@@ -506,7 +538,7 @@
       }
     ],
     "firstSeen": "2025-11-01T00:00:00Z",
-    "lastUpdated": "2026-05-06T14:45:38.780Z",
+    "lastUpdated": "2026-05-06T14:50:52.938Z",
     "tags": [
       "老牌商家",
       "企业级",
