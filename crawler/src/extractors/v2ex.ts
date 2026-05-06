@@ -2,7 +2,22 @@ import { RawPost } from "../types";
 
 const BASE_URL = "https://www.v2ex.com";
 const API_URL = `${BASE_URL}/api`;
-const KEYWORDS = ["API中转", "OpenAI代理", "GPT充值", "Claude中转", "AI API"];
+const KEYWORDS = [
+  "API中转站",
+  "OpenAI 中转",
+  "GPT 中转",
+  "Claude 中转",
+  "AI API 中转",
+  "API 代理",
+  "中转站 推荐",
+];
+
+// 内容预过滤 - 帖子必须包含这些关键词才处理
+const CONTENT_FILTER = [
+  "中转", "代理", "API key", "token", "充值",
+  "openai", "claude", "gpt", "模型",
+  "按量计费", "订阅", "官网",
+];
 
 // 真实爬取 - 使用 V2EX API
 export async function crawlV2EX(): Promise<RawPost[]> {
@@ -83,8 +98,16 @@ export async function crawlV2EX(): Promise<RawPost[]> {
 
         const detail = await fetchTopicDetail(topicId);
         if (detail) {
-          posts.push(detail);
-          existingIds.add(url);
+          // 内容预过滤：必须包含至少2个相关关键词
+          const text = `${detail.title} ${detail.content}`.toLowerCase();
+          const matchCount = CONTENT_FILTER.filter((kw) => text.includes(kw.toLowerCase())).length;
+          if (matchCount >= 2) {
+            posts.push(detail);
+            existingIds.add(url);
+            console.log(`[V2EX] Relevant post: ${detail.title.substring(0, 50)} (${matchCount} keywords)`);
+          } else {
+            console.log(`[V2EX] Skipping irrelevant post: ${detail.title.substring(0, 50)} (${matchCount} keywords)`);
+          }
         }
         await new Promise((r) => setTimeout(r, 2000));
       }
