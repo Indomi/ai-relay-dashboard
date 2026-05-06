@@ -32,7 +32,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "模型",
     ],
     schedule: "0 */2 * * *",
-    enabled: true,
+    enabled: false, // 需要登录 Cookie，暂时禁用
     maxConcurrency: 2,
     requestInterval: 3000,
   },
@@ -48,7 +48,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "API代理",
     ],
     schedule: "0 */3 * * *",
-    enabled: true,
+    enabled: false, // 需要登录 Cookie，暂时禁用
     maxConcurrency: 2,
     requestInterval: 2500,
   },
@@ -65,7 +65,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "API代理",
     ],
     schedule: "0 */4 * * *",
-    enabled: true,
+    enabled: false, // 需要登录，暂时禁用
     maxConcurrency: 2,
     requestInterval: 3000,
   },
@@ -95,7 +95,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "模型API",
     ],
     schedule: "0 */4 * * *",
-    enabled: true,
+    enabled: false, // 需要登录 Token，暂时禁用
     maxConcurrency: 2,
     requestInterval: 3000,
   },
@@ -109,7 +109,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "GPT访问",
     ],
     schedule: "0 */6 * * *",
-    enabled: true,
+    enabled: false, // 需要登录 Cookie，暂时禁用
     maxConcurrency: 2,
     requestInterval: 4000,
   },
@@ -127,7 +127,7 @@ export const crawlerConfigs: CrawlerConfig[] = [
       "真心求推",
     ],
     schedule: "0 */6 * * *",
-    enabled: true,
+    enabled: false, // 需要登录 Cookie + 签名，暂时禁用
     maxConcurrency: 2,
     requestInterval: 4000,
   },
