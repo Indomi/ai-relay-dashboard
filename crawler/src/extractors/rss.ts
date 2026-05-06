@@ -79,7 +79,7 @@ export function generateMockRSSPosts(): RawPost[] {
   const now = new Date();
   return [
     {
-      
+      url: "https://example.com/blog/ai-api-guide",
       platform: "rss",
       title: "AI API 中转站技术选型指南",
       content: `随着 AI 应用的普及，越来越多的开发者需要调用 OpenAI、Claude 等 API。
@@ -95,8 +95,8 @@ export function generateMockRSSPosts(): RawPost[] {
 - CloudBridge: 企业级服务
 - AI Hub Pro: 模型最全`,
       author: "技术博主",
-      url: "https://example.com/blog/ai-api-guide",
       publishedAt: new Date(now.getTime() - 3 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
   ];
 }
@@ -116,13 +116,13 @@ export async function crawlRSS(): Promise<RawPost[]> {
 
       for (const item of relevant) {
         posts.push({
-          id: `rss-${Buffer.from(item.link).toString("base64").slice(0, 20)}`,
+          url: item.link,
           platform: "rss",
           title: item.title,
           content: item.description,
           author: item.author || "未知",
-          url: item.link,
           publishedAt: item.pubDate,
+          fetchedAt: new Date().toISOString(),
         });
       }
     }

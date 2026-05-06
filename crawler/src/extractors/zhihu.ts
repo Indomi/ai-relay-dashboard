@@ -11,7 +11,7 @@ export function generateMockZhihuPosts(): RawPost[] {
   const now = new Date();
   return [
     {
-      
+      url: "https://www.zhihu.com/question/123456789/answer/987654321",
       platform: "zhihu",
       title: "国内有哪些靠谱的AI API中转站推荐？",
       content: `作为一个长期使用AI API的开发者，我来分享一下我的经验：
@@ -42,11 +42,11 @@ export function generateMockZhihuPosts(): RawPost[] {
 
 希望对大家有帮助！`,
       author: "AI开发者老王",
-      url: "https://www.zhihu.com/question/123456789/answer/987654321",
-      publishedAt: new Date(now.getTime() - 8 * 60 * 60 * 1000).toISOString(), // 8小时前
+      publishedAt: new Date(now.getTime() - 8 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
     {
-      
+      url: "https://zhuanlan.zhihu.com/p/123456789",
       platform: "zhihu",
       title: "OpenAI API 国内调用方案全解析",
       content: `本文详细介绍在国内调用 OpenAI API 的几种方案：
@@ -72,8 +72,8 @@ export function generateMockZhihuPosts(): RawPost[] {
 2. 注意数据安全
 3. 测试后再付费`,
       author: "技术博主",
-      url: "https://zhuanlan.zhihu.com/p/123456789",
-      publishedAt: new Date(now.getTime() - 24 * 60 * 60 * 1000).toISOString(), // 1天前
+      publishedAt: new Date(now.getTime() - 24 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
   ];
 }

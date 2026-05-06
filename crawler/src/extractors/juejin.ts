@@ -38,7 +38,7 @@ async function fetchJuejinArticles(): Promise<JuejinArticle[]> {
       body: JSON.stringify({
         id_type: 2,
         sort_type: 200,
-        cate_ // AI分类
+        cate_id: "6809637773935378440",
         cursor: "0",
         limit: 20,
       }),
@@ -78,7 +78,7 @@ export function generateMockJuejinPosts(): RawPost[] {
   const now = new Date();
   const posts: RawPost[] = [
     {
-      
+      url: "https://juejin.cn/post/7380000000000000001",
       platform: "juejin",
       title: "【推荐】国内好用的AI API中转站盘点，稳定又便宜",
       content: `最近测试了几个国内AI API中转站，分享一下体验：
@@ -100,11 +100,11 @@ export function generateMockJuejinPosts(): RawPost[] {
 
 大家有什么推荐的吗？欢迎评论区分享！`,
       author: "AI探索者",
-      url: "https://juejin.cn/post/7380000000000000001",
-      publishedAt: new Date(now.getTime() - 2 * 60 * 60 * 1000).toISOString(), // 2小时前
+      publishedAt: new Date(now.getTime() - 2 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
     {
-      
+      url: "https://juejin.cn/post/7380000000000000002",
       platform: "juejin",
       title: "OpenAI API 国内调用方案对比：中转站 vs 代理 vs Azure",
       content: `作为开发者，在国内调用 OpenAI API 一直是个痛点。今天对比几种方案：
@@ -127,8 +127,8 @@ export function generateMockJuejinPosts(): RawPost[] {
 
 综合推荐：个人开发者选中转站，企业选Azure`,
       author: "前端架构师",
-      url: "https://juejin.cn/post/7380000000000000002",
-      publishedAt: new Date(now.getTime() - 5 * 60 * 60 * 1000).toISOString(), // 5小时前
+      publishedAt: new Date(now.getTime() - 5 * 60 * 60 * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     },
   ];
 
@@ -146,13 +146,13 @@ export async function crawlJuejin(): Promise<RawPost[]> {
   if (relevant.length > 0) {
     console.log(`[Juejin] Found ${relevant.length} relevant articles`);
     return relevant.map((article) => ({
-      id: `juejin-${article.article_id}`,
+      url: `https://juejin.cn/post/${article.article_id}`,
       platform: "juejin",
       title: article.article_info.title,
       content: article.article_info.brief_content,
       author: article.author_user_info.user_name,
-      url: `https://juejin.cn/post/${article.article_id}`,
       publishedAt: new Date(parseInt(article.article_info.ctime) * 1000).toISOString(),
+      fetchedAt: new Date().toISOString(),
     }));
   }
 
