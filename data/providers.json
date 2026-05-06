@@ -1,1 +1,105 @@
-[]
+[
+  {
+    "id": "pmouaox3snnf2f",
+    "name": "Loomex",
+    "website": "https://www.loomex.top",
+    "contact": "QQ群：1104748544",
+    "models": [
+      {
+        "model": "codex",
+        "inputPrice": 0.08,
+        "outputPrice": 0.08,
+        "currency": "CNY"
+      },
+      {
+        "model": "codex-plus",
+        "inputPrice": 0.15,
+        "outputPrice": 0.15,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "日/周不限",
+    "status": "unknown",
+    "lastChecked": "2026-05-06T16:52:10.264Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210670",
+        "title": "[AI 中转站] 自用的 Codex 中转站",
+        "author": "yang1395592280",
+        "publishedAt": "2026-05-06T13:19:24.000Z",
+        "fetchedAt": "2026-05-06T16:52:10.264Z"
+      }
+    ],
+    "firstSeen": "2026-05-06T16:52:10.264Z",
+    "lastUpdated": "2026-05-06T16:52:10.264Z",
+    "tags": [
+      "AI中转",
+      "Codex",
+      "GPT",
+      "号池"
+    ]
+  },
+  {
+    "id": "pmouaox3smyiiw",
+    "name": "芝麻灵码",
+    "website": "https://next.zhima.world",
+    "contact": "https://qm.qq.com/q/jnGjQAg18I",
+    "models": [
+      {
+        "model": "gpt",
+        "inputPrice": 0.1,
+        "outputPrice": 0.1,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 3000,
+      "unit": "USD"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-06T16:52:10.264Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210663",
+        "title": "最近很多中转站跳水，我们依旧稳定，自荐一下：芝麻灵码，欢迎体验",
+        "author": "zkrczar",
+        "publishedAt": "2026-05-06T12:50:30.000Z",
+        "fetchedAt": "2026-05-06T16:52:10.264Z"
+      }
+    ],
+    "firstSeen": "2026-05-06T16:52:10.264Z",
+    "lastUpdated": "2026-05-06T16:52:10.264Z",
+    "tags": [
+      "AI API Gateway",
+      "稳定",
+      "企业服务",
+      "免费额度",
+      "优惠倍率"
+    ]
+  }
+]
