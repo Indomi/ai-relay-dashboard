@@ -85,6 +85,24 @@ export const crawlerConfigs: CrawlerConfig[] = [
     requestInterval: 2000,
   },
   {
+    name: "全网搜索",
+    platform: "websearch",
+    keywords: [
+      "AI API 中转站",
+      "OpenAI API 代理",
+      "GPT 中转站",
+      "Claude API 国内",
+      "one-api new-api",
+      "AI大模型 API 中转",
+      "ChatGPT API 中转",
+      "AI API relay proxy",
+    ],
+    schedule: "0 */4 * * *",
+    enabled: true,
+    maxConcurrency: 2,
+    requestInterval: 3000,
+  },
+  {
     name: "即刻 AI话题",
     platform: "jike",
     keywords: [

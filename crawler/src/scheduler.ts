@@ -8,6 +8,7 @@ import { crawlNodeSeek } from "./extractors/nodeseek";
 import { crawlLinuxDo } from "./extractors/linuxdo";
 import { crawlJuejin } from "./extractors/juejin";
 import { crawlRSS } from "./extractors/rss";
+import { crawlWebSearch } from "./extractors/websearch";
 import { crawlZhihu } from "./extractors/zhihu";
 import { crawlJike } from "./extractors/jike";
 import { crawlXiaohongshu } from "./extractors/xiaohongshu";
@@ -68,6 +69,9 @@ async function runCrawler(platform: string): Promise<CrawlerResult> {
         break;
       case "rss":
         posts = await crawlRSS();
+        break;
+      case "websearch":
+        posts = await crawlWebSearch();
         break;
       case "zhihu":
         posts = await crawlZhihu();
