@@ -3,8 +3,9 @@ import * as fs from "fs";
 import * as path from "path";
 
 // 导入静态JSON数据（构建时嵌入）
-import providersData from "@/data/providers.json";
-import statsData from "@/data/stats.json";
+// 使用相对路径确保Vercel构建时正确打包
+import providersData from "../../data/providers.json";
+import statsData from "../../data/stats.json";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const PROVIDERS_FILE = path.join(DATA_DIR, "providers.json");
