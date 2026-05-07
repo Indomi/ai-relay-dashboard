@@ -10,6 +10,10 @@ on:
         description: '指定爬虫平台 (v2ex/nodeseek/linux.do/xiaohongshu/all)'
         required: false
         default: 'all'
+      task:
+        description: '运行任务 (crawl/pricing/all)'
+        required: false
+        default: 'all'
 
 jobs:
   crawl:
@@ -32,17 +36,45 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Run crawler
+    - name: Run crawler (商家信息采集)
       env:
         AI_API_KEY: ${{ secrets.AI_API_KEY }}
         AI_BASE_URL: ${{ secrets.AI_BASE_URL }}
         AI_MODEL: ${{ secrets.AI_MODEL }}
       run: |
-        PLATFORM="${{ github.event.inputs.platform || 'all' }}"
-        if [ "$PLATFORM" = "all" ]; then
-          npx tsx crawler/run.ts
-        else
-          npx tsx tsx crawler/run.ts "$PLATFORM"
+        TASK="${{ github.event.inputs.task || 'all' }}"
+        if [ "$TASK" = "all" ] || [ "$TASK" = "crawl" ]; then
+          PLATFORM="${{ github.event.inputs.platform || 'all' }}"
+          if [ "$PLATFORM" = "all" ]; then
+            npx tsx crawler/run.ts
+          else
+            npx tsx crawler/run.ts "$PLATFORM"
+          fi
+        fi
+
+    - name: Run pricing crawler (价格采集)
+      env:
+        CRAWL_API_KEY: ${{ secrets.CRAWL_API_KEY }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      run: |
+        TASK="${{ github.event.inputs.task || 'all' }}"
+        if [ "$TASK" = "all" ] || [ "$TASK" = "pricing" ]; then
+          npx tsx scripts/crawl-pricing-v3.ts
+        fi
+        
+    - name: Sync pricing data to database
+      if: always()
+      env:
+        CRAWL_API_KEY: ${{ secrets.CRAWL_API_KEY }}
+      run: |
+        TASK="${{ github.event.inputs.task || 'all' }}"
+        if [ "$TASK" = "all" ] || [ "$TASK" = "pricing" ]; then
+          if [ -f "data/pricing-results.json" ]; then
+            curl -X POST "https://ai-relay-dashboard.vercel.app/api/crawl/pricing" \
+              -H "Content-Type: application/json" \
+              -H "x-crawl-api-key: ${CRAWL_API_KEY}" \
+              -d @data/pricing-results.json || echo "Failed to sync pricing data"
+          fi
         fi
         
     - name: Check for changes
