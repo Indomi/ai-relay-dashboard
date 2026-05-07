@@ -39,6 +39,11 @@ export function ProviderRowCard({ provider }: ProviderRowCardProps) {
                   {getChannelType()}
                 </Badge>
               )}
+              {provider.requiresLogin && (
+                <Badge variant="outline" className="text-xs text-amber-600 border-amber-300 bg-amber-50">
+                  🔒 需登录
+                </Badge>
+              )}
             </div>
             <p className="text-xs text-slate-500 mt-1 truncate">
               {models.join(", ")} {moreModels}

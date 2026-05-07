@@ -52,6 +52,7 @@ function dbToProvider(db: any): Provider {
     serviceHours: db.payment?.serviceHours || undefined,
     minTopup: db.payment?.minTopup ?? undefined,
     canInvoice: db.payment?.canInvoice ?? undefined,
+    requiresLogin: db.risk?.requiresLogin ?? false,
   };
 }
 
@@ -252,6 +253,7 @@ export async function upsertProvider(data: {
   // ProviderRisk 相关
   termsUrl?: string;
   termsSummary?: string;
+  requiresLogin?: boolean;
 }) {
   try {
     // 查找或创建商家
@@ -325,11 +327,12 @@ export async function upsertProvider(data: {
               }
             : {}),
           // ProviderRisk 表
-          ...((data.termsUrl || data.termsSummary)
+          ...((data.termsUrl || data.termsSummary || data.requiresLogin !== undefined)
             ? {
                 risk: {
                   create: {
                     termsClarity: data.termsSummary ? "clear" : "partial",
+                    requiresLogin: data.requiresLogin ?? false,
                   },
                 },
               }
@@ -433,15 +436,17 @@ export async function upsertProvider(data: {
       }
 
       // 更新 ProviderRisk 表
-      if (data.termsUrl || data.termsSummary) {
+      if (data.termsUrl || data.termsSummary || data.requiresLogin !== undefined) {
         await prisma.providerRisk.upsert({
           where: { providerId: existing.id },
           create: {
             providerId: existing.id,
             termsClarity: data.termsSummary ? "clear" : "partial",
+            requiresLogin: data.requiresLogin ?? false,
           },
           update: {
             termsClarity: data.termsSummary ? "clear" : "partial",
+            ...(data.requiresLogin !== undefined ? { requiresLogin: data.requiresLogin } : {}),
           },
         });
       }

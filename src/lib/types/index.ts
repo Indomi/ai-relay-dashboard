@@ -65,6 +65,7 @@ export interface Provider {
   serviceHours?: string;
   minTopup?: number;
   canInvoice?: boolean;
+  requiresLogin?: boolean; // 是否需要登录才能查看价格
 }
 
 export interface Stats {

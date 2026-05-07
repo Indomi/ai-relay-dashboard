@@ -115,6 +115,7 @@ model ProviderRisk {
   termsClarity    String? @default("unknown") // clear | partial | unclear | unknown
   supportTrust    String? @default("unknown") // high | medium | low | unknown
   overallScore    Int?    @default(0) // 0-100
+  requiresLogin   Boolean @default(false) // 是否需要登录才能查看价格
   lastEvaluated   DateTime @default(now())
 
   provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)

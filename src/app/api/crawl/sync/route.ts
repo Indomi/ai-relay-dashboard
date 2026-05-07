@@ -37,6 +37,7 @@ export async function POST(request: NextRequest) {
         // ProviderRisk 相关
         termsUrl?: string;
         termsSummary?: string;
+        requiresLogin?: boolean;
       }[];
     };
 

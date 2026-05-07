@@ -69,6 +69,9 @@ export interface ExtractedProvider {
   concurrencyLimit?: number;
   rateLimit?: string;
 
+  // 访问限制
+  requiresLogin?: boolean; // 是否需要登录才能查看价格
+
   // 其他
   tags?: string[];
   confidence: number; // AI 提取置信度 0-1
