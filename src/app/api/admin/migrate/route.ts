@@ -9,6 +9,37 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
+    // 先检查数据库连接和表结构
+    try {
+      await prisma.$queryRaw`SELECT 1`;
+      console.log("[Migrate] Database connected");
+    } catch (e) {
+      return NextResponse.json({ 
+        error: "Database connection failed", 
+        details: e instanceof Error ? e.message : String(e) 
+      }, { status: 500 });
+    }
+
+    // 检查 Provider 表是否存在
+    let tables: any[] = [];
+    try {
+      tables = await prisma.$queryRaw`
+        SELECT table_name FROM information_schema.tables
+        WHERE table_schema = 'public' AND table_name = 'Provider'
+      `;
+    } catch (e) {
+      return NextResponse.json({ 
+        error: "Failed to check tables", 
+        details: e instanceof Error ? e.message : String(e) 
+      }, { status: 500 });
+    }
+
+    if (tables.length === 0) {
+      return NextResponse.json({ 
+        error: "Provider table does not exist. Please run /api/admin/setup-db first" 
+      }, { status: 500 });
+    }
+
     // 从 GitHub raw 获取最新的 providers.json
     const GITHUB_RAW_URL = "https://raw.githubusercontent.com/Indomi/ai-relay-dashboard/main/data/providers.json";
     
@@ -23,6 +54,7 @@ export async function POST(request: NextRequest) {
     let created = 0;
     let updated = 0;
     let errors = 0;
+    const errorDetails: string[] = [];
 
     for (const p of providers) {
       try {
@@ -48,7 +80,7 @@ export async function POST(request: NextRequest) {
           });
           updated++;
         } else {
-          // 创建
+          // 创建 - 简化数据，避免外键约束问题
           await prisma.provider.create({
             data: {
               id: p.id,
@@ -64,29 +96,14 @@ export async function POST(request: NextRequest) {
               confidence: p.confidence || 0,
               firstSeen: new Date(p.firstSeen || new Date()),
               lastSeen: new Date(p.lastSeen || new Date()),
-              models: {
-                create: (p.models || []).map((m: any) => ({
-                  model: m.model,
-                  inputPrice: m.inputPrice || 0,
-                  outputPrice: m.outputPrice || 0,
-                  currency: m.currency || "CNY",
-                }))
-              },
-              sources: {
-                create: (p.sources || []).slice(0, 10).map((s: any) => ({
-                  platform: s.platform,
-                  title: s.title || "",
-                  url: s.url || "",
-                  author: s.author || null,
-                  publishedAt: s.publishedAt ? new Date(s.publishedAt) : null,
-                }))
-              }
             }
           });
           created++;
         }
       } catch (e) {
-        console.error("[Migrate] Error processing provider:", p.name, e);
+        const errorMsg = e instanceof Error ? e.message : String(e);
+        console.error("[Migrate] Error processing provider:", p.name, errorMsg);
+        errorDetails.push(`${p.name}: ${errorMsg}`);
         errors++;
       }
     }
@@ -94,11 +111,12 @@ export async function POST(request: NextRequest) {
     const finalCount = await prisma.provider.count();
 
     return NextResponse.json({
-      success: true,
+      success: errors === 0,
       created,
       updated,
       errors,
-      totalProviders: finalCount
+      totalProviders: finalCount,
+      errorDetails: errorDetails.slice(0, 5) // 只返回前5个错误
     });
   } catch (error) {
     console.error("[Migrate] Error:", error);
