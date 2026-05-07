@@ -2,11 +2,24 @@ import { Provider, Stats, CommunityPost } from "@/lib/types";
 import * as fs from "fs";
 import * as path from "path";
 
+// 导入静态JSON数据（构建时嵌入）
+import providersData from "@/data/providers.json";
+import statsData from "@/data/stats.json";
+
 const DATA_DIR = path.join(process.cwd(), "data");
 const PROVIDERS_FILE = path.join(DATA_DIR, "providers.json");
 const STATS_FILE = path.join(DATA_DIR, "stats.json");
 
+// 静态数据（构建时从JSON导入）
+const staticProviders: Provider[] = providersData as Provider[];
+const staticStats: Stats = statsData as Stats;
+
 function readProvidersFile(): Provider[] {
+  // 优先返回静态导入的数据（Vercel环境）
+  if (staticProviders && staticProviders.length > 0) {
+    return staticProviders;
+  }
+  // 开发环境尝试读取文件
   try {
     if (fs.existsSync(PROVIDERS_FILE)) {
       const data = fs.readFileSync(PROVIDERS_FILE, "utf-8");
@@ -19,6 +32,11 @@ function readProvidersFile(): Provider[] {
 }
 
 function readStatsFile(): Stats {
+  // 优先返回静态导入的数据
+  if (staticStats && staticStats.totalProviders > 0) {
+    return staticStats;
+  }
+  // 开发环境尝试读取文件
   try {
     if (fs.existsSync(STATS_FILE)) {
       const data = fs.readFileSync(STATS_FILE, "utf-8");
