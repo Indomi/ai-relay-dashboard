@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "chmod +x scripts/post-build.sh && ./scripts/post-build.sh",
     "start": "next start",
     "lint": "eslint",
     "db:push": "prisma db push",
