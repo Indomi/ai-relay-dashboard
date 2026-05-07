@@ -38,6 +38,8 @@ function dbToProvider(db: any): Provider {
 
 export async function getProviders(): Promise<Provider[]> {
   try {
+    console.log("[DB] Starting getProviders query...");
+    
     const providers = await prisma.provider.findMany({
       include: {
         models: true,
@@ -47,9 +49,15 @@ export async function getProviders(): Promise<Provider[]> {
     });
 
     console.log("[DB] Fetched", providers.length, "providers from database");
+    
+    if (providers.length === 0) {
+      console.log("[DB] Warning: No providers found in database");
+    }
+    
     return providers.map(dbToProvider);
   } catch (error) {
     console.error("[DB] Error reading providers:", error);
+    // 返回空数组而不是抛出错误，避免页面崩溃
     return [];
   }
 }
