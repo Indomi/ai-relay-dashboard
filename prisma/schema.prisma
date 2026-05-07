@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// 商家/渠道
+model Provider {
+  id          String   @id @default(cuid())
+  name        String
+  website     String?
+  contact     String?
+  description String?
+  billingType String?  @default("token") // token | subscription | hybrid
+  status      String?  @default("active") // active | inactive | unknown
+  heatScore   Int      @default(0)
+  mentionCount Int     @default(0)
+  tags        String[] // 存储为文本数组
+  confidence  Float    @default(0)
+  firstSeen   DateTime @default(now())
+  lastSeen    DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // 关系
+  models        ProviderModel[]
+  sources       ProviderSource[]
+  subscriptions SubscriptionPlan[]
+  payment       ProviderPayment?
+  risk          ProviderRisk?
+
+  @@index([name])
+  @@index([heatScore(sort: Desc)])
+  @@index([billingType])
+  @@index([status])
+}
+
+// 模型价格
+model ProviderModel {
+  id          String   @id @default(cuid())
+  providerId  String
+  model       String
+  inputPrice  Float?   // 每 1M tokens
+  outputPrice Float?   // 每 1M tokens
+  currency    String?  @default("CNY")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+
+  @@unique([providerId, model])
+  @@index([model])
+  @@index([inputPrice])
+}
+
+// 数据来源
+model ProviderSource {
+  id          String   @id @default(cuid())
+  providerId  String
+  platform    String   // v2ex, websearch, rss, etc.
+  title       String
+  url         String
+  author      String?
+  publishedAt DateTime?
+  fetchedAt   DateTime @default(now())
+
+  provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+
+  @@unique([providerId, url])
+  @@index([platform])
+  @@index([fetchedAt(sort: Desc)])
+}
+
+// 订阅方案
+model SubscriptionPlan {
+  id          String   @id @default(cuid())
+  providerId  String
+  name        String
+  price       Float
+  period      String?  // month | quarter | year
+  features    String[] // 存储为文本数组
+  autoRenew   Boolean? @default(false)
+  refundRule  String?
+
+  provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+
+  @@index([providerId])
+  @@index([price])
+}
+
+// 支付与售后信息
+model ProviderPayment {
+  id              String  @id @default(cuid())
+  providerId      String  @unique
+  paymentMethods  String? // JSON 字符串: ["支付宝", "微信"]
+  minTopup        Float?  // 最低充值
+  canInvoice      Boolean @default(false)
+  refundSupport   String? @default("unknown") // yes | partial | no | unknown
+  refundCondition String?
+  supportChannels String? // JSON 字符串: ["微信", "TG"]
+  serviceHours    String?
+
+  provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+}
+
+// 风险评估
+model ProviderRisk {
+  id              String  @id @default(cuid())
+  providerId      String  @unique
+  accountSource   String? @default("unknown") // transparent | partial | unknown
+  sharingRisk     String? @default("unknown") // low | medium | high | unknown
+  banRisk         String? @default("unknown") // low | medium | high | unknown
+  termsClarity    String? @default("unknown") // clear | partial | unclear | unknown
+  supportTrust    String? @default("unknown") // high | medium | low | unknown
+  overallScore    Int?    @default(0) // 0-100
+  lastEvaluated   DateTime @default(now())
+
+  provider Provider @relation(fields: [providerId], references: [id], onDelete: Cascade)
+}

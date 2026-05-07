@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { getProviders, getStats } from "@/lib/data/providers";
+import { getProviders, getStats } from "@/lib/data/providers-db";
 import { SmartRecommendPanelWrapper } from "@/components/home/SmartRecommendPanelWrapper";
 import { ProviderRowCard } from "@/components/home/ProviderRowCard";
 
 export default async function HomePage() {
-  const stats = getStats();
-  const providers = getProviders();
+  const stats = await getStats();
+  const providers = await getProviders();
 
   // 获取热门商家
   const hotProviders = [...providers]

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { getProviders, getStats } from "@/lib/data/providers";
+import { getProviders, getStats } from "@/lib/data/providers-db";
 import { ProviderFilterList } from "@/components/providers/ProviderFilterList";
 
 export default async function ProvidersPage() {
-  const stats = getStats();
-  const providers = getProviders();
+  const stats = await getStats();
+  const providers = await getProviders();
 
   return (
     <div className="min-h-screen bg-slate-50">
