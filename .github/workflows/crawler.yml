@@ -2,8 +2,8 @@ name: Crawler - 定时抓取AI中转商数据
 
 on:
   schedule:
-    # 每12小时运行一次 (每天 0:00 和 12:00 UTC)
-    - cron: '0 0,12 * * *'
+    # 每3小时运行一次
+    - cron: '0 */3 * * *'
   workflow_dispatch:
     inputs:
       platform:
