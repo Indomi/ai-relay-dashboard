@@ -11,7 +11,7 @@ const statusConfig = {
 };
 
 export function StatusBadge({ status }: StatusBadgeProps) {
-  const config = statusConfig[status];
+  const config = statusConfig[status] || statusConfig.unknown;
   return (
     <Badge variant="secondary" className={`text-xs px-1.5 py-0 ${config.className}`}>
       {config.label}

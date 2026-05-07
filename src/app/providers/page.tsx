@@ -16,10 +16,19 @@ export default function ProvidersPage() {
     fetch("/api/providers")
       .then((res) => res.json())
       .then((data) => {
-        setProviders(data);
+        // 防御性检查：确保数据是数组
+        if (Array.isArray(data)) {
+          setProviders(data);
+        } else {
+          console.error("[Providers] API returned non-array:", data);
+          setProviders([]);
+        }
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch((err) => {
+        console.error("[Providers] API error:", err);
+        setLoading(false);
+      });
   }, []);
 
   const filtered = useMemo(() => {

@@ -11,7 +11,7 @@ const billingConfig = {
 };
 
 export function BillingBadge({ type }: BillingBadgeProps) {
-  const config = billingConfig[type];
+  const config = billingConfig[type] || { label: "未知", className: "bg-gray-100 text-gray-600" };
   return (
     <Badge variant="secondary" className={`text-xs px-1.5 py-0 ${config.className}`}>
       {config.label}

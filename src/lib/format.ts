@@ -16,7 +16,7 @@ export function formatModelName(model: string): string {
 }
 
 export function formatPrice(price: number | null | undefined): string {
-  if (price === null || price === undefined) return "¥-";
+  if (price === null || price === undefined || !isFinite(price)) return "¥-";
   return `¥${price.toFixed(1)}`;
 }
 

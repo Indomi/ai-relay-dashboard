@@ -12,7 +12,14 @@ interface ProviderCardProps {
 }
 
 export function ProviderCard({ provider }: ProviderCardProps) {
-  const minPrice = Math.min(...provider.models.map(m => m.inputPrice));
+  // 防御性检查
+  if (!provider || !provider.models) {
+    return null;
+  }
+  
+  const minPrice = provider.models.length > 0 
+    ? Math.min(...provider.models.map(m => m.inputPrice || 0))
+    : 0;
   const topModels = provider.models.slice(0, 3);
 
   return (
