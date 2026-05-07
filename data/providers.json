@@ -141,24 +141,24 @@
           "period": "月",
           "features": [
             "共享90,000次/月额度",
-            "独立RAM子账号",
+            "开通独立RAM子账号",
             "用量透明",
-            "无缝对接OpenClaw、ClaudeCode"
+            "无缝对接OpenClaw、ClaudeCode等"
           ]
         }
       ]
     },
     "freeQuota": {
       "amount": null,
-      "unit": ""
+      "unit": null
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -171,7 +171,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T21:51:54.017Z",
+    "lastUpdated": "2026-05-07T02:04:23.427Z",
     "tags": [
       "拼车",
       "阿里云",
@@ -206,8 +206,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -220,7 +220,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T21:51:54.017Z",
+    "lastUpdated": "2026-05-07T02:04:23.427Z",
     "tags": [
       "API中转",
       "Codex",
@@ -247,8 +247,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 43,
-    "mentionCount": 5,
+    "heatScore": 45,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -261,7 +261,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T21:51:54.017Z",
+    "lastUpdated": "2026-05-07T02:04:23.427Z",
     "tags": [
       "API中转",
       "GPT代理",
@@ -289,8 +289,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -303,7 +303,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T21:51:54.018Z",
+    "lastUpdated": "2026-05-07T02:04:23.427Z",
     "tags": [
       "API中转",
       "ChatGPT",
@@ -329,8 +329,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 63,
-    "mentionCount": 10,
+    "heatScore": 65,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -351,7 +351,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T21:51:54.018Z",
+    "lastUpdated": "2026-05-07T02:04:23.428Z",
     "tags": [
       "AI中转站检测工具",
       "安全检测",
@@ -365,7 +365,14 @@
     "name": "Best Model",
     "website": "https://bestmodel.dev",
     "contact": "QQ群：1017575055",
-    "models": [],
+    "models": [
+      {
+        "model": "Claude Max (CCMax)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
     "billingType": "hybrid",
     "subscription": {
       "plans": [
@@ -389,8 +396,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -403,7 +410,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T21:51:54.018Z",
+    "lastUpdated": "2026-05-07T02:04:23.428Z",
     "tags": [
       "纯血模型",
       "CCMax",
@@ -426,44 +433,44 @@
       },
       {
         "model": "QwQ-32B",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "glm-4-9b-chat",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "CosyVoice2-0.5B",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Kolors",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "HunyuanVideo-HD",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Wan2.1-I2V-14B-720P",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Wan2.1-T2V-14B",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -472,16 +479,16 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": ""
+      "amount": null,
+      "unit": "CNY"
     },
     "paymentMethods": [],
     "concurrencyLimit": 0,
     "rateLimit": "部分模型免费调用（有限速）",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.885Z",
-    "heatScore": 27,
-    "mentionCount": 7,
+    "heatScore": 33,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -510,7 +517,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.885Z",
-    "lastUpdated": "2026-05-06T22:01:08.266Z",
+    "lastUpdated": "2026-05-07T02:15:06.070Z",
     "tags": [
       "国产模型",
       "合规API",
@@ -533,16 +540,13 @@
       "amount": 0,
       "unit": "CNY"
     },
-    "paymentMethods": [
-      "欧易",
-      "币安"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.887Z",
-    "heatScore": 58,
-    "mentionCount": 10,
+    "heatScore": 60,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -555,7 +559,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.887Z",
-    "lastUpdated": "2026-05-06T21:51:54.020Z",
+    "lastUpdated": "2026-05-07T02:04:23.429Z",
     "tags": [
       "AI账号销售",
       "共享会员",
@@ -587,6 +591,30 @@
         "inputPrice": 2.5,
         "outputPrice": 15,
         "currency": "USD"
+      },
+      {
+        "model": "openai/gpt-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "claude",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "qwen",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -602,8 +630,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
-    "heatScore": 67,
-    "mentionCount": 12,
+    "heatScore": 75,
+    "mentionCount": 16,
     "priceHistory": [],
     "sources": [
       {
@@ -632,7 +660,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-06T22:01:08.267Z",
+    "lastUpdated": "2026-05-07T02:15:06.071Z",
     "tags": [
       "官方直连",
       "多模型聚合",
@@ -662,125 +690,23 @@
     ],
     "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "入门试错",
-          "price": 13.88,
-          "period": "一次性",
-          "features": [
-            "1 个 API Key",
-            "1 并发",
-            "基础稳定性",
-            "不含税"
-          ]
-        },
-        {
-          "name": "个人用户",
-          "price": 55.88,
-          "period": "一次性",
-          "features": [
-            "1 个 API Key",
-            "1 并发",
-            "基础稳定性",
-            "不含税"
-          ]
-        },
-        {
-          "name": "个人进阶",
-          "price": 111.88,
-          "period": "一次性",
-          "features": [
-            "1 个 API Key",
-            "3 并发",
-            "基础稳定性",
-            "不含税"
-          ]
-        },
-        {
-          "name": "小团队版",
-          "price": 300,
-          "period": "一次性",
-          "features": [
-            "5 个 API Key",
-            "5 并发",
-            "优先稳定性",
-            "企业权限",
-            "30 天",
-            "含税"
-          ]
-        },
-        {
-          "name": "成长团队版",
-          "price": 500,
-          "period": "一次性",
-          "features": [
-            "10 个 API Key",
-            "10 并发",
-            "更高稳定性",
-            "企业权限",
-            "60 天",
-            "含税"
-          ]
-        },
-        {
-          "name": "标准企业版",
-          "price": 1000,
-          "period": "一次性",
-          "features": [
-            "30 个 API Key",
-            "高并发",
-            "最高稳定性",
-            "企业权限",
-            "90 天",
-            "独立资源池",
-            "SLA 保障",
-            "含税"
-          ]
-        },
-        {
-          "name": "企业增强版",
-          "price": 1500,
-          "period": "一次性",
-          "features": [
-            "50 个 API Key",
-            "很高并发",
-            "最高稳定性",
-            "企业权限",
-            "120 天",
-            "独立资源池",
-            "SLA 保障",
-            "含税"
-          ]
-        },
-        {
-          "name": "大规模解决方案",
-          "price": 3000,
-          "period": "一次性",
-          "features": [
-            "100 个 API Key",
-            "极高并发",
-            "最高稳定性",
-            "企业权限",
-            "180 天",
-            "独立资源池",
-            "SLA 保障",
-            "专属技术支持",
-            "含税"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "企业对公转账"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 59,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -790,10 +716,26 @@
         "author": "aicodingsh",
         "publishedAt": "2026-04-30T02:45:57.000Z",
         "fetchedAt": "2026-05-06T19:40:07.888Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210733",
+        "title": "$10 FREE | Claude API 国内直连方案，按量计费低至官方 0.19 折",
+        "author": "aicodingsh",
+        "publishedAt": "2026-05-07T01:21:20.000Z",
+        "fetchedAt": "2026-05-07T02:04:23.427Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210733#reply0",
+        "title": "[推广] $10 FREE | Claude API 国内直连方案，按量计费低至官方 0.19 折",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-07T01:21:20.000Z",
+        "fetchedAt": "2026-05-07T02:06:02.418Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-06T21:51:54.021Z",
+    "lastUpdated": "2026-05-07T02:06:02.418Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -821,8 +763,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.889Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -835,7 +777,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.889Z",
-    "lastUpdated": "2026-05-06T21:51:54.021Z",
+    "lastUpdated": "2026-05-07T02:04:23.439Z",
     "tags": [
       "API中转",
       "GPT",
@@ -888,8 +830,8 @@
       },
       {
         "model": "OpenAI系列",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -909,8 +851,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.889Z",
-    "heatScore": 78,
-    "mentionCount": 20,
+    "heatScore": 86,
+    "mentionCount": 24,
     "priceHistory": [],
     "sources": [
       {
@@ -931,7 +873,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.889Z",
-    "lastUpdated": "2026-05-06T21:51:54.025Z",
+    "lastUpdated": "2026-05-07T02:04:23.436Z",
     "tags": [
       "OpenAI",
       "Pro订阅",
@@ -972,8 +914,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 63,
-    "mentionCount": 10,
+    "heatScore": 67,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -994,7 +936,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.024Z",
+    "lastUpdated": "2026-05-07T02:04:23.435Z",
     "tags": [
       "企业级",
       "中转",
@@ -1090,8 +1032,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 83,
-    "mentionCount": 20,
+    "heatScore": 91,
+    "mentionCount": 24,
     "priceHistory": [],
     "sources": [
       {
@@ -1112,7 +1054,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.024Z",
+    "lastUpdated": "2026-05-07T02:04:23.435Z",
     "tags": [
       "AI生图",
       "电商工具",
@@ -1129,8 +1071,8 @@
     "models": [
       {
         "model": "gpt-5.5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -1168,8 +1110,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 38,
-    "mentionCount": 5,
+    "heatScore": 40,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1182,7 +1124,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.024Z",
+    "lastUpdated": "2026-05-07T02:04:23.435Z",
     "tags": [
       "AI中转",
       "trace分析",
@@ -1218,7 +1160,7 @@
         },
         {
           "name": "月卡 lite",
-          "price": 0.18,
+          "price": null,
           "period": "月",
           "features": [
             "日限额 30 刀",
@@ -1228,7 +1170,7 @@
         },
         {
           "name": "月卡 pro",
-          "price": 0.18,
+          "price": null,
           "period": "月",
           "features": [
             "日限额 100 刀",
@@ -1246,11 +1188,11 @@
       "兑换码"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "根据套餐有日、周、月限额",
+    "rateLimit": "套餐内有日、周、月限额",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 58,
-    "mentionCount": 10,
+    "heatScore": 62,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -1263,7 +1205,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.024Z",
+    "lastUpdated": "2026-05-07T02:04:23.436Z",
     "tags": [
       "API中转",
       "GPT",
@@ -1275,7 +1217,14 @@
     "name": "Codex API",
     "website": "https://brookepeng.gettoken.dev",
     "contact": "",
-    "models": [],
+    "models": [
+      {
+        "model": "GPT-5.5",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      }
+    ],
     "billingType": "token",
     "subscription": {
       "plans": [
@@ -1284,19 +1233,17 @@
           "price": 20,
           "period": "永久",
           "features": [
-            "永久有效余额",
-            "按官方定价消耗",
-            "控制台可见交付"
+            "永久余额",
+            "按官方价格1:1扣费"
           ]
         },
         {
-          "name": "Credit Limit",
+          "name": "$500 Credit Limit",
           "price": 50,
           "period": "永久",
           "features": [
-            "永久有效余额",
-            "无每日/每周限制",
-            "按官方定价消耗"
+            "永久余额",
+            "无每日/每周限额"
           ]
         },
         {
@@ -1304,9 +1251,8 @@
           "price": 100,
           "period": "永久",
           "features": [
-            "永久有效余额",
-            "按官方定价消耗",
-            "控制台可见交付"
+            "永久余额",
+            "按官方价格1:1扣费"
           ]
         },
         {
@@ -1314,9 +1260,8 @@
           "price": 200,
           "period": "永久",
           "features": [
-            "永久有效余额",
-            "按官方定价消耗",
-            "控制台可见交付"
+            "永久余额",
+            "按官方价格1:1扣费"
           ]
         },
         {
@@ -1324,9 +1269,8 @@
           "price": 400,
           "period": "永久",
           "features": [
-            "永久有效余额",
-            "无每日/每周限制",
-            "按官方定价消耗"
+            "永久余额",
+            "无每日/每周限额"
           ]
         }
       ]
@@ -1340,8 +1284,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1354,7 +1298,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.024Z",
+    "lastUpdated": "2026-05-07T02:04:23.436Z",
     "tags": [
       "官方API",
       "永久余额",
@@ -1386,11 +1330,11 @@
     "subscription": {
       "plans": [
         {
-          "name": "GPT包月",
+          "name": "GPT包月套餐",
           "price": null,
           "period": "月",
           "features": [
-            "GPT模型访问"
+            "GPT模型包月使用"
           ]
         }
       ]
@@ -1404,8 +1348,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 43,
-    "mentionCount": 5,
+    "heatScore": 45,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1418,11 +1362,12 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.024Z",
+    "lastUpdated": "2026-05-07T02:04:23.436Z",
     "tags": [
       "中转站",
       "GPT",
-      "包月"
+      "包月",
+      "OpenAI"
     ]
   },
   {
@@ -1469,8 +1414,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1483,7 +1428,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-06T21:51:54.025Z",
+    "lastUpdated": "2026-05-07T02:04:23.436Z",
     "tags": [
       "OpenAI",
       "API中转",
@@ -1521,6 +1466,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "GPT/Codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -1528,18 +1479,16 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 0.2,
-      "unit": "M tokens"
+      "amount": 10,
+      "unit": "USD"
     },
-    "paymentMethods": [
-      "支付宝"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "公益分组倍率0.01，约0.01美元额度可用0.2M token；另有5个team号，倍率0.1。",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 58,
-    "mentionCount": 10,
+    "heatScore": 62,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -1557,10 +1506,18 @@
         "author": "bigdogbigpig",
         "publishedAt": "2026-04-29T10:32:46.000Z",
         "fetchedAt": "2026-05-06T19:40:07.894Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210717#reply80",
+        "title": "[推广] 中转站送福利，评论区回复，每人 10$！",
+        "author": "<name>GaryLee</name>\n\t\t<uri>https://www.v2ex.com/member/GaryLee</uri>",
+        "publishedAt": "2026-05-07T01:58:44.000Z",
+        "fetchedAt": "2026-05-07T02:06:02.418Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-06T21:51:54.027Z",
+    "lastUpdated": "2026-05-07T02:06:02.418Z",
     "tags": [
       "中转站",
       "OpenAI",
@@ -1594,7 +1551,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
@@ -1607,8 +1564,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1621,7 +1578,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-06T21:51:54.025Z",
+    "lastUpdated": "2026-05-07T02:04:23.437Z",
     "tags": [
       "企业对接",
       "可开发票",
@@ -1656,8 +1613,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1670,11 +1627,12 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-06T21:51:54.025Z",
+    "lastUpdated": "2026-05-07T02:04:23.437Z",
     "tags": [
       "GPT",
       "中转站",
-      "开业优惠"
+      "开业优惠",
+      "API中转"
     ]
   },
   {
@@ -1703,8 +1661,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -1717,7 +1675,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-06T21:51:54.025Z",
+    "lastUpdated": "2026-05-07T02:04:23.437Z",
     "tags": [
       "白嫖",
       "送额度",
@@ -1734,7 +1692,7 @@
     "models": [
       {
         "model": "codex-gpt-image-2",
-        "inputPrice": 0.001,
+        "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
       },
@@ -1758,8 +1716,8 @@
     "rateLimit": "GPT 0.05x 的倍率 可能随时上涨",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 63,
-    "mentionCount": 15,
+    "heatScore": 69,
+    "mentionCount": 18,
     "priceHistory": [],
     "sources": [
       {
@@ -1788,7 +1746,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-06T21:51:54.026Z",
+    "lastUpdated": "2026-05-07T02:04:23.439Z",
     "tags": [
       "GPT",
       "图像生成",
@@ -1805,20 +1763,20 @@
     "models": [
       {
         "model": "gpt-4o",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "gpt-4-turbo",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "gpt-3.5-turbo",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -1835,8 +1793,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.893Z",
-    "heatScore": 50,
-    "mentionCount": 6,
+    "heatScore": 52,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -1849,12 +1807,13 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.893Z",
-    "lastUpdated": "2026-05-06T21:51:54.026Z",
+    "lastUpdated": "2026-05-07T02:04:23.438Z",
     "tags": [
       "GPT",
       "中转站",
       "免费额度",
-      "中转"
+      "中转",
+      "API代理"
     ]
   },
   {
@@ -1884,16 +1843,16 @@
     ],
     "billingType": "subscription",
     "freeQuota": {
-      "amount": 0,
-      "unit": "CNY"
+      "amount": 50,
+      "unit": "USD"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.893Z",
-    "heatScore": 47,
-    "mentionCount": 7,
+    "heatScore": 49,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -1914,7 +1873,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.893Z",
-    "lastUpdated": "2026-05-06T21:53:29.712Z",
+    "lastUpdated": "2026-05-07T02:04:23.438Z",
     "tags": [
       "GPT-5.5",
       "Pro号池",
@@ -1923,206 +1882,7 @@
       "价格比较"
     ],
     "subscription": {
-      "plans": [
-        {
-          "name": "ChatGPT Plus",
-          "price": 75.85,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "土耳其地区价格"
-          ]
-        },
-        {
-          "name": "ChatGPT Pro 5x",
-          "price": 683.99,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "美国地区价格"
-          ]
-        },
-        {
-          "name": "ChatGPT Pro 20x",
-          "price": 1108.89,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "菲律宾地区价格"
-          ]
-        },
-        {
-          "name": "Claude Pro Monthly",
-          "price": 74.4,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "尼日利亚地区价格"
-          ]
-        },
-        {
-          "name": "Claude Max 5x Monthly",
-          "price": 499.33,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "尼日利亚地区价格"
-          ]
-        },
-        {
-          "name": "Claude Max 20x Monthly",
-          "price": 998.67,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "尼日利亚地区价格"
-          ]
-        },
-        {
-          "name": "Claude Pro Annual",
-          "price": 1319.79,
-          "period": "年",
-          "features": [
-            "官方订阅",
-            "土耳其地区价格"
-          ]
-        },
-        {
-          "name": "Google AI Plus (200GB)",
-          "price": 28.79,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "印度地区价格"
-          ]
-        },
-        {
-          "name": "Google AI Pro (5 TB)",
-          "price": 89.44,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "埃及地区价格"
-          ]
-        },
-        {
-          "name": "Google AI Ultra (30 TB)",
-          "price": 1386.52,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "香港地区价格"
-          ]
-        },
-        {
-          "name": "Perplexity Pro",
-          "price": 74.4,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "尼日利亚地区价格"
-          ]
-        },
-        {
-          "name": "Perplexity Max",
-          "price": 1108.89,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "菲律宾地区价格"
-          ]
-        },
-        {
-          "name": "SuperGrok Lite",
-          "price": 63.88,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "埃及地区价格"
-          ]
-        },
-        {
-          "name": "Microsoft Copilot Pro",
-          "price": 84.89,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "尼日利亚地区价格"
-          ]
-        },
-        {
-          "name": "Microsoft 365 Personal",
-          "price": 30.54,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "埃及地区价格"
-          ]
-        },
-        {
-          "name": "Microsoft 365 Premium",
-          "price": 84.89,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "尼日利亚地区价格"
-          ]
-        },
-        {
-          "name": "Notion Plus",
-          "price": 75.85,
-          "period": "月",
-          "features": [
-            "官方订阅",
-            "土耳其地区价格"
-          ]
-        },
-        {
-          "name": "Notion Plus Annual",
-          "price": 733.9,
-          "period": "年",
-          "features": [
-            "官方订阅",
-            "巴基斯坦地区价格"
-          ]
-        },
-        {
-          "name": "Kimi Moderato Annual Pass",
-          "price": 1108.89,
-          "period": "年",
-          "features": [
-            "官方订阅",
-            "菲律宾地区价格"
-          ]
-        },
-        {
-          "name": "Kimi Allegretto Annual Pass",
-          "price": 2298.39,
-          "period": "年",
-          "features": [
-            "官方订阅",
-            "韩国地区价格"
-          ]
-        },
-        {
-          "name": "Kimi Allegro Annual Pass",
-          "price": 5941.74,
-          "period": "年",
-          "features": [
-            "官方订阅",
-            "韩国地区价格"
-          ]
-        },
-        {
-          "name": "Kimi Vivace Annual Pass",
-          "price": 12270.05,
-          "period": "年",
-          "features": [
-            "官方订阅",
-            "巴基斯坦地区价格"
-          ]
-        }
-      ]
+      "plans": []
     }
   },
   {
@@ -2131,7 +1891,7 @@
     "website": "https://hongmacc.com/",
     "contact": "",
     "models": [],
-    "billingType": "subscription",
+    "billingType": "hybrid",
     "subscription": {
       "plans": [
         {
@@ -2140,7 +1900,7 @@
           "period": "一次性",
           "features": [
             "赠送100美元额度",
-            "可参与大礼包抽奖"
+            "可参与抽奖"
           ]
         },
         {
@@ -2149,7 +1909,7 @@
           "period": "一次性",
           "features": [
             "赠送80美元额度",
-            "可参与大礼包抽奖"
+            "可参与抽奖"
           ]
         }
       ]
@@ -2163,8 +1923,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.893Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -2177,7 +1937,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.893Z",
-    "lastUpdated": "2026-05-06T21:51:54.026Z",
+    "lastUpdated": "2026-05-07T02:04:23.439Z",
     "tags": [
       "企业级",
       "中转平台",
@@ -2212,8 +1972,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.894Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -2226,7 +1986,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.894Z",
-    "lastUpdated": "2026-05-06T21:51:54.027Z",
+    "lastUpdated": "2026-05-07T02:04:23.439Z",
     "tags": [
       "中转站",
       "送token",
@@ -2703,7 +2463,7 @@
     "subscription": {
       "plans": [
         {
-          "name": "ChatGPT Plus",
+          "name": "ChatGPT plus",
           "price": 75.45,
           "period": "月",
           "features": [
@@ -2711,7 +2471,7 @@
           ]
         },
         {
-          "name": "ChatGPT Go",
+          "name": "ChatGPT go",
           "price": 28.62,
           "period": "月",
           "features": [
@@ -2719,7 +2479,7 @@
           ]
         },
         {
-          "name": "ChatGPT Pro 5X",
+          "name": "ChatGPT pro 5X",
           "price": 671.2,
           "period": "月",
           "features": [
@@ -2727,7 +2487,7 @@
           ]
         },
         {
-          "name": "ChatGPT Pro 20X",
+          "name": "ChatGPT pro 20X",
           "price": 1111.22,
           "period": "月",
           "features": [
@@ -2735,7 +2495,7 @@
           ]
         },
         {
-          "name": "Claude Pro",
+          "name": "Claude pro",
           "price": 74.15,
           "period": "月",
           "features": [
@@ -2772,8 +2532,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T20:20:16.966Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 53,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -2783,10 +2543,18 @@
         "author": "<name>jzyzcz</name>\n\t\t<uri>https://www.v2ex.com/member/jzyzcz</uri>",
         "publishedAt": "2026-05-06T20:02:41.000Z",
         "fetchedAt": "2026-05-06T20:20:16.966Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210705#reply9",
+        "title": "[程序员] 😂 昨天又有一大批天才程序员陨落了，不如「改邪归正」吧",
+        "author": "<name>jzyzcz</name>\n\t\t<uri>https://www.v2ex.com/member/jzyzcz</uri>",
+        "publishedAt": "2026-05-07T00:51:04.000Z",
+        "fetchedAt": "2026-05-07T02:06:02.418Z"
       }
     ],
     "firstSeen": "2026-05-06T20:20:16.966Z",
-    "lastUpdated": "2026-05-06T21:53:29.711Z",
+    "lastUpdated": "2026-05-07T02:06:02.418Z",
     "tags": [
       "比价",
       "订阅",
@@ -2810,28 +2578,19 @@
     ],
     "billingType": "subscription",
     "subscription": {
-      "plans": [
-        {
-          "name": "GPT PLUS",
-          "price": null,
-          "period": "月",
-          "features": [
-            "提供API访问额度"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null
+      "amount": 0,
+      "unit": "USD"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T20:32:34.252Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -2844,7 +2603,7 @@
       }
     ],
     "firstSeen": "2026-05-06T20:32:34.252Z",
-    "lastUpdated": "2026-05-06T21:51:54.027Z",
+    "lastUpdated": "2026-05-07T02:04:23.439Z",
     "tags": [
       "代理服务器",
       "API中转",
@@ -2909,8 +2668,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.265Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -2923,10 +2682,12 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.265Z",
-    "lastUpdated": "2026-05-06T22:01:08.265Z",
+    "lastUpdated": "2026-05-07T02:15:06.070Z",
     "tags": [
       "AI中转站对比评测平台",
-      "信息聚合"
+      "信息聚合",
+      "对比评测",
+      "推荐列表"
     ]
   },
   {
@@ -2945,8 +2706,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.266Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -2959,7 +2720,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.266Z",
-    "lastUpdated": "2026-05-06T22:01:08.266Z",
+    "lastUpdated": "2026-05-07T02:15:06.070Z",
     "tags": [
       "评测",
       "比价",
@@ -2985,8 +2746,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.266Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -2999,10 +2760,11 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.266Z",
-    "lastUpdated": "2026-05-06T22:01:08.266Z",
+    "lastUpdated": "2026-05-07T02:15:06.070Z",
     "tags": [
       "免费",
-      "速度测试"
+      "速度测试",
+      "免费阵营"
     ]
   },
   {
@@ -3028,6 +2790,18 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "USD"
+      },
+      {
+        "model": "Claude Opus 4.7",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "Gemini 3.1 Pro Preview",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -3038,17 +2812,13 @@
       "amount": null,
       "unit": "USD"
     },
-    "paymentMethods": [
-      "Google",
-      "GitHub",
-      "MetaMask"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.266Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 57,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -3074,10 +2844,18 @@
         "author": "",
         "publishedAt": "2026-05-06T21:56:07.813Z",
         "fetchedAt": "2026-05-06T22:01:08.271Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://www.cnblogs.com/qiniushanghai/p/19857917",
+        "title": "国内支持 Claude API 的平台盘点（2026 最新）：无需代理的直连方案 - 七牛云行业应用 - 博客园",
+        "author": "",
+        "publishedAt": "2026-05-07T02:07:27.520Z",
+        "fetchedAt": "2026-05-07T02:15:06.073Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.266Z",
-    "lastUpdated": "2026-05-06T22:01:08.271Z",
+    "lastUpdated": "2026-05-07T02:15:06.075Z",
     "tags": [
       "LLM API Gateway",
       "Unified Interface",
@@ -3091,22 +2869,35 @@
     "name": "CloseAI",
     "website": "",
     "contact": "",
-    "models": [],
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
     "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 0,
-      "unit": ""
+      "unit": "USD"
     },
     "paymentMethods": [],
     "concurrencyLimit": 0,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.266Z",
-    "heatScore": 17,
-    "mentionCount": 2,
+    "heatScore": 23,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -3124,10 +2915,18 @@
         "author": "",
         "publishedAt": "2026-05-06T21:54:47.640Z",
         "fetchedAt": "2026-05-06T22:01:08.268Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://www.cnblogs.com/qiniushanghai/p/19857917",
+        "title": "国内支持 Claude API 的平台盘点（2026 最新）：无需代理的直连方案 - 七牛云行业应用 - 博客园",
+        "author": "",
+        "publishedAt": "2026-05-07T02:07:27.520Z",
+        "fetchedAt": "2026-05-07T02:15:06.072Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.266Z",
-    "lastUpdated": "2026-05-06T22:01:08.268Z",
+    "lastUpdated": "2026-05-07T02:15:06.072Z",
     "tags": [
       "企业级",
       "中转代理",
@@ -3155,8 +2954,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.267Z",
-    "heatScore": 44,
-    "mentionCount": 3,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -3182,10 +2981,26 @@
         "author": "",
         "publishedAt": "2026-05-06T21:55:38.606Z",
         "fetchedAt": "2026-05-06T22:01:08.270Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://segmentfault.com/a/1190000047742004",
+        "title": "2026 Ai大模型api中转平台深度测评：多维度硬核数据对比，为开发者提供权威选型指南",
+        "author": "",
+        "publishedAt": "2026-05-07T02:08:06.655Z",
+        "fetchedAt": "2026-05-07T02:15:06.074Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://blog.csdn.net/2601_95971137/article/details/160824052",
+        "title": "2026年ai大模型api中转系统揭秘：5款主流服务性能横评与接入实战指南-csdn博客",
+        "author": "",
+        "publishedAt": "2026-05-07T02:08:14.662Z",
+        "fetchedAt": "2026-05-07T02:15:06.074Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.267Z",
-    "lastUpdated": "2026-05-06T22:01:08.270Z",
+    "lastUpdated": "2026-05-07T02:15:06.074Z",
     "tags": [
       "OpenAI兼容",
       "按量计费",
@@ -3202,14 +3017,14 @@
     "models": [
       {
         "model": "gpt-5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "gpt-4o",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
@@ -3220,14 +3035,14 @@
       },
       {
         "model": "claude",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "gemini",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -3247,8 +3062,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.267Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -3261,7 +3076,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.267Z",
-    "lastUpdated": "2026-05-06T22:01:08.267Z",
+    "lastUpdated": "2026-05-07T02:15:06.071Z",
     "tags": [
       "国内直连",
       "无需代理",
@@ -3289,8 +3104,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.267Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -3303,11 +3118,13 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.267Z",
-    "lastUpdated": "2026-05-06T22:01:08.267Z",
+    "lastUpdated": "2026-05-07T02:15:06.071Z",
     "tags": [
       "免费",
       "代理中转",
-      "OpenAI"
+      "OpenAI",
+      "代理",
+      "中转"
     ]
   },
   {
@@ -3557,20 +3374,59 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "claude-opus-4-7",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-sonnet",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-haiku",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude 3.7 Sonnet",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude 3 Opus",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude 3.5 Haiku",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": null,
+    "freeQuota": {
+      "amount": null,
+      "unit": ""
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.268Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 19,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -3580,15 +3436,24 @@
         "author": "",
         "publishedAt": "2026-05-06T21:54:49.640Z",
         "fetchedAt": "2026-05-06T22:01:08.268Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://claude-api-china.github.io/",
+        "title": "Claude API中转站：国内直连免费指南（支持 Claude 3.7 Sonnet、3.5 Sonnet、3 Opus、3.5 Haiku ...",
+        "author": "",
+        "publishedAt": "2026-05-07T02:07:33.525Z",
+        "fetchedAt": "2026-05-07T02:15:06.073Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.268Z",
-    "lastUpdated": "2026-05-06T22:01:08.268Z",
+    "lastUpdated": "2026-05-07T02:15:06.073Z",
     "tags": [
       "Anthropic",
       "Claude",
       "国内直连",
-      "代理"
+      "代理",
+      "Claude API"
     ]
   },
   {
@@ -3599,8 +3464,8 @@
     "models": [
       {
         "model": "Claude",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -3617,8 +3482,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.268Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -3631,7 +3496,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.268Z",
-    "lastUpdated": "2026-05-06T22:01:08.268Z",
+    "lastUpdated": "2026-05-07T02:15:06.073Z",
     "tags": [
       "Claude",
       "API中转",
@@ -3697,38 +3562,38 @@
     "models": [
       {
         "model": "gpt-5.4",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "claude-opus-4.6",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "gemini-3.1-pro",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "gemini-3-pro-image-preview",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "sora-2",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "Nano Banana Pro",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -3745,8 +3610,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.268Z",
-    "heatScore": 17,
-    "mentionCount": 2,
+    "heatScore": 19,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -3767,7 +3632,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.268Z",
-    "lastUpdated": "2026-05-06T22:01:08.271Z",
+    "lastUpdated": "2026-05-07T02:15:06.075Z",
     "tags": [
       "中转服务",
       "Claude Code",
@@ -3795,8 +3660,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.269Z",
-    "heatScore": 17,
-    "mentionCount": 2,
+    "heatScore": 19,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -3817,7 +3682,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.269Z",
-    "lastUpdated": "2026-05-06T22:01:08.270Z",
+    "lastUpdated": "2026-05-07T02:15:06.075Z",
     "tags": [
       "API中转",
       "Claude",
@@ -3845,8 +3710,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.269Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -3859,11 +3724,12 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.269Z",
-    "lastUpdated": "2026-05-06T22:01:08.269Z",
+    "lastUpdated": "2026-05-07T02:15:06.073Z",
     "tags": [
       "开源",
       "聚合管理",
-      "中转分发"
+      "中转分发",
+      "统一接入"
     ]
   },
   {
@@ -3885,8 +3751,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.269Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -3899,10 +3765,12 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.269Z",
-    "lastUpdated": "2026-05-06T22:01:08.269Z",
+    "lastUpdated": "2026-05-07T02:15:06.073Z",
     "tags": [
       "开源项目",
-      "API中转"
+      "API中转",
+      "开源",
+      "OpenAI API格式"
     ]
   },
   {
@@ -3913,8 +3781,8 @@
     "models": [
       {
         "model": "GPT-4.5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -3925,26 +3793,26 @@
       },
       {
         "model": "Claude 3.7",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Claude 4",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Deepseek R1",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Gemini 2.0",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -3955,20 +3823,20 @@
       },
       {
         "model": "Midjourney",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Suno",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Luma",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -3987,8 +3855,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.270Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -4001,7 +3869,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.270Z",
-    "lastUpdated": "2026-05-06T22:01:08.270Z",
+    "lastUpdated": "2026-05-07T02:15:06.074Z",
     "tags": [
       "API中转",
       "国内可用",
@@ -4029,8 +3897,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.270Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -4043,10 +3911,11 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.270Z",
-    "lastUpdated": "2026-05-06T22:01:08.270Z",
+    "lastUpdated": "2026-05-07T02:15:06.074Z",
     "tags": [
       "国内中转",
-      "兼容OpenAI SDK"
+      "兼容OpenAI SDK",
+      "无需翻墙"
     ]
   },
   {
@@ -4091,6 +3960,661 @@
       "GPT",
       "Gemini",
       "API服务"
+    ]
+  },
+  {
+    "id": "pmouuf2tppnsdc",
+    "name": "墨香课堂",
+    "website": "https://token.moxiangketang.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT-5.2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-5.4",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-5.3-codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-5.4-mini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "USD"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:04:23.437Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1207909",
+        "title": "[Codex 中转站]不跑路的老王送福利了，新用户即送 10$",
+        "author": "Bnonymous",
+        "publishedAt": "2026-04-23T01:38:25.000Z",
+        "fetchedAt": "2026-05-07T02:04:23.437Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:04:23.437Z",
+    "lastUpdated": "2026-05-07T02:04:23.437Z",
+    "tags": [
+      "API中转",
+      "多模型支持",
+      "新用户福利"
+    ]
+  },
+  {
+    "id": "pmouuh776el85f",
+    "name": "易支付",
+    "website": "",
+    "contact": "https://t.me/KeYing_ak",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": ""
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
+    "concurrencyLimit": 0,
+    "rateLimit": "",
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:06:02.418Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210745#reply0",
+        "title": "[推广] 易支付|大量接 AI 中转 发卡 支付宝 微信 费率 3% 自营稳定一手双通道",
+        "author": "<name>ronaldocan</name>\n\t\t<uri>https://www.v2ex.com/member/ronaldocan</uri>",
+        "publishedAt": "2026-05-07T01:41:00.000Z",
+        "fetchedAt": "2026-05-07T02:06:02.418Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:06:02.418Z",
+    "lastUpdated": "2026-05-07T02:06:02.418Z",
+    "tags": [
+      "支付通道",
+      "AI中转",
+      "发卡"
+    ]
+  },
+  {
+    "id": "pmouuh776y3f4s",
+    "name": "aiiStudio",
+    "website": "https://aiistudio.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT Image 2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 3,
+      "unit": "次生图机会"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "",
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:06:02.418Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210735#reply0",
+        "title": "[分享创造] 做了一个 GPT Image 2 提示词和生图网站，注册送 3 次生图机会",
+        "author": "<name>biubiuff</name>\n\t\t<uri>https://www.v2ex.com/member/biubiuff</uri>",
+        "publishedAt": "2026-05-07T01:28:21.000Z",
+        "fetchedAt": "2026-05-07T02:06:02.418Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:06:02.418Z",
+    "lastUpdated": "2026-05-07T02:06:02.418Z",
+    "tags": [
+      "AI生图",
+      "提示词",
+      "GPT Image 2",
+      "在线工具"
+    ]
+  },
+  {
+    "id": "pmouuh776ghu80",
+    "name": "55ai.net",
+    "website": "https://55ai.net",
+    "contact": "big825",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "ChatGPT Plus",
+          "price": 135,
+          "period": "月",
+          "features": [
+            "官方原价20美元/月",
+            "半小时内充好",
+            "可开正规企业发票"
+          ]
+        },
+        {
+          "name": "Claude Pro",
+          "price": 145,
+          "period": "月",
+          "features": []
+        },
+        {
+          "name": "Gemini Pro",
+          "price": null,
+          "period": null,
+          "features": [
+            "欢迎咨询"
+          ]
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:06:02.418Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1210734#reply0",
+        "title": "[推广] ChatGPT plus/Claude pro 官方代充值，欢迎 V 友咨询",
+        "author": "<name>aiGPT</name>\n\t\t<uri>https://www.v2ex.com/member/aiGPT</uri>",
+        "publishedAt": "2026-05-06T09:22:40.000Z",
+        "fetchedAt": "2026-05-07T02:06:02.418Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:06:02.418Z",
+    "lastUpdated": "2026-05-07T02:06:02.418Z",
+    "tags": [
+      "代充值",
+      "官方订阅",
+      "ChatGPT Plus",
+      "Claude Pro",
+      "Gemini Pro"
+    ]
+  },
+  {
+    "id": "pmouusuolvgcyo",
+    "name": "302.AI",
+    "website": "https://302.ai",
+    "contact": "",
+    "models": [
+      {
+        "model": "chat-latest",
+        "inputPrice": 5,
+        "outputPrice": 30,
+        "currency": "USD"
+      },
+      {
+        "model": "gpt-5.5",
+        "inputPrice": 5,
+        "outputPrice": 30,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "inputPrice": 1.72,
+        "outputPrice": 3.43,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek-v4-flash",
+        "inputPrice": 0.143,
+        "outputPrice": 0.286,
+        "currency": "USD"
+      },
+      {
+        "model": "kimi-k2.6",
+        "inputPrice": 0.95,
+        "outputPrice": 4,
+        "currency": "USD"
+      },
+      {
+        "model": "qwen3.6-flash",
+        "inputPrice": 0.19,
+        "outputPrice": 1.13,
+        "currency": "USD"
+      },
+      {
+        "model": "qwen3.6-35b-a3b",
+        "inputPrice": 0.28,
+        "outputPrice": 1.7,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-opus-4-7",
+        "inputPrice": 5,
+        "outputPrice": 25,
+        "currency": "USD"
+      },
+      {
+        "model": "glm-5.1",
+        "inputPrice": 0.86,
+        "outputPrice": 3.5,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "USD"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": "无TPM限制，不限并发",
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:15:06.069Z",
+    "heatScore": 48,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "websearch",
+        "url": "https://ofox.ai/zh/blog/ai-api-relay-station-comparison-guide-2026/",
+        "title": "AI API 中转站推荐 2026：主流平台对比评测，哪家最靠谱？",
+        "author": "",
+        "publishedAt": "2026-05-07T02:06:08.864Z",
+        "fetchedAt": "2026-05-07T02:15:06.069Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:15:06.069Z",
+    "lastUpdated": "2026-05-07T02:15:06.069Z",
+    "tags": [
+      "企业级",
+      "全模型",
+      "按量付费",
+      "API中转"
+    ]
+  },
+  {
+    "id": "pmouusuon2wbyn",
+    "name": "未明确提及商家名称",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "gpt-3.5-turbo",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "",
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:15:06.071Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "websearch",
+        "url": "https://blog.csdn.net/weyson/article/details/142656848",
+        "title": "国内访问OpenAI API_openai代理-CSDN博客",
+        "author": "",
+        "publishedAt": "2026-05-07T02:06:42.738Z",
+        "fetchedAt": "2026-05-07T02:15:06.071Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:15:06.071Z",
+    "lastUpdated": "2026-05-07T02:15:06.071Z",
+    "tags": [
+      "OpenAI代理",
+      "国内访问"
+    ]
+  },
+  {
+    "id": "pmouusuonqs4dr",
+    "name": "4SAPI",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT-5",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-5 Mini",
+        "inputPrice": 6,
+        "outputPrice": 12,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-4o",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "o3",
+        "inputPrice": 10,
+        "outputPrice": 40,
+        "currency": "USD"
+      },
+      {
+        "model": "o3-mini",
+        "inputPrice": 1.1,
+        "outputPrice": 4.4,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": ""
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:15:06.071Z",
+    "heatScore": 19,
+    "mentionCount": 3,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "websearch",
+        "url": "https://4sapi.com/blog/post20",
+        "title": "GPT-5 API 费率全拆解：2026 各平台真实价格对比，附省钱方案 - 4SAPI",
+        "author": "",
+        "publishedAt": "2026-05-07T02:07:07.719Z",
+        "fetchedAt": "2026-05-07T02:15:06.071Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://www.sohu.com/a/980924351_122525024",
+        "title": "2026年GPT中转主流简易测评 星链4SAPI凭什么成黑马_OpenAI_平台_PoloAPI",
+        "author": "",
+        "publishedAt": "2026-05-07T02:07:10.794Z",
+        "fetchedAt": "2026-05-07T02:15:06.071Z"
+      },
+      {
+        "platform": "websearch",
+        "url": "https://www.techtrends.reviews/2026/04/09/top-5-ai-api-relay-platforms-of-2026-unlock-seamless-access-to-gpt-5-4-gemini-3-1-pro-claude-4-6/",
+        "title": "Top 5 AI API Relay Platforms of 2026: Unlock Seamless Access to GPT-5.4 ...",
+        "author": "",
+        "publishedAt": "2026-05-07T02:08:53.559Z",
+        "fetchedAt": "2026-05-07T02:15:06.076Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:15:06.071Z",
+    "lastUpdated": "2026-05-07T02:15:06.076Z",
+    "tags": [
+      "价格对比",
+      "省钱方案",
+      "模型分级",
+      "缓存优化",
+      "GPT中转"
+    ]
+  },
+  {
+    "id": "pmouusuooeg7nk",
+    "name": "七牛云",
+    "website": "https://www.qiniu.com/",
+    "contact": "",
+    "models": [
+      {
+        "model": "DeepSeek-V4",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Enterprise Token Plan",
+          "price": 2999,
+          "period": "月",
+          "features": [
+            "1个API Key接入主流大模型",
+            "含DeepSeek-V4等四大国产新款模型",
+            "支持团队多人共用"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:15:06.072Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "websearch",
+        "url": "https://www.cnblogs.com/qiniushanghai/p/19857917",
+        "title": "国内支持 Claude API 的平台盘点（2026 最新）：无需代理的直连方案 - 七牛云行业应用 - 博客园",
+        "author": "",
+        "publishedAt": "2026-05-07T02:07:27.520Z",
+        "fetchedAt": "2026-05-07T02:15:06.072Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:15:06.072Z",
+    "lastUpdated": "2026-05-07T02:15:06.072Z",
+    "tags": [
+      "AI大模型推理",
+      "API代理",
+      "云服务"
+    ]
+  },
+  {
+    "id": "pmouusuor40rtz",
+    "name": "PoloAPI",
+    "website": "https://poloapi.com",
+    "contact": "微信",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "gemini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "qwen",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "doubao",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:15:06.075Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "websearch",
+        "url": "https://poloapi.com/poloapi-blog/chatGPT-news-092508",
+        "title": "国内直连使用GPT API Key的两种方案：官方代理与中转平台对比",
+        "author": "",
+        "publishedAt": "2026-05-07T02:08:37.058Z",
+        "fetchedAt": "2026-05-07T02:15:06.075Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:15:06.075Z",
+    "lastUpdated": "2026-05-07T02:15:06.075Z",
+    "tags": [
+      "API中转",
+      "企业级",
+      "多模型聚合",
+      "高并发",
+      "SLA保障"
+    ]
+  },
+  {
+    "id": "pmouusuosmsi7q",
+    "name": "RelayPlane",
+    "website": "https://relayplane.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "claude-opus",
+        "inputPrice": 15,
+        "outputPrice": 15,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-sonnet",
+        "inputPrice": 3,
+        "outputPrice": 3,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-haiku",
+        "inputPrice": 0.25,
+        "outputPrice": 1.25,
+        "currency": "USD"
+      },
+      {
+        "model": "gpt-4o",
+        "inputPrice": 2.5,
+        "outputPrice": 10,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-07T02:15:06.076Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "websearch",
+        "url": "https://relayplane.com/docs/getting-started/first-workflow",
+        "title": "Get Started — Cut AI API Costs in 60 Seconds — RelayPlane",
+        "author": "",
+        "publishedAt": "2026-05-07T02:08:55.561Z",
+        "fetchedAt": "2026-05-07T02:15:06.076Z"
+      }
+    ],
+    "firstSeen": "2026-05-07T02:15:06.076Z",
+    "lastUpdated": "2026-05-07T02:15:06.076Z",
+    "tags": [
+      "API代理",
+      "成本优化",
+      "模型路由",
+      "治理",
+      "租户隔离"
     ]
   }
 ]
