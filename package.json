@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "db:push": "prisma db push",
+    "db:push": "prisma generate && prisma db push",
     "db:migrate": "tsx scripts/migrate-to-db.ts"
   },
   "dependencies": {
