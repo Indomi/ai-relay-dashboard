@@ -39,7 +39,6 @@ function dbToProvider(db: any): Provider {
 export async function getProviders(): Promise<Provider[]> {
   try {
     const providers = await prisma.provider.findMany({
-      where: { status: { not: "inactive" } },
       include: {
         models: true,
         sources: { take: 10, orderBy: { fetchedAt: "desc" } },
@@ -47,6 +46,7 @@ export async function getProviders(): Promise<Provider[]> {
       orderBy: { heatScore: "desc" },
     });
 
+    console.log("[DB] Fetched", providers.length, "providers from database");
     return providers.map(dbToProvider);
   } catch (error) {
     console.error("[DB] Error reading providers:", error);
