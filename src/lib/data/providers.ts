@@ -2,49 +2,62 @@ import { Provider, Stats, CommunityPost } from "@/lib/types";
 import * as fs from "fs";
 import * as path from "path";
 
-// 导入静态JSON数据（构建时嵌入）
-// 使用相对路径确保Vercel构建时正确打包
-import providersData from "../../data/providers.json";
-import statsData from "../../data/stats.json";
+// 数据文件路径 - 尝试多个位置
+const DATA_PATHS = [
+  path.join(process.cwd(), "public/data"),
+  path.join(process.cwd(), "data"),
+  path.join(__dirname, "../../../../public/data"),
+  path.join(__dirname, "../../../public/data"),
+  "/var/task/public/data",
+];
 
-const DATA_DIR = path.join(process.cwd(), "data");
+function getDataDir(): string {
+  for (const dir of DATA_PATHS) {
+    try {
+      const testFile = path.join(dir, "providers.json");
+      if (fs.existsSync(testFile)) {
+        console.log("[Data] Found data at:", dir);
+        return dir;
+      }
+    } catch {
+      // continue
+    }
+  }
+  console.log("[Data] No data directory found, returning first path");
+  return DATA_PATHS[0];
+}
+
+const DATA_DIR = getDataDir();
 const PROVIDERS_FILE = path.join(DATA_DIR, "providers.json");
 const STATS_FILE = path.join(DATA_DIR, "stats.json");
 
-// 静态数据（构建时从JSON导入）
-const staticProviders: Provider[] = providersData as Provider[];
-const staticStats: Stats = statsData as Stats;
+console.log("[Data] DATA_DIR:", DATA_DIR);
+console.log("[Data] PROVIDERS_FILE:", PROVIDERS_FILE);
+console.log("[Data] File exists:", fs.existsSync(PROVIDERS_FILE));
 
 function readProvidersFile(): Provider[] {
-  // 优先返回静态导入的数据（Vercel环境）
-  if (staticProviders && staticProviders.length > 0) {
-    return staticProviders;
-  }
-  // 开发环境尝试读取文件
   try {
     if (fs.existsSync(PROVIDERS_FILE)) {
       const data = fs.readFileSync(PROVIDERS_FILE, "utf-8");
-      return JSON.parse(data) as Provider[];
+      const parsed = JSON.parse(data);
+      console.log("[Data] Loaded", parsed.length, "providers");
+      return parsed as Provider[];
     }
   } catch (error) {
-    console.error("[Data] Error reading providers.json:", error);
+    console.error("[Data] Error reading providers:", error);
   }
+  console.log("[Data] No providers loaded, returning empty array");
   return [];
 }
 
 function readStatsFile(): Stats {
-  // 优先返回静态导入的数据
-  if (staticStats && staticStats.totalProviders > 0) {
-    return staticStats;
-  }
-  // 开发环境尝试读取文件
   try {
     if (fs.existsSync(STATS_FILE)) {
       const data = fs.readFileSync(STATS_FILE, "utf-8");
       return JSON.parse(data) as Stats;
     }
   } catch (error) {
-    console.error("[Data] Error reading stats.json:", error);
+    console.error("[Data] Error reading stats:", error);
   }
   return {
     totalProviders: 0,
@@ -63,24 +76,20 @@ export function getProviders(): Provider[] {
 }
 
 export function getProviderById(id: string): Provider | undefined {
-  return readProvidersFile().find((p) => p.id === id);
+  return getProviders().find((p) => p.id === id);
 }
 
 export function getStats(): Stats {
   // 从 providers.json 动态计算统计数据
-  const providers = readProvidersFile();
+  const providers = getProviders();
   
   if (providers.length === 0) {
-    return readStatsFile(); // 如果没有数据，返回 stats.json 的默认值
+    return readStatsFile();
   }
   
-  // 计算总商家数
   const totalProviders = providers.length;
-  
-  // 计算在线商家数（假设所有有网站的商家都是在线的）
   const onlineProviders = providers.filter(p => p.website && p.website.startsWith("http")).length;
   
-  // 计算今日新增（24小时内）- 使用 firstSeen 字段
   const now = new Date();
   const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const todayNew = providers.filter(p => {
@@ -88,26 +97,18 @@ export function getStats(): Stats {
     return addedDate >= todayStart;
   }).length;
   
-  // 计算最低价格
   let lowestPrice = { model: "", price: Infinity, provider: "" };
   providers.forEach(p => {
     p.models.forEach(m => {
       if (m.inputPrice > 0 && m.inputPrice < lowestPrice.price) {
-        lowestPrice = {
-          model: m.model,
-          price: m.inputPrice,
-          provider: p.name
-        };
+        lowestPrice = { model: m.model, price: m.inputPrice, provider: p.name };
       }
     });
   });
-  
-  // 如果没有找到价格，返回空值
   if (lowestPrice.price === Infinity) {
     lowestPrice = { model: "", price: 0, provider: "" };
   }
   
-  // 计算模型覆盖
   const modelCount: Record<string, number> = {};
   providers.forEach(p => {
     p.models.forEach(m => {
@@ -120,7 +121,6 @@ export function getStats(): Stats {
     .sort((a, b) => b.count - a.count)
     .slice(0, 10);
   
-  // 计算价格分布
   const priceRanges = [
     { range: "0-1", min: 0, max: 1, count: 0 },
     { range: "1-3", min: 1, max: 3, count: 0 },
@@ -138,7 +138,6 @@ export function getStats(): Stats {
   });
   const priceDistribution = priceRanges.filter(r => r.count > 0);
   
-  // 计算来源分布
   const sourceCount: Record<string, number> = {};
   providers.forEach(p => {
     p.sources.forEach(s => {
@@ -149,7 +148,6 @@ export function getStats(): Stats {
     .map(([platform, count]) => ({ platform, count }))
     .sort((a, b) => b.count - a.count);
   
-  // 计算每日趋势（最近7天）- 使用 firstSeen 字段
   const dailyTrend: { date: string; newProviders: number; priceChanges: number }[] = [];
   for (let i = 6; i >= 0; i--) {
     const date = new Date(now);
