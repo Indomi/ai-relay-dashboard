@@ -1,20 +1,19 @@
 import { PrismaClient } from "../generated/prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
 };
 
 function createPrismaClient() {
+  // Vercel Postgres 会自动设置 POSTGRES_PRISMA_URL
   const connectionString = process.env.POSTGRES_PRISMA_URL || process.env.DATABASE_URL;
+  
   if (!connectionString) {
-    // 没有数据库连接时使用空字符串（构建时用）
     console.warn("[DB] No database connection string found");
-    const adapter = new PrismaPg("postgresql://localhost:5432/placeholder");
-    return new PrismaClient({ adapter });
   }
-  const adapter = new PrismaPg(connectionString);
-  return new PrismaClient({ adapter });
+  
+  // Prisma 7 在 Vercel 上需要直接使用 connection string
+  return new PrismaClient();
 }
 
 export const prisma = globalForPrisma.prisma ?? createPrismaClient();
