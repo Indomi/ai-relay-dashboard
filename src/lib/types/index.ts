@@ -54,6 +54,17 @@ export interface Provider {
   firstSeen: string;
   lastUpdated: string;
   tags: string[];
+  // 新增字段
+  signupBonus?: string;
+  termsUrl?: string;
+  termsSummary?: string;
+  refundSupport?: string;
+  refundCondition?: string;
+  compensationPolicy?: string;
+  supportChannels?: string[];
+  serviceHours?: string;
+  minTopup?: number;
+  canInvoice?: boolean;
 }
 
 export interface Stats {

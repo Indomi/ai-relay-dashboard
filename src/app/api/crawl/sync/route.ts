@@ -19,11 +19,24 @@ export async function POST(request: NextRequest) {
         website?: string;
         contact?: string;
         description?: string;
+        signupBonus?: string;
         billingType?: string;
         tags?: string[];
         confidence?: number;
         models: { model: string; inputPrice?: number; outputPrice?: number; currency?: string }[];
         source: { platform: string; title: string; url: string; author?: string; publishedAt?: string };
+        // SubscriptionPlan 相关
+        subscriptionPlans?: { name: string; price: number; period?: string; features?: string[]; autoRenew?: boolean; refundRule?: string }[];
+        // ProviderPayment 相关
+        minTopup?: number;
+        canInvoice?: boolean;
+        refundSupport?: string;
+        refundCondition?: string;
+        supportChannels?: string[];
+        serviceHours?: string;
+        // ProviderRisk 相关
+        termsUrl?: string;
+        termsSummary?: string;
       }[];
     };
 

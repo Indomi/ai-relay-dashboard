@@ -3,6 +3,16 @@ import { Provider, Stats } from "@/lib/types";
 
 // 将数据库记录转换为前端 Provider 类型
 function dbToProvider(db: any): Provider {
+  // 解析 supportChannels JSON 字符串为数组
+  let supportChannels: string[] | undefined;
+  if (db.payment?.supportChannels) {
+    try {
+      supportChannels = JSON.parse(db.payment.supportChannels);
+    } catch {
+      supportChannels = undefined;
+    }
+  }
+
   return {
     id: db.id,
     name: db.name,
@@ -33,6 +43,15 @@ function dbToProvider(db: any): Provider {
     firstSeen: db.firstSeen?.toISOString() || new Date().toISOString(),
     lastUpdated: db.lastSeen?.toISOString() || new Date().toISOString(),
     tags: db.tags || [],
+    // 新增字段
+    signupBonus: db.description || undefined,
+    refundSupport: db.payment?.refundSupport || undefined,
+    refundCondition: db.payment?.refundCondition || undefined,
+    compensationPolicy: db.payment?.refundCondition || undefined,
+    supportChannels,
+    serviceHours: db.payment?.serviceHours || undefined,
+    minTopup: db.payment?.minTopup ?? undefined,
+    canInvoice: db.payment?.canInvoice ?? undefined,
   };
 }
 
@@ -215,11 +234,24 @@ export async function upsertProvider(data: {
   website?: string;
   contact?: string;
   description?: string;
+  signupBonus?: string;
   billingType?: string;
   tags?: string[];
   confidence?: number;
   models: { model: string; inputPrice?: number; outputPrice?: number; currency?: string }[];
   source: { platform: string; title: string; url: string; author?: string; publishedAt?: string };
+  // SubscriptionPlan 相关
+  subscriptionPlans?: { name: string; price: number; period?: string; features?: string[]; autoRenew?: boolean; refundRule?: string }[];
+  // ProviderPayment 相关
+  minTopup?: number;
+  canInvoice?: boolean;
+  refundSupport?: string;
+  refundCondition?: string;
+  supportChannels?: string[];
+  serviceHours?: string;
+  // ProviderRisk 相关
+  termsUrl?: string;
+  termsSummary?: string;
 }) {
   try {
     // 查找或创建商家
@@ -239,7 +271,7 @@ export async function upsertProvider(data: {
           name: data.name,
           website: data.website,
           contact: data.contact,
-          description: data.description,
+          description: data.signupBonus || data.description,
           billingType: data.billingType || "token",
           tags: data.tags || [],
           confidence: data.confidence || 0,
@@ -262,8 +294,48 @@ export async function upsertProvider(data: {
               publishedAt: data.source.publishedAt ? new Date(data.source.publishedAt) : undefined,
             },
           },
+          // SubscriptionPlan 表
+          ...(data.subscriptionPlans && data.subscriptionPlans.length > 0
+            ? {
+                subscriptions: {
+                  create: data.subscriptionPlans.map((plan) => ({
+                    name: plan.name,
+                    price: plan.price,
+                    period: plan.period,
+                    features: plan.features || [],
+                    autoRenew: plan.autoRenew ?? false,
+                    refundRule: plan.refundRule,
+                  })),
+                },
+              }
+            : {}),
+          // ProviderPayment 表
+          ...((data.minTopup !== undefined || data.canInvoice !== undefined || data.refundSupport || data.refundCondition || data.supportChannels || data.serviceHours)
+            ? {
+                payment: {
+                  create: {
+                    minTopup: data.minTopup,
+                    canInvoice: data.canInvoice ?? false,
+                    refundSupport: data.refundSupport || "unknown",
+                    refundCondition: data.refundCondition,
+                    supportChannels: data.supportChannels ? JSON.stringify(data.supportChannels) : undefined,
+                    serviceHours: data.serviceHours,
+                  },
+                },
+              }
+            : {}),
+          // ProviderRisk 表
+          ...((data.termsUrl || data.termsSummary)
+            ? {
+                risk: {
+                  create: {
+                    termsClarity: data.termsSummary ? "clear" : "partial",
+                  },
+                },
+              }
+            : {}),
         },
-        include: { models: true, sources: true },
+        include: { models: true, sources: true, subscriptions: true, payment: true, risk: true },
       });
       return created;
     } else {
@@ -274,6 +346,9 @@ export async function upsertProvider(data: {
           heatScore: { increment: 2 },
           mentionCount: { increment: 1 },
           lastSeen: new Date(),
+          ...(data.signupBonus || data.description
+            ? { description: data.signupBonus || data.description }
+            : {}),
           ...(data.confidence && data.confidence > existing.confidence
             ? { confidence: data.confidence }
             : {}),
@@ -310,6 +385,63 @@ export async function upsertProvider(data: {
             url: data.source.url,
             author: data.source.author,
             publishedAt: data.source.publishedAt ? new Date(data.source.publishedAt) : undefined,
+          },
+        });
+      }
+
+      // 更新 SubscriptionPlan 表
+      if (data.subscriptionPlans && data.subscriptionPlans.length > 0) {
+        // 先删除旧的订阅方案，再创建新的
+        await prisma.subscriptionPlan.deleteMany({
+          where: { providerId: existing.id },
+        });
+        await prisma.subscriptionPlan.createMany({
+          data: data.subscriptionPlans.map((plan) => ({
+            providerId: existing.id,
+            name: plan.name,
+            price: plan.price,
+            period: plan.period,
+            features: plan.features || [],
+            autoRenew: plan.autoRenew ?? false,
+            refundRule: plan.refundRule,
+          })),
+        });
+      }
+
+      // 更新 ProviderPayment 表
+      if (data.minTopup !== undefined || data.canInvoice !== undefined || data.refundSupport || data.refundCondition || data.supportChannels || data.serviceHours) {
+        await prisma.providerPayment.upsert({
+          where: { providerId: existing.id },
+          create: {
+            providerId: existing.id,
+            minTopup: data.minTopup,
+            canInvoice: data.canInvoice ?? false,
+            refundSupport: data.refundSupport || "unknown",
+            refundCondition: data.refundCondition,
+            supportChannels: data.supportChannels ? JSON.stringify(data.supportChannels) : undefined,
+            serviceHours: data.serviceHours,
+          },
+          update: {
+            ...(data.minTopup !== undefined ? { minTopup: data.minTopup } : {}),
+            ...(data.canInvoice !== undefined ? { canInvoice: data.canInvoice } : {}),
+            ...(data.refundSupport ? { refundSupport: data.refundSupport } : {}),
+            ...(data.refundCondition ? { refundCondition: data.refundCondition } : {}),
+            ...(data.supportChannels ? { supportChannels: JSON.stringify(data.supportChannels) } : {}),
+            ...(data.serviceHours ? { serviceHours: data.serviceHours } : {}),
+          },
+        });
+      }
+
+      // 更新 ProviderRisk 表
+      if (data.termsUrl || data.termsSummary) {
+        await prisma.providerRisk.upsert({
+          where: { providerId: existing.id },
+          create: {
+            providerId: existing.id,
+            termsClarity: data.termsSummary ? "clear" : "partial",
+          },
+          update: {
+            termsClarity: data.termsSummary ? "clear" : "partial",
           },
         });
       }
