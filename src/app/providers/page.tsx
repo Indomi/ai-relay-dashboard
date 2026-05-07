@@ -1,11 +1,7 @@
 import Link from "next/link";
-import { getProviders, getStats } from "@/lib/data/providers-db";
 import { ProviderFilterList } from "@/components/providers/ProviderFilterList";
 
-export default async function ProvidersPage() {
-  const stats = await getStats();
-  const providers = await getProviders();
-
+export default function ProvidersPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* 顶部导航 */}
@@ -48,19 +44,12 @@ export default async function ProvidersPage() {
                 按你的预算、模型需求和风险偏好筛选
               </p>
             </div>
-            <div className="text-sm text-slate-500">
-              共 <span className="font-semibold text-slate-700">{providers.length}</span> 个渠道 ·{" "}
-              <span className="font-semibold text-slate-700">
-                {providers.filter((p) => p.heatScore && p.heatScore > 50).length}
-              </span>{" "}
-              个最近活跃
-            </div>
           </div>
         </div>
       </div>
 
-      {/* 商家列表 */}
-      <ProviderFilterList allProviders={providers} />
+      {/* 商家列表 - 客户端组件，从 API 获取数据 */}
+      <ProviderFilterList />
     </div>
   );
 }
