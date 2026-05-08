@@ -35,6 +35,9 @@ export default async function HomePage() {
                 <Link href="/risk" className="text-slate-600 hover:text-slate-900">
                   风险雷达
                 </Link>
+                <Link href="/dashboard" className="text-slate-600 hover:text-slate-900">
+                  数据大盘
+                </Link>
               </div>
             </div>
             <div className="flex items-center gap-3">

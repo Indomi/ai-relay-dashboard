@@ -49,7 +49,7 @@ export interface Provider {
   responseTime?: number;
   heatScore: number;
   mentionCount: number;
-  priceHistory: PriceHistoryEntry[];
+  priceHistory?: PriceHistoryEntry[];
   sources: Source[];
   firstSeen: string;
   lastUpdated: string;

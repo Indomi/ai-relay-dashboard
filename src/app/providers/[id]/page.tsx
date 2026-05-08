@@ -196,7 +196,7 @@ export default async function ProviderDetailPage({ params }: PageProps) {
           )}
 
           {/* 价格历史 */}
-          {provider.priceHistory.length > 0 && (
+          {provider.priceHistory && provider.priceHistory.length > 0 && (
             <Card className="border-0 shadow-sm">
               <CardHeader className="pb-3">
                 <CardTitle className="text-base font-semibold">

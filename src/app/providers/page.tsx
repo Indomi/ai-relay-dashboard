@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { ProviderFilterList } from "@/components/providers/ProviderFilterList";
 
-export default function ProvidersPage() {
+export default async function ProvidersPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | undefined }>;
+}) {
+  const params = await searchParams;
   return (
     <div className="min-h-screen bg-slate-50">
       {/* 顶部导航 */}
@@ -24,6 +29,9 @@ export default function ProvidersPage() {
                 </Link>
                 <Link href="/risk" className="text-slate-600 hover:text-slate-900">
                   风险雷达
+                </Link>
+                <Link href="/dashboard" className="text-slate-600 hover:text-slate-900">
+                  数据大盘
                 </Link>
               </div>
             </div>
@@ -49,7 +57,7 @@ export default function ProvidersPage() {
       </div>
 
       {/* 商家列表 - 客户端组件，从 API 获取数据 */}
-      <ProviderFilterList />
+      <ProviderFilterList initialParams={params} />
     </div>
   );
 }

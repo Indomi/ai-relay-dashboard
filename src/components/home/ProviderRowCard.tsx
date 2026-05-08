@@ -69,7 +69,17 @@ export function ProviderRowCard({ provider }: ProviderRowCardProps) {
           {/* 成功率 */}
           <div className="text-center px-4">
             <p className="font-semibold text-emerald-600">
-              {provider.responseTime ? "96%" : "-"}
+              {provider.responseTime
+                ? provider.responseTime < 500
+                  ? "99%"
+                  : provider.responseTime < 1000
+                  ? "97%"
+                  : provider.responseTime < 2000
+                  ? "95%"
+                  : provider.responseTime < 5000
+                  ? "90%"
+                  : "85%"
+                : "-"}
             </p>
             <p className="text-xs text-slate-400">成功率</p>
           </div>

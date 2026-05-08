@@ -31,7 +31,7 @@ function dbToProvider(db: any): Provider {
     responseTime: undefined,
     heatScore: db.heatScore || 0,
     mentionCount: db.mentionCount || 0,
-    priceHistory: [],
+    priceHistory: undefined,
     sources: (db.sources || []).map((s: any) => ({
       platform: s.platform,
       title: s.title,
