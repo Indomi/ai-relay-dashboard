@@ -7441,22 +7441,35 @@
     "website": "https://novproxy.com",
     "contact": "",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "Long-Term Static ISP",
+          "price": 3,
+          "period": "month",
+          "features": [
+            "Native IP，独享使用",
+            "无限流量",
+            "适合长期账号维护"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
       "amount": 3,
-      "unit": "条",
-      "description": "新用户可免费兑换3条短效住宅IP"
+      "unit": "IPs",
+      "description": "通过CDK兑换3条短效住宅IP作为免费体验。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -7477,7 +7490,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-09T18:53:30.309Z",
+    "lastUpdated": "2026-05-09T21:44:43.374Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -8766,24 +8779,91 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY/USD"
+      },
+      {
+        "model": "BYOK (用户自定义模型)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "Free",
+          "price": 0,
+          "period": "month",
+          "features": [
+            "50次翻译/月",
+            "JSON Studio",
+            "CLI",
+            "单项目管理",
+            "3个文件版本历史",
+            "支持10+语言",
+            "自定义AI模型 (BYOK)",
+            "永久免费"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Pro",
+          "price": 8.8,
+          "period": "month",
+          "features": [
+            "500次翻译/月",
+            "JSON Studio",
+            "CLI",
+            "10个项目",
+            "支持30+语言",
+            "自定义AI模型 (BYOK)",
+            "媒体资源云同步",
+            "快速翻译队列",
+            "20个文件版本历史",
+            "导出提交报告 (CSV/PDF)",
+            "优先技术支持邮件"
+          ],
+          "autoRenew": true,
+          "refundRule": null
+        },
+        {
+          "name": "Max",
+          "price": 49,
+          "period": "month",
+          "features": [
+            "5000次翻译/月",
+            "JSON Studio",
+            "CLI",
+            "无限项目",
+            "支持100+语言",
+            "自定义AI模型 (BYOK)",
+            "API访问",
+            "媒体资源云同步",
+            "最快翻译队列",
+            "20个文件版本历史",
+            "导出提交报告 (CSV/PDF)",
+            "专属客户成功经理",
+            "自定义功能请求优先响应",
+            "抢先体验新功能"
+          ],
+          "autoRenew": true,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
       "amount": 30,
-      "unit": "translations",
-      "description": "新用户注册送30次翻译额度。"
+      "unit": "次翻译",
+      "description": "新用户注册赠送30次免费翻译额度。"
     },
     "paymentMethods": [
       "积分"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-09T12:59:24.796Z",
-    "heatScore": 44,
-    "mentionCount": 3,
+    "heatScore": 46,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -8796,14 +8876,15 @@
       }
     ],
     "firstSeen": "2026-05-09T12:59:24.796Z",
-    "lastUpdated": "2026-05-09T18:53:30.308Z",
+    "lastUpdated": "2026-05-09T21:44:43.373Z",
     "tags": [
       "JSON翻译",
       "国际化",
       "i18n",
       "开发者工具",
       "CLI"
-    ]
+    ],
+    "rateLimit": "按套餐区分翻译队列速度（免费/Pro/Max）"
   },
   {
     "id": "pmoycp5a4vymlx",
@@ -8819,8 +8900,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T12:59:24.796Z",
-    "heatScore": 32,
-    "mentionCount": 2,
+    "heatScore": 34,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8841,7 +8922,7 @@
       }
     ],
     "firstSeen": "2026-05-09T12:59:24.796Z",
-    "lastUpdated": "2026-05-09T18:53:30.308Z",
+    "lastUpdated": "2026-05-09T21:44:43.374Z",
     "tags": [
       "中转站",
       "个人搭建"
@@ -8857,12 +8938,16 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY",
+      "description": "未提及"
+    },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T12:59:24.797Z",
-    "heatScore": 44,
-    "mentionCount": 3,
+    "heatScore": 46,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -8875,7 +8960,7 @@
       }
     ],
     "firstSeen": "2026-05-09T12:59:24.797Z",
-    "lastUpdated": "2026-05-09T18:53:30.309Z",
+    "lastUpdated": "2026-05-09T21:44:43.374Z",
     "tags": [
       "AI填表",
       "文档解析",
@@ -8890,46 +8975,41 @@
     "website": "https://resvrl.com",
     "contact": "contact@shimmersoft.com",
     "models": [],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
       "plans": [
         {
-          "name": "虚拟机套餐（具体配置未详述）",
-          "price": "未明确",
-          "period": "月/季/年（具体未详述）",
+          "name": "虚拟机套餐",
+          "price": null,
+          "period": "unknown",
           "features": [
-            "2核4G50G配置（示例）",
-            "可使用年付专属8折循环优惠券"
+            "2核4G50G配置",
+            "可用全年/3个月免费使用权或兑换余额"
           ]
         },
         {
-          "name": "容器托管套餐（具体配置未详述）",
-          "price": "未明确",
-          "period": "月/季/年（具体未详述）",
+          "name": "容器托管套餐",
+          "price": null,
+          "period": "unknown",
           "features": [
-            "支持从ClawCloud一键迁移",
-            "全系RAID1磁盘冗余",
-            "免费自动数据备份",
-            "专业DDoS防护",
-            "原生K8s集群支持",
-            "自研AI智能助手",
-            "7×24小时售后"
+            "1个月免费使用权",
+            "可用20元代金券"
           ]
         }
       ]
     },
     "freeQuota": {
-      "amount": 20,
+      "amount": null,
       "unit": "CNY",
-      "description": "新用户注册并参与开业活动（回帖并注册）可免费领取容器托管20元代金券，无门槛使用。"
+      "description": "新用户注册可领取账户专属赠金，可全额抵扣消费；完成新用户注册可免费领取容器托管20元代金券。"
     },
     "paymentMethods": [
-      "未明确"
+      "unknown"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8947,10 +9027,18 @@
         "author": "<name>Viaxdero</name>\n\t\t<uri>https://www.v2ex.com/member/Viaxdero</uri>",
         "publishedAt": "2026-05-09T17:39:11.000Z",
         "fetchedAt": "2026-05-09T18:53:30.306Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211564#reply7",
+        "title": "[云计算] 爪云平替? RESVRL 容器托管重磅上线！支持 ClawCloud 一键迁移！",
+        "author": "<name>Viaxdero</name>\n\t\t<uri>https://www.v2ex.com/member/Viaxdero</uri>",
+        "publishedAt": "2026-05-09T17:39:11.000Z",
+        "fetchedAt": "2026-05-09T21:44:43.371Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-05-09T18:53:30.306Z",
+    "lastUpdated": "2026-05-09T21:44:43.371Z",
     "tags": [
       "容器托管",
       "爪云平替",
@@ -8969,16 +9057,12 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 0,
-      "unit": "unknown",
-      "description": "限时免费"
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 17,
-    "mentionCount": 2,
+    "heatScore": 19,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8991,7 +9075,7 @@
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-05-09T18:53:30.307Z",
+    "lastUpdated": "2026-05-09T21:44:43.371Z",
     "tags": [
       "统计工具",
       "token使用",
@@ -9019,9 +9103,9 @@
         {
           "name": "套餐",
           "price": null,
-          "period": null,
+          "period": "month",
           "features": [
-            "套餐低至0.1倍率"
+            "低至0.1倍率"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -9035,11 +9119,11 @@
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": null,
+    "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -9057,10 +9141,18 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-09T18:46:26.000Z",
         "fetchedAt": "2026-05-09T18:53:30.307Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211550#reply24",
+        "title": "[推广] HyperAPI 中转站继续送福利，留邮箱发 10$兑换码",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-09T20:01:33.000Z",
+        "fetchedAt": "2026-05-09T21:44:43.372Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-09T18:53:30.307Z",
+    "lastUpdated": "2026-05-09T21:44:43.372Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -9080,15 +9172,15 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 1,
+      "amount": 0,
       "unit": "CNY",
-      "description": "免费开源软件"
+      "description": "免费开源软件，无付费内容。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -9101,12 +9193,13 @@
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-09T15:54:08.087Z",
+    "lastUpdated": "2026-05-09T21:44:43.373Z",
     "tags": [
       "剪贴板管理",
       "AI Agent",
       "MCP",
-      "开源"
+      "开源",
+      "AI Agent集成"
     ]
   },
   {
