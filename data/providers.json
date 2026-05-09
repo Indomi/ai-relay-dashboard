@@ -5640,8 +5640,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.126Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -5662,7 +5662,7 @@
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.126Z",
-    "lastUpdated": "2026-05-09T10:13:29.596Z",
+    "lastUpdated": "2026-05-09T12:59:24.799Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -7291,8 +7291,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 45,
-    "mentionCount": 6,
+    "heatScore": 47,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -7329,7 +7329,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-09T10:13:29.596Z",
+    "lastUpdated": "2026-05-09T12:59:24.799Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -7421,63 +7421,22 @@
     "website": "https://novproxy.com",
     "contact": "",
     "models": [],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "Long-Term Static ISP",
-          "price": 3,
-          "period": "month",
-          "features": [
-            "原生IP，独享使用",
-            "高质量ASN提供商",
-            "无限流量",
-            "连接更稳定"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "Unlimited Traffic-Bandwidth",
-          "price": 38.33,
-          "period": "day",
-          "features": [
-            "按带宽销售，专用服务器，可定制带宽",
-            "无限流量和IP，多线程高并发",
-            "支持粘性会话和轮换会话，最长120分钟"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "Unlimited Traffic-Port",
-          "price": 0.3,
-          "period": "day",
-          "features": [
-            "按端口销售，端口数量可定制",
-            "无限流量和IP，多端口使用",
-            "自动切换IP，IP可使用30分钟"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 3,
-      "unit": "IP",
-      "description": "新用户可通过CDK兑换3条短效住宅IP进行免费体验。"
+      "unit": "条",
+      "description": "新用户可通过CDK免费兑换3条短效住宅IP。"
     },
-    "paymentMethods": [
-      "支付宝",
-      "加密货币"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -7498,7 +7457,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-09T10:13:29.593Z",
+    "lastUpdated": "2026-05-09T12:59:24.798Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -8607,8 +8566,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T10:13:29.594Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -8618,10 +8577,18 @@
         "author": "<name>onecookie</name>\n\t\t<uri>https://www.v2ex.com/member/onecookie</uri>",
         "publishedAt": "2026-05-09T09:48:15.000Z",
         "fetchedAt": "2026-05-09T10:13:29.594Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211516#reply11",
+        "title": "[分享创造] [首发送码] Redock 专为 ClaudeCode/Codex 等 Agent 开发流适配的手机终端 (iOS/ iPad )",
+        "author": "<name>onecookie</name>\n\t\t<uri>https://www.v2ex.com/member/onecookie</uri>",
+        "publishedAt": "2026-05-09T10:47:27.000Z",
+        "fetchedAt": "2026-05-09T12:59:24.798Z"
       }
     ],
     "firstSeen": "2026-05-09T10:13:29.594Z",
-    "lastUpdated": "2026-05-09T10:13:29.594Z",
+    "lastUpdated": "2026-05-09T12:59:24.798Z",
     "tags": [
       "AI开发工具",
       "手机终端",
@@ -8638,20 +8605,20 @@
     "models": [
       {
         "model": "amzProductDetail",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY/USD"
       },
       {
         "model": "amzBestSellers",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY/USD"
       },
       {
         "model": "amzReview",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY/USD"
       }
     ],
@@ -8667,8 +8634,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T10:13:29.595Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -8681,7 +8648,7 @@
       }
     ],
     "firstSeen": "2026-05-09T10:13:29.595Z",
-    "lastUpdated": "2026-05-09T10:13:29.595Z",
+    "lastUpdated": "2026-05-09T12:59:24.799Z",
     "tags": [
       "Amazon数据采集",
       "API服务",
@@ -8759,6 +8726,115 @@
       "LLM代理",
       "统一接口",
       "支出跟踪"
+    ]
+  },
+  {
+    "id": "pmoycp5a4zapi3",
+    "name": "JsonTranslate.org",
+    "website": "https://www.youtube.com/watch?si=aQ_8kp9e2lGlF39k&v=1Nf2Y_WdP4s&feature=youtu.be",
+    "contact": "",
+    "models": [],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 30,
+      "unit": "次",
+      "description": "网站内置AI翻译功能，注册后赠送30次翻译额度。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-09T12:59:24.796Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211528#reply0",
+        "title": "[分享创造] 自造轮子分享， ai 国际化 json translate 小工具",
+        "author": "<name>jiames1969</name>\n\t\t<uri>https://www.v2ex.com/member/jiames1969</uri>",
+        "publishedAt": "2026-05-09T10:34:55.000Z",
+        "fetchedAt": "2026-05-09T12:59:24.796Z"
+      }
+    ],
+    "firstSeen": "2026-05-09T12:59:24.796Z",
+    "lastUpdated": "2026-05-09T12:59:24.796Z",
+    "tags": [
+      "JSON翻译",
+      "国际化",
+      "i18n",
+      "开发者工具",
+      "CLI"
+    ]
+  },
+  {
+    "id": "pmoycp5a4vymlx",
+    "name": "passionevery.art",
+    "website": "https://passionevery.art/",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-09T12:59:24.796Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211527#reply0",
+        "title": "[程序员] 自己搭建的中转站",
+        "author": "<name>maky</name>\n\t\t<uri>https://www.v2ex.com/member/maky</uri>",
+        "publishedAt": "2026-05-09T10:35:48.000Z",
+        "fetchedAt": "2026-05-09T12:59:24.796Z"
+      }
+    ],
+    "firstSeen": "2026-05-09T12:59:24.796Z",
+    "lastUpdated": "2026-05-09T12:59:24.796Z",
+    "tags": [
+      "中转站"
+    ]
+  },
+  {
+    "id": "pmoycp5a5v1thw",
+    "name": "SnapFill",
+    "website": "https://www.gosnapfill.cn/landing?utm_source=v2ex",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-09T12:59:24.797Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211526#reply0",
+        "title": "[Claude] Claude 也开始做这种通用的 office agent 了。。这不是抄的 Kimi?",
+        "author": "<name>cxd8190102</name>\n\t\t<uri>https://www.v2ex.com/member/cxd8190102</uri>",
+        "publishedAt": "2026-05-09T10:34:07.000Z",
+        "fetchedAt": "2026-05-09T12:59:24.797Z"
+      }
+    ],
+    "firstSeen": "2026-05-09T12:59:24.797Z",
+    "lastUpdated": "2026-05-09T12:59:24.797Z",
+    "tags": [
+      "AI填表",
+      "文档解析",
+      "办公自动化"
     ]
   }
 ]
