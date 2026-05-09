@@ -7448,15 +7448,15 @@
     "freeQuota": {
       "amount": 3,
       "unit": "条",
-      "description": "免费兑换码包含 3 条短效住宅 IP。"
+      "description": "新用户可免费兑换3条短效住宅IP"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 53,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -7477,7 +7477,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-09T15:54:08.089Z",
+    "lastUpdated": "2026-05-09T18:53:30.309Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -8562,16 +8562,16 @@
     "subscription": {
       "plans": [
         {
-          "name": "PRO 版本（一年解锁）",
-          "price": "",
+          "name": "PRO版（一年解锁）",
+          "price": null,
           "period": "年",
           "features": [
             "解锁全部功能"
           ]
         },
         {
-          "name": "PRO 版本（一个月解锁）",
-          "price": "",
+          "name": "PRO版（一个月解锁）",
+          "price": null,
           "period": "月",
           "features": [
             "解锁全部功能"
@@ -8580,15 +8580,15 @@
       ]
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "CNY",
-      "description": "免费版可满足绝大多数场景"
+      "amount": null,
+      "unit": null,
+      "description": "提供免费版，可满足绝大多数场景"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T10:13:29.594Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8609,7 +8609,7 @@
       }
     ],
     "firstSeen": "2026-05-09T10:13:29.594Z",
-    "lastUpdated": "2026-05-09T12:59:24.798Z",
+    "lastUpdated": "2026-05-09T18:53:30.309Z",
     "tags": [
       "AI开发工具",
       "手机终端",
@@ -8757,14 +8757,14 @@
     "models": [
       {
         "model": "GPT-5.4 mini",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY/USD"
       },
       {
         "model": "Gemini 2.5 Flash",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY/USD"
       }
     ],
@@ -8774,14 +8774,16 @@
     },
     "freeQuota": {
       "amount": 30,
-      "unit": "次",
-      "description": "新用户注册后赠送30次翻译，通过留下邮箱可额外获得100次翻译"
+      "unit": "translations",
+      "description": "新用户注册送30次翻译额度。"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "积分"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-09T12:59:24.796Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8794,7 +8796,7 @@
       }
     ],
     "firstSeen": "2026-05-09T12:59:24.796Z",
-    "lastUpdated": "2026-05-09T15:54:08.088Z",
+    "lastUpdated": "2026-05-09T18:53:30.308Z",
     "tags": [
       "JSON翻译",
       "国际化",
@@ -8817,8 +8819,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T12:59:24.796Z",
-    "heatScore": 30,
-    "mentionCount": 1,
+    "heatScore": 32,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -8828,12 +8830,21 @@
         "author": "<name>maky</name>\n\t\t<uri>https://www.v2ex.com/member/maky</uri>",
         "publishedAt": "2026-05-09T10:35:48.000Z",
         "fetchedAt": "2026-05-09T12:59:24.796Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211527#reply1",
+        "title": "[程序员] 自己搭建的中转站",
+        "author": "<name>maky</name>\n\t\t<uri>https://www.v2ex.com/member/maky</uri>",
+        "publishedAt": "2026-05-09T11:35:48.000Z",
+        "fetchedAt": "2026-05-09T18:53:30.308Z"
       }
     ],
     "firstSeen": "2026-05-09T12:59:24.796Z",
-    "lastUpdated": "2026-05-09T12:59:24.796Z",
+    "lastUpdated": "2026-05-09T18:53:30.308Z",
     "tags": [
-      "中转站"
+      "中转站",
+      "个人搭建"
     ]
   },
   {
@@ -8850,8 +8861,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T12:59:24.797Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8864,7 +8875,7 @@
       }
     ],
     "firstSeen": "2026-05-09T12:59:24.797Z",
-    "lastUpdated": "2026-05-09T15:54:08.089Z",
+    "lastUpdated": "2026-05-09T18:53:30.309Z",
     "tags": [
       "AI填表",
       "文档解析",
@@ -8879,20 +8890,46 @@
     "website": "https://resvrl.com",
     "contact": "contact@shimmersoft.com",
     "models": [],
-    "billingType": "subscription",
+    "billingType": "hybrid",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "虚拟机套餐（具体配置未详述）",
+          "price": "未明确",
+          "period": "月/季/年（具体未详述）",
+          "features": [
+            "2核4G50G配置（示例）",
+            "可使用年付专属8折循环优惠券"
+          ]
+        },
+        {
+          "name": "容器托管套餐（具体配置未详述）",
+          "price": "未明确",
+          "period": "月/季/年（具体未详述）",
+          "features": [
+            "支持从ClawCloud一键迁移",
+            "全系RAID1磁盘冗余",
+            "免费自动数据备份",
+            "专业DDoS防护",
+            "原生K8s集群支持",
+            "自研AI智能助手",
+            "7×24小时售后"
+          ]
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
+      "amount": 20,
       "unit": "CNY",
-      "description": "未明确提及免费额度，但新用户注册可获赠金（无套路可全额抵扣消费），具体金额需联系管理员。"
+      "description": "新用户注册并参与开业活动（回帖并注册）可免费领取容器托管20元代金券，无门槛使用。"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未明确"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -8902,10 +8939,18 @@
         "author": "<name>Viaxdero</name>\n\t\t<uri>https://www.v2ex.com/member/Viaxdero</uri>",
         "publishedAt": "2026-05-09T15:49:19.000Z",
         "fetchedAt": "2026-05-09T15:54:08.086Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211564#reply6",
+        "title": "[云计算] 爪云平替? RESVRL 容器托管重磅上线！支持 ClawCloud 一键迁移！",
+        "author": "<name>Viaxdero</name>\n\t\t<uri>https://www.v2ex.com/member/Viaxdero</uri>",
+        "publishedAt": "2026-05-09T17:39:11.000Z",
+        "fetchedAt": "2026-05-09T18:53:30.306Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-05-09T15:54:08.086Z",
+    "lastUpdated": "2026-05-09T18:53:30.306Z",
     "tags": [
       "容器托管",
       "爪云平替",
@@ -8927,13 +8972,13 @@
     "freeQuota": {
       "amount": 0,
       "unit": "unknown",
-      "description": "未提及具体免费额度，仅提到限时免费"
+      "description": "限时免费"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -8946,11 +8991,13 @@
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-05-09T15:54:08.086Z",
+    "lastUpdated": "2026-05-09T18:53:30.307Z",
     "tags": [
       "统计工具",
       "token使用",
-      "dashboard"
+      "dashboard",
+      "token统计",
+      "coding-time"
     ]
   },
   {
@@ -8961,12 +9008,12 @@
     "models": [
       {
         "model": "gpt-5.5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": [
         {
@@ -8984,15 +9031,15 @@
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "注册即有5$额度"
+      "description": "新用户注册送$5额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -9002,14 +9049,24 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-09T15:11:38.000Z",
         "fetchedAt": "2026-05-09T15:54:08.087Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211550#reply23",
+        "title": "[推广] HyperAPI 中转站继续送福利，留邮箱发 10$兑换码",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-09T18:46:26.000Z",
+        "fetchedAt": "2026-05-09T18:53:30.307Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-09T15:54:08.087Z",
+    "lastUpdated": "2026-05-09T18:53:30.307Z",
     "tags": [
       "中转站",
       "优惠活动",
-      "新用户福利"
+      "新用户福利",
+      "API中转",
+      "GPT-5.5"
     ]
   },
   {
