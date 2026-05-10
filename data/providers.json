@@ -905,7 +905,7 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户加入社群即送10美元额度用于测试服务质量。"
+      "description": "新用户加入社群即送10美元额度"
     },
     "paymentMethods": [
       "支付宝",
@@ -916,8 +916,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
-    "heatScore": 79,
-    "mentionCount": 18,
+    "heatScore": 81,
+    "mentionCount": 19,
     "priceHistory": [],
     "sources": [
       {
@@ -994,7 +994,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-10T08:05:48.484Z",
+    "lastUpdated": "2026-05-10T10:19:51.009Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -2391,16 +2391,17 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 1,
-      "unit": "USD"
+      "amount": 10,
+      "unit": "CNY",
+      "description": "注册后留邮箱赠送¥10试用金"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": null,
+    "rateLimit": "价格不固定，按动态路由到的上游价格计费",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.894Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -2410,10 +2411,18 @@
         "author": "milkleeeeee",
         "publishedAt": "2026-05-06T04:25:09.000Z",
         "fetchedAt": "2026-05-06T19:40:07.894Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211647#reply4",
+        "title": "[推广] 稳定性 99.9% 的中转站 DevRouter.ai 送福利，留邮箱送 ¥10",
+        "author": "<name>milkleeeeee</name>\n\t\t<uri>https://www.v2ex.com/member/milkleeeeee</uri>",
+        "publishedAt": "2026-05-10T10:10:26.000Z",
+        "fetchedAt": "2026-05-10T10:19:51.006Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.894Z",
-    "lastUpdated": "2026-05-06T21:51:54.027Z",
+    "lastUpdated": "2026-05-10T10:19:51.006Z",
     "tags": [
       "API网关",
       "多提供商路由",
@@ -5913,6 +5922,12 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "gpt-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "hybrid",
@@ -5953,7 +5968,7 @@
     "freeQuota": {
       "amount": 20,
       "unit": "USD",
-      "description": "新用户注册后扫码进群可领取20美元体验额度。"
+      "description": "新用户注册领20刀体验"
     },
     "paymentMethods": [
       "自助充值"
@@ -5962,8 +5977,8 @@
     "rateLimit": "每天有额度限制（如周卡每天50刀）",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.119Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 53,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -5981,10 +5996,18 @@
         "author": "<name>darbra</name>\n\t\t<uri>https://www.v2ex.com/member/darbra</uri>",
         "publishedAt": "2026-05-10T07:13:11.000Z",
         "fetchedAt": "2026-05-10T08:05:48.481Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211626#reply2",
+        "title": "[推广] gpt 中转站，新用户 20 刀体验",
+        "author": "<name>darbra</name>\n\t\t<uri>https://www.v2ex.com/member/darbra</uri>",
+        "publishedAt": "2026-05-10T07:13:11.000Z",
+        "fetchedAt": "2026-05-10T10:19:51.007Z"
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.119Z",
-    "lastUpdated": "2026-05-10T08:05:48.481Z",
+    "lastUpdated": "2026-05-10T10:19:51.007Z",
     "tags": [
       "Codex中转",
       "API代理",
@@ -7773,8 +7796,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 51,
-    "mentionCount": 9,
+    "heatScore": 53,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -7819,7 +7842,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-10T08:05:48.482Z",
+    "lastUpdated": "2026-05-10T10:19:51.008Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -9904,8 +9927,8 @@
     "models": [
       {
         "model": "GPT-5.5",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.15,
+        "outputPrice": 0.15,
         "currency": "CNY"
       },
       {
@@ -9947,13 +9970,13 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "前1000名注册即送10U"
+      "description": "新用户前1000名注册即送10U"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.614Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -9979,10 +10002,18 @@
         "author": "<name>ellye</name>\n\t\t<uri>https://www.v2ex.com/member/ellye</uri>",
         "publishedAt": "2026-05-10T08:01:39.000Z",
         "fetchedAt": "2026-05-10T08:05:48.483Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211616#reply3",
+        "title": "[推广] Avemujica API 中转站",
+        "author": "<name>ellye</name>\n\t\t<uri>https://www.v2ex.com/member/ellye</uri>",
+        "publishedAt": "2026-05-10T08:01:39.000Z",
+        "fetchedAt": "2026-05-10T10:19:51.009Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.614Z",
-    "lastUpdated": "2026-05-10T08:05:48.483Z",
+    "lastUpdated": "2026-05-10T10:19:51.009Z",
     "tags": [
       "API中转",
       "OpenAI",
@@ -10147,21 +10178,38 @@
     "name": "unknown",
     "website": "unknown",
     "contact": "unknown",
-    "models": [],
-    "billingType": "unknown",
+    "models": [
+      {
+        "model": "ChatGPT Team",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "ChatGPT Team (两个车位)",
+          "price": 50,
+          "period": "月",
+          "features": [
+            "平均每人每月50人民币",
+            "可使用英国优惠码获得48个月半价"
+          ]
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
+      "amount": null,
       "unit": "unknown",
-      "description": "未提及"
+      "description": "unknown"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.628Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -10171,15 +10219,24 @@
         "author": "312ybj",
         "publishedAt": "2026-05-07T02:51:57.000Z",
         "fetchedAt": "2026-05-10T06:05:59.628Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211633#reply0",
+        "title": "[推广] 全网最低！抓紧！ ChatGPT Team 官方计划实测开通成功：💲15/人，两个车位平均 1 人每个月 50 人民币， 48 个月半价，英国 promo 码爆破！",
+        "author": "<name>pks</name>\n\t\t<uri>https://www.v2ex.com/member/pks</uri>",
+        "publishedAt": "2026-05-10T03:25:38.000Z",
+        "fetchedAt": "2026-05-10T10:19:51.007Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.628Z",
-    "lastUpdated": "2026-05-10T06:05:59.628Z",
+    "lastUpdated": "2026-05-10T10:19:51.007Z",
     "tags": [
       "独立开发者",
       "AI中转站",
       "经验分享",
-      "行业现状分析"
+      "行业现状分析",
+      "ChatGPT Team"
     ]
   },
   {
@@ -10203,8 +10260,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.630Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -10222,15 +10279,24 @@
         "author": "<name>cjtree04</name>\n\t\t<uri>https://www.v2ex.com/member/cjtree04</uri>",
         "publishedAt": "2026-05-10T06:03:15.000Z",
         "fetchedAt": "2026-05-10T06:08:12.033Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211621#reply2",
+        "title": "[分享创造] 做了个中转站检测工具，测了我自己建的站，有 1 项 未通过",
+        "author": "<name>cjtree04</name>\n\t\t<uri>https://www.v2ex.com/member/cjtree04</uri>",
+        "publishedAt": "2026-05-10T07:15:03.000Z",
+        "fetchedAt": "2026-05-10T10:19:51.008Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.630Z",
-    "lastUpdated": "2026-05-10T06:08:12.033Z",
+    "lastUpdated": "2026-05-10T10:19:51.008Z",
     "tags": [
       "中转站",
       "API代理",
       "模型检测",
-      "AI API"
+      "AI API",
+      "检测示例"
     ]
   },
   {
@@ -10243,12 +10309,16 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": null,
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY",
+      "description": "完全免费使用"
+    },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:08:12.034Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -10261,13 +10331,114 @@
       }
     ],
     "firstSeen": "2026-05-10T06:08:12.034Z",
-    "lastUpdated": "2026-05-10T06:08:12.034Z",
+    "lastUpdated": "2026-05-10T10:19:51.009Z",
     "tags": [
       "开源",
       "免费",
       "开发工具",
       "MCP",
       "Skill"
+    ]
+  },
+  {
+    "id": "pmozmfsrilrpja",
+    "name": "OpenMarsh",
+    "website": "https://openmarsh.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "Gemini Pro 1-Year Membership",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Claude MAX 20X Access Rental",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Claude MAX 20X Direct Top-Up Account",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT Plus Southeast Asia 1-Month Free Trial Account",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Claude Pro Access",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "ChatGPT Plus Vietnam",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-PRO",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Perplexity Pro Search Access",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Zapier Automation Access",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "ChatGPT Plus Daily-Use Account",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [
+      "USDT"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-10T10:19:51.006Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211658#reply0",
+        "title": "[分享创造] AI 访问权凭证担保交易平台，大虾们给点意见。",
+        "author": "<name>rainbit</name>\n\t\t<uri>https://www.v2ex.com/member/rainbit</uri>",
+        "publishedAt": "2026-05-10T10:08:29.000Z",
+        "fetchedAt": "2026-05-10T10:19:51.006Z"
+      }
+    ],
+    "firstSeen": "2026-05-10T10:19:51.006Z",
+    "lastUpdated": "2026-05-10T10:19:51.006Z",
+    "tags": [
+      "凭证交易",
+      "账号买卖",
+      "租赁",
+      "担保交易"
     ]
   }
 ]
