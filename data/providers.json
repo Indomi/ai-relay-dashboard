@@ -2393,15 +2393,15 @@
     "freeQuota": {
       "amount": 10,
       "unit": "CNY",
-      "description": "注册后留邮箱赠送¥10试用金"
+      "description": "新用户注册后留邮箱，赠送¥10试用金"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "价格不固定，按动态路由到的上游价格计费",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.894Z",
-    "heatScore": 55,
-    "mentionCount": 6,
+    "heatScore": 59,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -2422,7 +2422,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.894Z",
-    "lastUpdated": "2026-05-10T10:19:51.006Z",
+    "lastUpdated": "2026-05-10T12:59:28.096Z",
     "tags": [
       "API网关",
       "多提供商路由",
@@ -5925,60 +5925,27 @@
       },
       {
         "model": "gpt-5.5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "周卡",
-          "price": 20,
-          "period": "week",
-          "features": [
-            "每天50刀额度"
-          ],
-          "autoRenew": false,
-          "refundRule": "能退的未消耗额度会正常处理"
-        },
-        {
-          "name": "月卡",
-          "price": 50,
-          "period": "month",
-          "features": [
-            "每天100刀额度"
-          ],
-          "autoRenew": false,
-          "refundRule": "能退的未消耗额度会正常处理"
-        },
-        {
-          "name": "Plus月卡",
-          "price": 88,
-          "period": "month",
-          "features": [
-            "每天200刀额度"
-          ],
-          "autoRenew": false,
-          "refundRule": "能退的未消耗额度会正常处理"
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 20,
       "unit": "USD",
-      "description": "新用户注册领20刀体验"
+      "description": "新用户注册后扫码进群可领取20美元体验额度。"
     },
-    "paymentMethods": [
-      "自助充值"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "每天有额度限制（如周卡每天50刀）",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.119Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -6007,7 +5974,7 @@
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.119Z",
-    "lastUpdated": "2026-05-10T10:19:51.007Z",
+    "lastUpdated": "2026-05-10T12:59:28.097Z",
     "tags": [
       "Codex中转",
       "API代理",
@@ -6593,9 +6560,21 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "ChatGPT Team",
+          "price": 15.21,
+          "period": "月",
+          "features": [
+            "ChatGPT Team官方计划",
+            "两个车位",
+            "平均每人每月约50人民币",
+            "可使用英国优惠码获得48个月半价"
+          ]
+        }
+      ]
     },
     "freeQuota": {
       "amount": null,
@@ -6605,8 +6584,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
-    "heatScore": 35,
-    "mentionCount": 11,
+    "heatScore": 37,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -6640,10 +6619,18 @@
         "author": "zz177060",
         "publishedAt": "2026-04-28T11:27:31.000Z",
         "fetchedAt": "2026-05-10T06:05:59.625Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211633#reply0",
+        "title": "[推广] 全网最低！抓紧！ ChatGPT Team 官方计划实测开通成功：💲15/人，两个车位平均 1 人每个月 50 人民币， 48 个月半价，英国 promo 码爆破！",
+        "author": "<name>pks</name>\n\t\t<uri>https://www.v2ex.com/member/pks</uri>",
+        "publishedAt": "2026-05-10T03:25:38.000Z",
+        "fetchedAt": "2026-05-10T12:59:28.097Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-10T06:05:59.625Z",
+    "lastUpdated": "2026-05-10T12:59:28.097Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -7785,19 +7772,23 @@
     "website": "www.lingducloud.com",
     "contact": "tg:cloudcup",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY",
+      "description": "未明确提及"
+    },
     "paymentMethods": [
       "USDT",
       "支付宝"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 53,
-    "mentionCount": 10,
+    "heatScore": 55,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -7842,7 +7833,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-10T10:19:51.008Z",
+    "lastUpdated": "2026-05-10T12:59:28.097Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -10252,16 +10243,20 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": null,
+      "unit": "USD",
+      "description": "未提及"
+    },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.630Z",
-    "heatScore": 44,
-    "mentionCount": 3,
+    "heatScore": 46,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -10290,7 +10285,7 @@
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.630Z",
-    "lastUpdated": "2026-05-10T10:19:51.008Z",
+    "lastUpdated": "2026-05-10T12:59:28.097Z",
     "tags": [
       "中转站",
       "API代理",
@@ -10407,20 +10402,140 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "Gemini Pro 1-Year Membership",
+          "price": 10,
+          "period": "year",
+          "features": [
+            "Gmail账号",
+            "绑定手机号",
+            "1年会员",
+            "1个月内问题可更换新账号"
+          ],
+          "autoRenew": true,
+          "refundRule": "提供1个月内问题更换服务，未明确提及退款"
+        },
+        {
+          "name": "Claude MAX 20X Access Rental",
+          "price": 2,
+          "period": "day",
+          "features": [
+            "每日2u额度",
+            "邮箱+验证码或设备码登录",
+            "最少租用5天"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Claude MAX 20X Direct Top-Up Account",
+          "price": 90,
+          "period": "month",
+          "features": [
+            "尼日利亚独家账号",
+            "真人KYC",
+            "封号包换",
+            "每月直充"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "GPT Plus Southeast Asia 1-Month Free Trial Account",
+          "price": 0.5,
+          "period": "month",
+          "features": [
+            "东南亚区1个月免费试用",
+            "仅保证首次登录",
+            "登录失败免费更换"
+          ],
+          "autoRenew": false,
+          "refundRule": "登录失败免费更换"
+        },
+        {
+          "name": "Claude Pro Access",
+          "price": 12,
+          "period": "month",
+          "features": [
+            "美国区账号",
+            "支持网页登录",
+            "支付后自动发送取货链接"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "ChatGPT Plus Vietnam",
+          "price": 0.75,
+          "period": "month",
+          "features": [
+            "越南区订阅",
+            "有效期1个月"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "GPT-PRO",
+          "price": 20,
+          "period": "month",
+          "features": [
+            "印度库存",
+            "质量数量保证",
+            "可订阅充值"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Perplexity Pro Search Access",
+          "price": 9.9,
+          "period": "month",
+          "features": [
+            "增强搜索与研究分析权限"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Zapier Automation Access",
+          "price": 15.5,
+          "period": "month",
+          "features": [
+            "工作流自动化访问权限",
+            "适用于表单、通知、跨平台任务"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "ChatGPT Plus Daily-Use Account",
+          "price": 0.6,
+          "period": "day",
+          "features": [
+            "每日使用高级账号",
+            "适用于中转站图片生成",
+            "仅保证首次登录",
+            "每日稳定供应2000个"
+          ],
+          "autoRenew": false,
+          "refundRule": "仅保证首次登录，首次登录失败免费更换"
+        }
+      ]
     },
     "freeQuota": null,
     "paymentMethods": [
-      "USDT"
+      "USDT (NOWPayments)"
     ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T10:19:51.006Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -10433,12 +10548,54 @@
       }
     ],
     "firstSeen": "2026-05-10T10:19:51.006Z",
-    "lastUpdated": "2026-05-10T10:19:51.006Z",
+    "lastUpdated": "2026-05-10T12:59:28.096Z",
     "tags": [
       "凭证交易",
       "账号买卖",
       "租赁",
-      "担保交易"
+      "担保交易",
+      "账号交易"
+    ]
+  },
+  {
+    "id": "pmozs52hrd4rb8",
+    "name": "FK Claude",
+    "website": "https://www.fkclaude.xyz/",
+    "contact": "",
+    "models": [
+      {
+        "model": "Claude",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-10T12:59:28.095Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211670#reply2",
+        "title": "[推广] FK Claude 专注干爆 Claude 的中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-10T12:31:49.000Z",
+        "fetchedAt": "2026-05-10T12:59:28.095Z"
+      }
+    ],
+    "firstSeen": "2026-05-10T12:59:28.095Z",
+    "lastUpdated": "2026-05-10T12:59:28.095Z",
+    "tags": [
+      "Claude",
+      "中转",
+      "拼车/共享"
     ]
   }
 ]
