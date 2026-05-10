@@ -19,8 +19,8 @@
       },
       {
         "model": "GPT全家桶",
-        "inputPrice": 1111.11,
-        "outputPrice": 1111.11,
+        "inputPrice": 0.08,
+        "outputPrice": 0.08,
         "currency": "CNY"
       },
       {
@@ -35,17 +35,17 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "",
-      "description": ""
+      "amount": 1000,
+      "unit": "USD",
+      "description": "新用户注册后联系客服可免费加入一个共享1000美元额度的分组。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "日/周不限",
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
-    "heatScore": 75,
-    "mentionCount": 16,
+    "heatScore": 77,
+    "mentionCount": 17,
     "priceHistory": [],
     "sources": [
       {
@@ -119,10 +119,18 @@
         "author": "",
         "publishedAt": "2026-05-10T06:09:10.071Z",
         "fetchedAt": "2026-05-10T06:16:17.869Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211578#reply82",
+        "title": "[推广] 自用 Codex 站",
+        "author": "<name>yang1395592280</name>\n\t\t<uri>https://www.v2ex.com/member/yang1395592280</uri>",
+        "publishedAt": "2026-05-10T08:00:51.000Z",
+        "fetchedAt": "2026-05-10T08:05:48.485Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-10T06:16:17.872Z",
+    "lastUpdated": "2026-05-10T08:05:48.485Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -882,6 +890,12 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "USD"
+      },
+      {
+        "model": "Gemini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -889,22 +903,21 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 5,
+      "amount": 10,
       "unit": "USD",
-      "description": "新用户加入社群即送 $5 额度"
+      "description": "新用户加入社群即送10美元额度用于测试服务质量。"
     },
     "paymentMethods": [
       "支付宝",
       "微信",
-      "USDT",
       "对公转账"
     ],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
-    "heatScore": 77,
-    "mentionCount": 17,
+    "heatScore": 79,
+    "mentionCount": 18,
     "priceHistory": [],
     "sources": [
       {
@@ -981,7 +994,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-10T06:08:12.034Z",
+    "lastUpdated": "2026-05-10T08:05:48.484Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -2052,8 +2065,8 @@
     "models": [
       {
         "model": "codex-gpt-image-2",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.01,
+        "outputPrice": 0.01,
         "currency": "CNY"
       },
       {
@@ -2070,15 +2083,15 @@
     "freeQuota": {
       "amount": 0.2,
       "unit": "USD",
-      "description": "新用户注册赠送"
+      "description": "注册赠送 0.2 美元"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "GPT 0.05x 的倍率 可能随时上涨",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 87,
-    "mentionCount": 27,
+    "heatScore": 89,
+    "mentionCount": 28,
     "priceHistory": [],
     "sources": [
       {
@@ -2123,7 +2136,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-10T06:08:12.035Z",
+    "lastUpdated": "2026-05-10T08:05:48.485Z",
     "tags": [
       "GPT",
       "图像生成",
@@ -5894,6 +5907,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "gpt5.4",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
       }
     ],
     "billingType": "hybrid",
@@ -5934,7 +5953,7 @@
     "freeQuota": {
       "amount": 20,
       "unit": "USD",
-      "description": "V友专属兑换码，加群后私聊群主领取"
+      "description": "新用户注册后扫码进群可领取20美元体验额度。"
     },
     "paymentMethods": [
       "自助充值"
@@ -5943,8 +5962,8 @@
     "rateLimit": "每天有额度限制（如周卡每天50刀）",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.119Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -5954,10 +5973,18 @@
         "author": "darbra",
         "publishedAt": "2026-05-07T05:05:10.000Z",
         "fetchedAt": "2026-05-07T13:36:39.119Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211626#reply1",
+        "title": "[推广] gpt 中转站，新用户 20 刀体验",
+        "author": "<name>darbra</name>\n\t\t<uri>https://www.v2ex.com/member/darbra</uri>",
+        "publishedAt": "2026-05-10T07:13:11.000Z",
+        "fetchedAt": "2026-05-10T08:05:48.481Z"
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.119Z",
-    "lastUpdated": "2026-05-10T06:05:59.623Z",
+    "lastUpdated": "2026-05-10T08:05:48.481Z",
     "tags": [
       "Codex中转",
       "API代理",
@@ -7746,8 +7773,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 49,
-    "mentionCount": 8,
+    "heatScore": 51,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -7792,7 +7819,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-10T06:08:12.032Z",
+    "lastUpdated": "2026-05-10T08:05:48.482Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -8931,25 +8958,25 @@
     "website": "https://partner.bybit.com/b/146364",
     "contact": "Telegram: @fgvbt123",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": 10,
+      "amount": 120,
       "unit": "USD",
-      "description": "新人专属奖励，充值100U即送10U。"
+      "description": "新人专属奖励：充100U送10U（共110U）加上10%消费返现最高110U，总计120U。"
     },
     "paymentMethods": [
-      "微信",
+      "微信支付",
       "支付宝",
       "Apple Pay",
       "Google Pay"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-09T07:41:46.423Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -8970,7 +8997,7 @@
       }
     ],
     "firstSeen": "2026-05-09T07:41:46.423Z",
-    "lastUpdated": "2026-05-10T06:08:12.034Z",
+    "lastUpdated": "2026-05-10T08:05:48.484Z",
     "tags": [
       "U卡",
       "支付",
@@ -9883,8 +9910,8 @@
       },
       {
         "model": "GPT (fast)",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -9898,41 +9925,35 @@
     "subscription": {
       "plans": [
         {
-          "name": "1天",
+          "name": "1天套餐",
           "price": null,
           "period": "天",
-          "features": [
-            "按量付费，价格低至0.1元/U"
-          ]
+          "features": []
         },
         {
-          "name": "3天",
+          "name": "3天套餐",
           "price": null,
           "period": "天",
-          "features": [
-            "按量付费，价格低至0.1元/U"
-          ]
+          "features": []
         },
         {
-          "name": "7天",
+          "name": "7天套餐",
           "price": null,
           "period": "天",
-          "features": [
-            "按量付费，价格低至0.1元/U"
-          ]
+          "features": []
         }
       ]
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户注册即送10U"
+      "description": "前1000名注册即送10U"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.614Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -9950,10 +9971,18 @@
         "author": "<name>ellye</name>\n\t\t<uri>https://www.v2ex.com/member/ellye</uri>",
         "publishedAt": "2026-05-10T05:07:34.000Z",
         "fetchedAt": "2026-05-10T06:08:12.033Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211616#reply2",
+        "title": "[推广] Avemujica API 中转站",
+        "author": "<name>ellye</name>\n\t\t<uri>https://www.v2ex.com/member/ellye</uri>",
+        "publishedAt": "2026-05-10T08:01:39.000Z",
+        "fetchedAt": "2026-05-10T08:05:48.483Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.614Z",
-    "lastUpdated": "2026-05-10T06:08:12.033Z",
+    "lastUpdated": "2026-05-10T08:05:48.483Z",
     "tags": [
       "API中转",
       "OpenAI",
@@ -10028,12 +10057,18 @@
       },
       {
         "model": "gpt-4o",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "gpt-4-turbo",
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
       },
       {
-        "model": "gpt-4-turbo",
+        "model": "gpt-3.5-turbo",
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
@@ -10047,7 +10082,7 @@
           "price": 10,
           "period": null,
           "features": [
-            "赠送10美元体验额度"
+            "赠送10美元额度"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -10059,13 +10094,17 @@
       "unit": "USD",
       "description": "前10位加群的朋友赠送10刀体验卡"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "QQ红包"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "未知",
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.626Z",
-    "heatScore": 37,
-    "mentionCount": 2,
+    "heatScore": 39,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -10083,10 +10122,18 @@
         "author": "<name>roper</name>\n\t\t<uri>https://www.v2ex.com/member/roper</uri>",
         "publishedAt": "2026-05-10T06:05:09.000Z",
         "fetchedAt": "2026-05-10T06:08:12.035Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211600#reply22",
+        "title": "[分享创造] 搭了个 gpt 的中转站，主要自用顺便回点血",
+        "author": "<name>roper</name>\n\t\t<uri>https://www.v2ex.com/member/roper</uri>",
+        "publishedAt": "2026-05-10T07:12:30.000Z",
+        "fetchedAt": "2026-05-10T08:05:48.484Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.626Z",
-    "lastUpdated": "2026-05-10T06:08:12.035Z",
+    "lastUpdated": "2026-05-10T08:05:48.484Z",
     "tags": [
       "共享订阅",
       "GPT Plus",
