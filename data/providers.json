@@ -19,8 +19,8 @@
       },
       {
         "model": "GPT全家桶",
-        "inputPrice": 0.08,
-        "outputPrice": 0.08,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -35,17 +35,17 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 1000,
+      "amount": 500,
       "unit": "USD",
-      "description": "新用户注册后联系客服可免费加入一个共享1000美元额度的分组。"
+      "description": "通过福利分组共享500美元额度，先到先得。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "日/周不限",
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
-    "heatScore": 77,
-    "mentionCount": 17,
+    "heatScore": 79,
+    "mentionCount": 18,
     "priceHistory": [],
     "sources": [
       {
@@ -127,10 +127,18 @@
         "author": "<name>yang1395592280</name>\n\t\t<uri>https://www.v2ex.com/member/yang1395592280</uri>",
         "publishedAt": "2026-05-10T08:00:51.000Z",
         "fetchedAt": "2026-05-10T08:05:48.485Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211765#reply1",
+        "title": "[推广] 自用 Codex 站（今天继续福利分组）",
+        "author": "<name>yang1395592280</name>\n\t\t<uri>https://www.v2ex.com/member/yang1395592280</uri>",
+        "publishedAt": "2026-05-11T01:57:47.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.114Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-10T08:05:48.485Z",
+    "lastUpdated": "2026-05-11T02:02:19.114Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -153,27 +161,63 @@
       },
       {
         "model": "codex",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "claude",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "gemini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "grok",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "minimax",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "glm",
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": 3300,
+      "amount": 300,
       "unit": "USD",
-      "description": "累计赠送3300刀额度（具体赠送规则未明确）"
+      "description": "当天赠送300刀额度，累计已赠送4200刀。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
-    "heatScore": 52,
-    "mentionCount": 7,
+    "heatScore": 54,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -199,10 +243,18 @@
         "author": "<name>kk2685803719</name>\n\t\t<uri>https://www.v2ex.com/member/kk2685803719</uri>",
         "publishedAt": "2026-05-08T03:09:16.000Z",
         "fetchedAt": "2026-05-08T05:34:16.188Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211761#reply0",
+        "title": "[推广] 福利天天送，模型保真，欢迎进群测试，今天送 300 刀额度，已累计赠送（4200 刀），交个朋友",
+        "author": "<name>kk2685803719</name>\n\t\t<uri>https://www.v2ex.com/member/kk2685803719</uri>",
+        "publishedAt": "2026-05-11T01:41:43.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.114Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-08T05:34:16.188Z",
+    "lastUpdated": "2026-05-11T02:02:19.114Z",
     "tags": [
       "AI API Gateway",
       "稳定",
@@ -905,19 +957,15 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户加入社群即送10美元额度"
+      "description": "新用户加入社群可获赠10美元额度用于测试。"
     },
-    "paymentMethods": [
-      "支付宝",
-      "微信",
-      "对公转账"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
-    "heatScore": 81,
-    "mentionCount": 19,
+    "heatScore": 83,
+    "mentionCount": 20,
     "priceHistory": [],
     "sources": [
       {
@@ -991,10 +1039,18 @@
         "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
         "publishedAt": "2026-05-10T03:34:52.000Z",
         "fetchedAt": "2026-05-10T06:08:12.034Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211746#reply0",
+        "title": "[推广] 免费领 10 刀额度|aicoding.sh：企业级 Claude API 中转服务，国内直连稳定可靠",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-11T01:16:48.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.115Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-10T10:19:51.009Z",
+    "lastUpdated": "2026-05-11T02:02:19.115Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -8617,9 +8673,15 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "gpt-4o",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "freeQuota": {
       "amount": null,
       "unit": null,
@@ -8627,11 +8689,11 @@
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": null,
+    "rateLimit": "rate limit",
     "status": "unknown",
     "lastChecked": "2026-05-08T19:13:26.758Z",
-    "heatScore": 41,
-    "mentionCount": 4,
+    "heatScore": 43,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -8649,10 +8711,18 @@
         "author": "<name>runcode</name>\n\t\t<uri>https://www.v2ex.com/member/runcode</uri>",
         "publishedAt": "2026-05-10T15:41:03.000Z",
         "fetchedAt": "2026-05-10T18:56:00.823Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211749#reply0",
+        "title": "[推广] 超低价 Codex API，最低每刀不到 0.06R，纯血 gpt plus 号池反代，可用 gpt5.5， gpt-image2，稳定好用",
+        "author": "<name>runcode</name>\n\t\t<uri>https://www.v2ex.com/member/runcode</uri>",
+        "publishedAt": "2026-05-11T01:19:51.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.115Z"
       }
     ],
     "firstSeen": "2026-05-08T19:13:26.758Z",
-    "lastUpdated": "2026-05-10T21:49:27.130Z",
+    "lastUpdated": "2026-05-11T02:02:19.115Z",
     "tags": [
       "Codex",
       "GPT-5.5",
@@ -10911,6 +10981,231 @@
       "OpenAI兼容",
       "图像/视频生成",
       "API中转"
+    ]
+  },
+  {
+    "id": "pmp0k3tk9lofjp",
+    "name": "素流",
+    "website": "官网链接未明确提供，帖子中提及“官网：了解更多详细内容”但未给出具体URL。",
+    "contact": "微信公众号：但丁自留地；GitHub Issues（具体链接未提供）",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "基础版",
+          "price": 0,
+          "period": "一次性",
+          "features": [
+            "多标签页",
+            "跨目录剪贴板",
+            "格式直开",
+            "深度存储分析",
+            "快捷分类",
+            "基础清理",
+            "操作撤销",
+            "深色模式",
+            "零广告"
+          ]
+        },
+        {
+          "name": "Pro版",
+          "price": "未明确",
+          "period": "一次性买断",
+          "features": [
+            "AI Agent对话式管理",
+            "端侧语义检索",
+            "相似图片检测+智能清理建议",
+            "智能聚合",
+            "素匣隐私保险箱",
+            "智能伴读",
+            "文档/媒体文件语义搜索"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY",
+      "description": "基础版完全免费，提供核心文件管理功能。"
+    },
+    "paymentMethods": [
+      "Google Play购买",
+      "GitHub Release下载（未明确支付方式）"
+    ],
+    "status": "unknown",
+    "lastChecked": "2026-05-11T02:02:19.113Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211769#reply0",
+        "title": "[分享创造] 上次分享了素言输入法，这次带来素系列第二款产品：一个带 AI Agent 的文件管理器「素流」",
+        "author": "<name>jhspider</name>\n\t\t<uri>https://www.v2ex.com/member/jhspider</uri>",
+        "publishedAt": "2026-05-11T01:53:44.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.113Z"
+      }
+    ],
+    "firstSeen": "2026-05-11T02:02:19.113Z",
+    "lastUpdated": "2026-05-11T02:02:19.113Z",
+    "tags": [
+      "AI文件管理器",
+      "Android应用",
+      "本地AI",
+      "Agent",
+      "文件管理"
+    ]
+  },
+  {
+    "id": "pmp0k3tkaaxmv5",
+    "name": "智友社",
+    "website": "https://pay.ldxp.cn/item/4xtc99",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "GPTPlus 正规渠道直充卡密",
+          "price": 118,
+          "period": "月",
+          "features": [
+            "正规渠道直充",
+            "一个月足月质保"
+          ]
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-11T02:02:19.114Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211767#reply0",
+        "title": "[推广] 智友社上新啦，新渠道新特价， GPTPlus 正规渠道全程质保直充卡密",
+        "author": "<name>Ai2You</name>\n\t\t<uri>https://www.v2ex.com/member/Ai2You</uri>",
+        "publishedAt": "2026-05-11T01:51:48.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.114Z"
+      }
+    ],
+    "firstSeen": "2026-05-11T02:02:19.114Z",
+    "lastUpdated": "2026-05-11T02:02:19.114Z",
+    "tags": [
+      "GPT",
+      "订阅",
+      "直充",
+      "卡密"
+    ]
+  },
+  {
+    "id": "pmp0k3tkayjn53",
+    "name": "Kitt AI",
+    "website": "https://coding.kitt.tools",
+    "contact": "",
+    "models": [],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD",
+      "description": "新用户注册时填写优惠码V2EX可领取5美元额度"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-11T02:02:19.114Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211752#reply3",
+        "title": "[推广] 自用中转站. 注册即有 5$ 额度，套餐低至 0.1 倍率",
+        "author": "<name>emojiiii</name>\n\t\t<uri>https://www.v2ex.com/member/emojiiii</uri>",
+        "publishedAt": "2026-05-11T01:55:28.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.114Z"
+      }
+    ],
+    "firstSeen": "2026-05-11T02:02:19.114Z",
+    "lastUpdated": "2026-05-11T02:02:19.114Z",
+    "tags": [
+      "API中转",
+      "新用户优惠"
+    ]
+  },
+  {
+    "id": "pmp0k3tkbw3djb",
+    "name": "Nexus",
+    "website": "https://nexus.1982video.cn/",
+    "contact": "微信号：chantgptjjxx",
+    "models": [
+      {
+        "model": "GPT-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "全站会员",
+          "price": null,
+          "period": "day",
+          "features": [
+            "每日自带 100 美元平台额度"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "USD",
+      "description": "V站用户注册并回帖或添加客服微信后，可免费领取10美元平台余额。"
+    },
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-11T02:02:19.115Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211736#reply25",
+        "title": "[推广] Nexus 满血 GPT5.5 API 中转｜拒绝降智阉割·长期稳定靠谱",
+        "author": "<name>kuicc1987</name>\n\t\t<uri>https://www.v2ex.com/member/kuicc1987</uri>",
+        "publishedAt": "2026-05-11T01:54:17.000Z",
+        "fetchedAt": "2026-05-11T02:02:19.115Z"
+      }
+    ],
+    "firstSeen": "2026-05-11T02:02:19.115Z",
+    "lastUpdated": "2026-05-11T02:02:19.115Z",
+    "tags": [
+      "GPT-5.5",
+      "官方渠道",
+      "满血",
+      "稳定",
+      "开发者友好"
     ]
   }
 ]
