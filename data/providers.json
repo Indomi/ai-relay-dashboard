@@ -7188,6 +7188,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "OpenAI 模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "hybrid",
@@ -7198,7 +7204,7 @@
           "price": 60,
           "period": "月",
           "features": [
-            "每日20美元等值OpenAI用量",
+            "每日 20 美元等值 OpenAI 用量",
             "无周限"
           ]
         },
@@ -7207,26 +7213,24 @@
           "price": 150,
           "period": "月",
           "features": [
-            "每日60美元等值OpenAI用量",
+            "每日 60 美元等值 OpenAI 用量",
             "无周限"
           ]
         }
       ]
     },
     "freeQuota": {
-      "amount": 10,
+      "amount": 30,
       "unit": "USD",
-      "description": "新用户注册赠送$10"
+      "description": "注册赠送30$余额（新用户注册即赠送$10，在本帖回复注册邮箱，即可免费再送$20）"
     },
-    "paymentMethods": [
-      "未明确提及"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-07T16:52:48.363Z",
-    "heatScore": 57,
-    "mentionCount": 7,
+    "heatScore": 59,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -7260,10 +7264,18 @@
         "author": "<name>feifeimiao</name>\n\t\t<uri>https://www.v2ex.com/member/feifeimiao</uri>",
         "publishedAt": "2026-05-11T14:02:05.000Z",
         "fetchedAt": "2026-05-11T14:35:06.929Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211962#reply38",
+        "title": "[推广] 继续推广我的 gpt 中转站，注册就送 30$余额",
+        "author": "<name>feifeimiao</name>\n\t\t<uri>https://www.v2ex.com/member/feifeimiao</uri>",
+        "publishedAt": "2026-05-11T16:33:03.000Z",
+        "fetchedAt": "2026-05-11T17:30:28.550Z"
       }
     ],
     "firstSeen": "2026-05-07T16:52:48.363Z",
-    "lastUpdated": "2026-05-11T14:35:06.929Z",
+    "lastUpdated": "2026-05-11T17:30:28.550Z",
     "tags": [
       "OpenAI",
       "API中转",
@@ -10844,8 +10856,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 43,
-    "mentionCount": 5,
+    "heatScore": 45,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -10863,10 +10875,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-11T14:06:51.000Z",
         "fetchedAt": "2026-05-11T14:35:06.924Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211997#reply1",
+        "title": "[推广] FK Claude 专注 Claude 的中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-11T14:31:32.000Z",
+        "fetchedAt": "2026-05-11T17:30:28.546Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-11T14:35:06.924Z",
+    "lastUpdated": "2026-05-11T17:30:28.546Z",
     "tags": [
       "Claude",
       "中转",
@@ -11758,16 +11778,35 @@
     "website": "未提及",
     "contact": "未提及",
     "models": [],
-    "billingType": "未提及",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "会员",
+          "price": "未提及",
+          "period": "月",
+          "features": [
+            "用户自定义句子课程",
+            "句子收藏与复习",
+            "AI文章生成",
+            "等级评估",
+            "视频/听力/字幕学习工作流"
+          ]
+        }
+      ]
     },
-    "freeQuota": {},
-    "paymentMethods": [],
+    "freeQuota": {
+      "amount": 7,
+      "unit": "天",
+      "description": "通过邀请码注册可获得七天会员资格"
+    },
+    "paymentMethods": [
+      "未提及"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-11T06:55:10.618Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -11777,14 +11816,24 @@
         "author": "",
         "publishedAt": "2026-05-11T06:44:52.563Z",
         "fetchedAt": "2026-05-11T06:55:10.618Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211980#reply4",
+        "title": "[分享创造] 用 AI 做低价英语学习工具：不是 PPT，这半个月我做了这些",
+        "author": "<name>Fifto</name>\n\t\t<uri>https://www.v2ex.com/member/Fifto</uri>",
+        "publishedAt": "2026-05-11T16:24:07.000Z",
+        "fetchedAt": "2026-05-11T17:30:28.548Z"
       }
     ],
     "firstSeen": "2026-05-11T06:55:10.618Z",
-    "lastUpdated": "2026-05-11T06:55:10.618Z",
+    "lastUpdated": "2026-05-11T17:30:28.548Z",
     "tags": [
       "Claude",
       "API代理",
-      "国内直连"
+      "国内直连",
+      "英语学习",
+      "AI工具"
     ]
   },
   {
@@ -11922,7 +11971,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
@@ -11949,11 +11998,11 @@
       "USDT"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "未提及",
+    "rateLimit": "分组消耗倍率是 0.06",
     "status": "unknown",
     "lastChecked": "2026-05-11T12:09:20.018Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -11971,10 +12020,18 @@
         "author": "<name>xianyv</name>\n\t\t<uri>https://www.v2ex.com/member/xianyv</uri>",
         "publishedAt": "2026-05-11T14:26:27.000Z",
         "fetchedAt": "2026-05-11T14:35:06.928Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211966#reply25",
+        "title": "[推广] 新建 Codex 中转站,0.06 倍率消耗,1:1 充值,注册送 5 刀,还有个 1000 刀免费分组使用可以使用,蹬完为止",
+        "author": "<name>xianyv</name>\n\t\t<uri>https://www.v2ex.com/member/xianyv</uri>",
+        "publishedAt": "2026-05-11T16:29:23.000Z",
+        "fetchedAt": "2026-05-11T17:30:28.549Z"
       }
     ],
     "firstSeen": "2026-05-11T12:09:20.018Z",
-    "lastUpdated": "2026-05-11T14:35:06.928Z",
+    "lastUpdated": "2026-05-11T17:30:28.549Z",
     "tags": [
       "Codex",
       "API中转",
@@ -12003,15 +12060,14 @@
       "description": "回贴送$25额度"
     },
     "paymentMethods": [
-      "支付宝",
-      "微信"
+      "支付宝"
     ],
     "concurrencyLimit": null,
     "rateLimit": "按量计费 0.08 倍率",
     "status": "unknown",
     "lastChecked": "2026-05-11T12:09:20.018Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -12029,15 +12085,24 @@
         "author": "<name>blueskeay</name>\n\t\t<uri>https://www.v2ex.com/member/blueskeay</uri>",
         "publishedAt": "2026-05-10T18:20:04.000Z",
         "fetchedAt": "2026-05-11T14:35:06.928Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1211965#reply6",
+        "title": "[推广] [65535 中转] Codex 1:1 充值，按量计费 0.08 倍率, 稳定运营 30 天+，回贴送$25 额度！",
+        "author": "<name>blueskeay</name>\n\t\t<uri>https://www.v2ex.com/member/blueskeay</uri>",
+        "publishedAt": "2026-05-10T18:20:04.000Z",
+        "fetchedAt": "2026-05-11T17:30:28.550Z"
       }
     ],
     "firstSeen": "2026-05-11T12:09:20.018Z",
-    "lastUpdated": "2026-05-11T14:35:06.928Z",
+    "lastUpdated": "2026-05-11T17:30:28.550Z",
     "tags": [
       "Codex",
       "按量计费",
       "日抛账号",
-      "API中转"
+      "API中转",
+      "GPT-4"
     ]
   },
   {
@@ -12053,15 +12118,15 @@
     "freeQuota": {
       "amount": null,
       "unit": null,
-      "description": "可以回帖获取测试额度"
+      "description": "可以通过回帖申请测试额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-11T12:09:20.019Z",
-    "heatScore": 37,
-    "mentionCount": 2,
+    "heatScore": 39,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -12074,12 +12139,13 @@
       }
     ],
     "firstSeen": "2026-05-11T12:09:20.019Z",
-    "lastUpdated": "2026-05-11T14:35:06.929Z",
+    "lastUpdated": "2026-05-11T17:30:28.551Z",
     "tags": [
       "API网关",
       "多模型聚合",
       "OpenAI兼容",
-      "多模型管理"
+      "多模型管理",
+      "早期项目"
     ]
   },
   {
@@ -12162,20 +12228,22 @@
     "website": "https://knowhereto.ai/?utm_source=v2ex",
     "contact": "",
     "models": [],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": 14,
-      "unit": "天",
-      "description": "SaaS版提供14天免费试用"
+      "amount": 5,
+      "unit": "USD",
+      "description": "注册赠送$5免费额度"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "信用卡"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-11T14:35:06.925Z",
-    "heatScore": 43,
-    "mentionCount": 1,
+    "heatScore": 45,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -12188,7 +12256,7 @@
       }
     ],
     "firstSeen": "2026-05-11T14:35:06.925Z",
-    "lastUpdated": "2026-05-11T14:35:06.925Z",
+    "lastUpdated": "2026-05-11T17:30:28.547Z",
     "tags": [
       "文档解析",
       "AI幻觉",
@@ -12210,27 +12278,20 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "free",
     "subscription": {
-      "plans": [
-        {
-          "name": "会员功能",
-          "price": null,
-          "period": null,
-          "features": []
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 1,
-      "unit": "CNY",
-      "description": "所有音色模型（ 300+）现阶段均免费使用"
+      "amount": 300,
+      "unit": "models",
+      "description": "现阶段所有300+音色模型均免费使用。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-11T14:35:06.926Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -12243,11 +12304,13 @@
       }
     ],
     "firstSeen": "2026-05-11T14:35:06.926Z",
-    "lastUpdated": "2026-05-11T14:35:06.926Z",
+    "lastUpdated": "2026-05-11T17:30:28.548Z",
     "tags": [
       "AI变声",
       "安卓应用",
-      "娱乐"
+      "娱乐",
+      "变声应用",
+      "AI音色"
     ]
   },
   {
