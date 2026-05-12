@@ -34,14 +34,18 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 65,
+      "unit": "USD",
+      "description": "为每个人提供Plus账号的免费额度"
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "日/周不限",
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
-    "heatScore": 89,
-    "mentionCount": 23,
+    "heatScore": 91,
+    "mentionCount": 24,
     "priceHistory": [],
     "sources": [
       {
@@ -163,10 +167,18 @@
         "author": "<name>lemayi</name>\n\t\t<uri>https://www.v2ex.com/member/lemayi</uri>",
         "publishedAt": "2026-05-12T06:21:16.000Z",
         "fetchedAt": "2026-05-12T08:40:45.320Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212207#reply6",
+        "title": "[推广] 一个免费的中转站",
+        "author": "<name>lemayi</name>\n\t\t<uri>https://www.v2ex.com/member/lemayi</uri>",
+        "publishedAt": "2026-05-12T12:10:26.000Z",
+        "fetchedAt": "2026-05-12T13:44:47.654Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-12T11:48:24.891Z",
+    "lastUpdated": "2026-05-12T13:44:47.654Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -8243,11 +8255,11 @@
     "subscription": {
       "plans": [
         {
-          "name": "Pro会员",
-          "price": 300,
+          "name": "Pro",
+          "price": null,
           "period": "month",
           "features": [
-            "300美元GPT API额度",
+            "300美元API额度",
             "约3亿token"
           ],
           "autoRenew": false,
@@ -8258,15 +8270,15 @@
     "freeQuota": {
       "amount": 300,
       "unit": "USD",
-      "description": "新注册用户赠送30天Pro会员，包含300美元GPT API额度（约3亿token）"
+      "description": "新用户注册赠送30天Pro会员，包含300美元API额度（约3亿token）"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "5小时内限流10美元额度。",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 61,
-    "mentionCount": 9,
+    "heatScore": 63,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -8316,10 +8328,18 @@
         "author": "<name>CKAJ555</name>\n\t\t<uri>https://www.v2ex.com/member/CKAJ555</uri>",
         "publishedAt": "2026-05-12T08:28:24.000Z",
         "fetchedAt": "2026-05-12T08:40:45.320Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212206#reply4",
+        "title": "[推广] 不知道什么路子，新注册送 30 天 Pro 会员",
+        "author": "<name>CKAJ555</name>\n\t\t<uri>https://www.v2ex.com/member/CKAJ555</uri>",
+        "publishedAt": "2026-05-12T08:38:20.000Z",
+        "fetchedAt": "2026-05-12T13:44:47.654Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-12T08:40:45.320Z",
+    "lastUpdated": "2026-05-12T13:44:47.654Z",
     "tags": [
       "新站开业",
       "免费额度",
@@ -8541,8 +8561,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 59,
-    "mentionCount": 8,
+    "heatScore": 61,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -8571,7 +8591,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-12T11:32:15.102Z",
+    "lastUpdated": "2026-05-12T13:44:47.654Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -11300,8 +11320,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 49,
-    "mentionCount": 8,
+    "heatScore": 51,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -11327,10 +11347,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-11T14:31:32.000Z",
         "fetchedAt": "2026-05-11T17:30:28.546Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212260#reply0",
+        "title": "[推广] [FK Claude] 专注 Claude 的中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-12T13:39:48.000Z",
+        "fetchedAt": "2026-05-12T13:44:47.650Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-11T22:09:25.188Z",
+    "lastUpdated": "2026-05-12T13:44:47.650Z",
     "tags": [
       "Claude",
       "中转",
@@ -11881,38 +11909,36 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "USD"
+      },
+      {
+        "model": "Claude 4.7",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "OpenAI 5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "hybrid",
     "subscription": {
-      "plans": [
-        {
-          "name": "全站会员",
-          "price": null,
-          "period": "day",
-          "features": [
-            "每日自带100美元GPT5.5额度"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
       "description": "V站用户回复注册邮箱或加客服微信可免费领取$10余额"
     },
-    "paymentMethods": [
-      "支付宝",
-      "微信"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.115Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -11930,10 +11956,18 @@
         "author": "kuicc1987",
         "publishedAt": "2026-05-11T00:47:52.000Z",
         "fetchedAt": "2026-05-12T01:41:35.504Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212255#reply2",
+        "title": "[程序员] 源头厂家",
+        "author": "<name>martin2975068046</name>\n\t\t<uri>https://www.v2ex.com/member/martin2975068046</uri>",
+        "publishedAt": "2026-05-12T13:13:45.000Z",
+        "fetchedAt": "2026-05-12T13:44:47.652Z"
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.115Z",
-    "lastUpdated": "2026-05-12T01:41:35.504Z",
+    "lastUpdated": "2026-05-12T13:44:47.652Z",
     "tags": [
       "GPT-5.5",
       "官方渠道",
@@ -13034,8 +13068,8 @@
     "models": [
       {
         "model": "openai/gpt-4o",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
@@ -13046,28 +13080,28 @@
       },
       {
         "model": "deepseek/deepseek-r1",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "meta/meta-llama-3.3-70b-instruct",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
-    "billingType": "free quota",
+    "billingType": "token",
     "freeQuota": {
-      "amount": 0,
-      "unit": "USD",
-      "description": "每个模型额度独立，超额返回429，次日重置"
+      "amount": null,
+      "unit": "CNY/USD",
+      "description": "每个模型额度独立，超额返回429，次日重置。具体免费额度未提及。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T08:40:45.317Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -13080,7 +13114,7 @@
       }
     ],
     "firstSeen": "2026-05-12T08:40:45.317Z",
-    "lastUpdated": "2026-05-12T11:32:15.102Z",
+    "lastUpdated": "2026-05-12T13:44:47.653Z",
     "tags": [
       "免费API",
       "旧模型",
@@ -13185,14 +13219,14 @@
     "models": [
       {
         "model": "Claude 4.7",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "GPT-5.5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -13208,8 +13242,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T11:32:15.100Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -13222,13 +13256,15 @@
       }
     ],
     "firstSeen": "2026-05-12T11:32:15.100Z",
-    "lastUpdated": "2026-05-12T11:32:15.100Z",
+    "lastUpdated": "2026-05-12T13:44:47.652Z",
     "tags": [
       "开发专用",
       "高并发",
       "按量付费",
-      "测试额度"
-    ]
+      "测试额度",
+      "API中转"
+    ],
+    "rateLimit": "支持超高并发"
   },
   {
     "id": "pmp2jwm0vrusiw",
@@ -13289,6 +13325,55 @@
       "拼车",
       "GPT-5.5",
       "免费额度"
+    ]
+  },
+  {
+    "id": "pmp2on28z0lozf",
+    "name": "www.gpt-plus.ai",
+    "website": "www.gpt-plus.ai",
+    "contact": "未明确提及",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": [
+        {
+          "name": "GPT Plus",
+          "price": 100,
+          "period": "unknown",
+          "features": []
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "USD",
+      "description": "未提及"
+    },
+    "paymentMethods": [
+      "银行卡"
+    ],
+    "status": "unknown",
+    "lastChecked": "2026-05-12T13:44:47.651Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212256#reply2",
+        "title": "[OpenAI] GPT 被封了 7 个号后，找到一家不用给 seension 充值的网站！",
+        "author": "<name>killben</name>\n\t\t<uri>https://www.v2ex.com/member/killben</uri>",
+        "publishedAt": "2026-05-12T13:22:54.000Z",
+        "fetchedAt": "2026-05-12T13:44:47.651Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T13:44:47.651Z",
+    "lastUpdated": "2026-05-12T13:44:47.651Z",
+    "tags": [
+      "OpenAI",
+      "GPT Plus",
+      "充值",
+      "银行卡"
     ]
   }
 ]
