@@ -11313,15 +11313,19 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
-    "freeQuota": null,
+    "billingType": "hybrid",
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": null
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 51,
-    "mentionCount": 9,
+    "heatScore": 53,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -11358,7 +11362,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-12T13:44:47.650Z",
+    "lastUpdated": "2026-05-12T17:17:02.464Z",
     "tags": [
       "Claude",
       "中转",
@@ -13236,14 +13240,14 @@
     },
     "freeQuota": {
       "amount": null,
-      "unit": "USD",
+      "unit": null,
       "description": "注册送测试额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T11:32:15.100Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -13256,7 +13260,7 @@
       }
     ],
     "firstSeen": "2026-05-12T11:32:15.100Z",
-    "lastUpdated": "2026-05-12T13:44:47.652Z",
+    "lastUpdated": "2026-05-12T17:17:02.465Z",
     "tags": [
       "开发专用",
       "高并发",
@@ -13374,6 +13378,93 @@
       "GPT Plus",
       "充值",
       "银行卡"
+    ]
+  },
+  {
+    "id": "pmp2w80hsxgnv1",
+    "name": "Pet Gatekeeper",
+    "website": "https://petgatekeeper.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "Seedance 2.0 (AI视频生成)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": "",
+      "description": ""
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-12T17:17:02.464Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212287#reply0",
+        "title": "[分享创造] Pet Gatekeeper：让你家的宠物接管你的屏幕",
+        "author": "<name>x1shir</name>\n\t\t<uri>https://www.v2ex.com/member/x1shir</uri>",
+        "publishedAt": "2026-05-12T16:22:59.000Z",
+        "fetchedAt": "2026-05-12T17:17:02.464Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T17:17:02.464Z",
+    "lastUpdated": "2026-05-12T17:17:02.464Z",
+    "tags": [
+      "AI视频生成",
+      "宠物",
+      "浏览器插件",
+      "桌面应用",
+      "社区兑换"
+    ]
+  },
+  {
+    "id": "pmp2w80hs447zz",
+    "name": "video to text",
+    "website": "",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 30,
+      "unit": "minutes",
+      "description": "新用户有30分钟免费使用时长"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-12T17:17:02.464Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212272#reply0",
+        "title": "[AI Tools 精品 AI 工具导航] 做了一个音/视频转文本的工具",
+        "author": "<name>Dkphhh</name>\n\t\t<uri>https://www.v2ex.com/member/Dkphhh</uri>",
+        "publishedAt": "2026-05-12T14:44:38.000Z",
+        "fetchedAt": "2026-05-12T17:17:02.464Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T17:17:02.464Z",
+    "lastUpdated": "2026-05-12T17:17:02.464Z",
+    "tags": [
+      "音视频转文本",
+      "语音识别",
+      "字幕生成"
     ]
   }
 ]
