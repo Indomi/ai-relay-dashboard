@@ -11324,8 +11324,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 55,
-    "mentionCount": 11,
+    "heatScore": 57,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -11362,7 +11362,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-12T19:40:01.071Z",
+    "lastUpdated": "2026-05-12T22:12:54.394Z",
     "tags": [
       "Claude",
       "中转",
@@ -13240,14 +13240,14 @@
     },
     "freeQuota": {
       "amount": null,
-      "unit": "USD",
+      "unit": "CNY",
       "description": "注册送测试额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T11:32:15.100Z",
-    "heatScore": 46,
-    "mentionCount": 4,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -13260,7 +13260,7 @@
       }
     ],
     "firstSeen": "2026-05-12T11:32:15.100Z",
-    "lastUpdated": "2026-05-12T19:40:01.071Z",
+    "lastUpdated": "2026-05-12T22:12:54.395Z",
     "tags": [
       "开发专用",
       "高并发",
@@ -13447,13 +13447,13 @@
     "freeQuota": {
       "amount": 30,
       "unit": "minutes",
-      "description": "新用户有30分钟免费使用时长"
+      "description": "新用户有30分钟免费使用时长。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T17:17:02.464Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -13466,11 +13466,13 @@
       }
     ],
     "firstSeen": "2026-05-12T17:17:02.464Z",
-    "lastUpdated": "2026-05-12T17:17:02.464Z",
+    "lastUpdated": "2026-05-12T22:12:54.392Z",
     "tags": [
       "音视频转文本",
       "语音识别",
-      "字幕生成"
+      "字幕生成",
+      "音视频转写",
+      "会议记录"
     ]
   },
   {
@@ -13483,12 +13485,12 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": null,
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T19:40:01.070Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -13501,12 +13503,13 @@
       }
     ],
     "firstSeen": "2026-05-12T19:40:01.070Z",
-    "lastUpdated": "2026-05-12T19:40:01.070Z",
+    "lastUpdated": "2026-05-12T22:12:54.393Z",
     "tags": [
       "AI视频笔记",
       "视频转录",
       "AI总结",
-      "SaaS"
+      "SaaS",
+      "视频笔记"
     ]
   }
 ]
