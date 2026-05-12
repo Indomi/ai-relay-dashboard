@@ -34,14 +34,18 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 65,
+      "unit": "USD",
+      "description": "给每个人提供Plus账号的免费额度"
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "日/周不限",
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
-    "heatScore": 85,
-    "mentionCount": 21,
+    "heatScore": 87,
+    "mentionCount": 22,
     "priceHistory": [],
     "sources": [
       {
@@ -155,10 +159,18 @@
         "author": "<name>yang1395592280</name>\n\t\t<uri>https://www.v2ex.com/member/yang1395592280</uri>",
         "publishedAt": "2026-05-12T01:39:34.000Z",
         "fetchedAt": "2026-05-12T01:43:20.092Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212207#reply0",
+        "title": "[OpenAI] 一个免费的中转站",
+        "author": "<name>lemayi</name>\n\t\t<uri>https://www.v2ex.com/member/lemayi</uri>",
+        "publishedAt": "2026-05-12T06:21:16.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.320Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-12T01:43:20.092Z",
+    "lastUpdated": "2026-05-12T08:40:45.320Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -8198,8 +8210,8 @@
     "models": [
       {
         "model": "Codex GPT-5.5",
-        "inputPrice": 5,
-        "outputPrice": 10,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -8211,7 +8223,8 @@
           "price": 300,
           "period": "month",
           "features": [
-            "约3亿token额度"
+            "300美元GPT API额度",
+            "约3亿token"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -8221,15 +8234,15 @@
     "freeQuota": {
       "amount": 300,
       "unit": "USD",
-      "description": "新用户注册即送15天Pro会员，评论留言额外送15天，合计最高30天Pro会员（约300美元额度）。"
+      "description": "新注册用户赠送30天Pro会员，包含300美元GPT API额度（约3亿token）"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "5小时内限流10美元额度。",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 59,
-    "mentionCount": 8,
+    "heatScore": 61,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -8271,10 +8284,18 @@
         "author": "l534891619",
         "publishedAt": "2026-05-08T05:07:25.000Z",
         "fetchedAt": "2026-05-10T06:05:59.627Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212206#reply3",
+        "title": "[分享发现] 不知道什么路子，新注册送 30 天 Pro 会员",
+        "author": "<name>CKAJ555</name>\n\t\t<uri>https://www.v2ex.com/member/CKAJ555</uri>",
+        "publishedAt": "2026-05-12T08:28:24.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.320Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-12T01:41:35.514Z",
+    "lastUpdated": "2026-05-12T08:40:45.320Z",
     "tags": [
       "新站开业",
       "免费额度",
@@ -8300,8 +8321,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 59,
-    "mentionCount": 13,
+    "heatScore": 61,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -8359,10 +8380,18 @@
         "author": "xh2006000",
         "publishedAt": "2026-05-10T06:02:35.000Z",
         "fetchedAt": "2026-05-12T01:41:35.506Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212190#reply0",
+        "title": "[推广] 阿里云国际｜腾讯云国际｜华为云国际｜ AWS｜ GCP｜ Azure",
+        "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
+        "publishedAt": "2026-05-12T07:40:22.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.322Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-12T01:41:35.506Z",
+    "lastUpdated": "2026-05-12T08:40:45.322Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -8474,35 +8503,22 @@
     "website": "https://novproxy.com",
     "contact": "",
     "models": [],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "Long-Term Static ISP",
-          "price": 3,
-          "period": "month",
-          "features": [
-            "Native IP，独享使用",
-            "无限流量",
-            "适合长期账号维护"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 3,
-      "unit": "IPs",
-      "description": "通过CDK兑换3条短效住宅IP作为免费体验。"
+      "amount": null,
+      "unit": "unknown",
+      "description": "可联系客服申请测试额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 55,
-    "mentionCount": 6,
+    "heatScore": 57,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -8520,10 +8536,18 @@
         "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
         "publishedAt": "2026-05-09T09:46:25.000Z",
         "fetchedAt": "2026-05-09T10:13:29.593Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212211#reply0",
+        "title": "[推广] [海外住宅代理] 还在为爬虫封禁和账号关联发愁？ Novproxy 纯净住宅 IP 助力出海， V 友专属福利！",
+        "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
+        "publishedAt": "2026-05-12T08:31:18.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.320Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-09T21:44:43.374Z",
+    "lastUpdated": "2026-05-12T08:40:45.320Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -12852,6 +12876,151 @@
       "VPS部署",
       "教程",
       "New API"
+    ]
+  },
+  {
+    "id": "pmp2ds2dhym382",
+    "name": "GitHub Models",
+    "website": "https://github.com/marketplace/models",
+    "contact": "",
+    "models": [
+      {
+        "model": "openai/gpt-4o",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "openai/gpt-4o-mini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "meta/meta-llama-3.3-70b-instruct",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": {
+      "amount": 1,
+      "unit": "USD",
+      "description": "每个模型有独立的免费额度，具体额度未明确说明，超额返回 429，次日重置。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-12T08:40:45.317Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212214#reply0",
+        "title": "[程序员] GitHub Models 免费旧模型 API，包含 openai 旧模型",
+        "author": "<name>longxinglink</name>\n\t\t<uri>https://www.v2ex.com/member/longxinglink</uri>",
+        "publishedAt": "2026-05-12T08:33:17.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.317Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T08:40:45.317Z",
+    "lastUpdated": "2026-05-12T08:40:45.317Z",
+    "tags": [
+      "免费API",
+      "旧模型",
+      "GitHub"
+    ]
+  },
+  {
+    "id": "pmp2ds2dlonye1",
+    "name": "LokiProxy",
+    "website": "https://www.lokiproxy.com",
+    "contact": "support@lokiproxy.com",
+    "models": [
+      {
+        "model": "动态住宅代理",
+        "inputPrice": 0.48,
+        "outputPrice": 0.48,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-12T08:40:45.321Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212199#reply0",
+        "title": "[推广] 📢 LokiProxy ASN 功能上线 | ✅ 精准的 ISP 定位 | ✅ 0.48 美元/GB 起",
+        "author": "<name>lokiproxy</name>\n\t\t<uri>https://www.v2ex.com/member/lokiproxy</uri>",
+        "publishedAt": "2026-05-12T07:54:35.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.321Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T08:40:45.321Z",
+    "lastUpdated": "2026-05-12T08:40:45.321Z",
+    "tags": [
+      "ISP定位",
+      "ASN",
+      "住宅代理",
+      "全球覆盖"
+    ]
+  },
+  {
+    "id": "pmp2ds2dmyhcwv",
+    "name": "BetterToken",
+    "website": "https://www.bettertoken.ai/",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD",
+      "description": "新用户注册送$5"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-12T08:40:45.322Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212170#reply2",
+        "title": "[推广] 推广下自建的中转站（专注 Claude/Codex)，注册送 5 美刀，不薅白不薅，冲鸭",
+        "author": "<name>codingforfun</name>\n\t\t<uri>https://www.v2ex.com/member/codingforfun</uri>",
+        "publishedAt": "2026-05-12T08:27:48.000Z",
+        "fetchedAt": "2026-05-12T08:40:45.322Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T08:40:45.322Z",
+    "lastUpdated": "2026-05-12T08:40:45.322Z",
+    "tags": [
+      "Claude",
+      "Codex",
+      "中转站"
     ]
   }
 ]
