@@ -11313,7 +11313,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "freeQuota": {
       "amount": null,
       "unit": null,
@@ -11324,8 +11324,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 53,
-    "mentionCount": 10,
+    "heatScore": 55,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -11362,7 +11362,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-12T17:17:02.464Z",
+    "lastUpdated": "2026-05-12T19:40:01.071Z",
     "tags": [
       "Claude",
       "中转",
@@ -13240,14 +13240,14 @@
     },
     "freeQuota": {
       "amount": null,
-      "unit": null,
+      "unit": "USD",
       "description": "注册送测试额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T11:32:15.100Z",
-    "heatScore": 44,
-    "mentionCount": 3,
+    "heatScore": 46,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -13260,7 +13260,7 @@
       }
     ],
     "firstSeen": "2026-05-12T11:32:15.100Z",
-    "lastUpdated": "2026-05-12T17:17:02.465Z",
+    "lastUpdated": "2026-05-12T19:40:01.071Z",
     "tags": [
       "开发专用",
       "高并发",
@@ -13391,22 +13391,28 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "AI视频生成（基于Seedance 2.0）",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": null,
-      "unit": "",
-      "description": ""
+      "unit": "CNY/USD",
+      "description": "内置了多只萌宠，也可以兑换其他用户公开分享的宠物"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T17:17:02.464Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -13419,7 +13425,7 @@
       }
     ],
     "firstSeen": "2026-05-12T17:17:02.464Z",
-    "lastUpdated": "2026-05-12T17:17:02.464Z",
+    "lastUpdated": "2026-05-12T19:40:01.069Z",
     "tags": [
       "AI视频生成",
       "宠物",
@@ -13465,6 +13471,42 @@
       "音视频转文本",
       "语音识别",
       "字幕生成"
+    ]
+  },
+  {
+    "id": "pmp31bvseitwfj",
+    "name": "BiliNote Pro",
+    "website": "https://www.bilinote.app/",
+    "contact": "SmVmZmVyeUhKVw==",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-12T19:40:01.070Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212265#reply0",
+        "title": "[分享创造] BiliNote Pro（一款 AI 视频笔记助手）内测上线了，聊聊为什么我要把开源项目做成付费版",
+        "author": "<name>jefferyH</name>\n\t\t<uri>https://www.v2ex.com/member/jefferyH</uri>",
+        "publishedAt": "2026-05-12T13:57:33.000Z",
+        "fetchedAt": "2026-05-12T19:40:01.070Z"
+      }
+    ],
+    "firstSeen": "2026-05-12T19:40:01.070Z",
+    "lastUpdated": "2026-05-12T19:40:01.070Z",
+    "tags": [
+      "AI视频笔记",
+      "视频转录",
+      "AI总结",
+      "SaaS"
     ]
   }
 ]
