@@ -10668,31 +10668,20 @@
     ],
     "billingType": "hybrid",
     "subscription": {
-      "plans": [
-        {
-          "name": "pro20x",
-          "price": null,
-          "period": null,
-          "features": [
-            "套餐倍率低至0.1"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "注册即有10$额度"
+      "description": "新用户注册送$10额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 52,
-    "mentionCount": 7,
+    "heatScore": 54,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -10750,10 +10739,18 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-13T16:27:28.000Z",
         "fetchedAt": "2026-05-13T19:41:55.564Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212522#reply8",
+        "title": "[推广] HyperAPI 新增 pro20x 号，继续送福利，评论留 ID 加 10 刀",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-13T20:05:47.000Z",
+        "fetchedAt": "2026-05-13T22:16:25.492Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-13T19:41:55.564Z",
+    "lastUpdated": "2026-05-13T22:16:25.492Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -11632,8 +11629,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 61,
-    "mentionCount": 14,
+    "heatScore": 63,
+    "mentionCount": 15,
     "priceHistory": [],
     "sources": [
       {
@@ -11678,7 +11675,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-13T19:41:55.563Z",
+    "lastUpdated": "2026-05-13T22:16:25.492Z",
     "tags": [
       "Claude",
       "中转",
@@ -14030,15 +14027,15 @@
     "freeQuota": {
       "amount": 30,
       "unit": "USD",
-      "description": "新用户注册送$30，前50名V友专享。"
+      "description": "前50名注册用户赠送30美元体验金"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "未提及具体速率限制，但提到'Pro 20X 号池'。",
     "status": "unknown",
     "lastChecked": "2026-05-13T11:37:08.008Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 53,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -14072,10 +14069,18 @@
         "author": "<name>zhanlangorz</name>\n\t\t<uri>https://www.v2ex.com/member/zhanlangorz</uri>",
         "publishedAt": "2026-05-13T19:25:28.000Z",
         "fetchedAt": "2026-05-13T19:41:55.564Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212497#reply45",
+        "title": "[推广] 推广一下自己的中转站, 注册就送 30 刀, 是兄弟就来蹬我",
+        "author": "<name>zhanlangorz</name>\n\t\t<uri>https://www.v2ex.com/member/zhanlangorz</uri>",
+        "publishedAt": "2026-05-13T19:25:28.000Z",
+        "fetchedAt": "2026-05-13T22:16:25.493Z"
       }
     ],
     "firstSeen": "2026-05-13T11:37:08.008Z",
-    "lastUpdated": "2026-05-13T19:41:55.564Z",
+    "lastUpdated": "2026-05-13T22:16:25.493Z",
     "tags": [
       "API中转",
       "注册送金",
@@ -14452,15 +14457,15 @@
     "freeQuota": {
       "amount": 20,
       "unit": "USD",
-      "description": "新用户注册或参与活动可获得$20额度。"
+      "description": "回帖即获得$20"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-13T17:22:26.523Z",
-    "heatScore": 32,
-    "mentionCount": 2,
+    "heatScore": 34,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -14478,15 +14483,24 @@
         "author": "<name>PixelWanderer</name>\n\t\t<uri>https://www.v2ex.com/member/PixelWanderer</uri>",
         "publishedAt": "2026-05-13T17:38:13.000Z",
         "fetchedAt": "2026-05-13T19:41:55.561Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212543#reply6",
+        "title": "[推广] 给各位 V 友发点福利，顺便测试一下",
+        "author": "<name>PixelWanderer</name>\n\t\t<uri>https://www.v2ex.com/member/PixelWanderer</uri>",
+        "publishedAt": "2026-05-13T17:38:13.000Z",
+        "fetchedAt": "2026-05-13T22:16:25.487Z"
       }
     ],
     "firstSeen": "2026-05-13T17:22:26.523Z",
-    "lastUpdated": "2026-05-13T19:41:55.561Z",
+    "lastUpdated": "2026-05-13T22:16:25.487Z",
     "tags": [
       "API网关",
       "推广福利",
       "API中转",
-      "注册奖励"
+      "注册奖励",
+      "推广"
     ],
     "subscription": {
       "plans": []
@@ -14498,16 +14512,16 @@
     "website": "https://github.com/ferosai/feros",
     "contact": "",
     "models": [],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
-    "freeQuota": null,
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-13T19:41:55.563Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -14520,7 +14534,7 @@
       }
     ],
     "firstSeen": "2026-05-13T19:41:55.563Z",
-    "lastUpdated": "2026-05-13T19:41:55.563Z",
+    "lastUpdated": "2026-05-13T22:16:25.491Z",
     "tags": [
       "开源",
       "语音AI",
@@ -14536,8 +14550,8 @@
     "models": [
       {
         "model": "Claude code",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -14549,8 +14563,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-13T19:41:55.565Z",
-    "heatScore": 30,
-    "mentionCount": 1,
+    "heatScore": 32,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -14563,10 +14577,11 @@
       }
     ],
     "firstSeen": "2026-05-13T19:41:55.565Z",
-    "lastUpdated": "2026-05-13T19:41:55.565Z",
+    "lastUpdated": "2026-05-13T22:16:25.493Z",
     "tags": [
       "国内",
-      "Claude"
+      "Claude",
+      "AI中转"
     ]
   },
   {
@@ -14811,6 +14826,43 @@
       "API中转",
       "源头厂商",
       "企业级"
+    ]
+  },
+  {
+    "id": "pmp4mcviqxugno",
+    "name": "Grok Automation",
+    "website": "https://grok-automation.com/chrome-extension/",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-13T22:16:25.490Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212539#reply0",
+        "title": "[分享创造] 做了一个 Chrome 扩展 Grok Automation，让 Grok Imagine 可以批量跑图跑视频",
+        "author": "<name>funet</name>\n\t\t<uri>https://www.v2ex.com/member/funet</uri>",
+        "publishedAt": "2026-05-12T23:38:50.000Z",
+        "fetchedAt": "2026-05-13T22:16:25.490Z"
+      }
+    ],
+    "firstSeen": "2026-05-13T22:16:25.490Z",
+    "lastUpdated": "2026-05-13T22:16:25.490Z",
+    "tags": [
+      "Chrome扩展",
+      "AI图像生成",
+      "AI视频生成",
+      "批量处理",
+      "自动化工具"
     ]
   }
 ]
