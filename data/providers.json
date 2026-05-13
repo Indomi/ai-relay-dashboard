@@ -8358,15 +8358,19 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "无"
+    },
     "paymentMethods": [
       "USDT",
       "支付宝"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 63,
-    "mentionCount": 15,
+    "heatScore": 65,
+    "mentionCount": 16,
     "priceHistory": [],
     "sources": [
       {
@@ -8432,10 +8436,18 @@
         "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
         "publishedAt": "2026-05-12T07:40:22.000Z",
         "fetchedAt": "2026-05-12T08:40:45.322Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212486#reply0",
+        "title": "[推广] AWS 亚马逊云|腾讯云国际|谷歌云-优惠充值",
+        "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
+        "publishedAt": "2026-05-13T10:04:01.000Z",
+        "fetchedAt": "2026-05-13T11:37:08.011Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-12T11:32:15.105Z",
+    "lastUpdated": "2026-05-13T11:37:08.011Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -8561,8 +8573,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 61,
-    "mentionCount": 9,
+    "heatScore": 63,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -8588,10 +8600,18 @@
         "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
         "publishedAt": "2026-05-12T08:31:18.000Z",
         "fetchedAt": "2026-05-12T08:40:45.320Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212483#reply0",
+        "title": "[推广] 分享一个海外住宅代理 Novproxy，附带 500M 测试流量 CDK",
+        "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
+        "publishedAt": "2026-05-13T09:54:09.000Z",
+        "fetchedAt": "2026-05-13T11:37:08.012Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-12T13:44:47.654Z",
+    "lastUpdated": "2026-05-13T11:37:08.012Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -13639,6 +13659,218 @@
       "GPT Plus",
       "API网关",
       "套餐订阅"
+    ]
+  },
+  {
+    "id": "pmp3ziqp4eywu4",
+    "name": "OpenToken",
+    "website": "https://opentk.ai",
+    "contact": "QQ群：215816872",
+    "models": [
+      {
+        "model": "GPT-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 30,
+      "unit": "USD",
+      "description": "新用户注册并加入QQ群，回帖留下邮箱即可获得30美元免费额度。"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-13T11:37:08.008Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212497#reply0",
+        "title": "[推广] 推广一下自己的中转站, 注册就送 30 刀, 是兄弟就来蹬我",
+        "author": "<name>zhanlangorz</name>\n\t\t<uri>https://www.v2ex.com/member/zhanlangorz</uri>",
+        "publishedAt": "2026-05-13T11:32:33.000Z",
+        "fetchedAt": "2026-05-13T11:37:08.008Z"
+      }
+    ],
+    "firstSeen": "2026-05-13T11:37:08.008Z",
+    "lastUpdated": "2026-05-13T11:37:08.008Z",
+    "tags": [
+      "API中转",
+      "注册送金",
+      "GPT"
+    ]
+  },
+  {
+    "id": "pmp3ziqp9rdxlb",
+    "name": "Cursor",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "opus4.6",
+        "inputPrice": 0.08,
+        "outputPrice": 0.08,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "老用户套餐",
+          "price": 20,
+          "period": "月",
+          "features": [
+            "500次对话",
+            "超出后每次$0.08"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "USD",
+      "description": "无明确免费额度，套餐包含500次对话，超出后付费。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-13T11:37:08.013Z",
+    "heatScore": 25,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212467#reply19",
+        "title": "[程序员] 不吐不快， cursor 在变相折磨老用户",
+        "author": "<name>ggp1ot2</name>\n\t\t<uri>https://www.v2ex.com/member/ggp1ot2</uri>",
+        "publishedAt": "2026-05-13T11:26:04.000Z",
+        "fetchedAt": "2026-05-13T11:37:08.013Z"
+      }
+    ],
+    "firstSeen": "2026-05-13T11:37:08.013Z",
+    "lastUpdated": "2026-05-13T11:37:08.013Z",
+    "tags": [
+      "编程助手",
+      "AI工具",
+      "用户投诉"
+    ]
+  },
+  {
+    "id": "pmp3ziqpanheec",
+    "name": "MojoMake",
+    "website": "https://mojomake.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "Veo 3.1",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Kling 3.0",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Runway Gen-4 Turbo",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Nano Banana 2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Flux 2 Pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Starter",
+          "price": 9,
+          "period": "month",
+          "features": [
+            "按积分使用主流AI模型",
+            "商用许可"
+          ],
+          "autoRenew": true,
+          "refundRule": null
+        },
+        {
+          "name": "Standard",
+          "price": null,
+          "period": "month",
+          "features": [
+            "按积分使用主流AI模型",
+            "商用许可"
+          ],
+          "autoRenew": true,
+          "refundRule": null
+        },
+        {
+          "name": "Premium",
+          "price": null,
+          "period": "month",
+          "features": [
+            "按积分使用主流AI模型",
+            "商用许可"
+          ],
+          "autoRenew": true,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "积分",
+      "description": "新用户注册赠送10积分"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-13T11:37:08.014Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212453#reply1",
+        "title": "[分享创造] 做了一个 AI 视频图片生成站，把常用的视频图片大模型聚到一个订阅里",
+        "author": "<name>binarytree</name>\n\t\t<uri>https://www.v2ex.com/member/binarytree</uri>",
+        "publishedAt": "2026-05-13T08:22:16.000Z",
+        "fetchedAt": "2026-05-13T11:37:08.014Z"
+      }
+    ],
+    "firstSeen": "2026-05-13T11:37:08.014Z",
+    "lastUpdated": "2026-05-13T11:37:08.014Z",
+    "tags": [
+      "视频生成",
+      "图片生成",
+      "模型聚合",
+      "订阅制",
+      "商用许可"
     ]
   }
 ]
