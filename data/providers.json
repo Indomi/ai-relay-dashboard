@@ -13179,7 +13179,26 @@
     "name": "BetterToken",
     "website": "https://www.bettertoken.ai/",
     "contact": "",
-    "models": [],
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 10,
+        "outputPrice": 30,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 3,
+        "outputPrice": 15,
+        "currency": "USD"
+      },
+      {
+        "model": "gpt-3.5-turbo",
+        "inputPrice": 0.5,
+        "outputPrice": 1.5,
+        "currency": "USD"
+      }
+    ],
     "billingType": "token",
     "subscription": {
       "plans": []
@@ -13189,13 +13208,16 @@
       "unit": "USD",
       "description": "新用户注册送$5"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-12T08:40:45.322Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -13205,14 +13227,24 @@
         "author": "<name>codingforfun</name>\n\t\t<uri>https://www.v2ex.com/member/codingforfun</uri>",
         "publishedAt": "2026-05-12T08:27:48.000Z",
         "fetchedAt": "2026-05-12T08:40:45.322Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212356#reply0",
+        "title": "[推广] 推广下自建的中转站（支持 Claude/Codex 多种高性价比倍率)，注册送 5 美刀，不薅白不薅，冲鸭",
+        "author": "<name>codingforfun</name>\n\t\t<uri>https://www.v2ex.com/member/codingforfun</uri>",
+        "publishedAt": "2026-05-13T03:02:45.000Z",
+        "fetchedAt": "2026-05-13T06:31:19.572Z"
       }
     ],
     "firstSeen": "2026-05-12T08:40:45.322Z",
-    "lastUpdated": "2026-05-12T08:40:45.322Z",
+    "lastUpdated": "2026-05-13T06:31:19.572Z",
     "tags": [
       "Claude",
       "Codex",
-      "中转站"
+      "中转站",
+      "API中转",
+      "多模型"
     ]
   },
   {
@@ -13510,6 +13542,103 @@
       "AI总结",
       "SaaS",
       "视频笔记"
+    ]
+  },
+  {
+    "id": "pmp3olgybf8iio",
+    "name": "XINX",
+    "website": "https://api.xiaoxin.best/home",
+    "contact": "QQ群：1092067247",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "日卡",
+          "price": 3,
+          "period": "day",
+          "features": [
+            "50美元余额",
+            "日限额50美元"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "周卡",
+          "price": 19,
+          "period": "week",
+          "features": [
+            "400美元余额",
+            "日限额100美元"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "月卡",
+          "price": 49,
+          "period": "month",
+          "features": [
+            "1200美元余额",
+            "日限额200美元"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "月卡（大杯）",
+          "price": 89,
+          "period": "month",
+          "features": [
+            "3000美元余额",
+            "日限额400美元"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "月卡（超大杯）",
+          "price": 199,
+          "period": "month",
+          "features": [
+            "8888美元余额",
+            "日限额888美元"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 30,
+      "unit": "USD",
+      "description": "新用户注册赠送$6.6，回帖后额外赠送$23.4。"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "各套餐有每日使用额度限制。",
+    "status": "unknown",
+    "lastChecked": "2026-05-13T06:31:19.571Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212358#reply82",
+        "title": "[推广] 初来 v 站福利多多，注册就送 30$余额，需要中转的可以薅薅",
+        "author": "<name>zhlsk</name>\n\t\t<uri>https://www.v2ex.com/member/zhlsk</uri>",
+        "publishedAt": "2026-05-13T06:26:11.000Z",
+        "fetchedAt": "2026-05-13T06:31:19.571Z"
+      }
+    ],
+    "firstSeen": "2026-05-13T06:31:19.571Z",
+    "lastUpdated": "2026-05-13T06:31:19.571Z",
+    "tags": [
+      "GPT Plus",
+      "API网关",
+      "套餐订阅"
     ]
   }
 ]
