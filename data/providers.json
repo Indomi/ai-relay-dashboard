@@ -9871,7 +9871,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
@@ -9880,8 +9880,6 @@
           "period": "month",
           "features": [
             "每模型1,500次调用 / 5小时",
-            "原生多模态架构，理解生成一体",
-            "原生支持Cowork-Skills体系，办公场景特化支持",
             "支持Hermes Agent与OpenClaw快速接入",
             "最多20个API Key"
           ],
@@ -9889,35 +9887,27 @@
           "refundRule": null
         },
         {
-          "name": "Lite",
+          "name": "Lite / Pro (即将上线)",
           "price": null,
-          "period": null,
+          "period": "month",
           "features": null,
-          "autoRenew": null,
-          "refundRule": null
-        },
-        {
-          "name": "Pro",
-          "price": null,
-          "period": null,
-          "features": null,
-          "autoRenew": null,
+          "autoRenew": false,
           "refundRule": null
         }
       ]
     },
     "freeQuota": {
       "amount": 1500,
-      "unit": "次调用/5小时",
-      "description": "公测期间，每个模型免费提供每5小时1500次调用额度。"
+      "unit": "调用次数",
+      "description": "公测期间，每模型每5小时免费1500次调用"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "每模型1,500次调用 / 5小时",
     "status": "unknown",
     "lastChecked": "2026-05-09T01:41:43.373Z",
-    "heatScore": 46,
-    "mentionCount": 4,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -9938,7 +9928,7 @@
       }
     ],
     "firstSeen": "2026-05-09T01:41:43.373Z",
-    "lastUpdated": "2026-05-14T19:38:54.284Z",
+    "lastUpdated": "2026-05-14T22:11:55.066Z",
     "tags": [
       "公测免费",
       "多模态",
@@ -10028,8 +10018,8 @@
       },
       {
         "model": "Claude/OpenAI兼容模型",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -10045,8 +10035,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T05:51:22.979Z",
-    "heatScore": 53,
-    "mentionCount": 5,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -10083,7 +10073,7 @@
       }
     ],
     "firstSeen": "2026-05-09T05:51:22.979Z",
-    "lastUpdated": "2026-05-14T19:38:54.284Z",
+    "lastUpdated": "2026-05-14T22:11:55.065Z",
     "tags": [
       "开源",
       "AI Agent",
@@ -12113,17 +12103,17 @@
     ],
     "billingType": "unknown",
     "freeQuota": {
-      "amount": 0,
-      "unit": "unknown",
-      "description": "未提及"
+      "amount": null,
+      "unit": null,
+      "description": null
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 67,
-    "mentionCount": 17,
+    "heatScore": 69,
+    "mentionCount": 18,
     "priceHistory": [],
     "sources": [
       {
@@ -12176,7 +12166,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-14T19:38:54.282Z",
+    "lastUpdated": "2026-05-14T22:11:55.063Z",
     "tags": [
       "Claude",
       "中转",
@@ -13830,8 +13820,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T06:14:12.618Z",
-    "heatScore": 46,
-    "mentionCount": 4,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -13860,7 +13850,7 @@
       }
     ],
     "firstSeen": "2026-05-12T06:14:12.618Z",
-    "lastUpdated": "2026-05-14T19:38:54.281Z",
+    "lastUpdated": "2026-05-14T22:11:55.063Z",
     "tags": [
       "Claude",
       "CodeX",
@@ -15010,15 +15000,15 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户注册自动送 $10"
+      "description": "新用户注册自动送 $10 免费额度。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-13T17:22:26.523Z",
-    "heatScore": 42,
-    "mentionCount": 7,
+    "heatScore": 44,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -15063,7 +15053,7 @@
       }
     ],
     "firstSeen": "2026-05-13T17:22:26.523Z",
-    "lastUpdated": "2026-05-14T19:38:54.283Z",
+    "lastUpdated": "2026-05-14T22:11:55.064Z",
     "tags": [
       "API网关",
       "推广福利",
@@ -16098,7 +16088,7 @@
     "website": "",
     "contact": "",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
@@ -16106,8 +16096,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-14T17:08:53.356Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -16128,7 +16118,7 @@
       }
     ],
     "firstSeen": "2026-05-14T17:08:53.356Z",
-    "lastUpdated": "2026-05-14T17:08:53.356Z",
+    "lastUpdated": "2026-05-14T22:11:55.062Z",
     "tags": [
       "内网穿透",
       "QUIC",
@@ -16496,13 +16486,13 @@
     "freeQuota": {
       "amount": 1,
       "unit": "GB",
-      "description": "24小时试用订阅"
+      "description": "提供 1GB / 24h 的试用订阅"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-14T19:38:54.280Z",
-    "heatScore": 30,
-    "mentionCount": 1,
+    "heatScore": 32,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -16512,10 +16502,18 @@
         "author": "<name>zhao69270</name>\n\t\t<uri>https://www.v2ex.com/member/zhao69270</uri>",
         "publishedAt": "2026-05-14T15:19:33.000Z",
         "fetchedAt": "2026-05-14T19:38:54.280Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1212827#reply1",
+        "title": "[推广] 洛杉矶 REALITY 节点，自运维九年，主打稳定",
+        "author": "<name>zhao69270</name>\n\t\t<uri>https://www.v2ex.com/member/zhao69270</uri>",
+        "publishedAt": "2026-05-14T16:19:33.000Z",
+        "fetchedAt": "2026-05-14T22:11:55.062Z"
       }
     ],
     "firstSeen": "2026-05-14T19:38:54.280Z",
-    "lastUpdated": "2026-05-14T19:38:54.280Z",
+    "lastUpdated": "2026-05-14T22:11:55.062Z",
     "tags": [
       "VPN",
       "节点服务",
