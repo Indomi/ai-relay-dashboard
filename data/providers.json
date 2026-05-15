@@ -9306,86 +9306,91 @@
     "subscription": {
       "plans": [
         {
-          "name": "Dynamic Residential IP (流量套餐)",
+          "name": "动态住宅流量",
           "price": 0.5,
           "period": "GB",
           "features": [
-            "按流量计费",
-            "流量永不过期",
+            "按GB计费",
             "高纯度IP",
-            "支持轮换和粘性会话",
-            "无限连接"
+            "流量永不过期",
+            "支持旋转和粘性会话"
           ],
           "autoRenew": false,
-          "refundRule": "未提及"
+          "refundRule": null
         },
         {
-          "name": "Long-Term Static ISP IP",
+          "name": "长期静态ISP",
           "price": 3,
           "period": "month",
           "features": [
-            "原生IP独享",
-            "无限流量",
+            "原生独享IP",
+            "优质ASN",
             "适合长期养号",
-            "启动后开始计费"
+            "无限流量"
           ],
           "autoRenew": false,
-          "refundRule": "未提及"
+          "refundRule": null
         },
         {
-          "name": "Unlimited Traffic - Port",
-          "price": 0.3,
-          "period": "day",
-          "features": [
-            "按端口计费",
-            "无限流量和IP",
-            "自动切换IP",
-            "IP可用30分钟"
-          ],
-          "autoRenew": false,
-          "refundRule": "未提及"
-        },
-        {
-          "name": "Unlimited Traffic - Bandwidth",
+          "name": "无限流量-带宽",
           "price": 38.33,
           "period": "day",
           "features": [
             "按带宽计费",
-            "专属服务器",
+            "专用服务器",
             "可定制带宽",
-            "无限流量和IP"
+            "无限流量和IP",
+            "多线程高并发"
           ],
           "autoRenew": false,
-          "refundRule": "未提及"
+          "refundRule": null
         },
         {
-          "name": "Short-Term Residential IP",
+          "name": "无限流量-端口",
+          "price": 0.3,
+          "period": "day",
+          "features": [
+            "按端口计费",
+            "端口数可定制",
+            "无限流量和IP",
+            "多端口使用",
+            "自动切换IP"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "短期住宅IP",
           "price": 0.028,
           "period": "IP",
           "features": [
             "按IP数量计费",
-            "无限流量",
-            "未使用不收费",
+            "流量不限",
+            "未使用IP永不过期",
             "支持CDK生成",
-            "IP最长可用6小时"
+            "IP最长6小时"
           ],
           "autoRenew": false,
-          "refundRule": "未提及"
+          "refundRule": null
         }
       ]
     },
     "freeQuota": {
       "amount": null,
-      "unit": "流量",
-      "description": "新用户注册可获得免费测试额度"
+      "unit": null,
+      "description": "注册就送免费测试额度"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "无明确限制，支持多线程高并发",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 73,
-    "mentionCount": 15,
+    "heatScore": 75,
+    "mentionCount": 16,
     "priceHistory": [],
     "sources": [
       {
@@ -9438,7 +9443,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-15T13:35:40.011Z",
+    "lastUpdated": "2026-05-15T16:45:10.768Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -10692,20 +10697,38 @@
     "website": "https://partner.bybit.com/b/146364",
     "contact": "Telegram: @fgvbt123",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "基础卡",
+          "price": 0,
+          "period": "无",
+          "features": [
+            "支持微信、支付宝、Apple Pay绑定",
+            "双卡段覆盖（澳洲、中亚）",
+            "线上线下支付",
+            "跨境支付"
+          ]
+        }
+      ]
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 10,
+      "unit": "USD",
+      "description": "新人专属10U充值赠礼（充值100U赠送10U）"
+    },
     "paymentMethods": [
       "微信",
       "支付宝",
-      "Apple Pay"
+      "Apple Pay",
+      "Google Pay",
+      "信用卡"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-09T07:41:46.423Z",
-    "heatScore": 50,
-    "mentionCount": 6,
+    "heatScore": 52,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -10742,7 +10765,7 @@
       }
     ],
     "firstSeen": "2026-05-09T07:41:46.423Z",
-    "lastUpdated": "2026-05-15T13:35:40.012Z",
+    "lastUpdated": "2026-05-15T16:45:10.770Z",
     "tags": [
       "U卡",
       "支付",
@@ -12367,21 +12390,39 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "USD"
+      },
+      {
+        "model": "kiro",
+        "inputPrice": 0.4,
+        "outputPrice": 0.4,
+        "currency": "CNY"
+      },
+      {
+        "model": "Aws",
+        "inputPrice": 1.5,
+        "outputPrice": 1.5,
+        "currency": "CNY"
+      },
+      {
+        "model": "CC",
+        "inputPrice": 1.85,
+        "outputPrice": 1.85,
+        "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": null
+      "amount": 0,
+      "unit": "CNY",
+      "description": ""
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 69,
-    "mentionCount": 18,
+    "heatScore": 71,
+    "mentionCount": 19,
     "priceHistory": [],
     "sources": [
       {
@@ -12431,10 +12472,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-14T13:43:51.000Z",
         "fetchedAt": "2026-05-14T17:08:53.358Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213082#reply0",
+        "title": "[推广] FK Claude 把价格打下来",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-15T13:52:56.000Z",
+        "fetchedAt": "2026-05-15T16:45:10.768Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-14T22:11:55.063Z",
+    "lastUpdated": "2026-05-15T16:45:10.768Z",
     "tags": [
       "Claude",
       "中转",
