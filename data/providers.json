@@ -1194,26 +1194,18 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 10,
-      "unit": "USD",
-      "description": "新用户加入社群可领10美元初始额度"
-    },
-    "paymentMethods": [
-      "支付宝",
-      "微信",
-      "企业对公转账"
-    ],
+    "freeQuota": {},
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "无明确信息",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 31,
+    "mentionCount": 32,
     "priceHistory": [],
     "sources": [
       {
@@ -1319,10 +1311,18 @@
         "author": "aicodingsh",
         "publishedAt": "2026-05-14T00:30:42.000Z",
         "fetchedAt": "2026-05-14T19:37:13.999Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213165#reply5",
+        "title": "[分享创造] 做了一个自动更新的 AI Coding Plan 对比网站：什么 AI 值得买",
+        "author": "<name>irainsoft</name>\n\t\t<uri>https://www.v2ex.com/member/irainsoft</uri>",
+        "publishedAt": "2026-05-16T08:15:11.000Z",
+        "fetchedAt": "2026-05-16T13:06:50.636Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-15T06:34:29.285Z",
+    "lastUpdated": "2026-05-16T13:06:50.636Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -12492,7 +12492,7 @@
     "billingType": "token",
     "freeQuota": {
       "amount": 0,
-      "unit": "CNY",
+      "unit": "USD",
       "description": "未提及免费额度"
     },
     "paymentMethods": [],
@@ -12500,8 +12500,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 81,
-    "mentionCount": 24,
+    "heatScore": 83,
+    "mentionCount": 25,
     "priceHistory": [],
     "sources": [
       {
@@ -12570,7 +12570,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-16T10:19:22.443Z",
+    "lastUpdated": "2026-05-16T13:06:50.649Z",
     "tags": [
       "Claude",
       "中转",
@@ -15499,19 +15499,19 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户注册自动赠送$10额度，用于测试。"
+      "description": "新用户注册送$10"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-13T17:22:26.523Z",
-    "heatScore": 46,
-    "mentionCount": 9,
+    "heatScore": 48,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -15553,10 +15553,18 @@
         "author": "PixelWanderer",
         "publishedAt": "2026-05-14T11:34:25.000Z",
         "fetchedAt": "2026-05-14T19:37:13.994Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213202#reply0",
+        "title": "[推广] [福利/果冻 API] 新用户福利最后一天！新用户注册送 $10，加群送$10，欢迎 V 友试用反馈",
+        "author": "<name>PixelWanderer</name>\n\t\t<uri>https://www.v2ex.com/member/PixelWanderer</uri>",
+        "publishedAt": "2026-05-16T12:07:18.000Z",
+        "fetchedAt": "2026-05-16T13:06:50.636Z"
       }
     ],
     "firstSeen": "2026-05-13T17:22:26.523Z",
-    "lastUpdated": "2026-05-15T06:34:29.277Z",
+    "lastUpdated": "2026-05-16T13:06:50.636Z",
     "tags": [
       "API网关",
       "推广福利",
@@ -17371,6 +17379,54 @@
         "inputPrice": 0.2,
         "outputPrice": 0.2,
         "currency": "CNY"
+      },
+      {
+        "model": "Claude (Opus 4.7/4.6, Sonnet 4.6, Haiku 4.5)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "GPT-5.5/5.4/5.2/5/o3/o4-mini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Gemini (3.1 Pro, 3 Flash, 2.5 Pro, 2.5 Flash)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "DeepSeek (R1, V3.2)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Qwen (3 Coder Plus, 3 Max, 3.5系列)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Kimi K2.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "GLM-5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "M2.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
@@ -17383,8 +17439,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-15T11:24:17.350Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -17405,7 +17461,7 @@
       }
     ],
     "firstSeen": "2026-05-15T11:24:17.350Z",
-    "lastUpdated": "2026-05-16T10:19:22.441Z",
+    "lastUpdated": "2026-05-16T13:06:50.647Z",
     "tags": [
       "企业级线路",
       "高SLA",
@@ -17769,18 +17825,37 @@
     "models": [],
     "billingType": "unknown",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "基础套餐",
+          "price": "unknown",
+          "period": "永久",
+          "features": [
+            "支持200+国家和地区",
+            "可用于转售操作"
+          ]
+        },
+        {
+          "name": "企业套餐",
+          "price": "unknown",
+          "period": "永久",
+          "features": [
+            "支持200+国家和地区",
+            "可用于转售操作"
+          ]
+        }
+      ]
     },
     "freeQuota": {
       "amount": 500,
       "unit": "MB",
-      "description": "注册后联系客服可获得500MB免费额度"
+      "description": "注册后联系客服可获得500MB免费流量"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-16T07:59:25.227Z",
-    "heatScore": 37,
-    "mentionCount": 2,
+    "heatScore": 39,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -17793,12 +17868,13 @@
       }
     ],
     "firstSeen": "2026-05-16T07:59:25.227Z",
-    "lastUpdated": "2026-05-16T10:19:22.439Z",
+    "lastUpdated": "2026-05-16T13:06:50.644Z",
     "tags": [
       "代理服务",
       "转售支持",
       "多国支持",
-      "多地区定制"
+      "多地区定制",
+      "网络代理"
     ]
   },
   {
