@@ -6950,15 +6950,15 @@
         "currency": "USD"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "unknown",
     "subscription": {
       "plans": [
         {
-          "name": "体验订阅",
+          "name": "订阅体验",
           "price": 10,
-          "period": "unknown",
+          "period": null,
           "features": [
-            "提供模型API访问权限"
+            "新用户体验"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -6968,15 +6968,15 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户通过留言或扫码进群可获得10美元或20美元的体验订阅额度。"
+      "description": "新用户注册后通过活动可获得10美元订阅体验额度。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "unknown",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.119Z",
-    "heatScore": 69,
-    "mentionCount": 13,
+    "heatScore": 71,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -7026,10 +7026,18 @@
         "author": "<name>darbra</name>\n\t\t<uri>https://www.v2ex.com/member/darbra</uri>",
         "publishedAt": "2026-05-16T05:53:51.000Z",
         "fetchedAt": "2026-05-16T05:58:31.082Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213116#reply36",
+        "title": "[推广] 震惊！为了冲日活，居然对新用户干出这种事……（内含 10 刀福利）",
+        "author": "<name>darbra</name>\n\t\t<uri>https://www.v2ex.com/member/darbra</uri>",
+        "publishedAt": "2026-05-16T07:41:03.000Z",
+        "fetchedAt": "2026-05-16T07:59:25.232Z"
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.119Z",
-    "lastUpdated": "2026-05-16T05:58:31.082Z",
+    "lastUpdated": "2026-05-16T07:59:25.232Z",
     "tags": [
       "Codex中转",
       "API代理",
@@ -11366,8 +11374,8 @@
       },
       {
         "model": "Claude",
-        "inputPrice": "未知",
-        "outputPrice": "未知",
+        "inputPrice": 5,
+        "outputPrice": 25,
         "currency": "未知"
       },
       {
@@ -11375,9 +11383,15 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "未知"
+      },
+      {
+        "model": "GPT-5.5",
+        "inputPrice": 5,
+        "outputPrice": 30,
+        "currency": "USD"
       }
     ],
-    "billingType": "未知",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
@@ -11389,8 +11403,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 27,
-    "mentionCount": 7,
+    "heatScore": 29,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -11424,10 +11438,18 @@
         "author": "",
         "publishedAt": "2026-05-14T19:40:30.900Z",
         "fetchedAt": "2026-05-14T19:48:33.207Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213128#reply4",
+        "title": "[分享发现] 发现 cloudflare 也有各种 AI api, 包含 GPT-5.5, Claude Opus 4.7",
+        "author": "<name>yesha</name>\n\t\t<uri>https://www.v2ex.com/member/yesha</uri>",
+        "publishedAt": "2026-05-16T04:10:04.000Z",
+        "fetchedAt": "2026-05-16T07:59:25.230Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-05-14T19:48:33.207Z",
+    "lastUpdated": "2026-05-16T07:59:25.230Z",
     "tags": [
       "统计工具",
       "token使用",
@@ -12457,15 +12479,15 @@
     "freeQuota": {
       "amount": 0,
       "unit": "CNY",
-      "description": ""
+      "description": "未提及免费额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 77,
-    "mentionCount": 22,
+    "heatScore": 79,
+    "mentionCount": 23,
     "priceHistory": [],
     "sources": [
       {
@@ -12534,7 +12556,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-16T05:58:31.076Z",
+    "lastUpdated": "2026-05-16T07:59:25.229Z",
     "tags": [
       "Claude",
       "中转",
@@ -12999,14 +13021,20 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "Kiro Pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "subscription",
     "subscription": {
       "plans": [
         {
-          "name": "Kiro Pro月卡",
-          "price": "",
+          "name": "Kiro Pro 月卡独享成品号",
+          "price": null,
           "period": "月",
           "features": [
             "1000 Credits",
@@ -13016,15 +13044,15 @@
       ]
     },
     "freeQuota": {
-      "amount": 0,
+      "amount": null,
       "unit": "",
       "description": ""
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.114Z",
-    "heatScore": 57,
-    "mentionCount": 7,
+    "heatScore": 59,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -13061,7 +13089,7 @@
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.114Z",
-    "lastUpdated": "2026-05-16T05:58:31.082Z",
+    "lastUpdated": "2026-05-16T07:59:25.231Z",
     "tags": [
       "GPT",
       "订阅",
@@ -17244,6 +17272,30 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "Claude (Opus/Sonnet/Haiku)",
+        "inputPrice": 5,
+        "outputPrice": 5,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude (自建号池)",
+        "inputPrice": 2.6,
+        "outputPrice": 2.6,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude (第三方)",
+        "inputPrice": 1,
+        "outputPrice": 1,
+        "currency": "CNY"
+      },
+      {
+        "model": "GPT (普通线路)",
+        "inputPrice": 0.2,
+        "outputPrice": 0.2,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
@@ -17256,8 +17308,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-15T11:24:17.350Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -17267,15 +17319,24 @@
         "author": "<name>zws74100000</name>\n\t\t<uri>https://www.v2ex.com/member/zws74100000</uri>",
         "publishedAt": "2026-05-15T08:06:11.000Z",
         "fetchedAt": "2026-05-15T11:24:17.350Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213154#reply5",
+        "title": "[推广] ComeU API 中转，自建号池+GPT 限时优惠， SLA 99%+",
+        "author": "<name>zws74100000</name>\n\t\t<uri>https://www.v2ex.com/member/zws74100000</uri>",
+        "publishedAt": "2026-05-16T06:55:52.000Z",
+        "fetchedAt": "2026-05-16T07:59:25.228Z"
       }
     ],
     "firstSeen": "2026-05-15T11:24:17.350Z",
-    "lastUpdated": "2026-05-15T11:24:17.350Z",
+    "lastUpdated": "2026-05-16T07:59:25.228Z",
     "tags": [
       "企业级线路",
       "高SLA",
       "多模型支持",
-      "支付宝/微信支付"
+      "支付宝/微信支付",
+      "中转"
     ]
   },
   {
@@ -17605,6 +17666,94 @@
       "Codex",
       "包月套餐",
       "按量付费"
+    ]
+  },
+  {
+    "id": "pmp822be38kcib",
+    "name": "Proxy001",
+    "website": "https://proxy001.com/?aff=jason_e",
+    "contact": "E-mail:jasonproxy001@outlook.com, Whatsapp: +852 90163754, Telegram: t.me/proxy001_mora",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": [
+        {
+          "name": "基础套餐",
+          "price": "未知",
+          "period": "永久",
+          "features": []
+        },
+        {
+          "name": "企业套餐",
+          "price": "未知",
+          "period": "永久",
+          "features": []
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 500,
+      "unit": "MB",
+      "description": "注册后联系客服可获赠500MB免费额度"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-16T07:59:25.227Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213156#reply0",
+        "title": "[HTTP] Proxy001 - 500MB. Contact me after registration for a free gift!",
+        "author": "<name>Proxy001</name>\n\t\t<uri>https://www.v2ex.com/member/Proxy001</uri>",
+        "publishedAt": "2026-05-16T02:47:19.000Z",
+        "fetchedAt": "2026-05-16T07:59:25.227Z"
+      }
+    ],
+    "firstSeen": "2026-05-16T07:59:25.227Z",
+    "lastUpdated": "2026-05-16T07:59:25.227Z",
+    "tags": [
+      "代理服务",
+      "转售支持",
+      "多国支持"
+    ]
+  },
+  {
+    "id": "pmp822be5628c1",
+    "name": "Bright Data",
+    "website": "",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-16T07:59:25.229Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213150#reply0",
+        "title": "[Claude] bright data 解惑拼车",
+        "author": "<name>Sorhyu</name>\n\t\t<uri>https://www.v2ex.com/member/Sorhyu</uri>",
+        "publishedAt": "2026-05-15T23:08:06.000Z",
+        "fetchedAt": "2026-05-16T07:59:25.229Z"
+      }
+    ],
+    "firstSeen": "2026-05-16T07:59:25.229Z",
+    "lastUpdated": "2026-05-16T07:59:25.229Z",
+    "tags": [
+      "IP服务",
+      "拼车",
+      "静态住宅IP",
+      "美国IP"
     ]
   }
 ]
