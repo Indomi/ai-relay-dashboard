@@ -1926,20 +1926,32 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "GPT (未指定具体型号)",
+        "inputPrice": "未明确提供具体数值",
+        "outputPrice": "未明确提供具体数值",
+        "currency": "未明确提供"
       }
     ],
     "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
-    "paymentMethods": [],
+    "freeQuota": {
+      "amount": "未明确提供",
+      "unit": "未明确提供",
+      "description": "未提及"
+    },
+    "paymentMethods": [
+      "未明确提供"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 64,
-    "mentionCount": 13,
+    "heatScore": 66,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -1981,10 +1993,18 @@
         "author": "<name>runcode</name>\n\t\t<uri>https://www.v2ex.com/member/runcode</uri>",
         "publishedAt": "2026-05-10T15:41:03.000Z",
         "fetchedAt": "2026-05-10T15:54:11.526Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213229#reply0",
+        "title": "[推广] 比较贵的 gpt 兜底中转",
+        "author": "<name>rubi</name>\n\t\t<uri>https://www.v2ex.com/member/rubi</uri>",
+        "publishedAt": "2026-05-16T16:54:21.000Z",
+        "fetchedAt": "2026-05-16T21:49:49.547Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-10T15:54:11.526Z",
+    "lastUpdated": "2026-05-16T21:49:49.547Z",
     "tags": [
       "官方API",
       "永久余额",
@@ -11604,24 +11624,30 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "USD"
+      },
+      {
+        "model": "Codex (具体型号未明确)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "注册即送5美元体验额度"
+      "description": "新用户注册送5美元体验额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 56,
-    "mentionCount": 9,
+    "heatScore": 58,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -11695,10 +11721,18 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-16T15:50:35.000Z",
         "fetchedAt": "2026-05-16T15:58:42.413Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213222#reply15",
+        "title": "[推广] 这么好用的中转站，我必须得让大家知道",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-16T17:11:34.000Z",
+        "fetchedAt": "2026-05-16T21:49:49.548Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-16T15:58:42.413Z",
+    "lastUpdated": "2026-05-16T21:49:49.548Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -15638,17 +15672,17 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": 10,
+      "amount": 20,
       "unit": "USD",
-      "description": "新用户注册送 $10"
+      "description": "新用户注册送$10，加群送$10，新注册用户在评论区留下id可再获赠$10"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-13T17:22:26.523Z",
-    "heatScore": 52,
-    "mentionCount": 12,
+    "heatScore": 54,
+    "mentionCount": 13,
     "priceHistory": [],
     "sources": [
       {
@@ -15706,10 +15740,18 @@
         "author": "<name>PixelWanderer</name>\n\t\t<uri>https://www.v2ex.com/member/PixelWanderer</uri>",
         "publishedAt": "2026-05-16T12:07:18.000Z",
         "fetchedAt": "2026-05-16T15:58:42.416Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213202#reply3",
+        "title": "[推广] [福利/果冻 API] 新用户福利最后一天！新用户注册送 $10，加群送$10，欢迎 V 友试用反馈",
+        "author": "<name>PixelWanderer</name>\n\t\t<uri>https://www.v2ex.com/member/PixelWanderer</uri>",
+        "publishedAt": "2026-05-16T13:07:18.000Z",
+        "fetchedAt": "2026-05-16T21:49:49.549Z"
       }
     ],
     "firstSeen": "2026-05-13T17:22:26.523Z",
-    "lastUpdated": "2026-05-16T15:58:42.416Z",
+    "lastUpdated": "2026-05-16T21:49:49.549Z",
     "tags": [
       "API网关",
       "推广福利",
@@ -18526,8 +18568,8 @@
     "models": [
       {
         "model": "Seedance 2.0",
-        "inputPrice": 1.71,
-        "outputPrice": 5.43,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
@@ -18538,14 +18580,18 @@
       }
     ],
     "billingType": "token",
-    "freeQuota": null,
+    "freeQuota": {
+      "amount": null,
+      "unit": "积分",
+      "description": "新用户注册后赠送积分用于测试。"
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-16T15:58:42.415Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -18555,14 +18601,24 @@
         "author": "<name>a1ienworm</name>\n\t\t<uri>https://www.v2ex.com/member/a1ienworm</uri>",
         "publishedAt": "2026-05-16T13:36:45.000Z",
         "fetchedAt": "2026-05-16T15:58:42.415Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213213#reply2",
+        "title": "[分享创造] [AI 视频生成中转] 满血版 Seedance 2.0 支持多模态参考，送积分测试",
+        "author": "<name>a1ienworm</name>\n\t\t<uri>https://www.v2ex.com/member/a1ienworm</uri>",
+        "publishedAt": "2026-05-16T17:21:56.000Z",
+        "fetchedAt": "2026-05-16T21:49:49.549Z"
       }
     ],
     "firstSeen": "2026-05-16T15:58:42.415Z",
-    "lastUpdated": "2026-05-16T15:58:42.415Z",
+    "lastUpdated": "2026-05-16T21:49:49.549Z",
     "tags": [
       "AI视频生成",
       "中转服务",
-      "积分制"
+      "积分制",
+      "API中转",
+      "Seedance 2.0"
     ]
   },
   {
@@ -18597,6 +18653,42 @@
     "tags": [
       "开源",
       "API聚合平台"
+    ]
+  },
+  {
+    "id": "pmp8vq832zutcb",
+    "name": "EasyCodex",
+    "website": "https://github.com/Ryan-Laws/easycodex",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-16T21:49:49.550Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213195#reply2",
+        "title": "[问与答] 比官方手机 App 更自由：支持 Win/ Linux 和第三方 API 的 codex 手机遥控器-EasyCodex",
+        "author": "<name>Ryanzlab</name>\n\t\t<uri>https://www.v2ex.com/member/Ryanzlab</uri>",
+        "publishedAt": "2026-05-16T12:10:23.000Z",
+        "fetchedAt": "2026-05-16T21:49:49.550Z"
+      }
+    ],
+    "firstSeen": "2026-05-16T21:49:49.550Z",
+    "lastUpdated": "2026-05-16T21:49:49.550Z",
+    "tags": [
+      "开源项目",
+      "开发工具",
+      "API代理",
+      "跨平台"
     ]
   }
 ]
