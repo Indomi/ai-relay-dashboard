@@ -7,14 +7,14 @@
     "models": [
       {
         "model": "codex",
-        "inputPrice": 0.15,
-        "outputPrice": 0.15,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "codex-plus",
-        "inputPrice": 0.15,
-        "outputPrice": 0.15,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -53,7 +53,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
     "heatScore": 100,
-    "mentionCount": 37,
+    "mentionCount": 38,
     "priceHistory": [],
     "sources": [
       {
@@ -271,10 +271,18 @@
         "author": "",
         "publishedAt": "2026-05-15T21:59:13.171Z",
         "fetchedAt": "2026-05-15T22:06:25.321Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213229#reply0",
+        "title": "[推广] 比较贵的 gpt 兜底中转",
+        "author": "<name>rubi</name>\n\t\t<uri>https://www.v2ex.com/member/rubi</uri>",
+        "publishedAt": "2026-05-16T16:54:21.000Z",
+        "fetchedAt": "2026-05-17T01:59:20.845Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-15T22:06:25.321Z",
+    "lastUpdated": "2026-05-17T01:59:20.845Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -11627,27 +11635,27 @@
       },
       {
         "model": "Codex (具体型号未明确)",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "新用户注册送5美元体验额度"
+      "description": "新用户注册即送5美元体验额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 58,
-    "mentionCount": 10,
+    "heatScore": 60,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -11729,10 +11737,18 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-16T17:11:34.000Z",
         "fetchedAt": "2026-05-16T21:49:49.548Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213222#reply20",
+        "title": "[推广] 这么好用的中转站，我必须得让大家知道",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-16T22:11:34.000Z",
+        "fetchedAt": "2026-05-17T01:59:20.845Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-16T21:49:49.548Z",
+    "lastUpdated": "2026-05-17T01:59:20.845Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -15672,17 +15688,17 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": 20,
+      "amount": 10,
       "unit": "USD",
-      "description": "新用户注册送$10，加群送$10，新注册用户在评论区留下id可再获赠$10"
+      "description": "新用户注册送$10"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-13T17:22:26.523Z",
-    "heatScore": 54,
-    "mentionCount": 13,
+    "heatScore": 56,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -15751,7 +15767,7 @@
       }
     ],
     "firstSeen": "2026-05-13T17:22:26.523Z",
-    "lastUpdated": "2026-05-16T21:49:49.549Z",
+    "lastUpdated": "2026-05-17T01:59:20.846Z",
     "tags": [
       "API网关",
       "推广福利",
@@ -17068,53 +17084,25 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "充值优惠",
-          "price": 100,
-          "period": null,
-          "features": [
-            "9折优惠"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "充值优惠",
-          "price": 200,
-          "period": null,
-          "features": [
-            "8折优惠"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "充值优惠",
-          "price": 500,
-          "period": null,
-          "features": [
-            "7折优惠"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": null,
       "unit": "CNY",
-      "description": "提供免费额度兑换码供用户兑换。"
+      "description": "需跟帖提供ID获取测试额度"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-14T19:37:13.998Z",
-    "heatScore": 50,
-    "mentionCount": 6,
+    "heatScore": 52,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -17132,10 +17120,18 @@
         "author": "Johnhpure",
         "publishedAt": "2026-05-14T06:53:38.000Z",
         "fetchedAt": "2026-05-14T19:37:13.998Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213255#reply2",
+        "title": "[推广] 推广一下自己的中转站。Claude/GPT 主打纯血不掺水。",
+        "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
+        "publishedAt": "2026-05-17T01:55:21.000Z",
+        "fetchedAt": "2026-05-17T01:59:20.845Z"
       }
     ],
     "firstSeen": "2026-05-14T19:37:13.998Z",
-    "lastUpdated": "2026-05-16T15:57:08.598Z",
+    "lastUpdated": "2026-05-17T01:59:20.845Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -18579,19 +18575,19 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "freeQuota": {
       "amount": null,
       "unit": "积分",
-      "description": "新用户注册后赠送积分用于测试。"
+      "description": "赠送测试积分"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-16T15:58:42.415Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -18612,14 +18608,17 @@
       }
     ],
     "firstSeen": "2026-05-16T15:58:42.415Z",
-    "lastUpdated": "2026-05-16T21:49:49.549Z",
+    "lastUpdated": "2026-05-17T01:59:20.846Z",
     "tags": [
       "AI视频生成",
       "中转服务",
       "积分制",
       "API中转",
       "Seedance 2.0"
-    ]
+    ],
+    "subscription": {
+      "plans": []
+    }
   },
   {
     "id": "pmp8jis5st9vn6",
