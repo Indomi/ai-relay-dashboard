@@ -1183,8 +1183,8 @@
     "models": [
       {
         "model": "Claude",
-        "inputPrice": 1.9,
-        "outputPrice": 1.9,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
@@ -1211,20 +1211,21 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 10,
+      "amount": 5,
       "unit": "USD",
-      "description": "新用户加入社群可领取10美元额度用于试用"
+      "description": "加入微信技术交流群并发送UID后，机器人即时返还积分赠金。"
     },
     "paymentMethods": [
       "支付宝",
-      "微信"
+      "微信",
+      "企业对公转账"
     ],
     "concurrencyLimit": null,
     "rateLimit": "无明确信息",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 34,
+    "mentionCount": 35,
     "priceHistory": [],
     "sources": [
       {
@@ -1346,10 +1347,18 @@
         "author": "aicodingsh",
         "publishedAt": "2026-05-15T06:58:32.000Z",
         "fetchedAt": "2026-05-16T15:57:08.593Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213264#reply0",
+        "title": "[推广] 10 刀 FREE| Claude API 国内直连方案，按量计费低至官方 1.9 折",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-17T02:50:59.000Z",
+        "fetchedAt": "2026-05-17T06:25:46.994Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-16T15:57:08.598Z",
+    "lastUpdated": "2026-05-17T06:25:46.994Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -12369,6 +12378,18 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "codex pro",
+        "inputPrice": 0.3,
+        "outputPrice": 0.3,
+        "currency": "unknown"
+      },
+      {
+        "model": "plus",
+        "inputPrice": 0.2,
+        "outputPrice": 0.2,
+        "currency": "unknown"
       }
     ],
     "billingType": "token",
@@ -12376,15 +12397,15 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
+      "amount": 0,
       "unit": "unknown",
-      "description": "unknown"
+      "description": "未提及免费额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.628Z",
-    "heatScore": 19,
-    "mentionCount": 3,
+    "heatScore": 21,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -12410,10 +12431,18 @@
         "author": "",
         "publishedAt": "2026-05-14T11:22:47.856Z",
         "fetchedAt": "2026-05-14T11:31:51.302Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213229#reply0",
+        "title": "[推广] 比较贵的 gpt 兜底中转",
+        "author": "<name>rubi</name>\n\t\t<uri>https://www.v2ex.com/member/rubi</uri>",
+        "publishedAt": "2026-05-16T16:54:21.000Z",
+        "fetchedAt": "2026-05-17T06:25:46.997Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.628Z",
-    "lastUpdated": "2026-05-14T11:31:51.302Z",
+    "lastUpdated": "2026-05-17T06:25:46.997Z",
     "tags": [
       "独立开发者",
       "AI中转站",
@@ -17086,23 +17115,53 @@
     ],
     "billingType": "token",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "充值优惠",
+          "price": 100,
+          "period": "one-time",
+          "features": [
+            "9折优惠"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "充值优惠",
+          "price": 200,
+          "period": "one-time",
+          "features": [
+            "8折优惠"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "充值优惠",
+          "price": 500,
+          "period": "one-time",
+          "features": [
+            "7折优惠"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
       "amount": null,
-      "unit": "CNY",
-      "description": "需跟帖提供ID获取测试额度"
+      "unit": null,
+      "description": "可向帖主申请测试额度"
     },
     "paymentMethods": [
-      "支付宝",
-      "微信"
+      "支付宝"
     ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-14T19:37:13.998Z",
-    "heatScore": 52,
-    "mentionCount": 7,
+    "heatScore": 54,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -17128,10 +17187,18 @@
         "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
         "publishedAt": "2026-05-17T01:55:21.000Z",
         "fetchedAt": "2026-05-17T01:59:20.845Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213255#reply16",
+        "title": "[推广] 推广一下自己的中转站。Claude/GPT 主打纯血不掺水。",
+        "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
+        "publishedAt": "2026-05-17T06:15:29.000Z",
+        "fetchedAt": "2026-05-17T06:25:46.995Z"
       }
     ],
     "firstSeen": "2026-05-14T19:37:13.998Z",
-    "lastUpdated": "2026-05-17T01:59:20.845Z",
+    "lastUpdated": "2026-05-17T06:25:46.995Z",
     "tags": [
       "AI中转",
       "Claude",
