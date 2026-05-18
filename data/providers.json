@@ -1230,26 +1230,38 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "阶梯制余额消耗",
+          "price": null,
+          "period": null,
+          "features": [
+            "按官方价1.9折、2.9折、4.9折消耗余额",
+            "后台用量明细实时可查"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户加入社群可领取10美元额度"
+      "description": "加入社群领10美元体验额度"
     },
     "paymentMethods": [
       "支付宝",
       "微信",
-      "对公转账"
+      "企业对公转账"
     ],
     "concurrencyLimit": null,
     "rateLimit": "未在提供内容中找到明确的速率限制描述。",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 41,
+    "mentionCount": 42,
     "priceHistory": [],
     "sources": [
       {
@@ -1379,10 +1391,18 @@
         "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
         "publishedAt": "2026-05-17T02:50:59.000Z",
         "fetchedAt": "2026-05-17T06:25:46.994Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213391#reply0",
+        "title": "[推广] 数万用户验证过的 Claude API 中转，聊聊我们的运营数据",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-18T01:08:08.000Z",
+        "fetchedAt": "2026-05-18T02:10:49.065Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-17T21:53:53.880Z",
+    "lastUpdated": "2026-05-18T02:10:49.065Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -12914,20 +12934,20 @@
         "currency": "unknown"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 0,
       "unit": "unknown",
-      "description": "未提及免费额度"
+      "description": "未提及"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.628Z",
-    "heatScore": 21,
-    "mentionCount": 4,
+    "heatScore": 23,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -12961,10 +12981,18 @@
         "author": "<name>rubi</name>\n\t\t<uri>https://www.v2ex.com/member/rubi</uri>",
         "publishedAt": "2026-05-16T16:54:21.000Z",
         "fetchedAt": "2026-05-17T06:25:46.997Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213367#reply2",
+        "title": "[DeepSeek] [开源] 将 Codex Vibe 成了 DeepSeekX , 做了 DeepSeek 适配",
+        "author": "<name>Cycle0079</name>\n\t\t<uri>https://www.v2ex.com/member/Cycle0079</uri>",
+        "publishedAt": "2026-05-17T14:50:13.000Z",
+        "fetchedAt": "2026-05-18T02:10:49.065Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.628Z",
-    "lastUpdated": "2026-05-17T06:25:46.997Z",
+    "lastUpdated": "2026-05-18T02:10:49.065Z",
     "tags": [
       "独立开发者",
       "AI中转站",
@@ -13226,8 +13254,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
-    "heatScore": 97,
-    "mentionCount": 32,
+    "heatScore": 99,
+    "mentionCount": 33,
     "priceHistory": [],
     "sources": [
       {
@@ -13312,7 +13340,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-17T21:55:31.900Z",
+    "lastUpdated": "2026-05-18T02:10:49.066Z",
     "tags": [
       "Claude",
       "中转",
@@ -14007,9 +14035,15 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "codex (推测为GPT-4级别模型)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "freeQuota": {
       "amount": 20000000,
       "unit": "tokens",
@@ -14022,8 +14056,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-11T06:43:29.059Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -14033,16 +14067,50 @@
         "author": "<name>2452920748c</name>\n\t\t<uri>https://www.v2ex.com/member/2452920748c</uri>",
         "publishedAt": "2026-05-11T06:40:25.000Z",
         "fetchedAt": "2026-05-11T06:43:29.059Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213400#reply0",
+        "title": "[推广] 推荐自用满血 codex 小站点，全 plus 账号，福利分组（5.18）",
+        "author": "<name>2452920748c</name>\n\t\t<uri>https://www.v2ex.com/member/2452920748c</uri>",
+        "publishedAt": "2026-05-18T01:27:41.000Z",
+        "fetchedAt": "2026-05-18T02:10:49.064Z"
       }
     ],
     "firstSeen": "2026-05-11T06:43:29.059Z",
-    "lastUpdated": "2026-05-11T06:43:29.059Z",
+    "lastUpdated": "2026-05-18T02:10:49.064Z",
     "tags": [
       "GPT5.5",
       "官方渠道",
       "满血",
-      "兼容OpenAI接口"
-    ]
+      "兼容OpenAI接口",
+      "按量付费"
+    ],
+    "subscription": {
+      "plans": [
+        {
+          "name": "新人订阅套餐",
+          "price": 6.9,
+          "period": "month",
+          "features": [
+            "包含10美元额度"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "福利分组",
+          "price": 9.9,
+          "period": "month",
+          "features": [
+            "包含20美元额度",
+            "倍率 x0.085"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    }
   },
   {
     "id": "pmp0u5ehwgke8v",
