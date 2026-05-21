@@ -10661,29 +10661,31 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token/subscription/hybrid",
+    "billingType": "unknown",
     "subscription": {
       "plans": [
         {
           "name": "不限流量套餐",
-          "price": 3.8,
-          "period": "月",
-          "features": []
+          "price": "未知",
+          "period": "未知",
+          "features": [
+            "不限流量"
+          ]
         }
       ]
     },
     "freeQuota": {
-      "amount": null,
-      "unit": "USD",
-      "description": "注册后联系客服或留言UID，可开通测试额度"
+      "amount": "未知",
+      "unit": "未知",
+      "description": "注册后联系客服或在帖子下方留言账户UID，可开通测试额度/专属折扣"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "无明确限制，支持多线程高并发",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 83,
-    "mentionCount": 20,
+    "heatScore": 85,
+    "mentionCount": 21,
     "priceHistory": [],
     "sources": [
       {
@@ -10760,7 +10762,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-21T12:18:26.727Z",
+    "lastUpdated": "2026-05-21T15:20:05.401Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -14053,11 +14055,11 @@
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": null,
+    "rateLimit": "CC专用1.85倍率限制客户端",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 47,
+    "mentionCount": 48,
     "priceHistory": [],
     "sources": [
       {
@@ -14163,10 +14165,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-20T13:59:49.000Z",
         "fetchedAt": "2026-05-20T14:42:29.895Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214524#reply0",
+        "title": "[推广] [FK Claude] 小本 Claude 折扣站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-21T13:56:07.000Z",
+        "fetchedAt": "2026-05-21T15:20:05.398Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-20T22:34:56.977Z",
+    "lastUpdated": "2026-05-21T15:20:05.398Z",
     "tags": [
       "Claude",
       "中转",
@@ -20785,22 +20795,26 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "百炼平台模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
-          "name": "每月 20000 次调用",
-          "price": 40,
-          "period": "月",
-          "features": []
-        },
-        {
-          "name": "每月 40000 次调用",
-          "price": 80,
-          "period": "月",
-          "features": []
+          "name": "月度套餐",
+          "price": 198,
+          "period": "month",
+          "features": [
+            "AI模型API访问"
+          ],
+          "autoRenew": false,
+          "refundRule": null
         }
       ]
     },
@@ -20814,8 +20828,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-17T10:26:37.003Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -20825,10 +20839,18 @@
         "author": "heinumin",
         "publishedAt": "2026-05-16T08:04:42.000Z",
         "fetchedAt": "2026-05-17T10:26:37.003Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214495#reply4",
+        "title": "[问与答] 阿里 Token Plan vs trade 的 monthly pro+ vs 字节方舟的 coding plan . 老哥们有使用过的给点建议吧",
+        "author": "<name>SachinBeyond</name>\n\t\t<uri>https://www.v2ex.com/member/SachinBeyond</uri>",
+        "publishedAt": "2026-05-21T11:29:51.000Z",
+        "fetchedAt": "2026-05-21T15:20:05.398Z"
       }
     ],
     "firstSeen": "2026-05-17T10:26:37.003Z",
-    "lastUpdated": "2026-05-19T14:41:16.752Z",
+    "lastUpdated": "2026-05-21T15:20:05.398Z",
     "tags": [
       "拼车",
       "订阅共享",
@@ -24324,32 +24346,41 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "未明确指定具体模型，但提供Basic和Bonus用量",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "subscription",
     "subscription": {
       "plans": [
         {
-          "name": "Monthly Pro+",
+          "name": "Pro+",
           "price": 30,
           "period": "month",
           "features": [
-            "AI协作功能",
-            "包含使用额度"
+            "包含Basic Usage和Bonus Usage，具体模型消耗差异未说明"
           ],
           "autoRenew": true,
-          "refundRule": "未明确说明，需联系客服。"
+          "refundRule": "页面提及'Can I request a refund?'，但具体规则未展示"
         }
       ]
     },
-    "freeQuota": null,
+    "freeQuota": {
+      "amount": null,
+      "unit": "USD",
+      "description": "提供Pro试用，但具体额度未在页面中说明"
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": "未明确说明。",
+    "rateLimit": "未提及。",
     "status": "unknown",
     "lastChecked": "2026-05-21T12:18:26.727Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -24362,11 +24393,13 @@
       }
     ],
     "firstSeen": "2026-05-21T12:18:26.727Z",
-    "lastUpdated": "2026-05-21T12:18:26.727Z",
+    "lastUpdated": "2026-05-21T15:20:05.400Z",
     "tags": [
       "AI编码助手",
       "订阅制",
-      "月度计划"
+      "月度计划",
+      "订阅服务",
+      "代码协作"
     ]
   },
   {
@@ -24473,6 +24506,102 @@
       "订阅服务",
       "开源模型",
       "编程工具"
+    ]
+  },
+  {
+    "id": "pmpfn0a39oc5e6",
+    "name": "Pixlore",
+    "website": "",
+    "contact": "",
+    "models": [],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "credits",
+      "description": "登录用户赠送5个credits"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-21T15:20:05.397Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214535#reply0",
+        "title": "[分享创造] 做了一个 AI 复刻 APP UI 的小程序，大家给点意见",
+        "author": "<name>lzzyywz</name>\n\t\t<uri>https://www.v2ex.com/member/lzzyywz</uri>",
+        "publishedAt": "2026-05-21T15:07:38.000Z",
+        "fetchedAt": "2026-05-21T15:20:05.397Z"
+      }
+    ],
+    "firstSeen": "2026-05-21T15:20:05.397Z",
+    "lastUpdated": "2026-05-21T15:20:05.397Z",
+    "tags": [
+      "AI工具",
+      "UI设计",
+      "前端开发",
+      "小程序",
+      "Prompt生成"
+    ]
+  },
+  {
+    "id": "pmpfn0a3duefs5",
+    "name": "火山引擎（字节方舟）",
+    "website": "https://www.volcengine.com/activity/codingplan",
+    "contact": "",
+    "models": [
+      {
+        "model": "AI模型（具体型号未明确提及）",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Pro Plan",
+          "price": 200,
+          "period": "month",
+          "features": [
+            "具体功能未在内容中描述"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-21T15:20:05.401Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214495#reply4",
+        "title": "[问与答] 阿里 Token Plan vs trade 的 monthly pro+ vs 字节方舟的 coding plan . 老哥们有使用过的给点建议吧",
+        "author": "<name>SachinBeyond</name>\n\t\t<uri>https://www.v2ex.com/member/SachinBeyond</uri>",
+        "publishedAt": "2026-05-21T11:29:51.000Z",
+        "fetchedAt": "2026-05-21T15:20:05.401Z"
+      }
+    ],
+    "firstSeen": "2026-05-21T15:20:05.401Z",
+    "lastUpdated": "2026-05-21T15:20:05.401Z",
+    "tags": [
+      "云服务",
+      "AI订阅",
+      "开发者套餐"
     ]
   }
 ]
