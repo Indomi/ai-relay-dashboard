@@ -13996,8 +13996,8 @@
       },
       {
         "model": "kiro",
-        "inputPrice": 0.4,
-        "outputPrice": 0.4,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -14008,26 +14008,30 @@
       },
       {
         "model": "CC",
-        "inputPrice": 1.85,
-        "outputPrice": 1.85,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "CodeX",
-        "inputPrice": 0.5,
-        "outputPrice": 0.5,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
-    "freeQuota": {},
+    "billingType": "hybrid",
+    "freeQuota": {
+      "amount": null,
+      "unit": "",
+      "description": ""
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "CC专用1.85倍率限制客户端",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 50,
+    "mentionCount": 51,
     "priceHistory": [],
     "sources": [
       {
@@ -14144,7 +14148,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-21T19:57:17.170Z",
+    "lastUpdated": "2026-05-21T22:23:20.645Z",
     "tags": [
       "Claude",
       "中转",
@@ -24502,27 +24506,18 @@
     "models": [],
     "billingType": "hybrid",
     "subscription": {
-      "plans": [
-        {
-          "name": "体验会员",
-          "price": 0,
-          "period": "天",
-          "features": [
-            "赠送3天体验会员和5个credits"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "credits",
-      "description": "登录用户赠送5个credits"
+      "description": "新登录用户赠送3天体验会员和5个credits"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-21T15:20:05.397Z",
-    "heatScore": 34,
-    "mentionCount": 3,
+    "heatScore": 36,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -24535,7 +24530,7 @@
       }
     ],
     "firstSeen": "2026-05-21T15:20:05.397Z",
-    "lastUpdated": "2026-05-21T19:57:17.170Z",
+    "lastUpdated": "2026-05-21T22:23:20.645Z",
     "tags": [
       "AI工具",
       "UI设计",
@@ -24692,6 +24687,46 @@
       "API中转",
       "国内接入",
       "编程工具"
+    ]
+  },
+  {
+    "id": "pmpg24l6snh2ki",
+    "name": "LLM Bench",
+    "website": "https://github.com/benchmark-for-LLM",
+    "contact": "未提供",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "工具本身为开源项目，免费使用。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-21T22:23:20.644Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214544#reply0",
+        "title": "[分享创造] 拒绝感觉有效，基于在线推理性能测评，选出最适合我 Mac 的 LLM 推理框架",
+        "author": "<name>kuhung</name>\n\t\t<uri>https://www.v2ex.com/member/kuhung</uri>",
+        "publishedAt": "2026-05-21T16:26:34.000Z",
+        "fetchedAt": "2026-05-21T22:23:20.644Z"
+      }
+    ],
+    "firstSeen": "2026-05-21T22:23:20.644Z",
+    "lastUpdated": "2026-05-21T22:23:20.644Z",
+    "tags": [
+      "开源",
+      "性能测评",
+      "本地部署",
+      "LLM框架对比"
     ]
   }
 ]
