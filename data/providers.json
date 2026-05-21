@@ -8599,9 +8599,15 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "ChatGPT全量模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
@@ -8613,8 +8619,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
-    "heatScore": 73,
-    "mentionCount": 30,
+    "heatScore": 75,
+    "mentionCount": 31,
     "priceHistory": [],
     "sources": [
       {
@@ -8752,10 +8758,18 @@
         "author": "<name>Hanbuger</name>\n\t\t<uri>https://www.v2ex.com/member/Hanbuger</uri>",
         "publishedAt": "2026-05-20T13:38:36.000Z",
         "fetchedAt": "2026-05-20T20:14:44.422Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214378#reply0",
+        "title": "[推广] 每日至少 50 亿 ChatGPT 全量 tokens 找胃口大的",
+        "author": "<name>heywin</name>\n\t\t<uri>https://www.v2ex.com/member/heywin</uri>",
+        "publishedAt": "2026-05-21T05:07:34.000Z",
+        "fetchedAt": "2026-05-21T06:55:22.354Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-21T02:19:32.956Z",
+    "lastUpdated": "2026-05-21T06:55:22.354Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -14650,19 +14664,16 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {},
-    "paymentMethods": [
-      "支付宝",
-      "微信支付"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.114Z",
-    "heatScore": 99,
-    "mentionCount": 28,
+    "heatScore": 100,
+    "mentionCount": 29,
     "priceHistory": [],
     "sources": [
       {
@@ -14728,10 +14739,18 @@
         "author": "Ai2You",
         "publishedAt": "2026-05-18T00:08:41.000Z",
         "fetchedAt": "2026-05-18T12:36:23.877Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214382#reply0",
+        "title": "[推广] 智友社上新啦： ChatGPT 自助接码服务，欢迎您的试用反馈！",
+        "author": "<name>Ai2You</name>\n\t\t<uri>https://www.v2ex.com/member/Ai2You</uri>",
+        "publishedAt": "2026-05-21T05:18:15.000Z",
+        "fetchedAt": "2026-05-21T06:55:22.354Z"
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.114Z",
-    "lastUpdated": "2026-05-20T11:55:58.972Z",
+    "lastUpdated": "2026-05-21T06:55:22.354Z",
     "tags": [
       "GPT",
       "订阅",
@@ -24202,6 +24221,44 @@
       "high-performance",
       "Go",
       "OpenAI-compatible"
+    ]
+  },
+  {
+    "id": "pmpf4z7jltou7b",
+    "name": "claude-relay",
+    "website": "aHR0cHM6Ly9hcGkuY29kZS1yZWxheS5jb20vcmVnaXN0ZXI/YWZmPTJYRHY=",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "USD",
+      "description": "注册赠送10美元额度"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-21T06:55:22.353Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214399#reply1",
+        "title": "[推广] 发现一个 claude 站,注册送 10 刀",
+        "author": "<name>ewillie381</name>\n\t\t<uri>https://www.v2ex.com/member/ewillie381</uri>",
+        "publishedAt": "2026-05-21T06:23:48.000Z",
+        "fetchedAt": "2026-05-21T06:55:22.353Z"
+      }
+    ],
+    "firstSeen": "2026-05-21T06:55:22.353Z",
+    "lastUpdated": "2026-05-21T06:55:22.353Z",
+    "tags": [
+      "Claude",
+      "中转"
     ]
   }
 ]
