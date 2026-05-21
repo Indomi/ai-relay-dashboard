@@ -14024,8 +14024,8 @@
       },
       {
         "model": "kiro",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.4,
+        "outputPrice": 0.4,
         "currency": "CNY"
       },
       {
@@ -14036,22 +14036,22 @@
       },
       {
         "model": "CC",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 1.85,
+        "outputPrice": 1.85,
         "currency": "CNY"
       },
       {
         "model": "CodeX",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.5,
+        "outputPrice": 0.5,
         "currency": "CNY"
       }
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": null,
+      "amount": 0,
       "unit": "CNY",
-      "description": "未提及免费额度"
+      "description": "未提及"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -14059,7 +14059,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 48,
+    "mentionCount": 49,
     "priceHistory": [],
     "sources": [
       {
@@ -14176,7 +14176,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-21T15:20:05.398Z",
+    "lastUpdated": "2026-05-21T17:48:16.145Z",
     "tags": [
       "Claude",
       "中转",
@@ -20801,6 +20801,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "通义千问系列模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "subscription",
@@ -20811,7 +20817,7 @@
           "price": 198,
           "period": "month",
           "features": [
-            "AI模型API访问"
+            "AI模型API调用额度"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -20824,12 +20830,12 @@
       "description": "未提及"
     },
     "paymentMethods": [
-      "咸鱼交易"
+      "支付宝"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-17T10:26:37.003Z",
-    "heatScore": 50,
-    "mentionCount": 6,
+    "heatScore": 52,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -20850,7 +20856,7 @@
       }
     ],
     "firstSeen": "2026-05-17T10:26:37.003Z",
-    "lastUpdated": "2026-05-21T15:20:05.398Z",
+    "lastUpdated": "2026-05-21T17:48:16.148Z",
     "tags": [
       "拼车",
       "订阅共享",
@@ -24352,35 +24358,44 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "unknown",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "subscription",
     "subscription": {
       "plans": [
         {
-          "name": "Pro+",
+          "name": "Pro",
           "price": 30,
           "period": "month",
           "features": [
-            "包含Basic Usage和Bonus Usage，具体模型消耗差异未说明"
+            "AI协作功能",
+            "使用额度"
           ],
           "autoRenew": true,
-          "refundRule": "页面提及'Can I request a refund?'，但具体规则未展示"
+          "refundRule": "未明确说明"
         }
       ]
     },
     "freeQuota": {
       "amount": null,
-      "unit": "USD",
-      "description": "提供Pro试用，但具体额度未在页面中说明"
+      "unit": null,
+      "description": "未明确说明"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未明确说明"
+    ],
     "concurrencyLimit": null,
-    "rateLimit": "未提及。",
+    "rateLimit": "未明确说明",
     "status": "unknown",
     "lastChecked": "2026-05-21T12:18:26.727Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -24393,7 +24408,7 @@
       }
     ],
     "firstSeen": "2026-05-21T12:18:26.727Z",
-    "lastUpdated": "2026-05-21T15:20:05.400Z",
+    "lastUpdated": "2026-05-21T17:48:16.153Z",
     "tags": [
       "AI编码助手",
       "订阅制",
@@ -24516,7 +24531,16 @@
     "models": [],
     "billingType": "hybrid",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "体验会员",
+          "price": null,
+          "period": "天",
+          "features": [
+            "赠送3天体验会员"
+          ]
+        }
+      ]
     },
     "freeQuota": {
       "amount": 5,
@@ -24526,8 +24550,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-21T15:20:05.397Z",
-    "heatScore": 30,
-    "mentionCount": 1,
+    "heatScore": 32,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -24540,7 +24564,7 @@
       }
     ],
     "firstSeen": "2026-05-21T15:20:05.397Z",
-    "lastUpdated": "2026-05-21T15:20:05.397Z",
+    "lastUpdated": "2026-05-21T17:48:16.144Z",
     "tags": [
       "AI工具",
       "UI设计",
@@ -24560,6 +24584,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "豆包/云雀系列模型（具体型号未在内容中明确）",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "subscription",
@@ -24570,7 +24600,7 @@
           "price": 200,
           "period": "month",
           "features": [
-            "具体功能未在内容中描述"
+            "面向编码场景的AI模型访问权限"
           ],
           "autoRenew": null,
           "refundRule": null
@@ -24578,13 +24608,16 @@
       ]
     },
     "freeQuota": null,
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-21T15:20:05.401Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -24597,11 +24630,13 @@
       }
     ],
     "firstSeen": "2026-05-21T15:20:05.401Z",
-    "lastUpdated": "2026-05-21T15:20:05.401Z",
+    "lastUpdated": "2026-05-21T17:48:16.155Z",
     "tags": [
       "云服务",
       "AI订阅",
-      "开发者套餐"
+      "开发者套餐",
+      "字节跳动",
+      "火山引擎"
     ]
   }
 ]
