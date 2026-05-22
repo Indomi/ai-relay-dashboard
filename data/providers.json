@@ -1400,29 +1400,17 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "阶梯制余额消耗",
-          "price": null,
-          "period": null,
-          "features": [
-            "按官方价1.9折、2.9折、4.9折消耗余额"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 5,
+      "amount": 10,
       "unit": "USD",
-      "description": "新用户注册并扫码入群后，发送UID可获得$5体验额度"
+      "description": "新用户加入官方社群可领取10美元起始额度"
     },
     "paymentMethods": [
-      "支付宝",
-      "微信",
+      "个人充值",
       "企业对公转账"
     ],
     "concurrencyLimit": null,
@@ -1430,7 +1418,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 61,
+    "mentionCount": 62,
     "priceHistory": [],
     "sources": [
       {
@@ -1600,10 +1588,18 @@
         "author": "aicodingsh",
         "publishedAt": "2026-05-20T00:26:29.000Z",
         "fetchedAt": "2026-05-20T11:55:58.956Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214599#reply1",
+        "title": "[推广] 新人入群赠 10 美元额度， Claude API 企业级中转",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-22T01:48:10.000Z",
+        "fetchedAt": "2026-05-22T02:13:00.561Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-20T11:55:58.969Z",
+    "lastUpdated": "2026-05-22T02:13:00.561Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -14836,36 +14832,22 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "全站会员",
-          "price": null,
-          "period": "day",
-          "features": [
-            "每日自带100美元GPT5.5额度"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 10,
-      "unit": "USD",
-      "description": "V站用户回帖注册邮箱或加客服微信，免费领取$10余额"
+      "amount": 0,
+      "unit": "unknown",
+      "description": "作为开源软件，其使用和部署本身无直接费用，但未提及具体服务配额。"
     },
-    "paymentMethods": [
-      "支付宝",
-      "微信"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "未提及",
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.115Z",
-    "heatScore": 77,
-    "mentionCount": 17,
+    "heatScore": 79,
+    "mentionCount": 18,
     "priceHistory": [],
     "sources": [
       {
@@ -14891,10 +14873,18 @@
         "author": "<name>martin2975068046</name>\n\t\t<uri>https://www.v2ex.com/member/martin2975068046</uri>",
         "publishedAt": "2026-05-12T13:13:45.000Z",
         "fetchedAt": "2026-05-12T13:44:47.652Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214601#reply0",
+        "title": "[程序员] NexusX：定义一次模型，自动生成 REST + MCP",
+        "author": "<name>tangkikodo</name>\n\t\t<uri>https://www.v2ex.com/member/tangkikodo</uri>",
+        "publishedAt": "2026-05-22T01:54:12.000Z",
+        "fetchedAt": "2026-05-22T02:13:00.561Z"
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.115Z",
-    "lastUpdated": "2026-05-20T11:55:58.981Z",
+    "lastUpdated": "2026-05-22T02:13:00.561Z",
     "tags": [
       "GPT-5.5",
       "官方渠道",
@@ -24727,6 +24717,121 @@
       "性能测评",
       "本地部署",
       "LLM框架对比"
+    ]
+  },
+  {
+    "id": "pmpgabxu9e4qti",
+    "name": "Neverun API",
+    "website": "https://api.nerverun.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Pro号池套餐",
+          "price": 20,
+          "period": null,
+          "features": [
+            "到账80刀额度",
+            "专属0.3倍率",
+            "相当于266刀使用价值"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD",
+      "description": "在指定帖子回复注册邮箱（base64编码）即可免费获赠$5额度。"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "享0.3倍率优惠。",
+    "status": "unknown",
+    "lastChecked": "2026-05-22T02:13:00.560Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214609#reply0",
+        "title": "[推广] 自用 Neverun API 中转, Pro 号池，纯手工打造，欢迎鉴赏！",
+        "author": "<name>Zhcgo</name>\n\t\t<uri>https://www.v2ex.com/member/Zhcgo</uri>",
+        "publishedAt": "2026-05-21T22:05:26.000Z",
+        "fetchedAt": "2026-05-22T02:13:00.560Z"
+      }
+    ],
+    "firstSeen": "2026-05-22T02:13:00.560Z",
+    "lastUpdated": "2026-05-22T02:13:00.560Z",
+    "tags": [
+      "拼车",
+      "共享订阅",
+      "Pro号池",
+      "低倍率"
+    ]
+  },
+  {
+    "id": "pmpgabxubkd08w",
+    "name": "YouToGame",
+    "website": "https://www.youtogame.com",
+    "contact": "TG: @yueshan3321",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": null
+    },
+    "paymentMethods": [
+      "USDT",
+      "币安支付",
+      "Paypal"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-22T02:13:00.563Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214592#reply0",
+        "title": "[推广] USDT 加密货币购买国内国外礼品卡游戏点卡，全球话费充值，游戏直播充值",
+        "author": "<name>card123</name>\n\t\t<uri>https://www.v2ex.com/member/card123</uri>",
+        "publishedAt": "2026-05-22T01:39:09.000Z",
+        "fetchedAt": "2026-05-22T02:13:00.563Z"
+      }
+    ],
+    "firstSeen": "2026-05-22T02:13:00.563Z",
+    "lastUpdated": "2026-05-22T02:13:00.563Z",
+    "tags": [
+      "礼品卡",
+      "话费充值",
+      "会员代充",
+      "游戏充值",
+      "加密货币支付"
     ]
   }
 ]
