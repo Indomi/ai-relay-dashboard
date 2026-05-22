@@ -14059,8 +14059,8 @@
       },
       {
         "model": "kiro",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.4,
+        "outputPrice": 0.4,
         "currency": "CNY"
       },
       {
@@ -14071,8 +14071,8 @@
       },
       {
         "model": "CC",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 1.85,
+        "outputPrice": 1.85,
         "currency": "CNY"
       },
       {
@@ -14094,7 +14094,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 52,
+    "mentionCount": 53,
     "priceHistory": [],
     "sources": [
       {
@@ -14219,7 +14219,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-22T14:22:39.164Z",
+    "lastUpdated": "2026-05-22T17:16:28.131Z",
     "tags": [
       "Claude",
       "中转",
@@ -25093,78 +25093,91 @@
     "name": "星星小店",
     "website": "https://xingbao-ai.shop/",
     "contact": "QQ群：1106649425，电报交流群",
-    "models": [],
+    "models": [
+      {
+        "model": "ChatGPT Plus 月卡 (土区)",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude Pro 尼区卡密",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude Max 20X 月卡 (成品号)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "ChatGPT Pro 20X 月卡 (官方卡充)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
     "billingType": "subscription",
     "subscription": {
       "plans": [
         {
-          "name": "Gemini Pro 美区年卡",
-          "price": 30,
-          "period": "year",
-          "features": [
-            "成品号",
-            "自动发货"
-          ],
-          "autoRenew": false,
-          "refundRule": "未明确说明"
-        },
-        {
-          "name": "ChatGPT Plus 月卡（土区iOS官方充值）",
+          "name": "ChatGPT Plus 月卡 (土区)",
           "price": 97,
           "period": "month",
           "features": [
-            "卡密直充",
-            "保证低价",
-            "在线自动发货"
+            "自助充值卡密",
+            "官方正规充值"
           ],
           "autoRenew": false,
-          "refundRule": "未明确说明"
+          "refundRule": "不同渠道稳定性与售后规则不同，质保范围以商品详情页为准。"
         },
         {
-          "name": "ChatGPT Plus 月卡（成品号）",
+          "name": "ChatGPT Plus 月卡 (成品号)",
           "price": 55,
           "period": "month",
           "features": [
             "成品号",
-            "质保10天",
-            "自动发货"
+            "质保10天"
           ],
           "autoRenew": false,
-          "refundRule": "未明确说明"
+          "refundRule": "不同渠道稳定性与售后规则不同，质保范围以商品详情页为准。"
         },
         {
-          "name": "Claude Pro 尼区卡密直充",
+          "name": "Claude Pro 尼区卡密",
           "price": 115,
           "period": "month",
           "features": [
-            "卡密直充",
-            "安卓/iOS通用"
+            "安卓/iOS通用",
+            "自助充值卡密"
           ],
           "autoRenew": false,
-          "refundRule": "未明确说明"
+          "refundRule": "不同渠道稳定性与售后规则不同，质保范围以商品详情页为准。"
         },
         {
-          "name": "Claude Max 20X 月卡（成品号）",
+          "name": "Claude Max 20X 月卡 (成品号)",
           "price": 790,
           "period": "month",
           "features": [
-            "成品号",
             "高配额度",
-            "自动发货"
+            "成品号",
+            "即开即用"
           ],
           "autoRenew": false,
-          "refundRule": "未明确说明"
+          "refundRule": "不同渠道稳定性与售后规则不同，质保范围以商品详情页为准。"
         },
         {
-          "name": "ChatGPT Pro 20X 月卡（官方卡充）",
+          "name": "ChatGPT Pro 20X 月卡 (官方卡充)",
           "price": 1260,
           "period": "month",
           "features": [
             "官方卡充",
-            "支持续费"
+            "支持续费",
+            "1卡1账单"
           ],
           "autoRenew": false,
-          "refundRule": "未明确说明"
+          "refundRule": "不同渠道稳定性与售后规则不同，质保范围以商品详情页为准。"
         }
       ]
     },
@@ -25178,8 +25191,8 @@
     "rateLimit": "未明确说明",
     "status": "unknown",
     "lastChecked": "2026-05-22T14:22:39.166Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -25192,13 +25205,49 @@
       }
     ],
     "firstSeen": "2026-05-22T14:22:39.166Z",
-    "lastUpdated": "2026-05-22T14:22:39.166Z",
+    "lastUpdated": "2026-05-22T17:16:28.134Z",
     "tags": [
       "账号销售",
       "卡密充值",
       "成品号",
       "ChatGPT",
       "Claude"
+    ]
+  },
+  {
+    "id": "pmph6lso3o2eud",
+    "name": "Open Prompts",
+    "website": "www.open-prompts.com",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-22T17:16:28.131Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214837#reply0",
+        "title": "[分享创造] 精选 X 上的图片提示词开源社区 - Open Prompts",
+        "author": "<name>chatbase</name>\n\t\t<uri>https://www.v2ex.com/member/chatbase</uri>",
+        "publishedAt": "2026-05-22T15:37:07.000Z",
+        "fetchedAt": "2026-05-22T17:16:28.131Z"
+      }
+    ],
+    "firstSeen": "2026-05-22T17:16:28.131Z",
+    "lastUpdated": "2026-05-22T17:16:28.131Z",
+    "tags": [
+      "开源",
+      "提示词",
+      "图像生成",
+      "模板库"
     ]
   }
 ]
