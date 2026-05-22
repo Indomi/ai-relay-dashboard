@@ -14082,10 +14082,10 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "freeQuota": {
       "amount": null,
-      "unit": "",
+      "unit": "CNY",
       "description": ""
     },
     "paymentMethods": [],
@@ -14094,7 +14094,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 51,
+    "mentionCount": 52,
     "priceHistory": [],
     "sources": [
       {
@@ -14208,10 +14208,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-21T13:56:07.000Z",
         "fetchedAt": "2026-05-21T15:20:05.398Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214820#reply0",
+        "title": "[推广] [FK Claude] 一个只做 Claude 的中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-22T13:46:58.000Z",
+        "fetchedAt": "2026-05-22T14:22:39.164Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-21T22:23:20.645Z",
+    "lastUpdated": "2026-05-22T14:22:39.164Z",
     "tags": [
       "Claude",
       "中转",
@@ -17379,7 +17387,14 @@
     "name": "deepseek-cdp-cli",
     "website": "https://github.com/meomeo-dev/deepseek-cdp-cli",
     "contact": "",
-    "models": [],
+    "models": [
+      {
+        "model": "deepseek-v4-pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
     "billingType": "unknown",
     "subscription": {
       "plans": []
@@ -17388,8 +17403,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-13T14:12:56.721Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -17399,10 +17414,18 @@
         "author": "<name>Cycle0079</name>\n\t\t<uri>https://www.v2ex.com/member/Cycle0079</uri>",
         "publishedAt": "2026-05-13T09:42:42.000Z",
         "fetchedAt": "2026-05-13T14:12:56.721Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214810#reply1",
+        "title": "[DeepSeek] DeepSeek api 改成永久打折了",
+        "author": "<name>haukuen</name>\n\t\t<uri>https://www.v2ex.com/member/haukuen</uri>",
+        "publishedAt": "2026-05-22T13:50:50.000Z",
+        "fetchedAt": "2026-05-22T14:22:39.164Z"
       }
     ],
     "firstSeen": "2026-05-13T14:12:56.721Z",
-    "lastUpdated": "2026-05-13T14:12:56.721Z",
+    "lastUpdated": "2026-05-22T14:22:39.164Z",
     "tags": [
       "开源工具",
       "DeepSeek",
@@ -25063,6 +25086,119 @@
       "Claude Pro",
       "Gemini Pro",
       "官方直充"
+    ]
+  },
+  {
+    "id": "pmph0e9mm8cazg",
+    "name": "星星小店",
+    "website": "https://xingbao-ai.shop/",
+    "contact": "QQ群：1106649425，电报交流群",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Gemini Pro 美区年卡",
+          "price": 30,
+          "period": "year",
+          "features": [
+            "成品号",
+            "自动发货"
+          ],
+          "autoRenew": false,
+          "refundRule": "未明确说明"
+        },
+        {
+          "name": "ChatGPT Plus 月卡（土区iOS官方充值）",
+          "price": 97,
+          "period": "month",
+          "features": [
+            "卡密直充",
+            "保证低价",
+            "在线自动发货"
+          ],
+          "autoRenew": false,
+          "refundRule": "未明确说明"
+        },
+        {
+          "name": "ChatGPT Plus 月卡（成品号）",
+          "price": 55,
+          "period": "month",
+          "features": [
+            "成品号",
+            "质保10天",
+            "自动发货"
+          ],
+          "autoRenew": false,
+          "refundRule": "未明确说明"
+        },
+        {
+          "name": "Claude Pro 尼区卡密直充",
+          "price": 115,
+          "period": "month",
+          "features": [
+            "卡密直充",
+            "安卓/iOS通用"
+          ],
+          "autoRenew": false,
+          "refundRule": "未明确说明"
+        },
+        {
+          "name": "Claude Max 20X 月卡（成品号）",
+          "price": 790,
+          "period": "month",
+          "features": [
+            "成品号",
+            "高配额度",
+            "自动发货"
+          ],
+          "autoRenew": false,
+          "refundRule": "未明确说明"
+        },
+        {
+          "name": "ChatGPT Pro 20X 月卡（官方卡充）",
+          "price": 1260,
+          "period": "month",
+          "features": [
+            "官方卡充",
+            "支持续费"
+          ],
+          "autoRenew": false,
+          "refundRule": "未明确说明"
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": "未明确说明",
+    "status": "unknown",
+    "lastChecked": "2026-05-22T14:22:39.166Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214800#reply1",
+        "title": "[推广] ai 账号店铺 专营 gpt Claude gemini 成品号 卡密直冲",
+        "author": "<name>pipinexttime</name>\n\t\t<uri>https://www.v2ex.com/member/pipinexttime</uri>",
+        "publishedAt": "2026-05-22T12:38:49.000Z",
+        "fetchedAt": "2026-05-22T14:22:39.166Z"
+      }
+    ],
+    "firstSeen": "2026-05-22T14:22:39.166Z",
+    "lastUpdated": "2026-05-22T14:22:39.166Z",
+    "tags": [
+      "账号销售",
+      "卡密充值",
+      "成品号",
+      "ChatGPT",
+      "Claude"
     ]
   }
 ]
