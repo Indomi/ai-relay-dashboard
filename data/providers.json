@@ -7800,7 +7800,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
@@ -7814,8 +7814,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.126Z",
-    "heatScore": 97,
-    "mentionCount": 27,
+    "heatScore": 99,
+    "mentionCount": 28,
     "priceHistory": [],
     "sources": [
       {
@@ -7881,10 +7881,18 @@
         "author": "<name>ddshub</name>\n\t\t<uri>https://www.v2ex.com/member/ddshub</uri>",
         "publishedAt": "2026-05-21T09:26:32.000Z",
         "fetchedAt": "2026-05-21T12:18:26.728Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214759#reply0",
+        "title": "[推广] [DDShub] 折扣海外模型站",
+        "author": "<name>ddshub</name>\n\t\t<uri>https://www.v2ex.com/member/ddshub</uri>",
+        "publishedAt": "2026-05-22T08:55:52.000Z",
+        "fetchedAt": "2026-05-22T11:52:02.552Z"
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.126Z",
-    "lastUpdated": "2026-05-21T12:18:26.728Z",
+    "lastUpdated": "2026-05-22T11:52:02.552Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -10642,31 +10650,67 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": [
         {
-          "name": "不限流量套餐",
-          "price": "未知",
-          "period": "未知",
+          "name": "流量套餐",
+          "price": 0.5,
+          "period": "GB",
           "features": [
-            "不限流量"
-          ]
+            "按流量计费",
+            "适用于市场调研、数据采集"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "无限流量套餐",
+          "price": 3,
+          "period": "day",
+          "features": [
+            "不限流量",
+            "适用于高流量音视频下载"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "长期静态ISP IP",
+          "price": 3,
+          "period": "month",
+          "features": [
+            "IP永久使用",
+            "适用于社交媒体、电商、游戏"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "短期住宅IP",
+          "price": 0.028,
+          "period": "IP",
+          "features": [
+            "按IP计费",
+            "适用于问卷调查、一次性验证"
+          ],
+          "autoRenew": false,
+          "refundRule": null
         }
       ]
     },
     "freeQuota": {
-      "amount": "未知",
-      "unit": "未知",
-      "description": "注册后联系客服或在帖子下方留言账户UID，可开通测试额度/专属折扣"
+      "amount": null,
+      "unit": "traffic",
+      "description": "新用户注册免费领取测试流量（具体额度未明确）"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "无明确限制，支持多线程高并发",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 85,
-    "mentionCount": 21,
+    "heatScore": 87,
+    "mentionCount": 22,
     "priceHistory": [],
     "sources": [
       {
@@ -10740,10 +10784,18 @@
         "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
         "publishedAt": "2026-05-21T09:46:37.000Z",
         "fetchedAt": "2026-05-21T12:18:26.727Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214738#reply0",
+        "title": "[推广] [炸裂福利] 吹爆这款海外住宅代理！新用户注册免费送流量，文末再送 5 个独享 CDK，手慢无！",
+        "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
+        "publishedAt": "2026-05-22T08:27:47.000Z",
+        "fetchedAt": "2026-05-22T11:52:02.554Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-21T15:20:05.401Z",
+    "lastUpdated": "2026-05-22T11:52:02.554Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -23318,20 +23370,9 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
-      "plans": [
-        {
-          "name": "Token Plan",
-          "price": 20,
-          "period": "month",
-          "features": [
-            "主流模型包月使用"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": null,
@@ -23341,8 +23382,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-20T11:55:58.946Z",
-    "heatScore": 47,
-    "mentionCount": 3,
+    "heatScore": 49,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -23368,10 +23409,18 @@
         "author": "<name>todcrecco</name>\n\t\t<uri>https://www.v2ex.com/member/todcrecco</uri>",
         "publishedAt": "2026-05-20T13:13:43.000Z",
         "fetchedAt": "2026-05-20T14:42:29.899Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214749#reply0",
+        "title": "[推广] 时脉 API 使用",
+        "author": "<name>todcrecco</name>\n\t\t<uri>https://www.v2ex.com/member/todcrecco</uri>",
+        "publishedAt": "2026-05-22T08:45:39.000Z",
+        "fetchedAt": "2026-05-22T11:52:02.554Z"
       }
     ],
     "firstSeen": "2026-05-20T11:55:58.946Z",
-    "lastUpdated": "2026-05-20T14:42:29.899Z",
+    "lastUpdated": "2026-05-22T11:52:02.554Z",
     "tags": [
       "AI工具",
       "API接口",
