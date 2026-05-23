@@ -10913,22 +10913,70 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "流量套餐",
+          "price": 0.5,
+          "period": "month",
+          "features": [
+            "按流量计费，每GB $0.50",
+            "高纯度IP，流量不过期"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "无限流量-端口套餐",
+          "price": 9,
+          "period": "month",
+          "features": [
+            "$0.3/天/端口",
+            "无限流量",
+            "自动切换IP"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "长期静态ISP IP套餐",
+          "price": 3,
+          "period": "month",
+          "features": [
+            "每IP $3.0/月",
+            "原生独享IP",
+            "无限流量"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "短期住宅IP套餐",
+          "price": 0.028,
+          "period": "month",
+          "features": [
+            "每IP $0.028",
+            "未使用不收费",
+            "支持CDKey分发"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
       "amount": 3,
-      "unit": "条",
-      "description": "新用户注册后可免费领取3条短效原生静态住宅IP。"
+      "unit": "个",
+      "description": "新用户注册可免费领取3条短效原生静态住宅IP (通过兑换码)"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": "无明确限制，支持多线程高并发",
+    "rateLimit": "无限连接（无限流量套餐）",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 93,
-    "mentionCount": 25,
+    "heatScore": 95,
+    "mentionCount": 26,
     "priceHistory": [],
     "sources": [
       {
@@ -11029,7 +11077,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-23T13:06:52.709Z",
+    "lastUpdated": "2026-05-23T16:08:13.380Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -12294,24 +12342,26 @@
     "website": "https://partner.bybit.com/b/146364",
     "contact": "Telegram: @fgvbt123",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": 10,
-      "unit": "U",
-      "description": "新用户充值100U即送10U赠礼"
+      "amount": 0,
+      "unit": "USD",
+      "description": "无直接描述免费额度，但提供消费返现和订阅返现。"
     },
     "paymentMethods": [
       "微信",
       "支付宝",
-      "Apple Pay"
+      "Apple Pay",
+      "Google Pay",
+      "银行转账/加密货币充值（隐含）"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-09T07:41:46.423Z",
-    "heatScore": 54,
-    "mentionCount": 8,
+    "heatScore": 56,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -12353,10 +12403,18 @@
         "author": "<name>fgvbt3</name>\n\t\t<uri>https://www.v2ex.com/member/fgvbt3</uri>",
         "publishedAt": "2026-05-23T09:42:03.000Z",
         "fetchedAt": "2026-05-23T10:32:48.566Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214953#reply1",
+        "title": "[推广] 富途 老虎 长桥的难民请进 Bybit 已支持链上美股， Bybit U 卡支持微信、支付宝、Apple Pay 三 通啦！最新已可增加多张虚拟卡！",
+        "author": "<name>fgvbt3</name>\n\t\t<uri>https://www.v2ex.com/member/fgvbt3</uri>",
+        "publishedAt": "2026-05-23T15:54:32.000Z",
+        "fetchedAt": "2026-05-23T16:08:13.382Z"
       }
     ],
     "firstSeen": "2026-05-09T07:41:46.423Z",
-    "lastUpdated": "2026-05-23T10:32:48.566Z",
+    "lastUpdated": "2026-05-23T16:08:13.382Z",
     "tags": [
       "U卡",
       "支付",
@@ -14339,7 +14397,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 57,
+    "mentionCount": 58,
     "priceHistory": [],
     "sources": [
       {
@@ -14469,10 +14527,18 @@
         "author": "sx931210",
         "publishedAt": "2026-05-22T13:46:58.000Z",
         "fetchedAt": "2026-05-23T02:00:41.859Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214982#reply0",
+        "title": "[推广] [FK Claude] 一个简单的 Claude 中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-23T14:55:15.000Z",
+        "fetchedAt": "2026-05-23T16:08:13.377Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-23T02:02:40.198Z",
+    "lastUpdated": "2026-05-23T16:08:13.377Z",
     "tags": [
       "Claude",
       "中转",
@@ -20924,17 +20990,17 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 30,
-      "unit": "USD",
-      "description": "新用户注册自动赠送30美元额度。"
+      "amount": null,
+      "unit": null,
+      "description": null
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "已调整以限制高并发（防薅羊毛）。",
     "status": "unknown",
     "lastChecked": "2026-05-16T15:57:08.606Z",
-    "heatScore": 65,
-    "mentionCount": 11,
+    "heatScore": 67,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -20952,10 +21018,18 @@
         "author": "<name>fruitbagxxx</name>\n\t\t<uri>https://www.v2ex.com/member/fruitbagxxx</uri>",
         "publishedAt": "2026-05-16T15:44:56.000Z",
         "fetchedAt": "2026-05-16T15:58:42.416Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214980#reply4",
+        "title": "[OpenAI] 我做了一个 AI Token 市场定价的撮合系统，实现了真正的 Token 自由😂，感兴趣的来看看！",
+        "author": "<name>fruitbagxxx</name>\n\t\t<uri>https://www.v2ex.com/member/fruitbagxxx</uri>",
+        "publishedAt": "2026-05-23T12:40:52.000Z",
+        "fetchedAt": "2026-05-23T16:08:13.379Z"
       }
     ],
     "firstSeen": "2026-05-16T15:57:08.606Z",
-    "lastUpdated": "2026-05-19T22:15:47.706Z",
+    "lastUpdated": "2026-05-23T16:08:13.379Z",
     "tags": [
       "免费额度",
       "GPT",
