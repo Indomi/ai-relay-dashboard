@@ -10875,22 +10875,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 3,
-      "unit": "条",
-      "description": "新用户注册可免费兑换3条短效住宅IP"
+      "unit": "IP",
+      "description": "新用户注册可免费领取3条短效原生静态住宅IP（兑换码形式）"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "无明确限制，支持多线程高并发",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 89,
-    "mentionCount": 23,
+    "heatScore": 91,
+    "mentionCount": 24,
     "priceHistory": [],
     "sources": [
       {
@@ -10972,10 +10972,18 @@
         "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
         "publishedAt": "2026-05-22T08:27:47.000Z",
         "fetchedAt": "2026-05-22T11:52:02.554Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214956#reply0",
+        "title": "[推广] [限时福利] 全网寻找开发者/跨境老哥！送 3 条短效原生静态住宅 IP，新用户注册即领，手慢无！",
+        "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
+        "publishedAt": "2026-05-23T10:00:15.000Z",
+        "fetchedAt": "2026-05-23T10:32:48.566Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-23T02:00:41.830Z",
+    "lastUpdated": "2026-05-23T10:32:48.566Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -12240,38 +12248,24 @@
     "website": "https://partner.bybit.com/b/146364",
     "contact": "Telegram: @fgvbt123",
     "models": [],
-    "billingType": "subscription",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "基础卡",
-          "price": 0,
-          "period": "无",
-          "features": [
-            "支持微信、支付宝、Apple Pay绑定",
-            "双卡段覆盖（澳洲、中亚）",
-            "线上线下支付",
-            "跨境支付"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 10,
-      "unit": "USD",
-      "description": "新人专属10U充值赠礼（充值100U赠送10U）"
+      "unit": "U",
+      "description": "新用户充值100U即送10U赠礼"
     },
     "paymentMethods": [
       "微信",
       "支付宝",
-      "Apple Pay",
-      "Google Pay",
-      "信用卡"
+      "Apple Pay"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-09T07:41:46.423Z",
-    "heatScore": 52,
-    "mentionCount": 7,
+    "heatScore": 54,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -12305,10 +12299,18 @@
         "author": "<name>fgvbt3</name>\n\t\t<uri>https://www.v2ex.com/member/fgvbt3</uri>",
         "publishedAt": "2026-05-15T10:52:36.000Z",
         "fetchedAt": "2026-05-15T11:24:17.348Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214953#reply0",
+        "title": "[推广] 富途 老虎 长桥的难民请进 Bybit 已支持链上美股， Bybit U 卡支持微信、支付宝、Apple Pay 三 通啦！最新已可增加多张虚拟卡！",
+        "author": "<name>fgvbt3</name>\n\t\t<uri>https://www.v2ex.com/member/fgvbt3</uri>",
+        "publishedAt": "2026-05-23T09:42:03.000Z",
+        "fetchedAt": "2026-05-23T10:32:48.566Z"
       }
     ],
     "firstSeen": "2026-05-09T07:41:46.423Z",
-    "lastUpdated": "2026-05-15T16:45:10.770Z",
+    "lastUpdated": "2026-05-23T10:32:48.566Z",
     "tags": [
       "U卡",
       "支付",
@@ -25991,6 +25993,88 @@
     "tags": [
       "用户吐槽",
       "服务降级"
+    ]
+  },
+  {
+    "id": "pmpi7mjefpomr3",
+    "name": "筑基",
+    "website": "https://iaigc.fun/61/",
+    "contact": "群内交流",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-23T10:32:48.567Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214923#reply5",
+        "title": "[分享发现] Vibe 了一个六一亲子小活动，欢迎老哥们带娃来玩",
+        "author": "<name>armysheng</name>\n\t\t<uri>https://www.v2ex.com/member/armysheng</uri>",
+        "publishedAt": "2026-05-23T10:25:25.000Z",
+        "fetchedAt": "2026-05-23T10:32:48.567Z"
+      }
+    ],
+    "firstSeen": "2026-05-23T10:32:48.567Z",
+    "lastUpdated": "2026-05-23T10:32:48.567Z",
+    "tags": [
+      "亲子活动",
+      "AI工具",
+      "免费交流"
+    ]
+  },
+  {
+    "id": "pmpi7mjeg4tfrk",
+    "name": "aipet.dev",
+    "website": "aipet.dev",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT-Image-2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "次",
+      "description": "访客每小时5次，GitHub登录用户每小时10次，免费使用。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-23T10:32:48.568Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214916#reply1",
+        "title": "[分享创造] aipet.dev 升级 — 换了 GPT-Image-2 生成，像素宠物效果好不少",
+        "author": "<name>royluo</name>\n\t\t<uri>https://www.v2ex.com/member/royluo</uri>",
+        "publishedAt": "2026-05-23T06:20:51.000Z",
+        "fetchedAt": "2026-05-23T10:32:48.568Z"
+      }
+    ],
+    "firstSeen": "2026-05-23T10:32:48.568Z",
+    "lastUpdated": "2026-05-23T10:32:48.568Z",
+    "tags": [
+      "AI图像生成",
+      "像素艺术",
+      "桌宠",
+      "免费工具"
     ]
   }
 ]
