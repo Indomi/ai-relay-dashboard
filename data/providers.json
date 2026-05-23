@@ -76,24 +76,26 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "ChatGPT 全量模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": null,
-      "unit": "unknown",
-      "description": "无提及"
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "按量付费，日/周不限。",
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
     "heatScore": 100,
-    "mentionCount": 67,
+    "mentionCount": 68,
     "priceHistory": [],
     "sources": [
       {
@@ -455,10 +457,18 @@
         "author": "<name>donmenjie</name>\n\t\t<uri>https://www.v2ex.com/member/donmenjie</uri>",
         "publishedAt": "2026-05-22T06:51:58.000Z",
         "fetchedAt": "2026-05-22T06:55:21.851Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214378",
+        "title": "每日至少 50 亿 ChatGPT 全量 tokens 找胃口大的",
+        "author": "heywin",
+        "publishedAt": "2026-05-21T05:07:34.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.827Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-22T22:21:59.702Z",
+    "lastUpdated": "2026-05-23T02:00:41.827Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -1389,8 +1399,8 @@
     "models": [
       {
         "model": "Claude",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 35,
+        "outputPrice": 175,
         "currency": "USD"
       },
       {
@@ -1419,10 +1429,11 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户加入官方社群可领取10美元起始额度"
+      "description": "新用户加入社群后发送UID即可领取10美元额度"
     },
     "paymentMethods": [
-      "个人充值",
+      "支付宝",
+      "微信",
       "企业对公转账"
     ],
     "concurrencyLimit": null,
@@ -1430,7 +1441,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 62,
+    "mentionCount": 66,
     "priceHistory": [],
     "sources": [
       {
@@ -1608,10 +1619,42 @@
         "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
         "publishedAt": "2026-05-22T01:48:10.000Z",
         "fetchedAt": "2026-05-22T02:13:00.561Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214861",
+        "title": "Claude API 企业中转，新用户直接送 10 美元额度",
+        "author": "aicodingsh",
+        "publishedAt": "2026-05-23T01:31:51.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.821Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214599",
+        "title": "新人入群赠 10 美元额度， Claude API 企业级中转",
+        "author": "aicodingsh",
+        "publishedAt": "2026-05-22T01:48:10.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.826Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214344",
+        "title": "Claude API 企业中转 入群即送 10 美元额度",
+        "author": "aicodingsh",
+        "publishedAt": "2026-05-21T02:56:35.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.828Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214861#reply1",
+        "title": "[推广] Claude API 企业中转，新用户直接送 10 美元额度",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-23T01:31:51.000Z",
+        "fetchedAt": "2026-05-23T02:02:40.195Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-22T02:13:00.561Z",
+    "lastUpdated": "2026-05-23T02:02:40.195Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -1860,15 +1903,18 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "注册后，回帖报ID并加入官方群，发送用户ID，立即到账$10体验金。"
+      "description": "加入官方群发送注册邮箱或用户ID后，立即到账$10体验金。"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
     "heatScore": 100,
-    "mentionCount": 47,
+    "mentionCount": 49,
     "priceHistory": [],
     "sources": [
       {
@@ -1894,10 +1940,18 @@
         "author": "Unity2Ai",
         "publishedAt": "2026-05-11T07:17:58.000Z",
         "fetchedAt": "2026-05-12T01:41:35.508Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214647",
+        "title": "Unity2.ai 多模型中转站｜组合订阅上线，注册送 $2，加群/回帖再送 $10， V2EX 专属满 100 减 10",
+        "author": "Unity2Ai",
+        "publishedAt": "2026-05-22T03:19:18.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.822Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-20T11:55:58.980Z",
+    "lastUpdated": "2026-05-23T02:00:41.842Z",
     "tags": [
       "企业级",
       "中转",
@@ -2219,27 +2273,27 @@
       },
       {
         "model": "GPT 5.3",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 1,
+        "outputPrice": 1,
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新店运营，新用户注册并添加微信可免费领取10美元体验额度。"
+      "description": "新店运营，免费送10刀体验额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 74,
-    "mentionCount": 18,
+    "heatScore": 76,
+    "mentionCount": 19,
     "priceHistory": [],
     "sources": [
       {
@@ -2308,7 +2362,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-20T11:55:58.968Z",
+    "lastUpdated": "2026-05-23T02:00:41.858Z",
     "tags": [
       "官方API",
       "永久余额",
@@ -2426,15 +2480,15 @@
     "freeQuota": {
       "amount": 30,
       "unit": "USD",
-      "description": "注册后评论留邮箱（base64编码），手动赠送$30额度。"
+      "description": "注册后评论留邮箱，手动赠送$30额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.891Z",
-    "heatScore": 58,
-    "mentionCount": 10,
+    "heatScore": 60,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -2463,7 +2517,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.891Z",
-    "lastUpdated": "2026-05-20T11:55:58.948Z",
+    "lastUpdated": "2026-05-23T02:00:41.830Z",
     "tags": [
       "OpenAI",
       "API中转",
@@ -5121,8 +5175,8 @@
     "models": [
       {
         "model": "Claude全系列模型",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.7,
+        "outputPrice": 0.7,
         "currency": "CNY"
       },
       {
@@ -5226,23 +5280,30 @@
         "inputPrice": 0.5,
         "outputPrice": 0.5,
         "currency": "USD"
+      },
+      {
+        "model": "其他模型 (GPT/Gemini等)",
+        "inputPrice": 0.5,
+        "outputPrice": 0.5,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
-    "paymentMethods": [
-      "支付宝",
-      "微信"
-    ],
+    "freeQuota": {
+      "amount": 10,
+      "unit": "USD",
+      "description": "注册赠送$10体验金，够跑通流程"
+    },
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "未知",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.268Z",
     "heatScore": 100,
-    "mentionCount": 82,
+    "mentionCount": 83,
     "priceHistory": [],
     "sources": [
       {
@@ -5287,7 +5348,7 @@
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.268Z",
-    "lastUpdated": "2026-05-22T07:09:41.272Z",
+    "lastUpdated": "2026-05-23T02:00:41.846Z",
     "tags": [
       "Anthropic",
       "Claude",
@@ -7893,8 +7954,8 @@
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.126Z",
-    "heatScore": 99,
-    "mentionCount": 28,
+    "heatScore": 100,
+    "mentionCount": 30,
     "priceHistory": [],
     "sources": [
       {
@@ -7968,10 +8029,26 @@
         "author": "<name>ddshub</name>\n\t\t<uri>https://www.v2ex.com/member/ddshub</uri>",
         "publishedAt": "2026-05-22T08:55:52.000Z",
         "fetchedAt": "2026-05-22T11:52:02.552Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214759",
+        "title": "[DDShub] 折扣海外模型站",
+        "author": "ddshub",
+        "publishedAt": "2026-05-22T08:58:52.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.821Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214475",
+        "title": "[DDShub] 呆呆兽开启邀请功能啦",
+        "author": "ddshub",
+        "publishedAt": "2026-05-21T09:29:32.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.827Z"
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.126Z",
-    "lastUpdated": "2026-05-22T11:52:02.552Z",
+    "lastUpdated": "2026-05-23T02:00:41.827Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -8709,20 +8786,30 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "Pro",
+          "price": "未知",
+          "period": "未知",
+          "features": [
+            "无限期Pro订阅",
+            "登录即送"
+          ]
+        }
+      ]
     },
     "freeQuota": {
       "amount": 0,
-      "unit": "",
-      "description": ""
+      "unit": "unknown",
+      "description": "登录即送无限期Pro订阅，所有AI功能免费使用"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
-    "heatScore": 81,
-    "mentionCount": 34,
+    "heatScore": 83,
+    "mentionCount": 35,
     "priceHistory": [],
     "sources": [
       {
@@ -8876,10 +8963,18 @@
         "author": "",
         "publishedAt": "2026-05-21T12:19:35.112Z",
         "fetchedAt": "2026-05-21T12:30:24.255Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213934",
+        "title": "[6-1 前登录直接送无期限 Pro 订阅， AI 功能免费用] 做了一个美观的带 AI 功能的新标签页 Chrome 插件",
+        "author": "DeaglePC",
+        "publishedAt": "2026-05-19T14:56:16.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.838Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-22T19:45:53.107Z",
+    "lastUpdated": "2026-05-23T02:00:41.838Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -9293,8 +9388,8 @@
       },
       {
         "model": "OpenAI模型（如GPT-4o等）",
-        "inputPrice": 10,
-        "outputPrice": 10,
+        "inputPrice": 3,
+        "outputPrice": 6,
         "currency": "USD"
       },
       {
@@ -9359,8 +9454,8 @@
       },
       {
         "model": "gpt-3.5-turbo",
-        "inputPrice": 0.5,
-        "outputPrice": 1.5,
+        "inputPrice": 0.2,
+        "outputPrice": 0.4,
         "currency": "USD"
       }
     ],
@@ -9374,7 +9469,8 @@
           "features": [
             "每日20美元等值OpenAI用量",
             "无周限",
-            "1倍率"
+            "OpenAI订阅组",
+            "倍率1x"
           ],
           "autoRenew": true,
           "refundRule": "未提及"
@@ -9386,7 +9482,8 @@
           "features": [
             "每日60美元等值OpenAI用量",
             "无周限",
-            "1倍率"
+            "OpenAI订阅组",
+            "倍率1x"
           ],
           "autoRenew": true,
           "refundRule": "未提及"
@@ -9399,14 +9496,15 @@
       "description": "新用户注册送10美元体验金"
     },
     "paymentMethods": [
-      "支付宝"
+      "支付宝",
+      "微信"
     ],
     "concurrencyLimit": null,
     "rateLimit": "未提及",
     "status": "unknown",
     "lastChecked": "2026-05-07T16:52:48.363Z",
     "heatScore": 100,
-    "mentionCount": 30,
+    "mentionCount": 31,
     "priceHistory": [],
     "sources": [
       {
@@ -9483,7 +9581,7 @@
       }
     ],
     "firstSeen": "2026-05-07T16:52:48.363Z",
-    "lastUpdated": "2026-05-20T11:55:58.985Z",
+    "lastUpdated": "2026-05-23T02:00:41.846Z",
     "tags": [
       "OpenAI",
       "API中转",
@@ -10020,8 +10118,8 @@
     "models": [
       {
         "model": "GPT-5.4",
-        "inputPrice": 100,
-        "outputPrice": 100,
+        "inputPrice": 50,
+        "outputPrice": 50,
         "currency": "USD"
       },
       {
@@ -10032,14 +10130,14 @@
       },
       {
         "model": "gpt-5.3-codex",
-        "inputPrice": 100,
-        "outputPrice": 100,
+        "inputPrice": 50,
+        "outputPrice": 50,
         "currency": "USD"
       },
       {
         "model": "gpt-image-2",
-        "inputPrice": 1000000,
-        "outputPrice": 1000000,
+        "inputPrice": 20,
+        "outputPrice": 20,
         "currency": "USD"
       }
     ],
@@ -10047,17 +10145,18 @@
     "freeQuota": {
       "amount": 2,
       "unit": "USD",
-      "description": "新用户注册即送2美刀额度"
+      "description": "新用户注册即送2美元额度"
     },
     "paymentMethods": [
-      "支付宝"
+      "支付宝",
+      "微信"
     ],
     "concurrencyLimit": null,
     "rateLimit": "100美元额度约可调用1亿token（包含输入和输出）",
     "status": "unknown",
     "lastChecked": "2026-05-08T01:44:01.354Z",
     "heatScore": 100,
-    "mentionCount": 34,
+    "mentionCount": 36,
     "priceHistory": [],
     "sources": [
       {
@@ -10078,7 +10177,7 @@
       }
     ],
     "firstSeen": "2026-05-08T01:44:01.354Z",
-    "lastUpdated": "2026-05-20T11:55:58.984Z",
+    "lastUpdated": "2026-05-23T02:00:41.845Z",
     "tags": [
       "API中转",
       "GPT-5.4",
@@ -10294,6 +10393,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "Claude (Code)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -10303,15 +10408,15 @@
     "freeQuota": {
       "amount": 100,
       "unit": "USD",
-      "description": "回帖赠送100美金Claude Code API额度，限时3天用完。"
+      "description": "回帖送100美金Claude Code API额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": 2000,
     "rateLimit": "支持超2千人同时使用GPT",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 95,
-    "mentionCount": 26,
+    "heatScore": 97,
+    "mentionCount": 27,
     "priceHistory": [],
     "sources": [
       {
@@ -10412,7 +10517,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-20T11:55:59.001Z",
+    "lastUpdated": "2026-05-23T02:00:41.858Z",
     "tags": [
       "新站开业",
       "免费额度",
@@ -10561,14 +10666,14 @@
       },
       {
         "model": "Claude Opus 4.7",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 15,
+        "outputPrice": 75,
         "currency": "USD"
       },
       {
         "model": "Claude Sonnet",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 3,
+        "outputPrice": 15,
         "currency": "USD"
       },
       {
@@ -10618,6 +10723,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "Claude (具体版本未明确，如Opus 4.7)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -10627,18 +10738,18 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "V2EX用户注册后回复帖子赠送$10余额；非V站用户加官网公告微信送$5余额。"
+      "description": "V2EX用户注册后回复帖子赠送$10余额（非V站用户通过官网公告微信可获$5）。"
     },
     "paymentMethods": [
       "支付宝",
       "微信"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "未明确说明",
+    "rateLimit": "未明确提及",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
     "heatScore": 100,
-    "mentionCount": 31,
+    "mentionCount": 34,
     "priceHistory": [],
     "sources": [
       {
@@ -10656,10 +10767,18 @@
         "author": "huangyin0514",
         "publishedAt": "2026-05-08T03:30:24.000Z",
         "fetchedAt": "2026-05-10T06:05:59.619Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214028",
+        "title": "[送 $10] 被中转站扣费搞怕了，做了个工具专门看中转站 usage 透不透明、缓存命中问题",
+        "author": "huangyin0514",
+        "publishedAt": "2026-05-20T02:35:03.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.833Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-20T11:55:58.983Z",
+    "lastUpdated": "2026-05-23T02:00:41.845Z",
     "tags": [
       "Claude",
       "GPT",
@@ -10729,67 +10848,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "流量套餐",
-          "price": 0.5,
-          "period": "GB",
-          "features": [
-            "按流量计费",
-            "适用于市场调研、数据采集"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "无限流量套餐",
-          "price": 3,
-          "period": "day",
-          "features": [
-            "不限流量",
-            "适用于高流量音视频下载"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "长期静态ISP IP",
-          "price": 3,
-          "period": "month",
-          "features": [
-            "IP永久使用",
-            "适用于社交媒体、电商、游戏"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "短期住宅IP",
-          "price": 0.028,
-          "period": "IP",
-          "features": [
-            "按IP计费",
-            "适用于问卷调查、一次性验证"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": "traffic",
-      "description": "新用户注册免费领取测试流量（具体额度未明确）"
+      "amount": 3,
+      "unit": "条",
+      "description": "新用户注册可免费兑换3条短效住宅IP"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "无明确限制，支持多线程高并发",
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
-    "heatScore": 87,
-    "mentionCount": 22,
+    "heatScore": 89,
+    "mentionCount": 23,
     "priceHistory": [],
     "sources": [
       {
@@ -10874,7 +10948,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-22T11:52:02.554Z",
+    "lastUpdated": "2026-05-23T02:00:41.830Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -11215,7 +11289,7 @@
     "freeQuota": {
       "amount": 5,
       "unit": "CNY",
-      "description": "参与帖文抽奖的用户可获得5元体验金"
+      "description": "新用户注册参与活动送5元体验金"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -11223,7 +11297,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-08T10:26:17.175Z",
     "heatScore": 100,
-    "mentionCount": 31,
+    "mentionCount": 34,
     "priceHistory": [],
     "sources": [
       {
@@ -11244,7 +11318,7 @@
       }
     ],
     "firstSeen": "2026-05-08T10:26:17.175Z",
-    "lastUpdated": "2026-05-20T11:55:58.982Z",
+    "lastUpdated": "2026-05-23T02:00:41.844Z",
     "tags": [
       "API中转",
       "按量计费",
@@ -12465,25 +12539,25 @@
       },
       {
         "model": "gpt-5.5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": 0.25,
+        "outputPrice": 0.25,
         "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": "未明确提供"
+      "amount": 10,
+      "unit": "USD",
+      "description": "每人注册赠送10美元额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-09T10:13:29.595Z",
-    "heatScore": 66,
-    "mentionCount": 14,
+    "heatScore": 68,
+    "mentionCount": 15,
     "priceHistory": [],
     "sources": [
       {
@@ -12533,10 +12607,18 @@
         "author": "",
         "publishedAt": "2026-05-22T22:11:19.736Z",
         "fetchedAt": "2026-05-22T22:21:59.698Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214288",
+        "title": "纯 plus/pro 号池 gpt5.5 新建中转站需要测试一下并发压力 www.aigcwe.com",
+        "author": "xuwudi404",
+        "publishedAt": "2026-05-21T01:01:36.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.850Z"
       }
     ],
     "firstSeen": "2026-05-09T10:13:29.595Z",
-    "lastUpdated": "2026-05-22T22:21:59.698Z",
+    "lastUpdated": "2026-05-23T02:00:41.850Z",
     "tags": [
       "Amazon数据采集",
       "API服务",
@@ -14171,14 +14253,18 @@
       }
     ],
     "billingType": "token",
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": null,
+      "unit": "",
+      "description": ""
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "CC专用1.85倍率限制客户端",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 55,
+    "mentionCount": 57,
     "priceHistory": [],
     "sources": [
       {
@@ -14300,10 +14386,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-22T13:46:58.000Z",
         "fetchedAt": "2026-05-22T14:22:39.164Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214820",
+        "title": "[FK Claude] 一个只做 Claude 的中转站",
+        "author": "sx931210",
+        "publishedAt": "2026-05-22T13:46:58.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.859Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-22T22:10:36.009Z",
+    "lastUpdated": "2026-05-23T02:02:40.198Z",
     "tags": [
       "Claude",
       "中转",
@@ -14991,22 +15085,36 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "全站会员",
+          "price": null,
+          "period": "day",
+          "features": [
+            "每日自带100美元GPT5.5额度"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "unknown",
-      "description": "作为开源软件，其使用和部署本身无直接费用，但未提及具体服务配额。"
+      "amount": 10,
+      "unit": "USD",
+      "description": "V站用户回复注册邮箱或加微信后免费领取$10平台余额"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信卡密"
+    ],
     "concurrencyLimit": null,
-    "rateLimit": "未提及",
+    "rateLimit": "未明确说明。",
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.115Z",
-    "heatScore": 79,
-    "mentionCount": 18,
+    "heatScore": 81,
+    "mentionCount": 19,
     "priceHistory": [],
     "sources": [
       {
@@ -15043,7 +15151,7 @@
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.115Z",
-    "lastUpdated": "2026-05-22T02:13:00.561Z",
+    "lastUpdated": "2026-05-23T02:00:41.842Z",
     "tags": [
       "GPT-5.5",
       "官方渠道",
@@ -15183,8 +15291,8 @@
     "models": [
       {
         "model": "Codex",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.15,
+        "outputPrice": 0.15,
         "currency": "CNY"
       },
       {
@@ -15213,15 +15321,15 @@
     "freeQuota": {
       "amount": 500000,
       "unit": "tokens",
-      "description": "新用户注册送50万token"
+      "description": "新用户注册送50w token"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "Codex倍率为0.15",
     "status": "unknown",
     "lastChecked": "2026-05-11T06:43:29.061Z",
-    "heatScore": 70,
-    "mentionCount": 16,
+    "heatScore": 72,
+    "mentionCount": 17,
     "priceHistory": [],
     "sources": [
       {
@@ -15242,7 +15350,7 @@
       }
     ],
     "firstSeen": "2026-05-11T06:43:29.061Z",
-    "lastUpdated": "2026-05-20T11:55:58.980Z",
+    "lastUpdated": "2026-05-23T02:00:41.842Z",
     "tags": [
       "中转站",
       "Codex",
@@ -15473,8 +15581,8 @@
       },
       {
         "model": "Codex",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -15488,6 +15596,18 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "windsurf账号",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "opus4.7中转",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "unknown",
@@ -15495,11 +15615,13 @@
       "plans": []
     },
     "freeQuota": {},
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未提及"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-11T06:55:10.618Z",
-    "heatScore": 59,
-    "mentionCount": 13,
+    "heatScore": 61,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -15589,10 +15711,18 @@
         "author": "",
         "publishedAt": "2026-05-22T06:57:49.875Z",
         "fetchedAt": "2026-05-22T07:09:41.278Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1213690",
+        "title": "具体到可复制的副业有人会分享吗？我先来两个吧",
+        "author": "cwwx2022",
+        "publishedAt": "2026-05-19T01:40:08.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.858Z"
       }
     ],
     "firstSeen": "2026-05-11T06:55:10.618Z",
-    "lastUpdated": "2026-05-22T07:09:41.278Z",
+    "lastUpdated": "2026-05-23T02:00:41.858Z",
     "tags": [
       "Claude",
       "API代理",
@@ -16595,8 +16725,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T11:32:15.100Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -16606,10 +16736,18 @@
         "author": "<name>travelcc</name>\n\t\t<uri>https://www.v2ex.com/member/travelcc</uri>",
         "publishedAt": "2026-05-12T10:15:10.000Z",
         "fetchedAt": "2026-05-12T11:32:15.100Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214565",
+        "title": "现在还有什么中转站有可用的 GPT-5.5-Pro 模型？",
+        "author": "showonder",
+        "publishedAt": "2026-05-22T00:51:44.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.837Z"
       }
     ],
     "firstSeen": "2026-05-12T11:32:15.100Z",
-    "lastUpdated": "2026-05-12T22:12:54.395Z",
+    "lastUpdated": "2026-05-23T02:00:41.837Z",
     "tags": [
       "开发专用",
       "高并发",
@@ -16926,12 +17064,18 @@
     "models": [
       {
         "model": "gpt-4-plus-pro",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "gpt-4o",
         "inputPrice": 0,
         "outputPrice": 0,
-        "currency": "USD"
+        "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
@@ -16939,7 +17083,7 @@
           "price": 3,
           "period": "day",
           "features": [
-            "50刀余额",
+            "50美元余额",
             "日限额50"
           ],
           "autoRenew": false,
@@ -16950,7 +17094,7 @@
           "price": 19,
           "period": "week",
           "features": [
-            "400刀余额",
+            "400美元余额",
             "日限额100"
           ],
           "autoRenew": false,
@@ -16961,7 +17105,7 @@
           "price": 49,
           "period": "month",
           "features": [
-            "1200刀余额",
+            "1200美元余额",
             "日限额200"
           ],
           "autoRenew": false,
@@ -16972,7 +17116,7 @@
           "price": 89,
           "period": "month",
           "features": [
-            "3000刀余额",
+            "3000美元余额",
             "日限额400"
           ],
           "autoRenew": false,
@@ -16983,7 +17127,7 @@
           "price": 199,
           "period": "month",
           "features": [
-            "8888刀余额",
+            "8888美元余额",
             "日限额888"
           ],
           "autoRenew": false,
@@ -16992,20 +17136,20 @@
       ]
     },
     "freeQuota": {
-      "amount": 28.8,
+      "amount": 18.8,
       "unit": "USD",
-      "description": "新用户注册赠送$18.8，并在推广帖回复注册邮箱可额外获赠$10。"
+      "description": "新用户注册即赠送$18.8"
     },
     "paymentMethods": [
       "支付宝",
       "微信"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "根据套餐有每日调用限额（日限额）",
+    "rateLimit": "日限额根据套餐不同（50-888）",
     "status": "unknown",
     "lastChecked": "2026-05-13T06:31:19.571Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 59,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -17031,10 +17175,18 @@
         "author": "<name>zhlsk</name>\n\t\t<uri>https://www.v2ex.com/member/zhlsk</uri>",
         "publishedAt": "2026-05-22T06:43:11.000Z",
         "fetchedAt": "2026-05-22T06:55:21.855Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214665",
+        "title": "继续继续推广我的 gpt 中转站，注册就送 28.8$余额",
+        "author": "zhlsk",
+        "publishedAt": "2026-05-22T03:59:08.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.847Z"
       }
     ],
     "firstSeen": "2026-05-13T06:31:19.571Z",
-    "lastUpdated": "2026-05-22T06:55:21.855Z",
+    "lastUpdated": "2026-05-23T02:00:41.855Z",
     "tags": [
       "GPT Plus",
       "API网关",
@@ -17327,15 +17479,15 @@
     "freeQuota": {
       "amount": 20,
       "unit": "USD",
-      "description": "新用户注册后联系开发者可免费获得20美元额度。"
+      "description": "新用户注册后联系客服可获赠试用额度（根据评论区互动示例）"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "未提及",
     "status": "unknown",
     "lastChecked": "2026-05-13T14:11:00.450Z",
-    "heatScore": 71,
-    "mentionCount": 14,
+    "heatScore": 73,
+    "mentionCount": 15,
     "priceHistory": [],
     "sources": [
       {
@@ -17348,7 +17500,7 @@
       }
     ],
     "firstSeen": "2026-05-13T14:11:00.450Z",
-    "lastUpdated": "2026-05-20T11:55:58.980Z",
+    "lastUpdated": "2026-05-23T02:00:41.842Z",
     "tags": [
       "API中转",
       "按量付费",
@@ -19024,7 +19176,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
@@ -19060,22 +19212,19 @@
       ]
     },
     "freeQuota": {
-      "amount": 50,
+      "amount": null,
       "unit": "CNY",
-      "description": "通过抽奖活动赠送测试额度，每50楼随机抽取1位赠送50元，每100楼随机抽取1位赠送100元。"
+      "description": "通过跟帖抽奖活动可获得测试额度（50元或100元）。"
     },
     "paymentMethods": [
-      "支付宝",
-      "微信",
-      "USDT",
-      "信用卡"
+      "支付宝"
     ],
     "concurrencyLimit": null,
     "rateLimit": "根据实际使用情况动态调整。",
     "status": "unknown",
     "lastChecked": "2026-05-14T19:37:13.998Z",
     "heatScore": 100,
-    "mentionCount": 42,
+    "mentionCount": 43,
     "priceHistory": [],
     "sources": [
       {
@@ -19141,10 +19290,18 @@
         "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
         "publishedAt": "2026-05-21T02:02:54.000Z",
         "fetchedAt": "2026-05-21T02:09:45.008Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214276",
+        "title": "疯狂星期四， V 你 50",
+        "author": "Johnhpure",
+        "publishedAt": "2026-05-20T23:12:36.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.828Z"
       }
     ],
     "firstSeen": "2026-05-14T19:37:13.998Z",
-    "lastUpdated": "2026-05-21T02:09:45.008Z",
+    "lastUpdated": "2026-05-23T02:00:41.828Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -19533,8 +19690,8 @@
     "models": [
       {
         "model": "Claude系列（如Opus 4.7/4.6，Sonnet 4.6等）",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 5,
+        "outputPrice": 5,
         "currency": "CNY"
       },
       {
@@ -19599,8 +19756,8 @@
       },
       {
         "model": "GPT-5.5/5.4/5.2/5/o3/o4-mini",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.2,
+        "outputPrice": 0.2,
         "currency": "CNY"
       },
       {
@@ -19665,20 +19822,20 @@
       },
       {
         "model": "Claude Sonnet 4.6",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 2.6,
+        "outputPrice": 2.6,
         "currency": "CNY"
       },
       {
         "model": "Gemini 3.1 Pro",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 1,
+        "outputPrice": 1,
         "currency": "CNY"
       },
       {
         "model": "DeepSeek R1",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 1,
+        "outputPrice": 1,
         "currency": "CNY"
       },
       {
@@ -19695,14 +19852,14 @@
       },
       {
         "model": "Claude Haiku 4.5",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 1,
+        "outputPrice": 1,
         "currency": "CNY"
       },
       {
         "model": "GPT-5.4",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.2,
+        "outputPrice": 0.2,
         "currency": "CNY"
       },
       {
@@ -19776,6 +19933,12 @@
         "inputPrice": 1,
         "outputPrice": 1,
         "currency": "CNY"
+      },
+      {
+        "model": "GPT / Gemini / DeepSeek / Qwen 等",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
@@ -19792,8 +19955,8 @@
     "rateLimit": "未明确说明",
     "status": "unknown",
     "lastChecked": "2026-05-15T11:24:17.350Z",
-    "heatScore": 95,
-    "mentionCount": 26,
+    "heatScore": 100,
+    "mentionCount": 29,
     "priceHistory": [],
     "sources": [
       {
@@ -19830,7 +19993,7 @@
       }
     ],
     "firstSeen": "2026-05-15T11:24:17.350Z",
-    "lastUpdated": "2026-05-20T11:55:58.979Z",
+    "lastUpdated": "2026-05-23T02:00:41.841Z",
     "tags": [
       "企业级线路",
       "高SLA",
@@ -22375,15 +22538,15 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "注册就送10刀"
+      "description": "新用户注册账户后，通过‘钱包-兑换’可领取10美元免费额度。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "官方倍率 1x",
     "status": "unknown",
     "lastChecked": "2026-05-19T06:53:45.667Z",
-    "heatScore": 46,
-    "mentionCount": 4,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -22404,7 +22567,7 @@
       }
     ],
     "firstSeen": "2026-05-19T06:53:45.667Z",
-    "lastUpdated": "2026-05-20T11:55:59.001Z",
+    "lastUpdated": "2026-05-23T02:00:41.858Z",
     "tags": [
       "中转站",
       "新用户优惠",
@@ -22834,7 +22997,7 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户注册赠送$10永久额度"
+      "description": "新用户注册即送$10永久额度"
     },
     "paymentMethods": [
       "支付宝"
@@ -22843,8 +23006,8 @@
     "rateLimit": "未提及",
     "status": "unknown",
     "lastChecked": "2026-05-19T14:41:16.737Z",
-    "heatScore": 76,
-    "mentionCount": 14,
+    "heatScore": 82,
+    "mentionCount": 17,
     "priceHistory": [],
     "sources": [
       {
@@ -22870,10 +23033,18 @@
         "author": "<name>zhaiyuxin103</name>\n\t\t<uri>https://www.v2ex.com/member/zhaiyuxin103</uri>",
         "publishedAt": "2026-05-19T16:52:07.000Z",
         "fetchedAt": "2026-05-19T18:23:06.254Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214366",
+        "title": "我自己使用 gpt5.5 中转的一些发现。",
+        "author": "liufangyuan247",
+        "publishedAt": "2026-05-21T03:38:52.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.850Z"
       }
     ],
     "firstSeen": "2026-05-19T14:41:16.737Z",
-    "lastUpdated": "2026-05-20T11:55:58.961Z",
+    "lastUpdated": "2026-05-23T02:00:41.856Z",
     "tags": [
       "ChatGPT API",
       "中转",
@@ -23476,43 +23647,52 @@
     "models": [
       {
         "model": "OpenAI",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Claude",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Gemini",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Grok",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "token",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "Token Plan",
+          "price": 20,
+          "period": "月",
+          "features": [
+            "主流模型包月使用"
+          ]
+        }
+      ]
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": "新用户注册送测试额度"
+      "amount": 0,
+      "unit": "CNY",
+      "description": "新用户注册可领取测试额度，但实际测试中用户反馈注册后余额为0。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-20T11:55:58.946Z",
-    "heatScore": 49,
-    "mentionCount": 4,
+    "heatScore": 51,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -23549,7 +23729,7 @@
       }
     ],
     "firstSeen": "2026-05-20T11:55:58.946Z",
-    "lastUpdated": "2026-05-22T11:52:02.554Z",
+    "lastUpdated": "2026-05-23T02:00:41.830Z",
     "tags": [
       "AI工具",
       "API接口",
@@ -23603,23 +23783,30 @@
     "name": "FishXCode",
     "website": "https://fishxcode.com",
     "contact": "",
-    "models": [],
-    "billingType": "token",
+    "models": [
+      {
+        "model": "codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
+      "amount": 10,
       "unit": "USD",
-      "description": "新用户注册可参与盖楼送额度、签到抽奖等活动，具体额度不定。"
+      "description": "论坛盖楼活动，每10楼用户可获得10刀额度。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-20T11:55:58.952Z",
-    "heatScore": 39,
-    "mentionCount": 3,
+    "heatScore": 43,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -23632,7 +23819,7 @@
       }
     ],
     "firstSeen": "2026-05-20T11:55:58.952Z",
-    "lastUpdated": "2026-05-20T11:55:58.956Z",
+    "lastUpdated": "2026-05-23T02:00:41.836Z",
     "tags": [
       "AI中转",
       "API服务",
@@ -23649,8 +23836,8 @@
     "models": [
       {
         "model": "GPT 纯 Pro 号池",
-        "inputPrice": 0.13,
-        "outputPrice": 0.13,
+        "inputPrice": 0.25,
+        "outputPrice": 0.25,
         "currency": "CNY"
       },
       {
@@ -23700,6 +23887,18 @@
         "inputPrice": 0.25,
         "outputPrice": 0.25,
         "currency": "CNY"
+      },
+      {
+        "model": "GPT自建纯Pro号池",
+        "inputPrice": 0.13,
+        "outputPrice": 0.13,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude自建纯Max号池",
+        "inputPrice": 1.5,
+        "outputPrice": 1.5,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
@@ -23709,22 +23908,20 @@
           "name": "国产 Token Plan Basic",
           "price": null,
           "period": null,
-          "features": [
-            "阿里云满血直连，无并发、客户端限制"
-          ]
+          "features": []
         }
       ]
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": "无明确信息"
+      "amount": 10,
+      "unit": "USD",
+      "description": "在帖子下留下Krill用户ID，前50层可获得10 USD Codex额度；51-1000层可获得5 USD Codex额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-20T11:55:58.989Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -23745,7 +23942,7 @@
       }
     ],
     "firstSeen": "2026-05-20T11:55:58.989Z",
-    "lastUpdated": "2026-05-20T11:55:58.991Z",
+    "lastUpdated": "2026-05-23T02:00:41.853Z",
     "tags": [
       "AI中转",
       "低成本",
@@ -23773,7 +23970,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
@@ -23783,8 +23980,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-20T11:55:58.992Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -23797,11 +23994,13 @@
       }
     ],
     "firstSeen": "2026-05-20T11:55:58.992Z",
-    "lastUpdated": "2026-05-20T11:55:58.992Z",
+    "lastUpdated": "2026-05-23T02:00:41.854Z",
     "tags": [
       "大厂背景",
       "GPT",
-      "Claude"
+      "Claude",
+      "UCloud",
+      "大厂"
     ]
   },
   {
@@ -24957,6 +25156,18 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "OpenAI (Pro号池)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Anthropic (Pro号池)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "hybrid",
@@ -24967,9 +25178,9 @@
           "price": 20,
           "period": null,
           "features": [
-            "到账80刀额度",
+            "到账$80额度",
             "专属0.3倍率",
-            "相当于266刀使用价值"
+            "相当于实际$266使用价值"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -24979,15 +25190,15 @@
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "在指定帖子回复注册邮箱（base64编码）即可免费获赠$5额度。"
+      "description": "在帖子回复注册邮箱(base64编码)即可免费获赠$5额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "享0.3倍率优惠。",
     "status": "unknown",
     "lastChecked": "2026-05-22T02:13:00.560Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -24997,15 +25208,24 @@
         "author": "<name>Zhcgo</name>\n\t\t<uri>https://www.v2ex.com/member/Zhcgo</uri>",
         "publishedAt": "2026-05-21T22:05:26.000Z",
         "fetchedAt": "2026-05-22T02:13:00.560Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214609",
+        "title": "自用 Neverun API 中转, Pro 号池，纯手工打造，欢迎鉴赏！",
+        "author": "Zhcgo",
+        "publishedAt": "2026-05-22T02:05:26.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.826Z"
       }
     ],
     "firstSeen": "2026-05-22T02:13:00.560Z",
-    "lastUpdated": "2026-05-22T02:13:00.560Z",
+    "lastUpdated": "2026-05-23T02:00:41.826Z",
     "tags": [
       "拼车",
       "共享订阅",
       "Pro号池",
-      "低倍率"
+      "低倍率",
+      "API中转"
     ]
   },
   {
@@ -25354,8 +25574,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-22T17:16:28.131Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -25368,12 +25588,13 @@
       }
     ],
     "firstSeen": "2026-05-22T17:16:28.131Z",
-    "lastUpdated": "2026-05-22T17:16:28.131Z",
+    "lastUpdated": "2026-05-23T02:02:40.198Z",
     "tags": [
       "开源",
       "提示词",
       "图像生成",
-      "模板库"
+      "模板库",
+      "提示词管理"
     ]
   },
   {
@@ -25563,6 +25784,180 @@
       "服务商列表",
       "避雷指南",
       "GPT API"
+    ]
+  },
+  {
+    "id": "pmphpbyhw5d3yd",
+    "name": "BAO-API",
+    "website": "https://api.baobu.xyz/",
+    "contact": "",
+    "models": [
+      {
+        "model": "Claude Pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 20,
+      "unit": "USD",
+      "description": "新用户注册送20U"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "单个模型（如GPT5.5）可能有并发限额。",
+    "status": "unknown",
+    "lastChecked": "2026-05-23T02:00:41.828Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214345",
+        "title": "公益-中转站-20$",
+        "author": "BAOBU",
+        "publishedAt": "2026-05-21T03:06:08.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.828Z"
+      }
+    ],
+    "firstSeen": "2026-05-23T02:00:41.828Z",
+    "lastUpdated": "2026-05-23T02:00:41.828Z",
+    "tags": [
+      "共享订阅",
+      "Claude Pro",
+      "个人分享",
+      "公益"
+    ]
+  },
+  {
+    "id": "pmphpbyi1cq5kf",
+    "name": "Codex 满血中转 API",
+    "website": "",
+    "contact": "绿泡：ppluya369（加好友备注：V 友-10 刀比例）",
+    "models": [
+      {
+        "model": "Codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-23T02:00:41.833Z",
+    "heatScore": 43,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214072",
+        "title": "Codex 满血 API 中转，官方 1x 倍率/低延迟， V 友专属限时 1:10 刀",
+        "author": "mm8m6m7m",
+        "publishedAt": "2026-05-20T04:21:24.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.833Z"
+      }
+    ],
+    "firstSeen": "2026-05-23T02:00:41.833Z",
+    "lastUpdated": "2026-05-23T02:00:41.833Z",
+    "tags": [
+      "Codex",
+      "低延迟",
+      "API中转",
+      "V2EX限时活动",
+      "代码生成"
+    ]
+  },
+  {
+    "id": "pmphpbyi5a895x",
+    "name": "Aizex",
+    "website": "https://aizex.net/plusPool",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-23T02:00:41.837Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214565",
+        "title": "现在还有什么中转站有可用的 GPT-5.5-Pro 模型？",
+        "author": "showonder",
+        "publishedAt": "2026-05-22T00:51:44.000Z",
+        "fetchedAt": "2026-05-23T02:00:41.837Z"
+      }
+    ],
+    "firstSeen": "2026-05-23T02:00:41.837Z",
+    "lastUpdated": "2026-05-23T02:00:41.837Z",
+    "tags": [
+      "合租/共享",
+      "API中转"
+    ]
+  },
+  {
+    "id": "pmphpehtxhfgpg",
+    "name": "example.com",
+    "website": "example.com",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Pro 20x",
+          "price": 0,
+          "period": "unknown",
+          "features": []
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "无明确信息"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-23T02:02:40.197Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1214839#reply0",
+        "title": "[OpenAI] 感觉 GPT 5.5 最近降智实在离谱",
+        "author": "<name>drymonfidelia</name>\n\t\t<uri>https://www.v2ex.com/member/drymonfidelia</uri>",
+        "publishedAt": "2026-05-22T15:49:58.000Z",
+        "fetchedAt": "2026-05-23T02:02:40.197Z"
+      }
+    ],
+    "firstSeen": "2026-05-23T02:02:40.197Z",
+    "lastUpdated": "2026-05-23T02:02:40.197Z",
+    "tags": [
+      "用户吐槽",
+      "服务降级"
     ]
   }
 ]
