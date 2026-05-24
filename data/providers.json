@@ -27169,8 +27169,8 @@
     "models": [
       {
         "model": "gpt-image2",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "unknown"
       },
       {
@@ -27180,20 +27180,20 @@
         "currency": "unknown"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "free",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": null,
-      "unit": "unknown",
-      "description": "提供免费的GPT-5.5对话服务"
+      "unit": null,
+      "description": "对话功能免费提供 GPT-5.5 模型。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-24T16:07:29.863Z",
-    "heatScore": 30,
-    "mentionCount": 1,
+    "heatScore": 32,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -27206,10 +27206,12 @@
       }
     ],
     "firstSeen": "2026-05-24T16:07:29.863Z",
-    "lastUpdated": "2026-05-24T16:07:29.863Z",
+    "lastUpdated": "2026-05-24T19:10:41.285Z",
     "tags": [
       "AI生图",
-      "免费对话"
+      "免费对话",
+      "AI对话",
+      "免费"
     ]
   },
   {
@@ -27220,36 +27222,36 @@
     "models": [
       {
         "model": "Gemini Omni Flash",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "Veo 3.1",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
         "model": "Nano Banana 2",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
     "billingType": "token",
     "freeQuota": {
       "amount": null,
-      "unit": "credits",
-      "description": "提供免费额度用于生成视频"
+      "unit": "USD",
+      "description": "提供免费信用额度用于开始生成视频"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-24T16:07:29.865Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -27262,12 +27264,13 @@
       }
     ],
     "firstSeen": "2026-05-24T16:07:29.865Z",
-    "lastUpdated": "2026-05-24T16:07:29.865Z",
+    "lastUpdated": "2026-05-24T19:10:41.285Z",
     "tags": [
       "视频生成",
       "AI视频编辑",
       "按次计费",
-      "多模态"
+      "多模态",
+      "AI视频生成"
     ]
   },
   {
@@ -27280,12 +27283,16 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": null,
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY/USD",
+      "description": "项目为开源工具，本身不提供直接的AI模型调用额度。"
+    },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-24T16:07:29.866Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -27298,7 +27305,7 @@
       }
     ],
     "firstSeen": "2026-05-24T16:07:29.866Z",
-    "lastUpdated": "2026-05-24T16:07:29.866Z",
+    "lastUpdated": "2026-05-24T19:10:41.286Z",
     "tags": [
       "开源",
       "本地工具",
