@@ -1440,36 +1440,24 @@
     ],
     "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "按量计费（三档折扣）",
-          "price": null,
-          "period": null,
-          "features": [
-            "按Anthropic官方价的1.9折、2.9折、4.9折三档消耗余额",
-            "对应不同优先级的通道资源"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户加入官方社群可领取10美元体验额度"
+      "description": "新用户注册后加入社群可领取10美元体验额度"
     },
     "paymentMethods": [
       "支付宝",
       "微信",
-      "企业对公转账"
+      "对公转账"
     ],
     "concurrencyLimit": null,
     "rateLimit": "未明确提及",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 70,
+    "mentionCount": 71,
     "priceHistory": [],
     "sources": [
       {
@@ -1679,10 +1667,18 @@
         "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
         "publishedAt": "2026-05-23T01:31:51.000Z",
         "fetchedAt": "2026-05-23T02:02:40.195Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215033#reply1",
+        "title": "[推广] Claude API 国内直连，新用户免费领 10 美元额度",
+        "author": "<name>aicodingsh</name>\n\t\t<uri>https://www.v2ex.com/member/aicodingsh</uri>",
+        "publishedAt": "2026-05-24T02:58:05.000Z",
+        "fetchedAt": "2026-05-24T06:40:33.313Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-05-23T19:01:39.139Z",
+    "lastUpdated": "2026-05-24T06:40:33.313Z",
     "tags": [
       "Claude API",
       "中转服务",
@@ -3682,27 +3678,55 @@
       },
       {
         "model": "GPT-5.5",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-image-2",
         "inputPrice": 0,
         "outputPrice": 0,
-        "currency": "CNY"
+        "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "周卡",
+          "price": 15,
+          "period": "week",
+          "features": [
+            "日额度$100",
+            "周额度$500"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        },
+        {
+          "name": "月卡",
+          "price": 50,
+          "period": "month",
+          "features": [
+            "月度额度$1500（推测）"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "CNY/USD",
-      "description": ""
+      "amount": 10,
+      "unit": "USD",
+      "description": "新注册用户通过兑换码获得$10额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "可配置的请求和令牌速率限制",
     "status": "unknown",
     "lastChecked": "2026-05-06T20:09:56.044Z",
-    "heatScore": 73,
-    "mentionCount": 15,
+    "heatScore": 75,
+    "mentionCount": 16,
     "priceHistory": [],
     "sources": [
       {
@@ -3752,10 +3776,18 @@
         "author": "",
         "publishedAt": "2026-05-15T21:57:39.297Z",
         "fetchedAt": "2026-05-15T22:06:25.316Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215054#reply6",
+        "title": "[推广] 去年定投币圈亏损离场转玩中转站了。",
+        "author": "<name>KelleyV9</name>\n\t\t<uri>https://www.v2ex.com/member/KelleyV9</uri>",
+        "publishedAt": "2026-05-24T06:24:12.000Z",
+        "fetchedAt": "2026-05-24T06:40:33.309Z"
       }
     ],
     "firstSeen": "2026-05-06T20:09:56.044Z",
-    "lastUpdated": "2026-05-22T19:45:53.111Z",
+    "lastUpdated": "2026-05-24T06:40:33.309Z",
     "tags": [
       "开源",
       "API网关",
@@ -7973,34 +8005,22 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "体验订阅",
-          "price": 10,
-          "period": "month",
-          "features": [
-            "新用户福利",
-            "前20名留言用户赠送"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 10,
-      "unit": "USD",
-      "description": "新用户注册后在指定帖子留言，可领取10美元体验订阅。"
+      "amount": 0,
+      "unit": "unknown",
+      "description": ""
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "unknown",
     "status": "unknown",
     "lastChecked": "2026-05-07T13:36:39.119Z",
-    "heatScore": 91,
-    "mentionCount": 24,
+    "heatScore": 93,
+    "mentionCount": 25,
     "priceHistory": [],
     "sources": [
       {
@@ -8066,10 +8086,18 @@
         "author": "darbra",
         "publishedAt": "2026-05-16T01:20:17.000Z",
         "fetchedAt": "2026-05-16T15:57:08.607Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215029#reply3",
+        "title": "[VPS] [测评] 谁才是沪日顶流？ NB 上海前置 + IXP 先锋内测，与 MK 横向大对比",
+        "author": "<name>chareles</name>\n\t\t<uri>https://www.v2ex.com/member/chareles</uri>",
+        "publishedAt": "2026-05-24T03:34:16.000Z",
+        "fetchedAt": "2026-05-24T06:40:33.313Z"
       }
     ],
     "firstSeen": "2026-05-07T13:36:39.119Z",
-    "lastUpdated": "2026-05-19T22:15:47.706Z",
+    "lastUpdated": "2026-05-24T06:40:33.313Z",
     "tags": [
       "Codex中转",
       "API代理",
@@ -26767,6 +26795,84 @@
       "API中转",
       "统一网关",
       "Codex"
+    ]
+  },
+  {
+    "id": "pmpjerpjxz8zf7",
+    "name": "Pixelmax",
+    "website": "https://pixelmax.art",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [
+      "creem.io"
+    ],
+    "status": "unknown",
+    "lastChecked": "2026-05-24T06:40:33.309Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215057#reply4",
+        "title": "[推广] 记录第一个订阅站上线： [https://pixelmax.art](https://pixelmax.art)",
+        "author": "<name>kpub54</name>\n\t\t<uri>https://www.v2ex.com/member/kpub54</uri>",
+        "publishedAt": "2026-05-24T05:25:05.000Z",
+        "fetchedAt": "2026-05-24T06:40:33.309Z"
+      }
+    ],
+    "firstSeen": "2026-05-24T06:40:33.309Z",
+    "lastUpdated": "2026-05-24T06:40:33.309Z",
+    "tags": [
+      "AI图片编辑",
+      "订阅站",
+      "个人开发"
+    ]
+  },
+  {
+    "id": "pmpjerpk0ti2jy",
+    "name": "OpenSeek",
+    "website": "openseek.dev",
+    "contact": "X @ShenHuang / V2EX",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "未提及免费额度"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-24T06:40:33.312Z",
+    "heatScore": 25,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215048#reply3",
+        "title": "[程序员] 开源 OpenSeek: 给 DeepSeek V4 写了一层 Claude Code 同款的 TUI agent harness",
+        "author": "<name>lichamnesia</name>\n\t\t<uri>https://www.v2ex.com/member/lichamnesia</uri>",
+        "publishedAt": "2026-05-24T06:34:58.000Z",
+        "fetchedAt": "2026-05-24T06:40:33.312Z"
+      }
+    ],
+    "firstSeen": "2026-05-24T06:40:33.312Z",
+    "lastUpdated": "2026-05-24T06:40:33.312Z",
+    "tags": [
+      "开源",
+      "TUI agent",
+      "DeepSeek V4",
+      "coding agent",
+      "MCP"
     ]
   }
 ]
