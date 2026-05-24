@@ -27160,5 +27160,151 @@
       "Claude",
       "Gemini"
     ]
+  },
+  {
+    "id": "pmpjz0sw7xqr3b",
+    "name": "炫步 AI",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "gpt-image2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "unknown"
+      },
+      {
+        "model": "GPT-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "unknown"
+      }
+    ],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": "unknown",
+      "description": "提供免费的GPT-5.5对话服务"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-24T16:07:29.863Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215156#reply0",
+        "title": "[分享创造] vibe coding 了个 ai 生图体验站 免费 GPT-5.5 畅聊",
+        "author": "<name>DQb007</name>\n\t\t<uri>https://www.v2ex.com/member/DQb007</uri>",
+        "publishedAt": "2026-05-24T15:33:00.000Z",
+        "fetchedAt": "2026-05-24T16:07:29.863Z"
+      }
+    ],
+    "firstSeen": "2026-05-24T16:07:29.863Z",
+    "lastUpdated": "2026-05-24T16:07:29.863Z",
+    "tags": [
+      "AI生图",
+      "免费对话"
+    ]
+  },
+  {
+    "id": "pmpjz0sw9tedc6",
+    "name": "Veol",
+    "website": "https://www.veol.ai",
+    "contact": "",
+    "models": [
+      {
+        "model": "Gemini Omni Flash",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Veo 3.1",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Nano Banana 2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": {
+      "amount": null,
+      "unit": "credits",
+      "description": "提供免费额度用于生成视频"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-24T16:07:29.865Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215147#reply0",
+        "title": "[推广] [推广]Google I/O 发布的 Gemini Omni Flash，对话式视频编辑体验分享",
+        "author": "<name>WickedZX</name>\n\t\t<uri>https://www.v2ex.com/member/WickedZX</uri>",
+        "publishedAt": "2026-05-24T14:38:36.000Z",
+        "fetchedAt": "2026-05-24T16:07:29.865Z"
+      }
+    ],
+    "firstSeen": "2026-05-24T16:07:29.865Z",
+    "lastUpdated": "2026-05-24T16:07:29.865Z",
+    "tags": [
+      "视频生成",
+      "AI视频编辑",
+      "按次计费",
+      "多模态"
+    ]
+  },
+  {
+    "id": "pmpjz0swaoi4oj",
+    "name": "Welinker",
+    "website": "https://github.com/Leejaywell/welinker",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-24T16:07:29.866Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215129#reply1",
+        "title": "[分享创造] 做了一个本地消息中转工具：把微信、HTTP API 和各种 AI Agent 接起来",
+        "author": "<name>Leeww</name>\n\t\t<uri>https://www.v2ex.com/member/Leeww</uri>",
+        "publishedAt": "2026-05-24T15:49:41.000Z",
+        "fetchedAt": "2026-05-24T16:07:29.866Z"
+      }
+    ],
+    "firstSeen": "2026-05-24T16:07:29.866Z",
+    "lastUpdated": "2026-05-24T16:07:29.866Z",
+    "tags": [
+      "开源",
+      "本地工具",
+      "消息中转",
+      "工作流",
+      "微信"
+    ]
   }
 ]
