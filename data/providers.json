@@ -27180,20 +27180,20 @@
         "currency": "unknown"
       }
     ],
-    "billingType": "free",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": null,
-      "unit": null,
-      "description": "对话功能免费提供 GPT-5.5 模型。"
+      "unit": "unknown",
+      "description": "宣传免费使用GPT-5.5"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-24T16:07:29.863Z",
-    "heatScore": 32,
-    "mentionCount": 2,
+    "heatScore": 34,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -27206,12 +27206,13 @@
       }
     ],
     "firstSeen": "2026-05-24T16:07:29.863Z",
-    "lastUpdated": "2026-05-24T19:10:41.285Z",
+    "lastUpdated": "2026-05-24T21:58:24.925Z",
     "tags": [
       "AI生图",
       "免费对话",
       "AI对话",
-      "免费"
+      "免费",
+      "生图"
     ]
   },
   {
@@ -27241,17 +27242,17 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": null,
-      "unit": "USD",
-      "description": "提供免费信用额度用于开始生成视频"
+      "amount": 0,
+      "unit": "CNY/USD",
+      "description": "未提及"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-24T16:07:29.865Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -27264,14 +27265,17 @@
       }
     ],
     "firstSeen": "2026-05-24T16:07:29.865Z",
-    "lastUpdated": "2026-05-24T19:10:41.285Z",
+    "lastUpdated": "2026-05-24T21:58:24.926Z",
     "tags": [
       "视频生成",
       "AI视频编辑",
       "按次计费",
       "多模态",
       "AI视频生成"
-    ]
+    ],
+    "subscription": {
+      "plans": []
+    }
   },
   {
     "id": "pmpjz0swaoi4oj",
@@ -27312,6 +27316,43 @@
       "消息中转",
       "工作流",
       "微信"
+    ]
+  },
+  {
+    "id": "pmpkbk33135b3m",
+    "name": "agentserver",
+    "website": "https://agent.cs.ac.cn",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-24T21:58:24.925Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215157#reply0",
+        "title": "[分享创造] agentserver: 把多台设备组成“个人算力网”，欢迎试用",
+        "author": "<name>v2mryao</name>\n\t\t<uri>https://www.v2ex.com/member/v2mryao</uri>",
+        "publishedAt": "2026-05-24T15:34:35.000Z",
+        "fetchedAt": "2026-05-24T21:58:24.925Z"
+      }
+    ],
+    "firstSeen": "2026-05-24T21:58:24.925Z",
+    "lastUpdated": "2026-05-24T21:58:24.925Z",
+    "tags": [
+      "开源项目",
+      "算力网",
+      "codex",
+      "多设备协作",
+      "LLM代理"
     ]
   }
 ]
