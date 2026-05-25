@@ -11072,19 +11072,15 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": "新用户注册腾讯云国际账号免费开户，具体额度未提及。"
-    },
+    "freeQuota": {},
     "paymentMethods": [
       "USDT",
       "支付宝"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 79,
-    "mentionCount": 23,
+    "heatScore": 81,
+    "mentionCount": 24,
     "priceHistory": [],
     "sources": [
       {
@@ -11185,7 +11181,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-25T17:09:36.070Z",
+    "lastUpdated": "2026-05-25T19:28:34.492Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -13782,22 +13778,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "新用户注册送5美元"
+      "description": "新用户注册送5刀额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 64,
-    "mentionCount": 13,
+    "heatScore": 66,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -13906,7 +13902,7 @@
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-25T17:09:36.073Z",
+    "lastUpdated": "2026-05-25T19:28:34.495Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -18047,11 +18043,11 @@
     "subscription": {
       "plans": [
         {
-          "name": "Pro",
-          "price": 0,
+          "name": "Pro 会员",
+          "price": null,
           "period": "月",
           "features": [
-            "通过邀请链接注册或升级，首月可享受50%折扣"
+            "首月享受50%折扣"
           ]
         }
       ]
@@ -18064,8 +18060,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-13T11:37:08.013Z",
-    "heatScore": 33,
-    "mentionCount": 5,
+    "heatScore": 35,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -18094,7 +18090,7 @@
       }
     ],
     "firstSeen": "2026-05-13T11:37:08.013Z",
-    "lastUpdated": "2026-05-25T17:09:36.068Z",
+    "lastUpdated": "2026-05-25T19:28:34.489Z",
     "tags": [
       "编程助手",
       "AI工具",
@@ -28329,15 +28325,17 @@
     "freeQuota": {
       "amount": 50,
       "unit": "USD",
-      "description": "新用户注册赠送50美元额度"
+      "description": "注册赠送50刀"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝"
+    ],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-25T12:29:12.231Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -28363,10 +28361,18 @@
         "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
         "publishedAt": "2026-05-25T12:18:22.000Z",
         "fetchedAt": "2026-05-25T12:31:35.578Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215389#reply53",
+        "title": "[推广] 自建了一个 AI 中转站，邀请大家帮忙压测（支持 Claude Code 调用 GPT-5.5）",
+        "author": "<name>WinX</name>\n\t\t<uri>https://www.v2ex.com/member/WinX</uri>",
+        "publishedAt": "2026-05-25T19:04:46.000Z",
+        "fetchedAt": "2026-05-25T19:28:34.494Z"
       }
     ],
     "firstSeen": "2026-05-25T12:29:12.231Z",
-    "lastUpdated": "2026-05-25T12:31:35.578Z",
+    "lastUpdated": "2026-05-25T19:28:34.494Z",
     "tags": [
       "测试期",
       "邀请制",
@@ -28452,6 +28458,93 @@
     "tags": [
       "对比评测",
       "指南"
+    ]
+  },
+  {
+    "id": "pmplln8onacw5x",
+    "name": "APIGO",
+    "website": "https://api.apiaigo.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "gpt系列模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude系列模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-25T19:28:34.487Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215428#reply0",
+        "title": "[推广] 直接把中转站推广费用给大家免费额度了",
+        "author": "<name>DelayNoMay</name>\n\t\t<uri>https://www.v2ex.com/member/DelayNoMay</uri>",
+        "publishedAt": "2026-05-25T12:04:34.000Z",
+        "fetchedAt": "2026-05-25T19:28:34.487Z"
+      }
+    ],
+    "firstSeen": "2026-05-25T19:28:34.487Z",
+    "lastUpdated": "2026-05-25T19:28:34.487Z",
+    "tags": [
+      "GPT",
+      "Claude",
+      "API中转",
+      "充值优惠"
+    ]
+  },
+  {
+    "id": "pmplln8ore58om",
+    "name": "夜间福利中转站",
+    "website": "aHR0cHM6Ly90b2tlbndvcmsuYXBwL3JlZ2lzdGVyP2FmZj02VmJ1",
+    "contact": "",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 50,
+      "unit": "USD",
+      "description": "主推站点注册赠送50美元额度"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-25T19:28:34.491Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215404#reply2",
+        "title": "[推广] 夜间福利，注册送 50 刀的中转站（oai 今天杀疯了，还有站大方）",
+        "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
+        "publishedAt": "2026-05-25T12:47:58.000Z",
+        "fetchedAt": "2026-05-25T19:28:34.491Z"
+      }
+    ],
+    "firstSeen": "2026-05-25T19:28:34.491Z",
+    "lastUpdated": "2026-05-25T19:28:34.491Z",
+    "tags": [
+      "中转站",
+      "推广",
+      "注册送额度"
     ]
   }
 ]
