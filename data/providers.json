@@ -6222,22 +6222,24 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 50,
       "unit": "USD",
-      "description": "注册赠送50刀"
+      "description": "注册赠送50美元"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝"
+    ],
     "concurrencyLimit": 0,
     "rateLimit": "未提及",
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.269Z",
     "heatScore": 100,
-    "mentionCount": 61,
+    "mentionCount": 62,
     "priceHistory": [],
     "sources": [
       {
@@ -6343,10 +6345,18 @@
         "author": "<name>WinX</name>\n\t\t<uri>https://www.v2ex.com/member/WinX</uri>",
         "publishedAt": "2026-05-25T16:49:30.000Z",
         "fetchedAt": "2026-05-25T17:09:36.071Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215389#reply55",
+        "title": "[推广] 自建了一个 AI 中转站，邀请大家帮忙压测（支持 Claude Code 调用 GPT-5.5）",
+        "author": "<name>WinX</name>\n\t\t<uri>https://www.v2ex.com/member/WinX</uri>",
+        "publishedAt": "2026-05-25T20:14:32.000Z",
+        "fetchedAt": "2026-05-25T22:12:16.411Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.269Z",
-    "lastUpdated": "2026-05-25T17:09:36.071Z",
+    "lastUpdated": "2026-05-25T22:12:16.411Z",
     "tags": [
       "开源",
       "聚合管理",
@@ -9313,20 +9323,20 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "未知",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "未知",
-      "description": "未提及"
+      "amount": 50,
+      "unit": "USD",
+      "description": "其中一个中转站提供注册送50美元。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
-    "heatScore": 85,
-    "mentionCount": 36,
+    "heatScore": 87,
+    "mentionCount": 37,
     "priceHistory": [],
     "sources": [
       {
@@ -9496,10 +9506,18 @@
         "author": "",
         "publishedAt": "2026-05-23T21:56:34.030Z",
         "fetchedAt": "2026-05-23T22:15:18.966Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215404#reply2",
+        "title": "[推广] 夜间福利，注册送 50 刀的中转站（oai 今天杀疯了，还有站大方）",
+        "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
+        "publishedAt": "2026-05-25T12:47:58.000Z",
+        "fetchedAt": "2026-05-25T22:12:16.410Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-23T22:15:18.966Z",
+    "lastUpdated": "2026-05-25T22:12:16.410Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -11079,8 +11097,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 81,
-    "mentionCount": 24,
+    "heatScore": 83,
+    "mentionCount": 25,
     "priceHistory": [],
     "sources": [
       {
@@ -11181,7 +11199,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-25T19:28:34.492Z",
+    "lastUpdated": "2026-05-25T22:12:16.411Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -13642,22 +13660,45 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "USD"
+      },
+      {
+        "model": "Composer 2.5 (标准版)",
+        "inputPrice": 0.5,
+        "outputPrice": 2.5,
+        "currency": "USD"
+      },
+      {
+        "model": "Composer 2.5 (Fast 变体版)",
+        "inputPrice": 3,
+        "outputPrice": 15,
+        "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "Pro 会员",
+          "price": "未知（首月有50%折扣）",
+          "period": "月",
+          "features": [
+            "包含 Composer 2.5 模型的使用权"
+          ]
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "unknown",
-      "description": "未知"
+      "amount": "未知",
+      "unit": "未知",
+      "description": "未提及"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未知"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 45,
-    "mentionCount": 16,
+    "heatScore": 47,
+    "mentionCount": 17,
     "priceHistory": [],
     "sources": [
       {
@@ -13747,10 +13788,18 @@
         "author": "",
         "publishedAt": "2026-05-23T19:04:10.954Z",
         "fetchedAt": "2026-05-23T19:12:47.094Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215406#reply0",
+        "title": "[推广] Cursor Pro 首月 50% 优惠分享及 Composer 2.5 实用体验",
+        "author": "<name>Dnys</name>\n\t\t<uri>https://www.v2ex.com/member/Dnys</uri>",
+        "publishedAt": "2026-05-25T12:24:48.000Z",
+        "fetchedAt": "2026-05-25T22:12:16.410Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-05-23T19:12:47.094Z",
+    "lastUpdated": "2026-05-25T22:12:16.410Z",
     "tags": [
       "统计工具",
       "token使用",
@@ -13778,22 +13827,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "新用户注册送5刀额度"
+      "description": "新用户注册送5刀额度，无过期时间"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 66,
-    "mentionCount": 14,
+    "heatScore": 68,
+    "mentionCount": 15,
     "priceHistory": [],
     "sources": [
       {
@@ -13899,10 +13948,18 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-25T16:45:28.000Z",
         "fetchedAt": "2026-05-25T17:09:36.073Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215373#reply67",
+        "title": "[推广] HyperAPI 的新老用户来领福利了，留 ID 加额度",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-25T20:16:57.000Z",
+        "fetchedAt": "2026-05-25T22:12:16.412Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-25T19:28:34.495Z",
+    "lastUpdated": "2026-05-25T22:12:16.412Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -16326,16 +16383,27 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "未提及",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "未明确提及具体套餐名",
+          "price": 50,
+          "period": "月",
+          "features": [
+            "提供丰富的金融数据源"
+          ]
+        }
+      ]
     },
     "freeQuota": {},
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未提及"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-11T06:55:10.618Z",
-    "heatScore": 65,
-    "mentionCount": 16,
+    "heatScore": 67,
+    "mentionCount": 17,
     "priceHistory": [],
     "sources": [
       {
@@ -16441,10 +16509,18 @@
         "author": "",
         "publishedAt": "2026-05-23T08:26:20.668Z",
         "fetchedAt": "2026-05-23T08:34:20.192Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215407#reply0",
+        "title": "[投资] 有人做量化交易可以一起 share api 接口吗？（alpha vantage）",
+        "author": "<name>niuyeye611</name>\n\t\t<uri>https://www.v2ex.com/member/niuyeye611</uri>",
+        "publishedAt": "2026-05-25T08:57:33.000Z",
+        "fetchedAt": "2026-05-25T22:12:16.410Z"
       }
     ],
     "firstSeen": "2026-05-11T06:55:10.618Z",
-    "lastUpdated": "2026-05-23T08:34:20.192Z",
+    "lastUpdated": "2026-05-25T22:12:16.410Z",
     "tags": [
       "Claude",
       "API代理",
@@ -28468,26 +28544,30 @@
     "models": [
       {
         "model": "gpt系列模型",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "claude系列模型",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
-    "freeQuota": null,
+    "billingType": "subscription",
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": "帖子提及‘把中转站推广费用给大家免费额度了’，但未说明具体免费额度。"
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-25T19:28:34.487Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -28500,13 +28580,27 @@
       }
     ],
     "firstSeen": "2026-05-25T19:28:34.487Z",
-    "lastUpdated": "2026-05-25T19:28:34.487Z",
+    "lastUpdated": "2026-05-25T22:12:16.409Z",
     "tags": [
       "GPT",
       "Claude",
       "API中转",
       "充值优惠"
-    ]
+    ],
+    "subscription": {
+      "plans": [
+        {
+          "name": "充值10送15",
+          "price": 10,
+          "period": null,
+          "features": [
+            "充值10元，获得15元额度"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    }
   },
   {
     "id": "pmplln8ore58om",
