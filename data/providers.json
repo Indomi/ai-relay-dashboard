@@ -9316,22 +9316,28 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "未知",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 50,
       "unit": "USD",
-      "description": "其中一个中转站提供注册送50美元。"
+      "description": "注册赠送50美元额度"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
-    "heatScore": 87,
-    "mentionCount": 37,
+    "heatScore": 89,
+    "mentionCount": 38,
     "priceHistory": [],
     "sources": [
       {
@@ -9509,10 +9515,18 @@
         "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
         "publishedAt": "2026-05-25T12:47:58.000Z",
         "fetchedAt": "2026-05-25T22:12:16.410Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215571#reply0",
+        "title": "[推广] pp 无卡注册又活了！分享免费的中转注册给额度，大家薅起来！",
+        "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
+        "publishedAt": "2026-05-26T06:29:00.000Z",
+        "fetchedAt": "2026-05-26T06:50:07.417Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-25T22:12:16.410Z",
+    "lastUpdated": "2026-05-26T06:50:07.417Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -14460,6 +14474,12 @@
         "inputPrice": 4,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "Claude全系 (Haiku到Opus)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
@@ -14476,8 +14496,8 @@
     "rateLimit": "支持高并发",
     "status": "unknown",
     "lastChecked": "2026-05-10T06:05:59.624Z",
-    "heatScore": 37,
-    "mentionCount": 7,
+    "heatScore": 39,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -14503,10 +14523,18 @@
         "author": "hnbcinfo",
         "publishedAt": "2026-05-12T00:55:42.000Z",
         "fetchedAt": "2026-05-14T19:37:14.008Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215570#reply0",
+        "title": "[OpenAI] 我把 Claude Code 包成了桌面 App：不用装 CLI、不碰终端，发一句话它自己干活",
+        "author": "<name>jinininx</name>\n\t\t<uri>https://www.v2ex.com/member/jinininx</uri>",
+        "publishedAt": "2026-05-26T06:27:22.000Z",
+        "fetchedAt": "2026-05-26T06:50:07.419Z"
       }
     ],
     "firstSeen": "2026-05-10T06:05:59.624Z",
-    "lastUpdated": "2026-05-16T15:57:08.611Z",
+    "lastUpdated": "2026-05-26T06:50:07.419Z",
     "tags": [
       "AI生图",
       "电商工具",
@@ -28702,6 +28730,114 @@
       "免费",
       "个人维护",
       "GPT系列"
+    ]
+  },
+  {
+    "id": "pmpm9zpvcsa81t",
+    "name": "玄武 Codex 公益站",
+    "website": "https://gpt.bjqdtd.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT 5.3",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT 5.4",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT 5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "subscription",
+    "freeQuota": {
+      "amount": 50,
+      "unit": "USD",
+      "description": "新注册用户赠送50美元额度"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": "禁止异常并发调用和沉浸式翻译等长期高频占用型调用",
+    "status": "unknown",
+    "lastChecked": "2026-05-26T06:50:07.416Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215579#reply0",
+        "title": "[推广] 妙妙 AI（bushi）玄武 Codex 公益站，测并发，注册送 50 刀，爽蹬 5.5",
+        "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
+        "publishedAt": "2026-05-26T06:44:33.000Z",
+        "fetchedAt": "2026-05-26T06:50:07.416Z"
+      }
+    ],
+    "firstSeen": "2026-05-26T06:50:07.416Z",
+    "lastUpdated": "2026-05-26T06:50:07.416Z",
+    "tags": [
+      "公益站",
+      "免费额度",
+      "GPT系列",
+      "个人维护"
+    ]
+  },
+  {
+    "id": "pmpm9zpvi9frhx",
+    "name": "Cherry Agent",
+    "website": "https://agent.cherrychat.org",
+    "contact": "",
+    "models": [
+      {
+        "model": "Claude Haiku",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude Opus",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-26T06:50:07.422Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215544#reply0",
+        "title": "[分享创造] 做了三个月烧了一万多刀，搞了个给小白用的桌面 Claude Code",
+        "author": "<name>jinininx</name>\n\t\t<uri>https://www.v2ex.com/member/jinininx</uri>",
+        "publishedAt": "2026-05-26T05:42:57.000Z",
+        "fetchedAt": "2026-05-26T06:50:07.422Z"
+      }
+    ],
+    "firstSeen": "2026-05-26T06:50:07.422Z",
+    "lastUpdated": "2026-05-26T06:50:07.422Z",
+    "tags": [
+      "Claude",
+      "桌面应用",
+      "AI Agent",
+      "办公工具",
+      "代码工具"
     ]
   }
 ]
