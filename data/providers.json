@@ -15020,9 +15020,9 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": null,
-      "unit": "",
-      "description": ""
+      "amount": 0,
+      "unit": "CNY",
+      "description": "未提及"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -15030,7 +15030,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 61,
+    "mentionCount": 62,
     "priceHistory": [],
     "sources": [
       {
@@ -15176,10 +15176,18 @@
         "author": "sx931210",
         "publishedAt": "2026-05-23T14:55:15.000Z",
         "fetchedAt": "2026-05-23T19:01:39.165Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215730#reply0",
+        "title": "[推广] [FK Claude] Claude 折扣中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-26T13:54:23.000Z",
+        "fetchedAt": "2026-05-26T14:47:46.642Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-23T21:55:28.310Z",
+    "lastUpdated": "2026-05-26T14:47:46.642Z",
     "tags": [
       "Claude",
       "中转",
@@ -28838,6 +28846,213 @@
       "AI Agent",
       "办公工具",
       "代码工具"
+    ]
+  },
+  {
+    "id": "pmpmr1zgyejyqn",
+    "name": "pointfixAPI",
+    "website": "https://pointfix.xyz/",
+    "contact": "",
+    "models": [
+      {
+        "model": "gpt-4o",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-1.5-pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": "评论区留ID送额度"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-26T14:47:46.642Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215731#reply0",
+        "title": "[推广] pointfixAPI： API 中转站，评论区留 ID 送额度 绝对纯血 御三家模型全都有",
+        "author": "<name>poi09lkj</name>\n\t\t<uri>https://www.v2ex.com/member/poi09lkj</uri>",
+        "publishedAt": "2026-05-26T14:10:13.000Z",
+        "fetchedAt": "2026-05-26T14:47:46.642Z"
+      }
+    ],
+    "firstSeen": "2026-05-26T14:47:46.642Z",
+    "lastUpdated": "2026-05-26T14:47:46.642Z",
+    "tags": [
+      "API中转",
+      "多模型支持",
+      "国内访问优化"
+    ]
+  },
+  {
+    "id": "pmpmr1zgzv5vzx",
+    "name": "LeapNode",
+    "website": "https://leapnode.net",
+    "contact": "",
+    "models": [
+      {
+        "model": "Claude opus-4-6",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude opus-4-7",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-5.4-mini",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-5.3-codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-3.1-pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "DeepSeek",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Minimax",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "GLM",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Grok",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-image-2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-image",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Day Pass",
+          "price": 15,
+          "period": "day",
+          "features": [
+            "每天重置 ¥25 额度"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        },
+        {
+          "name": "Weekly Lite",
+          "price": 68,
+          "period": "week",
+          "features": [
+            "每周重置 ¥100 额度"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        },
+        {
+          "name": "Monthly Value",
+          "price": 300,
+          "period": "month",
+          "features": [
+            "每月重置 ¥500 额度"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-26T14:47:46.643Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215719#reply1",
+        "title": "[推广] 做了一个给 Claude Code / Cursor / Agent 用的多模型 API 网关， OpenClaw 能接 Opus，想找开发者试用反馈",
+        "author": "<name>hello985</name>\n\t\t<uri>https://www.v2ex.com/member/hello985</uri>",
+        "publishedAt": "2026-05-26T09:29:54.000Z",
+        "fetchedAt": "2026-05-26T14:47:46.643Z"
+      }
+    ],
+    "firstSeen": "2026-05-26T14:47:46.643Z",
+    "lastUpdated": "2026-05-26T14:47:46.643Z",
+    "tags": [
+      "API网关",
+      "多模型聚合",
+      "AI开发"
     ]
   }
 ]
