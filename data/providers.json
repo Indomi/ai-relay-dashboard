@@ -28280,8 +28280,39 @@
     "name": "小米 Mimo MAX",
     "website": "https://token-plan-sgp.xiaomimimo.com/v1",
     "contact": "",
-    "models": [],
-    "billingType": "subscription",
+    "models": [
+      {
+        "model": "MiMo-V2.5-Pro",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY/USD"
+      },
+      {
+        "model": "MiMo-V2.5-TTS-VoiceClone",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY/USD"
+      },
+      {
+        "model": "MiMo-V2.5-TTS-VoiceDesign",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY/USD"
+      },
+      {
+        "model": "MiMo-V2-Omni",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY/USD"
+      },
+      {
+        "model": "MiMo-V2-TTS",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY/USD"
+      }
+    ],
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
@@ -28289,8 +28320,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-25T07:14:18.436Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -28300,15 +28331,24 @@
         "author": "<name>morningstar132</name>\n\t\t<uri>https://www.v2ex.com/member/morningstar132</uri>",
         "publishedAt": "2026-05-25T04:56:00.000Z",
         "fetchedAt": "2026-05-25T07:14:18.436Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215920#reply1",
+        "title": "[☕Vibe Coding🤖] Xiaomi MiMo 随心用",
+        "author": "<name>Tink</name>\n\t\t<uri>https://www.v2ex.com/member/Tink</uri>",
+        "publishedAt": "2026-05-27T07:07:41.000Z",
+        "fetchedAt": "2026-05-27T07:15:46.383Z"
       }
     ],
     "firstSeen": "2026-05-25T07:14:18.436Z",
-    "lastUpdated": "2026-05-25T07:14:18.436Z",
+    "lastUpdated": "2026-05-27T07:15:46.383Z",
     "tags": [
       "AI中转",
       "订阅服务",
       "代理",
-      "API"
+      "API",
+      "OpenAI兼容"
     ]
   },
   {
@@ -28938,17 +28978,17 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": 50,
-      "unit": "USD",
-      "description": "注册送站内试用额度（抽奖活动）"
+      "amount": null,
+      "unit": null,
+      "description": "帖子中提到评论区留ID送额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-26T14:47:46.642Z",
-    "heatScore": 55,
-    "mentionCount": 6,
+    "heatScore": 57,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -28998,10 +29038,18 @@
         "author": "poi09lkj",
         "publishedAt": "2026-05-26T07:58:44.000Z",
         "fetchedAt": "2026-05-26T22:25:49.149Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215877#reply26",
+        "title": "[推广] pointfixAPI： API 中转站，评论区留 ID 送额度",
+        "author": "<name>443038716</name>\n\t\t<uri>https://www.v2ex.com/member/443038716</uri>",
+        "publishedAt": "2026-05-27T07:06:52.000Z",
+        "fetchedAt": "2026-05-27T07:15:46.387Z"
       }
     ],
     "firstSeen": "2026-05-26T14:47:46.642Z",
-    "lastUpdated": "2026-05-26T22:25:49.149Z",
+    "lastUpdated": "2026-05-27T07:15:46.387Z",
     "tags": [
       "API中转",
       "多模型支持",
@@ -29266,8 +29314,8 @@
     "models": [
       {
         "model": "gpt-4o",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": 0.01,
+        "outputPrice": 0.03,
         "currency": "CNY"
       },
       {
@@ -29281,29 +29329,24 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "gpt-3.5-turbo",
+        "inputPrice": 0.0005,
+        "outputPrice": 0.0015,
+        "currency": "USD"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "hybrid",
     "subscription": {
       "plans": [
         {
-          "name": "周卡",
-          "price": 15,
-          "period": "week",
+          "name": "日卡",
+          "price": 3.5,
+          "period": "day",
           "features": [
-            "日额度$100",
-            "周额度$500"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "月卡",
-          "price": 50,
-          "period": "month",
-          "features": [
-            "日额度$100",
-            "周额度$500"
+            "100额度（具体单位未说明，推测为人民币元）",
+            "支持gpt-4等模型"
           ],
           "autoRenew": false,
           "refundRule": null
@@ -29311,9 +29354,9 @@
       ]
     },
     "freeQuota": {
-      "amount": 10,
-      "unit": "USD",
-      "description": "新注册用户通过兑换码获得$10额度"
+      "amount": 100,
+      "unit": "CNY",
+      "description": "购买日卡包含100额度"
     },
     "paymentMethods": [
       "USDC",
@@ -29323,8 +29366,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-26T22:25:49.157Z",
-    "heatScore": 39,
-    "mentionCount": 3,
+    "heatScore": 41,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -29350,10 +29393,18 @@
         "author": "KelleyV9",
         "publishedAt": "2026-05-24T05:03:25.000Z",
         "fetchedAt": "2026-05-26T22:25:49.169Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215912#reply0",
+        "title": "[推广] 今天有小伙伴问我的中转站安全问题，不会投毒把？",
+        "author": "<name>KelleyV9</name>\n\t\t<uri>https://www.v2ex.com/member/KelleyV9</uri>",
+        "publishedAt": "2026-05-27T06:37:08.000Z",
+        "fetchedAt": "2026-05-27T07:15:46.384Z"
       }
     ],
     "firstSeen": "2026-05-26T22:25:49.157Z",
-    "lastUpdated": "2026-05-26T22:25:49.169Z",
+    "lastUpdated": "2026-05-27T07:15:46.384Z",
     "tags": [
       "中转站",
       "API网关",
@@ -29495,6 +29546,50 @@
       "新标签页",
       "桌面整理",
       "自部署"
+    ]
+  },
+  {
+    "id": "pmpnqck0h1ocoz",
+    "name": "移动云",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "Seedance2.0",
+        "inputPrice": 33.6,
+        "outputPrice": 33.6,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-27T07:15:46.385Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1215906#reply0",
+        "title": "[程序员] 移动引擎机密模型 Seedance2.0",
+        "author": "<name>wutongke</name>\n\t\t<uri>https://www.v2ex.com/member/wutongke</uri>",
+        "publishedAt": "2026-05-27T06:09:03.000Z",
+        "fetchedAt": "2026-05-27T07:15:46.385Z"
+      }
+    ],
+    "firstSeen": "2026-05-27T07:15:46.385Z",
+    "lastUpdated": "2026-05-27T07:15:46.385Z",
+    "tags": [
+      "视频生成",
+      "企业合作",
+      "政企",
+      "教育",
+      "文旅"
     ]
   }
 ]
