@@ -2755,14 +2755,14 @@
       },
       {
         "model": "Plus号池",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Pro20X",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -2772,58 +2772,52 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "hybrid",
     "subscription": {
       "plans": [
         {
           "name": "日卡",
-          "price": "0.06元/刀",
+          "price": 6,
           "period": "日",
           "features": [
-            "24小时有效期",
-            "plus号池，pro兜底"
+            "plus号池，pro兜底",
+            "24小时有效"
           ]
         },
         {
           "name": "周卡",
-          "price": "0.1元/刀",
+          "price": 30,
           "period": "周",
           "features": [
-            "额度7天内有效"
+            "plus号池，pro兜底",
+            "7天有效",
+            "7天共计300刀额度"
           ]
         },
         {
           "name": "Pro月卡",
-          "price": "约0.2元/刀",
+          "price": 200,
           "period": "月",
           "features": [
-            "只走Pro20X和Pro5x"
-          ]
-        },
-        {
-          "name": "按量/余额/不限时",
-          "price": "用多少充多少",
-          "period": "不限",
-          "features": [
-            "额度不过期"
+            "全程走1个Pro20X和2个Pro5x"
           ]
         }
       ]
     },
     "freeQuota": {
-      "amount": 15,
+      "amount": 30,
       "unit": "USD",
-      "description": "注册送15刀不限时额度"
+      "description": "注册送15刀，加群再送15刀，总计30刀。"
     },
     "paymentMethods": [
-      "卡网购买兑换"
+      "卡网购买"
     ],
     "concurrencyLimit": null,
     "rateLimit": "公益分组倍率0.01，约0.01美元额度可用0.2M token；另有5个team号，倍率0.1。",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 74,
-    "mentionCount": 18,
+    "heatScore": 76,
+    "mentionCount": 19,
     "priceHistory": [],
     "sources": [
       {
@@ -2865,10 +2859,18 @@
         "author": "bingoso",
         "publishedAt": "2026-05-27T14:24:59.000Z",
         "fetchedAt": "2026-05-27T18:16:39.472Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216026#reply12",
+        "title": "[推广] 活过来了，继续推广一下我的 codex 中转站，依旧免费送 30 刀",
+        "author": "<name>bingoso</name>\n\t\t<uri>https://www.v2ex.com/member/bingoso</uri>",
+        "publishedAt": "2026-05-27T17:53:15.000Z",
+        "fetchedAt": "2026-05-27T20:08:41.465Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-27T18:16:39.472Z",
+    "lastUpdated": "2026-05-27T20:08:41.465Z",
     "tags": [
       "中转站",
       "OpenAI",
@@ -3095,8 +3097,8 @@
     "rateLimit": "GPT 0.05x 的倍率 可能随时上涨",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
-    "heatScore": 99,
-    "mentionCount": 33,
+    "heatScore": 100,
+    "mentionCount": 34,
     "priceHistory": [],
     "sources": [
       {
@@ -3149,7 +3151,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-05-27T18:23:23.531Z",
+    "lastUpdated": "2026-05-27T20:08:41.469Z",
     "tags": [
       "GPT",
       "图像生成",
@@ -15189,7 +15191,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 67,
+    "mentionCount": 68,
     "priceHistory": [],
     "sources": [
       {
@@ -15370,7 +15372,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-27T18:23:23.529Z",
+    "lastUpdated": "2026-05-27T20:08:41.469Z",
     "tags": [
       "Claude",
       "中转",
@@ -30139,7 +30141,7 @@
     "website": "https://doc.rudder.zeeland.studio",
     "contact": "",
     "models": [],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
@@ -30147,8 +30149,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-27T18:23:23.521Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -30161,12 +30163,13 @@
       }
     ],
     "firstSeen": "2026-05-27T18:23:23.521Z",
-    "lastUpdated": "2026-05-27T18:23:23.521Z",
+    "lastUpdated": "2026-05-27T20:08:41.464Z",
     "tags": [
       "Agent协作平台",
       "开源软件",
       "Agent学习",
-      "工作流管理"
+      "工作流管理",
+      "AI工具"
     ]
   },
   {
@@ -30175,20 +30178,20 @@
     "website": "https://vivify.video",
     "contact": "",
     "models": [],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 20,
-      "unit": "CNY",
-      "description": "注册赠送20积分，V友跳转额外赠送100永久积分，积分可用于生成AI内容。"
+      "unit": "积分",
+      "description": "注册赠送20积分"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-27T18:23:23.524Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -30201,11 +30204,12 @@
       }
     ],
     "firstSeen": "2026-05-27T18:23:23.524Z",
-    "lastUpdated": "2026-05-27T18:23:23.524Z",
+    "lastUpdated": "2026-05-27T20:08:41.466Z",
     "tags": [
       "AI图片生成",
       "AI视频生成",
-      "提示词模板"
+      "提示词模板",
+      "积分制"
     ]
   },
   {
@@ -30225,28 +30229,23 @@
     "subscription": {
       "plans": [
         {
-          "name": "Pro Plan",
+          "name": "pro plan",
           "price": 30,
           "period": "月",
-          "features": [
-            "效果优于Typeless",
-            "开源"
-          ]
+          "features": []
         }
       ]
     },
     "freeQuota": {
-      "amount": null,
+      "amount": 0,
       "unit": "unknown",
       "description": "免费账户有少量使用次数"
     },
-    "paymentMethods": [
-      "unknown"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-27T18:23:23.529Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -30259,13 +30258,143 @@
       }
     ],
     "firstSeen": "2026-05-27T18:23:23.529Z",
-    "lastUpdated": "2026-05-27T18:23:23.529Z",
+    "lastUpdated": "2026-05-27T20:08:41.468Z",
     "tags": [
       "语音输入",
       "多模态大模型",
       "开源",
       "Gemini",
       "订阅服务"
+    ]
+  },
+  {
+    "id": "pmpohyj95lc8f9",
+    "name": "Orylia",
+    "website": "https://orylia.ai",
+    "contact": "",
+    "models": [
+      {
+        "model": "Orylia house model",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Free",
+          "price": 0,
+          "period": "month",
+          "features": [
+            "每天50积分（每24小时刷新）",
+            "512px分辨率的Orylia house模型",
+            "社区支持",
+            "仅限个人使用",
+            "无商业许可",
+            "无1024px或1536px输出"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Lite",
+          "price": 15,
+          "period": "month",
+          "features": [
+            "每月4,500积分",
+            "所有图像模型",
+            "512px分辨率的Orylia house模型",
+            "标准电子邮件支持",
+            "无商业许可",
+            "无1024px或1536px输出"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Plus",
+          "price": 30,
+          "period": "month",
+          "features": [
+            "每月10,000积分",
+            "所有图像模型 + 4K输出",
+            "1024px分辨率的Orylia house模型",
+            "商业许可",
+            "优先队列",
+            "单用户席位",
+            "无1536px输出"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Pro",
+          "price": 60,
+          "period": "month",
+          "features": [
+            "每月25,000积分",
+            "所有图像模型 + 4K输出",
+            "1536px分辨率的Orylia house模型",
+            "团队商业许可",
+            "3个团队席位",
+            "品牌套件 + 批量处理",
+            "无公共API访问",
+            "无转售权"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "Max",
+          "price": 80,
+          "period": "month",
+          "features": [
+            "每月50,000积分",
+            "所有图像模型 + 4K输出",
+            "1536px分辨率的Orylia house模型",
+            "完全商业许可 + 转售权",
+            "10个团队席位",
+            "品牌套件 + 批量处理",
+            "API访问 + 专属支持"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 50,
+      "unit": "credits",
+      "description": "免费计划下每天提供50积分，每24小时刷新"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-27T20:08:41.465Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216031#reply0",
+        "title": "[产品发布] [产品自荐] 业余两周做了个 AI Visual Agent，自动选模型、写 prompt、调参数，想请 V 友帮忙看看",
+        "author": "<name>yestwind</name>\n\t\t<uri>https://www.v2ex.com/member/yestwind</uri>",
+        "publishedAt": "2026-05-27T15:06:43.000Z",
+        "fetchedAt": "2026-05-27T20:08:41.465Z"
+      }
+    ],
+    "firstSeen": "2026-05-27T20:08:41.465Z",
+    "lastUpdated": "2026-05-27T20:08:41.465Z",
+    "tags": [
+      "AI图像生成",
+      "AI视频生成",
+      "一键工具",
+      "模板库",
+      "智能代理"
     ]
   }
 ]
