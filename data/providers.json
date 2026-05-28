@@ -12631,13 +12631,14 @@
     "subscription": {
       "plans": [
         {
-          "name": "Free (公测期)",
+          "name": "Free（公测）",
           "price": 0,
           "period": "month",
           "features": [
             "每模型 1,500 次调用 / 5 小时",
-            "支持 SenseNova 6.7 Flash-Lite 与 SenseNova U1 Fast",
-            "原生支持 Cowork-Skills 体系",
+            "特殊模型除外",
+            "原生多模态架构，理解生成一体",
+            "原生支持 Cowork-Skills 体系，办公场景特化支持",
             "支持 Hermes Agent 与 OpenClaw 快速接入",
             "最多 20 个 API Key"
           ],
@@ -12649,15 +12650,15 @@
     "freeQuota": {
       "amount": 0,
       "unit": "CNY",
-      "description": "公测期间完全免费开放，每模型每5小时可调用1500次。"
+      "description": "公测期间完全免费开放，提供基于调用次数和时间的免费额度（每模型1500次/5小时）。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": "每模型每5小时1500次调用。",
+    "rateLimit": "每模型 1,500 次调用 / 5 小时（Free公测档）",
     "status": "unknown",
     "lastChecked": "2026-05-09T01:41:43.373Z",
-    "heatScore": 50,
-    "mentionCount": 6,
+    "heatScore": 52,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -12686,7 +12687,7 @@
       }
     ],
     "firstSeen": "2026-05-09T01:41:43.373Z",
-    "lastUpdated": "2026-05-28T18:11:59.695Z",
+    "lastUpdated": "2026-05-28T22:38:18.711Z",
     "tags": [
       "公测免费",
       "多模态",
@@ -15327,8 +15328,8 @@
       },
       {
         "model": "kiro",
-        "inputPrice": 0.4,
-        "outputPrice": 0.4,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -15339,8 +15340,8 @@
       },
       {
         "model": "CC",
-        "inputPrice": 1.85,
-        "outputPrice": 1.85,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -15350,7 +15351,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "freeQuota": {},
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -15358,7 +15359,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 75,
+    "mentionCount": 76,
     "priceHistory": [],
     "sources": [
       {
@@ -15547,7 +15548,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-28T20:16:02.560Z",
+    "lastUpdated": "2026-05-28T22:38:18.712Z",
     "tags": [
       "Claude",
       "中转",
@@ -26647,26 +26648,18 @@
     "subscription": {
       "plans": [
         {
-          "name": "OpenCode Go 首月",
-          "price": 5,
-          "period": "month",
-          "features": [
-            "$60 使用额度",
-            "包含多款开源编程模型"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "OpenCode Go 次月起",
+          "name": "OpenCode Go",
           "price": 10,
           "period": "month",
           "features": [
-            "$60 使用额度",
-            "包含多款开源编程模型"
+            "首月5美元优惠",
+            "提供API密钥",
+            "访问精选开源编程模型",
+            "每月$60使用额度上限",
+            "5小时、每周、每月使用限制"
           ],
           "autoRenew": true,
-          "refundRule": null
+          "refundRule": "未明确提及"
         }
       ]
     },
@@ -26679,11 +26672,11 @@
       "支付宝"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "包含5小时、每周和每月的使用额度限制，超过限制后请求将被拦截（除非启用余额支付）。",
+    "rateLimit": "存在5小时、每周、每月的使用额度限制。",
     "status": "unknown",
     "lastChecked": "2026-05-21T12:18:26.729Z",
-    "heatScore": 59,
-    "mentionCount": 8,
+    "heatScore": 63,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -26720,7 +26713,7 @@
       }
     ],
     "firstSeen": "2026-05-21T12:18:26.729Z",
-    "lastUpdated": "2026-05-28T20:16:02.564Z",
+    "lastUpdated": "2026-05-28T22:38:18.716Z",
     "tags": [
       "订阅服务",
       "开源模型",
@@ -30049,8 +30042,8 @@
     "models": [
       {
         "model": "mimo-v2.5-pro",
-        "inputPrice": 0.1,
-        "outputPrice": 0.2,
+        "inputPrice": 700,
+        "outputPrice": 2100,
         "currency": "CNY"
       },
       {
@@ -30064,105 +30057,101 @@
     "subscription": {
       "plans": [
         {
-          "name": "Lite",
+          "name": "Lite (Monthly)",
           "price": 6,
           "period": "month",
           "features": [
             "4.1B Credits",
-            "支持8款MiMo模型",
-            "夜间0.8倍消耗",
-            "首购88折"
+            "覆盖8款模型",
+            "夜间0.8倍消耗"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Standard",
+          "name": "Standard (Monthly)",
           "price": 16,
           "period": "month",
           "features": [
             "11B Credits",
-            "支持8款MiMo模型",
-            "夜间0.8倍消耗",
-            "首购88折"
+            "覆盖8款模型",
+            "夜间0.8倍消耗"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Pro",
+          "name": "Pro (Monthly)",
           "price": 50,
           "period": "month",
           "features": [
             "38B Credits",
-            "支持8款MiMo模型",
-            "夜间0.8倍消耗",
-            "首购88折"
+            "覆盖8款模型",
+            "夜间0.8倍消耗"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Max",
+          "name": "Max (Monthly)",
           "price": 100,
           "period": "month",
           "features": [
             "82B Credits",
-            "支持8款MiMo模型",
-            "夜间0.8倍消耗",
-            "首购88折"
+            "覆盖8款模型",
+            "夜间0.8倍消耗"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Lite (年度)",
+          "name": "Lite (Annual)",
           "price": 63.36,
           "period": "year",
           "features": [
             "49.2B Credits",
-            "支持8款MiMo模型",
+            "覆盖8款模型",
             "夜间0.8倍消耗",
-            "连续包年88折"
+            "连续包年享88折"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Standard (年度)",
+          "name": "Standard (Annual)",
           "price": 168.96,
           "period": "year",
           "features": [
             "132B Credits",
-            "支持8款MiMo模型",
+            "覆盖8款模型",
             "夜间0.8倍消耗",
-            "连续包年88折"
+            "连续包年享88折"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Pro (年度)",
+          "name": "Pro (Annual)",
           "price": 528,
           "period": "year",
           "features": [
             "456B Credits",
-            "支持8款MiMo模型",
+            "覆盖8款模型",
             "夜间0.8倍消耗",
-            "连续包年88折"
+            "连续包年享88折"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Max (年度)",
+          "name": "Max (Annual)",
           "price": 1056,
           "period": "year",
           "features": [
             "984B Credits",
-            "支持8款MiMo模型",
+            "覆盖8款模型",
             "夜间0.8倍消耗",
-            "连续包年88折"
+            "连续包年享88折"
           ],
           "autoRenew": false,
           "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
@@ -30171,18 +30160,19 @@
     },
     "freeQuota": {
       "amount": null,
-      "unit": null,
-      "description": "提到了“重置额度”和“上次领的估计很多人都快过期了吧”，暗示可能有免费额度，但具体信息未知。"
+      "unit": "USD",
+      "description": "页面未提及免费额度，但可能有“免费体验”入口，具体需查看。"
     },
     "paymentMethods": [
-      "支付宝"
+      "支付宝",
+      "信用卡"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "套餐有请求频率限制，例如MiMo-V2.5每5小时30,100次请求。夜间（0:00-8:00）消耗系数为0.8倍。",
+    "rateLimit": "按套餐等级有不同模型额度消耗比例，TTS系列限时免费。",
     "status": "unknown",
     "lastChecked": "2026-05-26T18:09:38.803Z",
-    "heatScore": 21,
-    "mentionCount": 4,
+    "heatScore": 23,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -30211,7 +30201,7 @@
       }
     ],
     "firstSeen": "2026-05-26T18:09:38.803Z",
-    "lastUpdated": "2026-05-28T20:16:02.563Z",
+    "lastUpdated": "2026-05-28T22:38:18.719Z",
     "tags": [
       "小米",
       "MiMo",
@@ -31513,6 +31503,47 @@
       "AI coding agent",
       "开发工具",
       "免费"
+    ]
+  },
+  {
+    "id": "pmpq2qst3qtajx",
+    "name": "Anthropic",
+    "website": "https://www.anthropic.com/claude/opus",
+    "contact": "",
+    "models": [
+      {
+        "model": "claude-opus-4-8",
+        "inputPrice": 5,
+        "outputPrice": 25,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-28T22:38:18.711Z",
+    "heatScore": 50,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216300#reply18",
+        "title": "[Claude] Anthropic 发布了 Claude Opus 4.8",
+        "author": "<name>dcvsiug</name>\n\t\t<uri>https://www.v2ex.com/member/dcvsiug</uri>",
+        "publishedAt": "2026-05-28T20:52:17.000Z",
+        "fetchedAt": "2026-05-28T22:38:18.711Z"
+      }
+    ],
+    "firstSeen": "2026-05-28T22:38:18.711Z",
+    "lastUpdated": "2026-05-28T22:38:18.711Z",
+    "tags": [
+      "官方提供商",
+      "Claude",
+      "前沿模型"
     ]
   }
 ]
