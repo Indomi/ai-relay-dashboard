@@ -12631,39 +12631,33 @@
     "subscription": {
       "plans": [
         {
-          "name": "Free (公测)",
+          "name": "Free (公测期)",
           "price": 0,
           "period": "month",
           "features": [
-            "每模型1,500次调用 / 5小时",
-            "支持Hermes Agent与OpenClaw快速接入",
-            "最多20个API Key"
+            "每模型 1,500 次调用 / 5 小时",
+            "支持 SenseNova 6.7 Flash-Lite 与 SenseNova U1 Fast",
+            "原生支持 Cowork-Skills 体系",
+            "支持 Hermes Agent 与 OpenClaw 快速接入",
+            "最多 20 个 API Key"
           ],
-          "autoRenew": false,
-          "refundRule": null
-        },
-        {
-          "name": "Lite / Pro (即将上线)",
-          "price": null,
-          "period": "month",
-          "features": null,
           "autoRenew": false,
           "refundRule": null
         }
       ]
     },
     "freeQuota": {
-      "amount": 1500,
-      "unit": "调用次数",
-      "description": "公测期间，每模型每5小时免费1500次调用"
+      "amount": 0,
+      "unit": "CNY",
+      "description": "公测期间完全免费开放，每模型每5小时可调用1500次。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": "每模型1,500次调用 / 5小时",
+    "rateLimit": "每模型每5小时1500次调用。",
     "status": "unknown",
     "lastChecked": "2026-05-09T01:41:43.373Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -12681,10 +12675,18 @@
         "author": "<name>Daniel6606</name>\n\t\t<uri>https://www.v2ex.com/member/Daniel6606</uri>",
         "publishedAt": "2026-05-14T10:39:01.000Z",
         "fetchedAt": "2026-05-14T13:38:08.962Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216292#reply0",
+        "title": "[分享发现] [收藏] 商汤科技开源了一系列办公场景的 Skills 包",
+        "author": "<name>Daniel6606</name>\n\t\t<uri>https://www.v2ex.com/member/Daniel6606</uri>",
+        "publishedAt": "2026-05-28T15:03:02.000Z",
+        "fetchedAt": "2026-05-28T18:11:59.695Z"
       }
     ],
     "firstSeen": "2026-05-09T01:41:43.373Z",
-    "lastUpdated": "2026-05-14T22:11:55.066Z",
+    "lastUpdated": "2026-05-28T18:11:59.695Z",
     "tags": [
       "公测免费",
       "多模态",
@@ -15356,7 +15358,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 73,
+    "mentionCount": 74,
     "priceHistory": [],
     "sources": [
       {
@@ -15534,10 +15536,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-27T13:28:35.000Z",
         "fetchedAt": "2026-05-27T18:23:23.529Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216287#reply0",
+        "title": "[推广] [FK Claude] 满血 Claude 中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-28T14:39:11.000Z",
+        "fetchedAt": "2026-05-28T18:11:59.695Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-28T12:32:10.053Z",
+    "lastUpdated": "2026-05-28T18:11:59.695Z",
     "tags": [
       "Claude",
       "中转",
@@ -26621,10 +26631,10 @@
           "price": 5,
           "period": "month",
           "features": [
-            "首月5美元，之后每月10美元",
-            "每月60美元使用额度",
-            "5小时限制12美元，每周限制30美元",
-            "访问多个开源编程模型"
+            "首月$5优惠",
+            "每月$60使用额度上限",
+            "提供多个开源编程模型API访问",
+            "包含5小时、每周、每月使用限制"
           ],
           "autoRenew": true,
           "refundRule": null
@@ -26632,19 +26642,19 @@
       ]
     },
     "freeQuota": {
-      "amount": 0,
+      "amount": 60,
       "unit": "USD",
-      "description": "未提及免费额度。"
+      "description": "订阅后每月$60使用额度上限"
     },
     "paymentMethods": [
       "支付宝"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "5小时限制12美元，每周限制30美元，每月限制60美元（按美元价值定义）",
+    "rateLimit": "包含5小时限制（$12）、每周限制（$30）、每月限制（$60）",
     "status": "unknown",
     "lastChecked": "2026-05-21T12:18:26.729Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 55,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -26670,10 +26680,18 @@
         "author": "<name>skpoo</name>\n\t\t<uri>https://www.v2ex.com/member/skpoo</uri>",
         "publishedAt": "2026-05-28T12:07:58.000Z",
         "fetchedAt": "2026-05-28T12:35:46.635Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216263#reply8",
+        "title": "[程序员] 推荐一下 OpenCode Go Token Plan 5$ 换 60$ DeepSeek/MiMo 额度",
+        "author": "<name>skpoo</name>\n\t\t<uri>https://www.v2ex.com/member/skpoo</uri>",
+        "publishedAt": "2026-05-28T16:59:54.000Z",
+        "fetchedAt": "2026-05-28T18:11:59.696Z"
       }
     ],
     "firstSeen": "2026-05-21T12:18:26.729Z",
-    "lastUpdated": "2026-05-28T12:35:46.636Z",
+    "lastUpdated": "2026-05-28T18:11:59.700Z",
     "tags": [
       "订阅服务",
       "开源模型",
@@ -30013,56 +30031,116 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "hybrid",
     "subscription": {
       "plans": [
         {
-          "name": "Lite (月度)",
-          "price": 39,
+          "name": "Lite 月度",
+          "price": 6,
           "period": "month",
           "features": [
+            "覆盖8款模型",
             "4.1B Credits额度",
-            "支持8款MiMo模型",
-            "适合首次体验用户"
+            "夜间0.8倍消耗",
+            "首购88折",
+            "连续订阅折扣"
           ],
-          "autoRenew": true,
-          "refundRule": "订阅服务一经购买即生效，不支持退款"
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Standard (月度)",
-          "price": 99,
+          "name": "Standard 月度",
+          "price": 16,
           "period": "month",
           "features": [
+            "覆盖8款模型",
             "11B Credits额度",
-            "支持8款MiMo模型",
-            "适合办公达人"
+            "夜间0.8倍消耗",
+            "首购88折",
+            "连续订阅折扣"
           ],
-          "autoRenew": true,
-          "refundRule": "订阅服务一经购买即生效，不支持退款"
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Pro (月度)",
-          "price": 329,
+          "name": "Pro 月度",
+          "price": 50,
           "period": "month",
           "features": [
+            "覆盖8款模型",
             "38B Credits额度",
-            "支持8款MiMo模型",
-            "适合开发者"
+            "夜间0.8倍消耗",
+            "首购88折",
+            "连续订阅折扣"
           ],
-          "autoRenew": true,
-          "refundRule": "订阅服务一经购买即生效，不支持退款"
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         },
         {
-          "name": "Max (月度)",
-          "price": 659,
+          "name": "Max 月度",
+          "price": 100,
           "period": "month",
           "features": [
+            "覆盖8款模型",
             "82B Credits额度",
-            "支持8款MiMo模型",
-            "适合重度用户"
+            "夜间0.8倍消耗",
+            "首购88折",
+            "连续订阅折扣"
           ],
-          "autoRenew": true,
-          "refundRule": "订阅服务一经购买即生效，不支持退款"
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
+        },
+        {
+          "name": "Lite 年度",
+          "price": 63.36,
+          "period": "year",
+          "features": [
+            "覆盖8款模型",
+            "49.2B Credits额度",
+            "夜间0.8倍消耗",
+            "连续包年享88折"
+          ],
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
+        },
+        {
+          "name": "Standard 年度",
+          "price": 168.96,
+          "period": "year",
+          "features": [
+            "覆盖8款模型",
+            "132B Credits额度",
+            "夜间0.8倍消耗",
+            "连续包年享88折"
+          ],
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
+        },
+        {
+          "name": "Pro 年度",
+          "price": 528,
+          "period": "year",
+          "features": [
+            "覆盖8款模型",
+            "456B Credits额度",
+            "夜间0.8倍消耗",
+            "连续包年享88折"
+          ],
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
+        },
+        {
+          "name": "Max 年度",
+          "price": 1056,
+          "period": "year",
+          "features": [
+            "覆盖8款模型",
+            "984B Credits额度",
+            "夜间0.8倍消耗",
+            "连续包年享88折"
+          ],
+          "autoRenew": false,
+          "refundRule": "订阅服务一经购买即生效，不支持退款。套餐内额度未用完亦不予退费。"
         }
       ]
     },
@@ -30075,11 +30153,11 @@
       "支付宝"
     ],
     "concurrencyLimit": null,
-    "rateLimit": "夜间0.8倍消耗",
+    "rateLimit": "套餐有请求频率限制，例如MiMo-V2.5每5小时30,100次请求。夜间（0:00-8:00）消耗系数为0.8倍。",
     "status": "unknown",
     "lastChecked": "2026-05-26T18:09:38.803Z",
-    "heatScore": 17,
-    "mentionCount": 2,
+    "heatScore": 19,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -30097,10 +30175,18 @@
         "author": "<name>skpoo</name>\n\t\t<uri>https://www.v2ex.com/member/skpoo</uri>",
         "publishedAt": "2026-05-28T12:07:58.000Z",
         "fetchedAt": "2026-05-28T12:35:46.637Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216263#reply8",
+        "title": "[程序员] 推荐一下 OpenCode Go Token Plan 5$ 换 60$ DeepSeek/MiMo 额度",
+        "author": "<name>skpoo</name>\n\t\t<uri>https://www.v2ex.com/member/skpoo</uri>",
+        "publishedAt": "2026-05-28T16:59:54.000Z",
+        "fetchedAt": "2026-05-28T18:11:59.699Z"
       }
     ],
     "firstSeen": "2026-05-26T18:09:38.803Z",
-    "lastUpdated": "2026-05-28T12:35:46.637Z",
+    "lastUpdated": "2026-05-28T18:11:59.699Z",
     "tags": [
       "小米",
       "MiMo",
