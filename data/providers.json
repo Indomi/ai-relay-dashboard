@@ -9714,8 +9714,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
-    "heatScore": 95,
-    "mentionCount": 41,
+    "heatScore": 97,
+    "mentionCount": 42,
     "priceHistory": [],
     "sources": [
       {
@@ -9917,10 +9917,18 @@
         "author": "longxinglink",
         "publishedAt": "2026-05-27T08:29:34.000Z",
         "fetchedAt": "2026-05-28T12:32:10.021Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216545#reply0",
+        "title": "[推广] Gemini/Claude/Grok/GLM/Kimi 官号折扣",
+        "author": "<name>Davis03</name>\n\t\t<uri>https://www.v2ex.com/member/Davis03</uri>",
+        "publishedAt": "2026-05-29T11:14:40.000Z",
+        "fetchedAt": "2026-05-29T12:13:50.256Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-28T12:32:10.021Z",
+    "lastUpdated": "2026-05-29T12:13:50.256Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -17445,7 +17453,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
@@ -17454,13 +17462,11 @@
       "unit": "USD",
       "description": "新用户注册送$5免费额度"
     },
-    "paymentMethods": [
-      "信用卡"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-11T14:35:06.925Z",
-    "heatScore": 49,
-    "mentionCount": 4,
+    "heatScore": 51,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -17470,10 +17476,18 @@
         "author": "<name>cxd8190102</name>\n\t\t<uri>https://www.v2ex.com/member/cxd8190102</uri>",
         "publishedAt": "2026-05-11T13:10:15.000Z",
         "fetchedAt": "2026-05-11T14:35:06.925Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216510#reply4",
+        "title": "[分享创造] 做了一个文档记忆与检索工具，辅助给传统行业做 AI 落地的老哥",
+        "author": "<name>cxd8190102</name>\n\t\t<uri>https://www.v2ex.com/member/cxd8190102</uri>",
+        "publishedAt": "2026-05-29T10:34:59.000Z",
+        "fetchedAt": "2026-05-29T12:13:50.258Z"
       }
     ],
     "firstSeen": "2026-05-11T14:35:06.925Z",
-    "lastUpdated": "2026-05-11T22:09:25.189Z",
+    "lastUpdated": "2026-05-29T12:13:50.258Z",
     "tags": [
       "文档解析",
       "AI幻觉",
@@ -31830,6 +31844,53 @@
       "代理",
       "免费",
       "AI聚合"
+    ]
+  },
+  {
+    "id": "pmpqvvkmqchgs7",
+    "name": "AI Image to Image",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "图片风格转换模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": "次",
+      "description": "提供免费额度供用户直接体验"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-29T12:13:50.258Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216514#reply0",
+        "title": "[分享创造] 做了几个免费在线图片工具，分享给大家",
+        "author": "<name>doufum</name>\n\t\t<uri>https://www.v2ex.com/member/doufum</uri>",
+        "publishedAt": "2026-05-29T09:03:47.000Z",
+        "fetchedAt": "2026-05-29T12:13:50.258Z"
+      }
+    ],
+    "firstSeen": "2026-05-29T12:13:50.258Z",
+    "lastUpdated": "2026-05-29T12:13:50.258Z",
+    "tags": [
+      "图片处理",
+      "AI工具",
+      "免费工具",
+      "个人项目"
     ]
   }
 ]
