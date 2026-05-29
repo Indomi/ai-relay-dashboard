@@ -30215,7 +30215,14 @@
     "name": "赞 AI 中转站",
     "website": "",
     "contact": "",
-    "models": [],
+    "models": [
+      {
+        "model": "Claude Opus 4.8",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
     "billingType": "hybrid",
     "subscription": {
       "plans": []
@@ -30223,13 +30230,13 @@
     "freeQuota": {
       "amount": null,
       "unit": "",
-      "description": "注册有体验金额"
+      "description": ""
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-26T18:09:38.804Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -30239,14 +30246,24 @@
         "author": "<name>SeanZen</name>\n\t\t<uri>https://www.v2ex.com/member/SeanZen</uri>",
         "publishedAt": "2026-05-26T16:53:35.000Z",
         "fetchedAt": "2026-05-26T18:09:38.804Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216320#reply0",
+        "title": "[推广] [赞 AI] 已接入 Claude Opus 4.8",
+        "author": "<name>SeanZen</name>\n\t\t<uri>https://www.v2ex.com/member/SeanZen</uri>",
+        "publishedAt": "2026-05-29T00:42:12.000Z",
+        "fetchedAt": "2026-05-29T02:08:02.443Z"
       }
     ],
     "firstSeen": "2026-05-26T18:09:38.804Z",
-    "lastUpdated": "2026-05-26T18:09:38.804Z",
+    "lastUpdated": "2026-05-29T02:08:02.443Z",
     "tags": [
       "AI中转",
       "按量付费",
-      "订阅套餐"
+      "订阅套餐",
+      "Claude",
+      "Opus"
     ]
   },
   {
@@ -31544,6 +31561,128 @@
       "官方提供商",
       "Claude",
       "前沿模型"
+    ]
+  },
+  {
+    "id": "pmpqa8ih5yryif",
+    "name": "HappyCode",
+    "website": "https://happycode.vip",
+    "contact": "QQ群",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 1,
+      "unit": "CNY",
+      "description": "注册账号后加入QQ群，联系群主或管理员，可领取12.5美元使用额度，对应站内1元余额。"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-29T02:08:02.440Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216354#reply1",
+        "title": "[推广] [HappyCode] GPT-5.5 站点推广：余额直充， 0.08 倍率计费，欢迎普通用户和下游对接",
+        "author": "<name>happycodevip</name>\n\t\t<uri>https://www.v2ex.com/member/happycodevip</uri>",
+        "publishedAt": "2026-05-28T22:49:57.000Z",
+        "fetchedAt": "2026-05-29T02:08:02.440Z"
+      }
+    ],
+    "firstSeen": "2026-05-29T02:08:02.440Z",
+    "lastUpdated": "2026-05-29T02:08:02.440Z",
+    "tags": [
+      "API中转",
+      "余额直充",
+      "倍率计费",
+      "邀请返利"
+    ]
+  },
+  {
+    "id": "pmpqa8ih5qr8zr",
+    "name": "Zenmux",
+    "website": "",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-29T02:08:02.441Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216353#reply0",
+        "title": "[推广] 我擦，全面超越！ Claude Opus 4.8 正式发布",
+        "author": "<name>pks</name>\n\t\t<uri>https://www.v2ex.com/member/pks</uri>",
+        "publishedAt": "2026-05-28T21:43:59.000Z",
+        "fetchedAt": "2026-05-29T02:08:02.441Z"
+      }
+    ],
+    "firstSeen": "2026-05-29T02:08:02.441Z",
+    "lastUpdated": "2026-05-29T02:08:02.441Z",
+    "tags": [
+      "AI模型体验",
+      "Claude"
+    ]
+  },
+  {
+    "id": "pmpqa8ih6gs3bv",
+    "name": "Qoder",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "Qwen3.7-Max",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": null
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-29T02:08:02.442Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216338#reply1",
+        "title": "[程序员] Qwen3.7-Max 实际使用感受",
+        "author": "<name>liuyibao</name>\n\t\t<uri>https://www.v2ex.com/member/liuyibao</uri>",
+        "publishedAt": "2026-05-29T01:25:47.000Z",
+        "fetchedAt": "2026-05-29T02:08:02.442Z"
+      }
+    ],
+    "firstSeen": "2026-05-29T02:08:02.442Z",
+    "lastUpdated": "2026-05-29T02:08:02.442Z",
+    "tags": [
+      "AI中转",
+      "API服务",
+      "积分制"
     ]
   }
 ]
