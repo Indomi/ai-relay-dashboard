@@ -2047,27 +2047,30 @@
       },
       {
         "model": "gpt-image-2",
-        "inputPrice": 16000,
-        "outputPrice": 16000,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "CNY",
-      "description": "新用户注册加群后由机器人自动发放5元体验金。"
+      "description": "新注册用户通过QQ群机器人自动发放5元"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "未提及",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.889Z",
     "heatScore": 100,
-    "mentionCount": 81,
+    "mentionCount": 82,
     "priceHistory": [],
     "sources": [
       {
@@ -2096,7 +2099,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.889Z",
-    "lastUpdated": "2026-05-30T13:10:59.690Z",
+    "lastUpdated": "2026-05-30T16:10:23.198Z",
     "tags": [
       "OpenAI",
       "Pro订阅",
@@ -32655,6 +32658,83 @@
       "注册送金",
       "体验金",
       "薅羊毛"
+    ]
+  },
+  {
+    "id": "pmpsjrmn21hov8",
+    "name": "RelaxyCode",
+    "website": "https://www.relaxycode.com",
+    "contact": "",
+    "models": [
+      {
+        "model": "Claude Code",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Gemini CLI",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Enterprise Plan",
+          "price": null,
+          "period": null,
+          "features": [
+            "团队管理",
+            "用量分析",
+            "私有部署",
+            "专属支持",
+            "SLA保障"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": "提供免费开始选项，无需信用卡。"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-30T16:10:23.198Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216711#reply5",
+        "title": "[推广] 推荐一下自己开发的中转站， Claude Max 1r 1 刀",
+        "author": "<name>magicboylinw</name>\n\t\t<uri>https://www.v2ex.com/member/magicboylinw</uri>",
+        "publishedAt": "2026-05-30T14:37:17.000Z",
+        "fetchedAt": "2026-05-30T16:10:23.198Z"
+      }
+    ],
+    "firstSeen": "2026-05-30T16:10:23.198Z",
+    "lastUpdated": "2026-05-30T16:10:23.198Z",
+    "tags": [
+      "AI编程",
+      "共享订阅",
+      "成本优化",
+      "Claude",
+      "Codex"
     ]
   }
 ]
