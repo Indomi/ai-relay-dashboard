@@ -2047,19 +2047,19 @@
       },
       {
         "model": "gpt-image-2",
-        "inputPrice": 16,
-        "outputPrice": 0,
+        "inputPrice": 16000,
+        "outputPrice": 16000,
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 5,
       "unit": "CNY",
-      "description": "新用户注册加群机器人自动发放5元"
+      "description": "新用户注册加群后由机器人自动发放5元体验金。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -2067,7 +2067,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.889Z",
     "heatScore": 100,
-    "mentionCount": 79,
+    "mentionCount": 81,
     "priceHistory": [],
     "sources": [
       {
@@ -2096,7 +2096,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.889Z",
-    "lastUpdated": "2026-05-30T10:45:22.089Z",
+    "lastUpdated": "2026-05-30T13:10:59.690Z",
     "tags": [
       "OpenAI",
       "Pro订阅",
@@ -9710,16 +9710,12 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 15,
-      "unit": "USD",
-      "description": "注册送15刀体验金"
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 45,
+    "mentionCount": 46,
     "priceHistory": [],
     "sources": [
       {
@@ -9937,10 +9933,18 @@
         "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
         "publishedAt": "2026-05-30T01:25:48.000Z",
         "fetchedAt": "2026-05-30T06:25:37.053Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216677#reply0",
+        "title": "[推广] 提供大模型 API 中转站搭建 / 部署 / 二开 / 渠道接入服务",
+        "author": "<name>hfconcer</name>\n\t\t<uri>https://www.v2ex.com/member/hfconcer</uri>",
+        "publishedAt": "2026-05-30T08:47:57.000Z",
+        "fetchedAt": "2026-05-30T13:10:59.693Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-30T10:45:22.107Z",
+    "lastUpdated": "2026-05-30T13:10:59.693Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -32193,7 +32197,14 @@
     "name": "athom",
     "website": "",
     "contact": "VX: athom_______________",
-    "models": [],
+    "models": [
+      {
+        "model": "Claude Code",
+        "inputPrice": 125,
+        "outputPrice": 125,
+        "currency": "USD"
+      }
+    ],
     "billingType": "subscription",
     "subscription": {
       "plans": [
@@ -32201,13 +32212,23 @@
           "name": "标准席位",
           "price": 200,
           "period": "月",
-          "features": []
+          "features": [
+            "团队订阅",
+            "新加坡公司/新加坡IP",
+            "无需身份验证",
+            "额度比个人多25%"
+          ]
         },
         {
           "name": "Premium 席位",
           "price": 1010,
           "period": "月",
-          "features": []
+          "features": [
+            "团队订阅",
+            "新加坡公司/新加坡IP",
+            "无需身份验证",
+            "额度比个人多25%"
+          ]
         }
       ]
     },
@@ -32215,8 +32236,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-30T10:45:22.097Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -32226,10 +32247,18 @@
         "author": "<name>ttao98</name>\n\t\t<uri>https://www.v2ex.com/member/ttao98</uri>",
         "publishedAt": "2026-05-30T09:59:20.000Z",
         "fetchedAt": "2026-05-30T10:45:22.097Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216680#reply5",
+        "title": "[程序员] Claude Code 团队计划，非中转站",
+        "author": "<name>ttao98</name>\n\t\t<uri>https://www.v2ex.com/member/ttao98</uri>",
+        "publishedAt": "2026-05-30T12:10:04.000Z",
+        "fetchedAt": "2026-05-30T13:10:59.693Z"
       }
     ],
     "firstSeen": "2026-05-30T10:45:22.097Z",
-    "lastUpdated": "2026-05-30T10:45:22.097Z",
+    "lastUpdated": "2026-05-30T13:10:59.693Z",
     "tags": [
       "Claude",
       "团队订阅",
@@ -32300,15 +32329,15 @@
     "freeQuota": {
       "amount": 1500,
       "unit": "points",
-      "description": "新用户注册赠送1500积分（可使用100次）"
+      "description": "新用户注册赠送1500积分（约可使用100次）"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-30T10:45:22.105Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -32321,11 +32350,12 @@
       }
     ],
     "firstSeen": "2026-05-30T10:45:22.105Z",
-    "lastUpdated": "2026-05-30T10:45:22.105Z",
+    "lastUpdated": "2026-05-30T13:10:59.698Z",
     "tags": [
       "验证码识别",
       "Cloudflare",
-      "Turnstile"
+      "Turnstile",
+      "CAPTCHA"
     ]
   },
   {
@@ -32447,6 +32477,184 @@
     "lastUpdated": "2026-05-30T10:55:37.797Z",
     "tags": [
       "AI API中转"
+    ]
+  },
+  {
+    "id": "pmpsdcxgzxoa29",
+    "name": "2Captcha",
+    "website": "https://2captcha.com/",
+    "contact": "",
+    "models": [
+      {
+        "model": "reCAPTCHA v2",
+        "inputPrice": 1,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Image Captcha",
+        "inputPrice": 0.5,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Cloudflare Turnstile",
+        "inputPrice": 1.45,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "reCAPTCHA v3",
+        "inputPrice": 1.45,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "reCAPTCHA Enterprise",
+        "inputPrice": 1,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Arkose Labs captcha (FunCaptcha)",
+        "inputPrice": 1.45,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Amazon Captcha",
+        "inputPrice": 1.45,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "ALTCHA",
+        "inputPrice": 2.99,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-05-30T13:10:59.699Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216674#reply2",
+        "title": "[问与答] Cloudflare 的 5 秒盾/Turnstile 真的无敌吗？ CapSolver 这类 api 到底靠不靠谱？",
+        "author": "<name>ludyleocn</name>\n\t\t<uri>https://www.v2ex.com/member/ludyleocn</uri>",
+        "publishedAt": "2026-05-30T08:19:11.000Z",
+        "fetchedAt": "2026-05-30T13:10:59.699Z"
+      }
+    ],
+    "firstSeen": "2026-05-30T13:10:59.699Z",
+    "lastUpdated": "2026-05-30T13:10:59.699Z",
+    "tags": [
+      "验证码识别",
+      "CAPTCHA",
+      "reCAPTCHA",
+      "Cloudflare Turnstile"
+    ]
+  },
+  {
+    "id": "pmpsdcxh1u7nrf",
+    "name": "Pump",
+    "website": "https://coincommunities.org/",
+    "contact": "https://x.com/CoinComms",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "无明确信息"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-30T13:10:59.701Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216651#reply2",
+        "title": "[Solana] Pump 官方做了一个 crypto native 社区产品",
+        "author": "<name>Livid</name>\n\t\t<uri>https://www.v2ex.com/member/Livid</uri>",
+        "publishedAt": "2026-05-30T06:33:10.000Z",
+        "fetchedAt": "2026-05-30T13:10:59.701Z"
+      }
+    ],
+    "firstSeen": "2026-05-30T13:10:59.701Z",
+    "lastUpdated": "2026-05-30T13:10:59.701Z",
+    "tags": [
+      "crypto",
+      "community",
+      "token-gated",
+      "Solana",
+      "EVM"
+    ]
+  },
+  {
+    "id": "pmpsdcxh1v66hp",
+    "name": "AI中转服务商",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "未明确",
+        "inputPrice": 0.07,
+        "outputPrice": 0.07,
+        "currency": "USD"
+      },
+      {
+        "model": "未明确",
+        "inputPrice": 0.05,
+        "outputPrice": 0.05,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 15,
+      "unit": "USD",
+      "description": "注册赠送15美元体验金"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-30T13:10:59.701Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216650#reply1",
+        "title": "[推广] 5 月 30 日 最新薅中转站地址 注册送 15 刀",
+        "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
+        "publishedAt": "2026-05-30T01:25:48.000Z",
+        "fetchedAt": "2026-05-30T13:10:59.701Z"
+      }
+    ],
+    "firstSeen": "2026-05-30T13:10:59.701Z",
+    "lastUpdated": "2026-05-30T13:10:59.701Z",
+    "tags": [
+      "推广",
+      "注册送金",
+      "体验金",
+      "薅羊毛"
     ]
   }
 ]
