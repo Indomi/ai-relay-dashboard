@@ -15399,17 +15399,27 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "Opus",
+        "inputPrice": 1.85,
+        "outputPrice": 1.85,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 0,
+      "unit": "USD",
+      "description": "未提及"
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "CC专用模型限制客户端（Claude Code Cli 或 CC 插件）",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 77,
+    "mentionCount": 78,
     "priceHistory": [],
     "sources": [
       {
@@ -15603,10 +15613,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-05-29T13:30:08.000Z",
         "fetchedAt": "2026-05-29T20:16:08.102Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216563#reply1",
+        "title": "[推广] [FK Claude] 纯的不行的 Claude 中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-05-29T14:30:08.000Z",
+        "fetchedAt": "2026-05-30T02:03:18.219Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-05-29T20:16:08.102Z",
+    "lastUpdated": "2026-05-30T02:03:18.219Z",
     "tags": [
       "Claude",
       "中转",
@@ -16154,7 +16172,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.114Z",
     "heatScore": 100,
-    "mentionCount": 29,
+    "mentionCount": 30,
     "priceHistory": [],
     "sources": [
       {
@@ -16228,10 +16246,18 @@
         "author": "<name>Ai2You</name>\n\t\t<uri>https://www.v2ex.com/member/Ai2You</uri>",
         "publishedAt": "2026-05-21T05:18:15.000Z",
         "fetchedAt": "2026-05-21T06:55:22.354Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216614#reply0",
+        "title": "[Ai2You智友社] 智友社上新啦， ChatGPT 全新自助接码服务（ATT 实体卡接近 1 个月有效期，有效期内可无限接码），欢迎您的试用反馈。",
+        "author": "<name>Ai2You</name>\n\t\t<uri>https://www.v2ex.com/member/Ai2You</uri>",
+        "publishedAt": "2026-05-30T01:50:30.000Z",
+        "fetchedAt": "2026-05-30T02:03:18.218Z"
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.114Z",
-    "lastUpdated": "2026-05-21T06:55:22.354Z",
+    "lastUpdated": "2026-05-30T02:03:18.218Z",
     "tags": [
       "GPT",
       "订阅",
@@ -31947,20 +31973,20 @@
     "models": [
       {
         "model": "qwen3.7-max",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "deepseek-v4-pro",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "glm-5.1",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -31968,15 +31994,15 @@
     "freeQuota": {
       "amount": null,
       "unit": null,
-      "description": "免费服务至5月31日截止"
+      "description": "目前免费到5月31号截止"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-29T20:16:08.102Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -31986,14 +32012,23 @@
         "author": "<name>huBane</name>\n\t\t<uri>https://www.v2ex.com/member/huBane</uri>",
         "publishedAt": "2026-05-29T13:58:47.000Z",
         "fetchedAt": "2026-05-29T20:16:08.102Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216566#reply3",
+        "title": "[推广] 免费大模型 api 分享可以体验 qwen3.7-max/deepseek-v4-pro/glm-5.1 等国内优秀模型",
+        "author": "<name>huBane</name>\n\t\t<uri>https://www.v2ex.com/member/huBane</uri>",
+        "publishedAt": "2026-05-29T14:58:47.000Z",
+        "fetchedAt": "2026-05-30T02:03:18.219Z"
       }
     ],
     "firstSeen": "2026-05-29T20:16:08.102Z",
-    "lastUpdated": "2026-05-29T20:16:08.102Z",
+    "lastUpdated": "2026-05-30T02:03:18.219Z",
     "tags": [
       "免费API",
       "影视创作",
-      "国内模型"
+      "国内模型",
+      "免费"
     ]
   },
   {
