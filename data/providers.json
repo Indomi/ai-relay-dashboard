@@ -2033,8 +2033,14 @@
       },
       {
         "model": "gpt-image-2",
-        "inputPrice": null,
+        "inputPrice": 16,
         "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "claude-3.5-sonnet",
+        "inputPrice": 0,
+        "outputPrice": 0,
         "currency": "CNY"
       }
     ],
@@ -2045,7 +2051,7 @@
     "freeQuota": {
       "amount": 5,
       "unit": "CNY",
-      "description": "新注册用户通过QQ群机器人自动发放5元"
+      "description": "新用户注册加群自动发放5元"
     },
     "paymentMethods": [
       "支付宝",
@@ -2056,7 +2062,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.889Z",
     "heatScore": 100,
-    "mentionCount": 82,
+    "mentionCount": 84,
     "priceHistory": [],
     "sources": [
       {
@@ -2085,7 +2091,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.889Z",
-    "lastUpdated": "2026-05-30T16:10:23.198Z",
+    "lastUpdated": "2026-05-31T02:13:24.147Z",
     "tags": [
       "OpenAI",
       "Pro订阅",
@@ -7774,8 +7780,8 @@
       },
       {
         "model": "未明确提及具体模型，仅提及GPT",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": 0.08,
+        "outputPrice": 0.08,
         "currency": "CNY"
       },
       {
@@ -7875,22 +7881,22 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": ""
+      "amount": 120,
+      "unit": "USD",
+      "description": "注册送120刀体验金，CC和GPT模型均适用"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "",
     "status": "unknown",
     "lastChecked": "2026-05-07T02:15:06.071Z",
-    "heatScore": 59,
-    "mentionCount": 23,
+    "heatScore": 61,
+    "mentionCount": 24,
     "priceHistory": [],
     "sources": [
       {
@@ -7996,10 +8002,18 @@
         "author": "FreeLester",
         "publishedAt": "2026-05-28T06:21:15.000Z",
         "fetchedAt": "2026-05-28T07:03:30.474Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216746#reply0",
+        "title": "[推广] 5 月 31 日 注册免费 5.5 用到晚上 12 点，开签到了！ 0.08 倍率",
+        "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
+        "publishedAt": "2026-05-30T21:40:32.000Z",
+        "fetchedAt": "2026-05-31T02:13:24.142Z"
       }
     ],
     "firstSeen": "2026-05-07T02:15:06.071Z",
-    "lastUpdated": "2026-05-29T20:23:46.024Z",
+    "lastUpdated": "2026-05-31T02:13:24.142Z",
     "tags": [
       "OpenAI代理",
       "国内访问",
@@ -14275,15 +14289,15 @@
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "新用户注册送5刀额度，无过期时间"
+      "description": "新用户注册即送5刀体验额度。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "套餐低至0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.087Z",
-    "heatScore": 68,
-    "mentionCount": 15,
+    "heatScore": 70,
+    "mentionCount": 16,
     "priceHistory": [],
     "sources": [
       {
@@ -14397,10 +14411,18 @@
         "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
         "publishedAt": "2026-05-25T20:16:57.000Z",
         "fetchedAt": "2026-05-25T22:12:16.412Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216743#reply8",
+        "title": "[推广] HyperAPI 的新老用户来领福利了",
+        "author": "<name>WinterLord</name>\n\t\t<uri>https://www.v2ex.com/member/WinterLord</uri>",
+        "publishedAt": "2026-05-31T02:09:50.000Z",
+        "fetchedAt": "2026-05-31T02:13:24.143Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.087Z",
-    "lastUpdated": "2026-05-25T22:12:16.412Z",
+    "lastUpdated": "2026-05-31T02:13:24.143Z",
     "tags": [
       "中转站",
       "优惠活动",
@@ -32270,23 +32292,21 @@
     "subscription": {
       "plans": [
         {
-          "name": "Standard席位",
+          "name": "标准席位",
           "price": 200,
           "period": "月",
           "features": [
-            "团队账号额度比个人多25% Token",
-            "新加坡IP",
-            "无需折腾支付和验证"
+            "团队订阅，额度比个人同等级多25% Token",
+            "无需个人折腾支付、验证、代理等"
           ]
         },
         {
-          "name": "Premium席位",
+          "name": "Premium 席位",
           "price": 1010,
           "period": "月",
           "features": [
-            "团队账号额度比个人多25% Token",
-            "新加坡IP",
-            "无需折腾支付和验证"
+            "团队订阅，额度比个人同等级多25% Token",
+            "无需个人折腾支付、验证、代理等"
           ]
         }
       ]
@@ -32295,8 +32315,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-30T10:45:22.097Z",
-    "heatScore": 44,
-    "mentionCount": 3,
+    "heatScore": 46,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -32325,7 +32345,7 @@
       }
     ],
     "firstSeen": "2026-05-30T10:45:22.097Z",
-    "lastUpdated": "2026-05-30T19:06:54.304Z",
+    "lastUpdated": "2026-05-31T02:13:24.149Z",
     "tags": [
       "Claude",
       "团队订阅",
@@ -32738,14 +32758,20 @@
       },
       {
         "model": "Codex",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.1,
+        "outputPrice": 0.1,
         "currency": "USD"
       },
       {
         "model": "Gemini CLI",
         "inputPrice": null,
         "outputPrice": null,
+        "currency": "USD"
+      },
+      {
+        "model": "Claude Max",
+        "inputPrice": 1,
+        "outputPrice": 1,
         "currency": "USD"
       }
     ],
@@ -32778,8 +32804,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-30T16:10:23.198Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -32789,10 +32815,18 @@
         "author": "<name>magicboylinw</name>\n\t\t<uri>https://www.v2ex.com/member/magicboylinw</uri>",
         "publishedAt": "2026-05-30T14:37:17.000Z",
         "fetchedAt": "2026-05-30T16:10:23.198Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216711#reply6",
+        "title": "[推广] 推荐一下自己开发的中转站， Claude Max 1r 1 刀",
+        "author": "<name>magicboylinw</name>\n\t\t<uri>https://www.v2ex.com/member/magicboylinw</uri>",
+        "publishedAt": "2026-05-30T15:37:17.000Z",
+        "fetchedAt": "2026-05-31T02:13:24.147Z"
       }
     ],
     "firstSeen": "2026-05-30T16:10:23.198Z",
-    "lastUpdated": "2026-05-30T21:57:53.795Z",
+    "lastUpdated": "2026-05-31T02:13:24.147Z",
     "tags": [
       "AI编程",
       "共享订阅",
@@ -32811,16 +32845,12 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 0,
-      "unit": "",
-      "description": ""
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-30T19:06:54.300Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -32833,7 +32863,7 @@
       }
     ],
     "firstSeen": "2026-05-30T19:06:54.300Z",
-    "lastUpdated": "2026-05-30T19:06:54.300Z",
+    "lastUpdated": "2026-05-31T02:13:24.146Z",
     "tags": [
       "AI知识管理",
       "企业级平台",
@@ -33101,6 +33131,45 @@
       "OpenAI",
       "Claude",
       "Gemini"
+    ]
+  },
+  {
+    "id": "pmpt5b41db55iu",
+    "name": "xone 开发工作室",
+    "website": "轻梦起航",
+    "contact": "微信或 QQ",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [
+      "分阶段付款"
+    ],
+    "status": "unknown",
+    "lastChecked": "2026-05-31T02:13:24.145Z",
+    "heatScore": 50,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216731#reply0",
+        "title": "[接单] xone 资深全栈工程师接单",
+        "author": "<name>xone2023</name>\n\t\t<uri>https://www.v2ex.com/member/xone2023</uri>",
+        "publishedAt": "2026-05-30T19:47:25.000Z",
+        "fetchedAt": "2026-05-31T02:13:24.145Z"
+      }
+    ],
+    "firstSeen": "2026-05-31T02:13:24.145Z",
+    "lastUpdated": "2026-05-31T02:13:24.145Z",
+    "tags": [
+      "全栈开发",
+      "外包服务",
+      "MVP",
+      "小程序",
+      "企业系统"
     ]
   }
 ]
