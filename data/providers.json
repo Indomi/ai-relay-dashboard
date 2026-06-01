@@ -4068,15 +4068,17 @@
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
-      "description": "新用户注册送10美元额度（注册送5刀，联系客服再送5刀）"
+      "description": "免费赠送10刀额度"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "可配置的请求和令牌速率限制",
     "status": "unknown",
     "lastChecked": "2026-05-06T20:09:56.044Z",
-    "heatScore": 93,
-    "mentionCount": 25,
+    "heatScore": 95,
+    "mentionCount": 26,
     "priceHistory": [],
     "sources": [
       {
@@ -4201,7 +4203,7 @@
       }
     ],
     "firstSeen": "2026-05-06T20:09:56.044Z",
-    "lastUpdated": "2026-05-31T20:07:35.444Z",
+    "lastUpdated": "2026-05-31T22:12:31.249Z",
     "tags": [
       "开源",
       "API网关",
@@ -33909,20 +33911,20 @@
     "website": "",
     "contact": "",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 500,
       "unit": "MB",
-      "description": "注册即送 500M 动态住宅流量"
+      "description": "注册赠送500M动态住宅流量"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-31T13:20:22.017Z",
-    "heatScore": 17,
-    "mentionCount": 2,
+    "heatScore": 19,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -33935,7 +33937,7 @@
       }
     ],
     "firstSeen": "2026-05-31T13:20:22.017Z",
-    "lastUpdated": "2026-05-31T20:07:35.444Z",
+    "lastUpdated": "2026-05-31T22:12:31.248Z",
     "tags": [
       "代理服务",
       "住宅IP",
@@ -34162,6 +34164,51 @@
       "API代理",
       "OpenAI Codex",
       "多模型统一"
+    ]
+  },
+  {
+    "id": "pmpuc56rz2bmnw",
+    "name": "流沙需求验证平台",
+    "website": "https://liusha.com",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "需求发布/订阅",
+          "price": 2,
+          "period": "单次",
+          "features": [
+            "发布或订阅一个需求，表达付费意愿"
+          ]
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-05-31T22:12:31.247Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216827#reply14",
+        "title": "[分享创造] 开发一款软件能年入百万吗？",
+        "author": "<name>onebitbank</name>\n\t\t<uri>https://www.v2ex.com/member/onebitbank</uri>",
+        "publishedAt": "2026-05-31T16:24:00.000Z",
+        "fetchedAt": "2026-05-31T22:12:31.247Z"
+      }
+    ],
+    "firstSeen": "2026-05-31T22:12:31.247Z",
+    "lastUpdated": "2026-05-31T22:12:31.247Z",
+    "tags": [
+      "需求验证",
+      "产品开发",
+      "市场匹配",
+      "付费需求"
     ]
   }
 ]
