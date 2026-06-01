@@ -9856,11 +9856,13 @@
       "plans": []
     },
     "freeQuota": {},
-    "paymentMethods": [],
+    "paymentMethods": [
+      "闲鱼"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 48,
+    "mentionCount": 49,
     "priceHistory": [],
     "sources": [
       {
@@ -10094,10 +10096,18 @@
         "author": "",
         "publishedAt": "2026-05-30T19:08:26.566Z",
         "fetchedAt": "2026-05-30T19:15:08.448Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216872#reply3",
+        "title": "[iPhone] 土耳其账号 之前的账号无法被添加",
+        "author": "<name>jhk19970416</name>\n\t\t<uri>https://www.v2ex.com/member/jhk19970416</uri>",
+        "publishedAt": "2026-05-12T01:10:11.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.538Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-05-30T19:15:08.448Z",
+    "lastUpdated": "2026-06-01T02:28:24.538Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -12012,7 +12022,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.188Z",
     "heatScore": 100,
-    "mentionCount": 38,
+    "mentionCount": 39,
     "priceHistory": [],
     "sources": [
       {
@@ -12134,10 +12144,18 @@
         "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
         "publishedAt": "2026-05-29T06:12:51.000Z",
         "fetchedAt": "2026-05-29T06:59:41.237Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216922#reply0",
+        "title": "[推广] [6.1 儿童节特惠] 今天上班了！大朋友也要薅羊毛，瞒着老板偷偷送 6 个海外住宅 IP 兑换码（每个含 6 条），新用户速来！",
+        "author": "<name>novproxy</name>\n\t\t<uri>https://www.v2ex.com/member/novproxy</uri>",
+        "publishedAt": "2026-06-01T02:06:31.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.532Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.188Z",
-    "lastUpdated": "2026-05-29T06:59:41.237Z",
+    "lastUpdated": "2026-06-01T02:28:24.532Z",
     "tags": [
       "住宅IP代理",
       "数据采集",
@@ -20991,7 +21009,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
@@ -21006,7 +21024,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-14T19:37:13.998Z",
     "heatScore": 100,
-    "mentionCount": 57,
+    "mentionCount": 58,
     "priceHistory": [],
     "sources": [
       {
@@ -21104,10 +21122,18 @@
         "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
         "publishedAt": "2026-05-29T04:36:53.000Z",
         "fetchedAt": "2026-05-29T06:59:41.246Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216875#reply2",
+        "title": "[推广] # Claude360 周一开工福利：首充 9.9 得 20，已支持 Claude Opus 4.8 / GPT-5.5，开源作者/团队可领 200 元额度",
+        "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
+        "publishedAt": "2026-06-01T01:47:14.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.538Z"
       }
     ],
     "firstSeen": "2026-05-14T19:37:13.998Z",
-    "lastUpdated": "2026-05-29T06:59:41.246Z",
+    "lastUpdated": "2026-06-01T02:28:24.538Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -24605,6 +24631,36 @@
     "models": [
       {
         "model": "GPT Image 2",
+        "inputPrice": null,
+        "outputPrice": null,
+        "currency": "CNY"
+      },
+      {
+        "model": "NanoBanana",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Seedream",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Flux",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Seedane2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Gork",
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
@@ -24617,15 +24673,15 @@
     "freeQuota": {
       "amount": 100,
       "unit": "积分",
-      "description": "新用户可领取100积分，约20张Image2图片"
+      "description": "新用户注册赠送100+生图积分"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "每日登录有随机积分掉落。",
     "status": "unknown",
     "lastChecked": "2026-05-19T06:53:45.669Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -24635,13 +24691,23 @@
         "author": "<name>yu180</name>\n\t\t<uri>https://www.v2ex.com/member/yu180</uri>",
         "publishedAt": "2026-05-19T06:11:42.000Z",
         "fetchedAt": "2026-05-19T06:53:45.669Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216905#reply6",
+        "title": "[推广] 猫图 AI：注册送 100+ 生图积分，支持 GPT Image 2、图生视频和 API 调用",
+        "author": "<name>yu180</name>\n\t\t<uri>https://www.v2ex.com/member/yu180</uri>",
+        "publishedAt": "2026-06-01T01:56:22.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.533Z"
       }
     ],
     "firstSeen": "2026-05-19T06:53:45.669Z",
-    "lastUpdated": "2026-05-19T06:53:45.669Z",
+    "lastUpdated": "2026-06-01T02:28:24.533Z",
     "tags": [
       "图像生成",
-      "积分制"
+      "积分制",
+      "API中转",
+      "按积分付费"
     ]
   },
   {
@@ -34209,6 +34275,158 @@
       "产品开发",
       "市场匹配",
       "付费需求"
+    ]
+  },
+  {
+    "id": "pmpula9g687xtq",
+    "name": "PrismMark",
+    "website": "https://useprismmark.com/",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "免费会员",
+          "price": 0,
+          "period": "月",
+          "features": []
+        },
+        {
+          "name": "付费会员",
+          "price": null,
+          "period": null,
+          "features": []
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 3,
+      "unit": "月",
+      "description": "通过留下邮箱可获得3个月免费会员"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-01T02:28:24.534Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216883#reply0",
+        "title": "[推广] 做了一个 一套 markdown 输出不同模板样式的小工具，送会员",
+        "author": "<name>jimbray</name>\n\t\t<uri>https://www.v2ex.com/member/jimbray</uri>",
+        "publishedAt": "2026-06-01T00:45:06.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.534Z"
+      }
+    ],
+    "firstSeen": "2026-06-01T02:28:24.534Z",
+    "lastUpdated": "2026-06-01T02:28:24.534Z",
+    "tags": [
+      "Markdown工具",
+      "格式转换",
+      "内容排版",
+      "导出工具"
+    ]
+  },
+  {
+    "id": "pmpula9g7kg6qg",
+    "name": "minimax",
+    "website": "",
+    "contact": "",
+    "models": [
+      {
+        "model": "minimax-m3",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": [
+        {
+          "name": "月度约 6 亿+ token",
+          "price": 49,
+          "period": "月",
+          "features": []
+        },
+        {
+          "name": "月度约 18 亿+ token",
+          "price": 119,
+          "period": "月",
+          "features": []
+        },
+        {
+          "name": "月度约 55 亿+ token",
+          "price": 469,
+          "period": "月",
+          "features": []
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": null
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-01T02:28:24.535Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216879#reply9",
+        "title": "[程序员] minimax-m3 上线。套餐变相涨价",
+        "author": "<name>Chisa</name>\n\t\t<uri>https://www.v2ex.com/member/Chisa</uri>",
+        "publishedAt": "2026-06-01T02:03:49.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.535Z"
+      }
+    ],
+    "firstSeen": "2026-06-01T02:28:24.535Z",
+    "lastUpdated": "2026-06-01T02:28:24.535Z",
+    "tags": [
+      "minimax-m3",
+      "套餐",
+      "code agent"
+    ]
+  },
+  {
+    "id": "pmpula9g9pw9hq",
+    "name": "GitHub Copilot",
+    "website": "https://docs.github.com/zh/copilot/reference/copilot-billing/models-and-pricing",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-01T02:28:24.537Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1216878#reply28",
+        "title": "[GitHub Copilot] 今日， Copilot 正式转向 Token 计费",
+        "author": "<name>songtianlun</name>\n\t\t<uri>https://www.v2ex.com/member/songtianlun</uri>",
+        "publishedAt": "2026-06-01T02:08:21.000Z",
+        "fetchedAt": "2026-06-01T02:28:24.537Z"
+      }
+    ],
+    "firstSeen": "2026-06-01T02:28:24.537Z",
+    "lastUpdated": "2026-06-01T02:28:24.537Z",
+    "tags": [
+      "AI编程助手",
+      "Token计费"
     ]
   }
 ]
