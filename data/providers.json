@@ -11626,19 +11626,21 @@
     "website": "www.lingducloud.com",
     "contact": "tg:cloudcup",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
     "freeQuota": {},
     "paymentMethods": [
       "USDT",
-      "支付宝"
+      "支付宝",
+      "海外电汇",
+      "外币网银"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 85,
-    "mentionCount": 26,
+    "heatScore": 87,
+    "mentionCount": 27,
     "priceHistory": [],
     "sources": [
       {
@@ -11744,10 +11746,18 @@
         "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
         "publishedAt": "2026-05-29T04:59:52.000Z",
         "fetchedAt": "2026-05-29T06:59:41.245Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217391#reply0",
+        "title": "[推广] 企业出海阿里云国际版账号免绑卡统一计费流程",
+        "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
+        "publishedAt": "2026-06-02T10:56:20.000Z",
+        "fetchedAt": "2026-06-02T12:46:04.330Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-05-29T06:59:41.245Z",
+    "lastUpdated": "2026-06-02T12:46:04.330Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -34891,6 +34901,47 @@
       "稳定",
       "GPT",
       "API网关"
+    ]
+  },
+  {
+    "id": "pmpwmsfmxssgej",
+    "name": "OxideTerm",
+    "website": "https://oxideterm.app",
+    "contact": "https://github.com/AnalyseDeCircuit/oxideterm",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "无订阅或付费计划，全功能开源免费使用。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-02T12:46:04.329Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217395#reply2",
+        "title": "[分享创造] OxideTerm： Rust SSH 栈的本地优先 SSH 工作区，零遥测零订阅",
+        "author": "<name>soleilune</name>\n\t\t<uri>https://www.v2ex.com/member/soleilune</uri>",
+        "publishedAt": "2026-06-02T11:33:40.000Z",
+        "fetchedAt": "2026-06-02T12:46:04.329Z"
+      }
+    ],
+    "firstSeen": "2026-06-02T12:46:04.329Z",
+    "lastUpdated": "2026-06-02T12:46:04.329Z",
+    "tags": [
+      "SSH工具",
+      "AI运维助手",
+      "开源",
+      "本地优先",
+      "零订阅"
     ]
   }
 ]
