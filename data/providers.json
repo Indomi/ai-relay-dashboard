@@ -34518,5 +34518,176 @@
       "无上限",
       "Agent"
     ]
+  },
+  {
+    "id": "pmpw0mox2xwha7",
+    "name": "ZOOAPI",
+    "website": "https://zooapi.ai",
+    "contact": "微信 itlife888",
+    "models": [
+      {
+        "model": "gpt-5.5-pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gpt-image-2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "MiniMax-M2.7",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "轻量试用",
+          "price": 59,
+          "period": "month",
+          "features": [
+            "子账户 1 个",
+            "到账卡额 ¥800"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "程序员起步",
+          "price": 99,
+          "period": "month",
+          "features": [
+            "子账户 1 个",
+            "到账卡额 ¥2000",
+            "技术群"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "小团队",
+          "price": 198,
+          "period": "month",
+          "features": [
+            "子账户 2 个",
+            "到账卡额 ¥4000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "小团队",
+          "price": 396,
+          "period": "month",
+          "features": [
+            "子账户 2 个",
+            "到账卡额 ¥8000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "多人协作",
+          "price": 792,
+          "period": "month",
+          "features": [
+            "子账户 4 个",
+            "到账卡额 ¥16000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "企业独享",
+          "price": 1000,
+          "period": "month",
+          "features": [
+            "子账户 8 个",
+            "到账卡额 ¥24000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "企业独享",
+          "price": 2000,
+          "period": "month",
+          "features": [
+            "20x Pro 账号×1",
+            "企业专属服务群",
+            "子账户 16 个",
+            "到账卡额 ¥100000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "企业独享",
+          "price": 18000,
+          "period": "month",
+          "features": [
+            "20x Pro 账号×10",
+            "企业专属服务群",
+            "子账户 160 个",
+            "到账卡额 ¥1000000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "企业独享",
+          "price": 34000,
+          "period": "month",
+          "features": [
+            "20x Pro 账号×20",
+            "企业专属服务群",
+            "子账户 320 个",
+            "到账卡额 ¥2000000"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-02T02:25:44.870Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217204#reply2",
+        "title": "[推广] Codex 套餐只卖原价 2 折，最低¥0.292 充值$1",
+        "author": "<name>sakurajiayou</name>\n\t\t<uri>https://www.v2ex.com/member/sakurajiayou</uri>",
+        "publishedAt": "2026-06-02T02:13:36.000Z",
+        "fetchedAt": "2026-06-02T02:25:44.870Z"
+      }
+    ],
+    "firstSeen": "2026-06-02T02:25:44.870Z",
+    "lastUpdated": "2026-06-02T02:25:44.870Z",
+    "tags": [
+      "API聚合",
+      "OpenAI兼容",
+      "多模型",
+      "套餐充值",
+      "子账户管理"
+    ]
   }
 ]
