@@ -27418,6 +27418,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "nova-3",
+        "inputPrice": 0.007,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
     "billingType": "token",
@@ -27425,15 +27431,17 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": "评论区留ID送额度"
+      "amount": 200,
+      "unit": "USD",
+      "description": "新注册用户可获得 $200 免费额度，按 nova-3 模型 $0.007/分钟计算，足够转录约 476 小时音频。"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未提供"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-21T22:23:20.644Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -27451,10 +27459,18 @@
         "author": "poi09lkj",
         "publishedAt": "2026-05-26T14:10:13.000Z",
         "fetchedAt": "2026-05-27T18:16:39.487Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217309#reply0",
+        "title": "[推广] Chrome 扩展 DualPiP v1.7- 给任意网页视频加实时字幕 — 直播/网课/无字幕视频都能用",
+        "author": "<name>ymlluo</name>\n\t\t<uri>https://www.v2ex.com/member/ymlluo</uri>",
+        "publishedAt": "2026-06-02T06:13:34.000Z",
+        "fetchedAt": "2026-06-02T07:33:34.367Z"
       }
     ],
     "firstSeen": "2026-05-21T22:23:20.644Z",
-    "lastUpdated": "2026-05-27T18:16:39.487Z",
+    "lastUpdated": "2026-06-02T07:33:34.367Z",
     "tags": [
       "开源",
       "性能测评",
@@ -34688,6 +34704,193 @@
       "多模型",
       "套餐充值",
       "子账户管理"
+    ]
+  },
+  {
+    "id": "pmpwbmk2mqhj3m",
+    "name": "DuoPlus",
+    "website": "https://www.duoplus.cn/",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-02T07:33:34.366Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217329#reply1",
+        "title": "[推广] 分享一个云号码：稳定的美国/英国实体号、支持二次验证，可解决 codex/gpt 网页端登录验证",
+        "author": "<name>duoplustech</name>\n\t\t<uri>https://www.v2ex.com/member/duoplustech</uri>",
+        "publishedAt": "2026-06-02T07:21:06.000Z",
+        "fetchedAt": "2026-06-02T07:33:34.366Z"
+      }
+    ],
+    "firstSeen": "2026-06-02T07:33:34.366Z",
+    "lastUpdated": "2026-06-02T07:33:34.366Z",
+    "tags": [
+      "云号码",
+      "海外号码",
+      "接码平台",
+      "短信验证",
+      "账号验证"
+    ]
+  },
+  {
+    "id": "pmpwbmk2o5nyut",
+    "name": "wkele",
+    "website": "https://wkele.kukuai.fyi",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-02T07:33:34.368Z",
+    "heatScore": 30,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217300#reply11",
+        "title": "[推广] 爽啊 最近疯狂蹬 gpt5.5",
+        "author": "<name>WangCola</name>\n\t\t<uri>https://www.v2ex.com/member/WangCola</uri>",
+        "publishedAt": "2026-06-02T06:35:21.000Z",
+        "fetchedAt": "2026-06-02T07:33:34.368Z"
+      }
+    ],
+    "firstSeen": "2026-06-02T07:33:34.368Z",
+    "lastUpdated": "2026-06-02T07:33:34.368Z",
+    "tags": [
+      "GPT-5.5"
+    ]
+  },
+  {
+    "id": "pmpwbmk2p9158n",
+    "name": "合租巴士",
+    "website": "https://hezu.ink",
+    "contact": "",
+    "models": [
+      {
+        "model": "Codex",
+        "inputPrice": 0.2,
+        "outputPrice": 0.2,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Code",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "GPT-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-02T07:33:34.369Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217278#reply0",
+        "title": "[推广] 推广下中转站：合租巴士中转站 Codex|Claude|Code|gpt-5.5 倍率低至 0.2x（支持开票）",
+        "author": "<name>213dafssa</name>\n\t\t<uri>https://www.v2ex.com/member/213dafssa</uri>",
+        "publishedAt": "2026-06-02T04:27:24.000Z",
+        "fetchedAt": "2026-06-02T07:33:34.369Z"
+      }
+    ],
+    "firstSeen": "2026-06-02T07:33:34.369Z",
+    "lastUpdated": "2026-06-02T07:33:34.369Z",
+    "tags": [
+      "中转站",
+      "低价",
+      "企业支持",
+      "可开票"
+    ]
+  },
+  {
+    "id": "pmpwbmk2q5ppj5",
+    "name": "Puaai",
+    "website": "https://puaai.xyz",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT-4",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-4 Turbo",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT-3.5 Turbo",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-02T07:33:34.370Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217275#reply0",
+        "title": "[推广] 随缘推广朋友的中转站",
+        "author": "<name>ret2onion</name>\n\t\t<uri>https://www.v2ex.com/member/ret2onion</uri>",
+        "publishedAt": "2026-06-02T04:18:45.000Z",
+        "fetchedAt": "2026-06-02T07:33:34.370Z"
+      }
+    ],
+    "firstSeen": "2026-06-02T07:33:34.370Z",
+    "lastUpdated": "2026-06-02T07:33:34.370Z",
+    "tags": [
+      "中转站",
+      "稳定",
+      "GPT",
+      "API网关"
     ]
   }
 ]
