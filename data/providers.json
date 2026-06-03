@@ -32214,25 +32214,25 @@
     "models": [
       {
         "model": "Qwen3.7-Max",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": null
+      "amount": 200,
+      "unit": "requests/day",
+      "description": "每天免费200次Qwen3.7-Max模型请求。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-29T02:08:02.442Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -32242,15 +32242,26 @@
         "author": "<name>liuyibao</name>\n\t\t<uri>https://www.v2ex.com/member/liuyibao</uri>",
         "publishedAt": "2026-05-29T01:25:47.000Z",
         "fetchedAt": "2026-05-29T02:08:02.442Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217489#reply0",
+        "title": "[分享发现] Qwen3.7-Max 现已支持每天免费 200 次请求",
+        "author": "<name>cryptoboy</name>\n\t\t<uri>https://www.v2ex.com/member/cryptoboy</uri>",
+        "publishedAt": "2026-06-03T01:25:22.000Z",
+        "fetchedAt": "2026-06-03T02:41:04.142Z"
       }
     ],
     "firstSeen": "2026-05-29T02:08:02.442Z",
-    "lastUpdated": "2026-05-29T02:08:02.442Z",
+    "lastUpdated": "2026-06-03T02:41:04.142Z",
     "tags": [
       "AI中转",
       "API服务",
-      "积分制"
-    ]
+      "积分制",
+      "AI编程",
+      "代码助手"
+    ],
+    "rateLimit": "每天200次请求限制。"
   },
   {
     "id": "pmpqknkn0xmoxg",
@@ -35176,6 +35187,47 @@
     "tags": [
       "按量付费",
       "价格对比"
+    ]
+  },
+  {
+    "id": "pmpxgm8wcfpe1v",
+    "name": "AutoGeo",
+    "website": "https://autogeoflow.com/",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 30,
+      "unit": "CNY",
+      "description": "通过评论提供注册邮箱，可获得30积分，可用于发布30篇文章和生成30个GPT-2插图。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-03T02:41:04.140Z",
+    "heatScore": 25,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217514#reply0",
+        "title": "[分享创造] 做了一个 AutoGeo：给 SaaS / 工具站自动生成 GEO 图文博客，支持多语言、定时发布和 API 拉取",
+        "author": "<name>jiames1969</name>\n\t\t<uri>https://www.v2ex.com/member/jiames1969</uri>",
+        "publishedAt": "2026-06-03T02:31:38.000Z",
+        "fetchedAt": "2026-06-03T02:41:04.140Z"
+      }
+    ],
+    "firstSeen": "2026-06-03T02:41:04.140Z",
+    "lastUpdated": "2026-06-03T02:41:04.140Z",
+    "tags": [
+      "AI写作",
+      "博客生成",
+      "GEO优化",
+      "多语言",
+      "SaaS工具"
     ]
   }
 ]
