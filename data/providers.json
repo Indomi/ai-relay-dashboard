@@ -9930,7 +9930,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 51,
+    "mentionCount": 52,
     "priceHistory": [],
     "sources": [
       {
@@ -10180,10 +10180,18 @@
         "author": "winson030",
         "publishedAt": "2026-06-02T02:20:33.000Z",
         "fetchedAt": "2026-06-03T07:44:47.324Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217809#reply0",
+        "title": "[推广] cursor 无限额度 claude4.6 4.7 4.8 opus max thinking fast",
+        "author": "<name>yanx1n</name>\n\t\t<uri>https://www.v2ex.com/member/yanx1n</uri>",
+        "publishedAt": "2026-06-04T02:24:24.000Z",
+        "fetchedAt": "2026-06-04T02:31:52.358Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-06-03T07:44:47.361Z",
+    "lastUpdated": "2026-06-04T02:31:52.358Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -24590,51 +24598,20 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "静态长效住宅",
-          "price": 9.9,
-          "period": "7天",
-          "features": [
-            "多店铺/多账号长期固定",
-            "一 IP 一账号"
-          ]
-        },
-        {
-          "name": "不限量-带宽",
-          "price": 293,
-          "period": "天",
-          "features": [
-            "极限高并发",
-            "AI 训练",
-            "海量请求"
-          ]
-        },
-        {
-          "name": "不限量-端口",
-          "price": 2.5,
-          "period": "天",
-          "features": [
-            "多任务并行",
-            "配置极灵活"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 50,
-      "unit": "GB",
-      "description": "新用户注册最高可领50GB免费试用流量（动态住宅可用）"
+      "amount": 1,
+      "unit": "CDK",
+      "description": "每个新用户限领一个免费住宅IP兑换码(CDK)。"
     },
-    "paymentMethods": [
-      "未明确提及"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-19T02:09:52.504Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -24644,10 +24621,18 @@
         "author": "<name>565784135</name>\n\t\t<uri>https://www.v2ex.com/member/565784135</uri>",
         "publishedAt": "2026-05-19T01:57:53.000Z",
         "fetchedAt": "2026-05-19T02:09:52.504Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217781#reply6",
+        "title": "[推广] [福利] 纯正海外住宅 IP 免费送！手慢无，速来！",
+        "author": "<name>loving29cn</name>\n\t\t<uri>https://www.v2ex.com/member/loving29cn</uri>",
+        "publishedAt": "2026-06-04T01:35:05.000Z",
+        "fetchedAt": "2026-06-04T02:31:52.359Z"
       }
     ],
     "firstSeen": "2026-05-19T02:09:52.504Z",
-    "lastUpdated": "2026-05-19T02:09:52.504Z",
+    "lastUpdated": "2026-06-04T02:31:52.359Z",
     "tags": [
       "代理服务",
       "住宅IP",
@@ -36369,20 +36354,20 @@
     "website": "https://touch-ai.org",
     "contact": "",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 14,
-      "unit": "天",
-      "description": "在6.1-6.14期间，通过与小米合作，提供限时免费的Mimo Token支持，无需配置，授权即用。"
+      "unit": "days",
+      "description": "提供 14 天小米 Mimo Token 免费使用，无需配置，授权即用。"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-03T18:51:31.692Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -36400,10 +36385,18 @@
         "author": "<name>hiqiancheng</name>\n\t\t<uri>https://www.v2ex.com/member/hiqiancheng</uri>",
         "publishedAt": "2026-06-03T17:46:47.000Z",
         "fetchedAt": "2026-06-03T23:10:10.167Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217747#reply5",
+        "title": "[分享创造] [Xiaomi Mimo 14 天 Token 限时免费] TouchAI：一触即达的桌面效率 Agent（开源免费， BYOK）",
+        "author": "<name>hiqiancheng</name>\n\t\t<uri>https://www.v2ex.com/member/hiqiancheng</uri>",
+        "publishedAt": "2026-06-03T21:46:47.000Z",
+        "fetchedAt": "2026-06-04T02:31:52.361Z"
       }
     ],
     "firstSeen": "2026-06-03T18:51:31.692Z",
-    "lastUpdated": "2026-06-03T23:10:10.167Z",
+    "lastUpdated": "2026-06-04T02:31:52.361Z",
     "tags": [
       "开源",
       "桌面Agent",
@@ -36483,6 +36476,70 @@
       "Claude",
       "个人站长",
       "余额可退"
+    ]
+  },
+  {
+    "id": "pmpyvq9t43gswn",
+    "name": "AI Code Hub",
+    "website": "https://aicodehub.net/claude-codex.html",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "Claude max 20x 成品号",
+          "price": 800,
+          "period": "unknown",
+          "features": [
+            "Claude Opus 4.8 模型",
+            "20倍配额"
+          ]
+        },
+        {
+          "name": "Claude max 5x 成品号",
+          "price": 600,
+          "period": "unknown",
+          "features": [
+            "Claude Opus 4.8 模型",
+            "5倍配额"
+          ]
+        },
+        {
+          "name": "GPT Pro 20x 成品号",
+          "price": 700,
+          "period": "unknown",
+          "features": [
+            "GPT Codex 模型",
+            "20倍配额"
+          ]
+        }
+      ]
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-04T02:31:52.360Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217751#reply4",
+        "title": "[推广] Claude/Codex 成品号 5.7 折卖",
+        "author": "<name>sakurajiayou</name>\n\t\t<uri>https://www.v2ex.com/member/sakurajiayou</uri>",
+        "publishedAt": "2026-06-03T20:07:13.000Z",
+        "fetchedAt": "2026-06-04T02:31:52.360Z"
+      }
+    ],
+    "firstSeen": "2026-06-04T02:31:52.360Z",
+    "lastUpdated": "2026-06-04T02:31:52.360Z",
+    "tags": [
+      "成品号",
+      "Claude",
+      "GPT Codex",
+      "账号销售"
     ]
   }
 ]
