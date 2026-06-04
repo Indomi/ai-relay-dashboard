@@ -3376,21 +3376,27 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "gpt-image-2",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "token",
     "freeQuota": {
       "amount": 50,
       "unit": "USD",
-      "description": "每人送50刀体验金"
+      "description": "新用户注册送50刀体验额度，7天内用完"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.893Z",
-    "heatScore": 53,
-    "mentionCount": 10,
+    "heatScore": 55,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -3408,10 +3414,18 @@
         "author": "<name>jiaduobao</name>\n\t\t<uri>https://www.v2ex.com/member/jiaduobao</uri>",
         "publishedAt": "2026-04-28T11:14:13.000Z",
         "fetchedAt": "2026-05-06T20:20:16.967Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218037#reply0",
+        "title": "[推广] 中转福利，新人注册送 50 刀 7 套餐天内用完。GPT-5.5 高质量 Pro 号池（含 GPT-5.5 / GPT-5.4,Codex 速度快）",
+        "author": "<name>jiaduobao</name>\n\t\t<uri>https://www.v2ex.com/member/jiaduobao</uri>",
+        "publishedAt": "2026-06-04T00:26:27.000Z",
+        "fetchedAt": "2026-06-04T17:52:14.938Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.893Z",
-    "lastUpdated": "2026-05-07T14:16:59.902Z",
+    "lastUpdated": "2026-06-04T17:52:14.938Z",
     "tags": [
       "GPT-5.5",
       "Pro号池",
@@ -3420,7 +3434,18 @@
       "价格比较"
     ],
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "7套餐",
+          "price": null,
+          "period": "month",
+          "features": [
+            "使用50刀体验额度"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     }
   },
   {
@@ -3783,22 +3808,78 @@
     "name": "BAI",
     "website": "https://b.ai/",
     "contact": "",
-    "models": [],
-    "billingType": "subscription",
+    "models": [
+      {
+        "model": "gemini 3.5 flash",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek v4 pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "minimax m3",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "kimi 2.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GLM 5.1",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "Claude Opus",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "GPT",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "hybrid",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "高级账户",
+          "price": null,
+          "period": null,
+          "features": [
+            "使用Claude Opus和GPT等高级模型",
+            "充值享受1:1补贴（最高$100）"
+          ],
+          "autoRenew": null,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": ""
+      "amount": 500000,
+      "unit": "积分",
+      "description": "注册新账号赠送50万免费积分"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.894Z",
-    "heatScore": 41,
-    "mentionCount": 4,
+    "heatScore": 43,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -3808,10 +3889,18 @@
         "author": "luchenwei9266",
         "publishedAt": "2026-05-06T07:07:16.000Z",
         "fetchedAt": "2026-05-06T19:40:07.894Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218036#reply4",
+        "title": "[AI Agent 智能体] 最高 100 美元的 AI 贷款",
+        "author": "<name>quiqa</name>\n\t\t<uri>https://www.v2ex.com/member/quiqa</uri>",
+        "publishedAt": "2026-06-04T16:50:42.000Z",
+        "fetchedAt": "2026-06-04T17:52:14.939Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.894Z",
-    "lastUpdated": "2026-05-06T21:28:18.281Z",
+    "lastUpdated": "2026-06-04T17:52:14.939Z",
     "tags": [
       "AI中转",
       "特朗普",
@@ -16008,7 +16097,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "freeQuota": {},
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -16016,7 +16105,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 86,
+    "mentionCount": 87,
     "priceHistory": [],
     "sources": [
       {
@@ -16261,7 +16350,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-04T14:41:35.668Z",
+    "lastUpdated": "2026-06-04T17:52:14.941Z",
     "tags": [
       "Claude",
       "中转",
