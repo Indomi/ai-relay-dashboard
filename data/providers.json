@@ -1420,8 +1420,8 @@
     "models": [
       {
         "model": "openai/gpt-image-2",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 6.8,
+        "outputPrice": 25.5,
         "currency": "USD"
       },
       {
@@ -1432,8 +1432,8 @@
       },
       {
         "model": "gpt-5.4",
-        "inputPrice": 2.5,
-        "outputPrice": 15,
+        "inputPrice": 25.5,
+        "outputPrice": 153,
         "currency": "USD"
       },
       {
@@ -1518,7 +1518,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.888Z",
     "heatScore": 100,
-    "mentionCount": 164,
+    "mentionCount": 165,
     "priceHistory": [],
     "sources": [
       {
@@ -1568,10 +1568,18 @@
         "author": "good1uck",
         "publishedAt": "2026-05-18T12:28:35.000Z",
         "fetchedAt": "2026-05-18T19:31:19.207Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1217955#reply3",
+        "title": "[推广] GPT 全系列官方价 85 折，持续一个月（6.3 - 6.30），直接调用即生效",
+        "author": "<name>Celeste1900</name>\n\t\t<uri>https://www.v2ex.com/member/Celeste1900</uri>",
+        "publishedAt": "2026-06-04T09:45:09.000Z",
+        "fetchedAt": "2026-06-04T14:41:35.668Z"
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.888Z",
-    "lastUpdated": "2026-06-03T23:17:35.903Z",
+    "lastUpdated": "2026-06-04T14:41:35.668Z",
     "tags": [
       "官方直连",
       "多模型聚合",
@@ -16000,7 +16008,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "freeQuota": {},
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -16008,7 +16016,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 85,
+    "mentionCount": 86,
     "priceHistory": [],
     "sources": [
       {
@@ -16242,10 +16250,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-06-03T13:42:53.000Z",
         "fetchedAt": "2026-06-03T18:51:31.696Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218005#reply0",
+        "title": "[推广] [FK Claude] 就是一个 Claude 中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-06-04T14:06:36.000Z",
+        "fetchedAt": "2026-06-04T14:41:35.668Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-03T23:10:10.172Z",
+    "lastUpdated": "2026-06-04T14:41:35.668Z",
     "tags": [
       "Claude",
       "中转",
