@@ -6884,11 +6884,34 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "gpt5.4-mini",
+        "inputPrice": 1.25,
+        "outputPrice": 1.25,
+        "currency": "USD"
+      },
+      {
+        "model": "gpt5.5",
+        "inputPrice": 2.5,
+        "outputPrice": 2.5,
+        "currency": "USD"
       }
     ],
-    "billingType": "未提及",
+    "billingType": "token",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "终身8折套餐",
+          "price": 10,
+          "period": null,
+          "features": [
+            "享受永久8折token价格"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {},
     "paymentMethods": [],
@@ -6897,7 +6920,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.269Z",
     "heatScore": 100,
-    "mentionCount": 72,
+    "mentionCount": 73,
     "priceHistory": [],
     "sources": [
       {
@@ -7035,10 +7058,18 @@
         "author": "",
         "publishedAt": "2026-05-27T22:41:25.519Z",
         "fetchedAt": "2026-05-27T22:49:30.963Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218314#reply13",
+        "title": "[推广] API 中转站， V2 朋友可享永久 8 折",
+        "author": "<name>tenderstarry</name>\n\t\t<uri>https://www.v2ex.com/member/tenderstarry</uri>",
+        "publishedAt": "2026-06-05T16:01:20.000Z",
+        "fetchedAt": "2026-06-05T17:19:34.392Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.269Z",
-    "lastUpdated": "2026-06-05T14:39:43.605Z",
+    "lastUpdated": "2026-06-05T17:19:34.392Z",
     "tags": [
       "开源",
       "聚合管理",
@@ -37878,6 +37909,47 @@
       "模型验真",
       "比价",
       "稳定性监控"
+    ]
+  },
+  {
+    "id": "pmq16vpq1nx5wj",
+    "name": "WellAPI",
+    "website": "https://wellapi.ai",
+    "contact": "",
+    "models": [
+      {
+        "model": "MiniMax-M3",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "freeQuota": null,
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-05T17:19:34.393Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218313#reply1",
+        "title": "[推广] MiniMax M3 API 限时一折卖",
+        "author": "<name>sakurajiayou</name>\n\t\t<uri>https://www.v2ex.com/member/sakurajiayou</uri>",
+        "publishedAt": "2026-06-05T14:59:22.000Z",
+        "fetchedAt": "2026-06-05T17:19:34.393Z"
+      }
+    ],
+    "firstSeen": "2026-06-05T17:19:34.393Z",
+    "lastUpdated": "2026-06-05T17:19:34.393Z",
+    "tags": [
+      "MiniMax",
+      "国产模型",
+      "聚合平台"
     ]
   }
 ]
