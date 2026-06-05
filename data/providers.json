@@ -37959,20 +37959,24 @@
     "models": [
       {
         "model": "MiniMax-M3",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
     "billingType": "token",
-    "freeQuota": null,
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": null
+    },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-05T17:19:34.393Z",
-    "heatScore": 40,
-    "mentionCount": 1,
+    "heatScore": 42,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -37985,11 +37989,16 @@
       }
     ],
     "firstSeen": "2026-06-05T17:19:34.393Z",
-    "lastUpdated": "2026-06-05T17:19:34.393Z",
+    "lastUpdated": "2026-06-05T22:19:03.940Z",
     "tags": [
       "MiniMax",
       "国产模型",
-      "聚合平台"
-    ]
+      "聚合平台",
+      "API",
+      "一折"
+    ],
+    "subscription": {
+      "plans": []
+    }
   }
 ]
