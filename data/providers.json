@@ -6917,11 +6917,28 @@
         "inputPrice": 2.5,
         "outputPrice": 2.5,
         "currency": "USD"
+      },
+      {
+        "model": "gpt-image-2",
+        "inputPrice": 0.1,
+        "outputPrice": 0.1,
+        "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "hybrid",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "套餐",
+          "price": 10,
+          "period": null,
+          "features": [
+            "终身享受token消费8折优惠"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {},
     "paymentMethods": [],
@@ -6930,7 +6947,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.269Z",
     "heatScore": 100,
-    "mentionCount": 74,
+    "mentionCount": 75,
     "priceHistory": [],
     "sources": [
       {
@@ -7076,10 +7093,18 @@
         "author": "<name>tenderstarry</name>\n\t\t<uri>https://www.v2ex.com/member/tenderstarry</uri>",
         "publishedAt": "2026-06-05T16:01:20.000Z",
         "fetchedAt": "2026-06-05T17:19:34.392Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218314#reply15",
+        "title": "[推广] API 中转站， V2 朋友可享永久 8 折",
+        "author": "<name>tenderstarry</name>\n\t\t<uri>https://www.v2ex.com/member/tenderstarry</uri>",
+        "publishedAt": "2026-06-05T16:01:20.000Z",
+        "fetchedAt": "2026-06-06T02:04:09.379Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.269Z",
-    "lastUpdated": "2026-06-05T19:49:08.888Z",
+    "lastUpdated": "2026-06-06T02:04:09.379Z",
     "tags": [
       "开源",
       "聚合管理",
@@ -16242,8 +16267,8 @@
       },
       {
         "model": "CC",
-        "inputPrice": 1.85,
-        "outputPrice": 1.85,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -16267,7 +16292,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 92,
+    "mentionCount": 93,
     "priceHistory": [],
     "sources": [
       {
@@ -16528,7 +16553,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-05T19:38:43.985Z",
+    "lastUpdated": "2026-06-06T02:04:09.382Z",
     "tags": [
       "Claude",
       "中转",
@@ -37975,8 +38000,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-05T17:19:34.393Z",
-    "heatScore": 42,
-    "mentionCount": 2,
+    "heatScore": 44,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -37989,7 +38014,7 @@
       }
     ],
     "firstSeen": "2026-06-05T17:19:34.393Z",
-    "lastUpdated": "2026-06-05T22:19:03.940Z",
+    "lastUpdated": "2026-06-06T02:04:09.382Z",
     "tags": [
       "MiniMax",
       "国产模型",
@@ -38000,5 +38025,159 @@
     "subscription": {
       "plans": []
     }
+  },
+  {
+    "id": "pmq1pmbz1gptkt",
+    "name": "giffgaff",
+    "website": "https://www.giffgaff.com/",
+    "contact": "无明确信息",
+    "models": [],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": [
+        {
+          "name": "无月租套餐",
+          "price": 0,
+          "period": "月",
+          "features": [
+            "免费收短信"
+          ]
+        },
+        {
+          "name": "1GB流量套餐",
+          "price": 12,
+          "period": "月",
+          "features": [
+            "1GB流量"
+          ]
+        },
+        {
+          "name": "5GB流量套餐",
+          "price": 24,
+          "period": "月",
+          "features": [
+            "5GB流量"
+          ]
+        },
+        {
+          "name": "10GB流量套餐",
+          "price": 36,
+          "period": "月",
+          "features": [
+            "10GB流量"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 10,
+      "unit": "GBP",
+      "description": "初始购卡费用10英镑，包含账户余额，可用于支付通话、短信和流量费用。"
+    },
+    "paymentMethods": [
+      "信用卡（如招行双币信用卡）"
+    ],
+    "status": "unknown",
+    "lastChecked": "2026-06-06T02:04:09.373Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218346#reply1",
+        "title": "[分享发现] 分享教程：绕过 esim 手机限制获取 esim 配置二维码",
+        "author": "<name>davinci21s</name>\n\t\t<uri>https://www.v2ex.com/member/davinci21s</uri>",
+        "publishedAt": "2026-06-06T01:01:05.000Z",
+        "fetchedAt": "2026-06-06T02:04:09.373Z"
+      }
+    ],
+    "firstSeen": "2026-06-06T02:04:09.373Z",
+    "lastUpdated": "2026-06-06T02:04:09.373Z",
+    "tags": [
+      "英国",
+      "运营商",
+      "eSIM",
+      "无月租",
+      "流量套餐"
+    ]
+  },
+  {
+    "id": "pmq1pmbz7iye1t",
+    "name": "FreeUltraCode",
+    "website": "github.com/wellingfeng/FreeUltraCode",
+    "contact": "Discord: discord.gg/2C9ptSEFG, QQ群: 149523963",
+    "models": [
+      {
+        "model": "GitHub Models (openai/gpt-4.1-mini)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Hugging Face Router (deepseek-ai/DeepSeek-V4-Pro)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "SambaNova Cloud (DeepSeek-V3.1)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Together AI (Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Kilo Gateway (poolside/laguna-xs.2:free)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "LLM7 (codestral-latest)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY",
+      "description": "软件本身免费，但连接的上游渠道提供各自的免费额度或免费层。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-06T02:04:09.379Z",
+    "heatScore": 50,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218343#reply1",
+        "title": "[程序员] 我开发了一款接入 20+免费大模型渠道的 AI 编程工具",
+        "author": "<name>hotoh521</name>\n\t\t<uri>https://www.v2ex.com/member/hotoh521</uri>",
+        "publishedAt": "2026-06-06T01:15:31.000Z",
+        "fetchedAt": "2026-06-06T02:04:09.379Z"
+      }
+    ],
+    "firstSeen": "2026-06-06T02:04:09.379Z",
+    "lastUpdated": "2026-06-06T02:04:09.379Z",
+    "tags": [
+      "本地工具",
+      "渠道聚合",
+      "模型切换",
+      "AI编程助手",
+      "成本优化"
+    ]
   }
 ]
