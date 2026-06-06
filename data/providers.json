@@ -3333,8 +3333,8 @@
     "models": [
       {
         "model": "codex-gpt-image-2",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
         "currency": "CNY"
       },
       {
@@ -3348,14 +3348,20 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
-    "paymentMethods": [],
+    "freeQuota": {
+      "amount": 0,
+      "unit": "USD",
+      "description": "未提及"
+    },
+    "paymentMethods": [
+      "未提及"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "GPT 0.05x 的倍率 可能随时上涨",
     "status": "unknown",
     "lastChecked": "2026-05-06T19:40:07.892Z",
     "heatScore": 100,
-    "mentionCount": 37,
+    "mentionCount": 38,
     "priceHistory": [],
     "sources": [
       {
@@ -3416,7 +3422,7 @@
       }
     ],
     "firstSeen": "2026-05-06T19:40:07.892Z",
-    "lastUpdated": "2026-06-06T13:15:19.896Z",
+    "lastUpdated": "2026-06-06T16:15:49.365Z",
     "tags": [
       "GPT",
       "图像生成",
@@ -5863,14 +5869,21 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "ChatGPT Pro",
+          "price": 200,
+          "period": "月",
+          "features": []
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 0,
-      "unit": "unknown",
-      "description": "注册即送免费测试额度"
+      "amount": 1,
+      "unit": "month",
+      "description": "对于因违规被封号的用户，解封后免费续期一个月原套餐。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -5878,7 +5891,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T22:01:08.267Z",
     "heatScore": 100,
-    "mentionCount": 90,
+    "mentionCount": 91,
     "priceHistory": [],
     "sources": [
       {
@@ -5984,10 +5997,18 @@
         "author": "<name>haoofun</name>\n\t\t<uri>https://www.v2ex.com/member/haoofun</uri>",
         "publishedAt": "2026-06-04T07:26:15.000Z",
         "fetchedAt": "2026-06-04T07:32:48.075Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218431#reply9",
+        "title": "[OpenAI] OpenAI 的封号补偿来了",
+        "author": "<name>keyu1103</name>\n\t\t<uri>https://www.v2ex.com/member/keyu1103</uri>",
+        "publishedAt": "2026-06-06T16:05:06.000Z",
+        "fetchedAt": "2026-06-06T16:15:49.365Z"
       }
     ],
     "firstSeen": "2026-05-06T22:01:08.267Z",
-    "lastUpdated": "2026-06-05T02:28:08.988Z",
+    "lastUpdated": "2026-06-06T16:15:49.365Z",
     "tags": [
       "官方API",
       "多模态",
@@ -30812,8 +30833,8 @@
       },
       {
         "model": "默认分组",
-        "inputPrice": 0.003,
-        "outputPrice": 0.003,
+        "inputPrice": 3,
+        "outputPrice": 3,
         "currency": "USD"
       },
       {
@@ -30830,7 +30851,7 @@
     "freeQuota": {
       "amount": 5,
       "unit": "USD",
-      "description": "认证微信送5美元。"
+      "description": "认证微信送5$"
     },
     "paymentMethods": [
       "支付宝"
@@ -30839,8 +30860,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-25T12:29:12.231Z",
-    "heatScore": 61,
-    "mentionCount": 9,
+    "heatScore": 63,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -30893,7 +30914,7 @@
       }
     ],
     "firstSeen": "2026-05-25T12:29:12.231Z",
-    "lastUpdated": "2026-06-06T13:15:19.897Z",
+    "lastUpdated": "2026-06-06T16:15:49.366Z",
     "tags": [
       "测试期",
       "邀请制",
