@@ -16703,7 +16703,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 99,
+    "mentionCount": 100,
     "priceHistory": [],
     "sources": [
       {
@@ -16980,7 +16980,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-07T16:20:59.427Z",
+    "lastUpdated": "2026-06-07T19:15:35.964Z",
     "tags": [
       "Claude",
       "中转",
@@ -39580,27 +39580,18 @@
     "models": [],
     "billingType": "subscription",
     "subscription": {
-      "plans": [
-        {
-          "name": "日订阅",
-          "price": 30,
-          "period": "日",
-          "features": [
-            "注册直送"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 30,
       "unit": "USD",
-      "description": "注册直送的日订阅额度"
+      "description": "注册直送30美元日订阅，仅限今日兑换"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-07T16:20:59.425Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -39613,11 +39604,12 @@
       }
     ],
     "firstSeen": "2026-06-07T16:20:59.425Z",
-    "lastUpdated": "2026-06-07T16:20:59.425Z",
+    "lastUpdated": "2026-06-07T19:15:35.963Z",
     "tags": [
       "推广",
       "免费试用",
-      "日订阅"
+      "日订阅",
+      "全球顶级模型"
     ]
   }
 ]
