@@ -12426,8 +12426,8 @@
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 91,
-    "mentionCount": 29,
+    "heatScore": 93,
+    "mentionCount": 30,
     "priceHistory": [],
     "sources": [
       {
@@ -12560,7 +12560,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-06-07T13:29:35.339Z",
+    "lastUpdated": "2026-06-07T16:20:59.427Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -16691,7 +16691,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "freeQuota": {
       "amount": 0,
       "unit": "unknown",
@@ -16703,7 +16703,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 98,
+    "mentionCount": 99,
     "priceHistory": [],
     "sources": [
       {
@@ -16980,7 +16980,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-07T13:29:35.339Z",
+    "lastUpdated": "2026-06-07T16:20:59.427Z",
     "tags": [
       "Claude",
       "中转",
@@ -24541,13 +24541,13 @@
       },
       {
         "model": "codex",
-        "inputPrice": 1,
+        "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Claude (Kiro渠道)",
-        "inputPrice": 70,
+        "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
       },
@@ -24560,24 +24560,7 @@
     ],
     "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "Kiro 渠道 Claude",
-          "price": 10,
-          "period": "2天",
-          "features": [
-            "相当于 120 刀官方订阅额度"
-          ]
-        },
-        {
-          "name": "Codex 日卡",
-          "price": 10,
-          "period": "天",
-          "features": [
-            "享 10 刀额度畅用"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": null,
@@ -24589,8 +24572,8 @@
     "rateLimit": "Claude全模型0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-17T10:28:46.331Z",
-    "heatScore": 61,
-    "mentionCount": 14,
+    "heatScore": 63,
+    "mentionCount": 15,
     "priceHistory": [],
     "sources": [
       {
@@ -24656,10 +24639,18 @@
         "author": "<name>qw7624611</name>\n\t\t<uri>https://www.v2ex.com/member/qw7624611</uri>",
         "publishedAt": "2026-06-07T12:16:15.000Z",
         "fetchedAt": "2026-06-07T13:29:35.338Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218580#reply1",
+        "title": "[推广] 小数点级别 中转站",
+        "author": "<name>qw7624611</name>\n\t\t<uri>https://www.v2ex.com/member/qw7624611</uri>",
+        "publishedAt": "2026-06-07T15:37:16.000Z",
+        "fetchedAt": "2026-06-07T16:20:59.426Z"
       }
     ],
     "firstSeen": "2026-05-17T10:28:46.331Z",
-    "lastUpdated": "2026-06-07T13:29:35.338Z",
+    "lastUpdated": "2026-06-07T16:20:59.426Z",
     "tags": [
       "Claude",
       "API反代",
@@ -39579,6 +39570,54 @@
       "AI API代理",
       "网关",
       "多模型"
+    ]
+  },
+  {
+    "id": "pmq3zo2w14ig0j",
+    "name": "Muskapi.cc",
+    "website": "http://Muskapi.cc",
+    "contact": "",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": [
+        {
+          "name": "日订阅",
+          "price": 30,
+          "period": "日",
+          "features": [
+            "注册直送"
+          ]
+        }
+      ]
+    },
+    "freeQuota": {
+      "amount": 30,
+      "unit": "USD",
+      "description": "注册直送的日订阅额度"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-07T16:20:59.425Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218587#reply6",
+        "title": "[推广] [全球顶级模型免费试用] 1000 份 $30 日订阅直送，仅限今日兑换",
+        "author": "<name>wtcoder</name>\n\t\t<uri>https://www.v2ex.com/member/wtcoder</uri>",
+        "publishedAt": "2026-06-07T15:44:29.000Z",
+        "fetchedAt": "2026-06-07T16:20:59.425Z"
+      }
+    ],
+    "firstSeen": "2026-06-07T16:20:59.425Z",
+    "lastUpdated": "2026-06-07T16:20:59.425Z",
+    "tags": [
+      "推广",
+      "免费试用",
+      "日订阅"
     ]
   }
 ]
