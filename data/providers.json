@@ -10538,20 +10538,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": 0,
-      "unit": "CNY",
-      "description": "未提及"
+      "unit": "unknown",
+      "description": "无明确免费配额信息，只有注册奖励"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "unknown"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 59,
+    "mentionCount": 60,
     "priceHistory": [],
     "sources": [
       {
@@ -10825,10 +10827,18 @@
         "author": "wwang7",
         "publishedAt": "2026-06-03T05:03:05.000Z",
         "fetchedAt": "2026-06-06T11:00:37.953Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218557#reply1",
+        "title": "[推广] 6 月 7 日 薅 5.5 注册 10 刀和 15 刀的站点",
+        "author": "<name>sumozuishuai</name>\n\t\t<uri>https://www.v2ex.com/member/sumozuishuai</uri>",
+        "publishedAt": "2026-06-07T05:32:54.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.340Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-06-07T11:27:56.168Z",
+    "lastUpdated": "2026-06-07T13:29:35.340Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -12405,15 +12415,19 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "未提及"
+    },
     "paymentMethods": [
       "USDT",
       "支付宝"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
-    "heatScore": 89,
-    "mentionCount": 28,
+    "heatScore": 91,
+    "mentionCount": 29,
     "priceHistory": [],
     "sources": [
       {
@@ -12535,10 +12549,18 @@
         "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
         "publishedAt": "2026-06-04T05:41:22.000Z",
         "fetchedAt": "2026-06-04T07:32:48.078Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218565#reply0",
+        "title": "[推广] 海外云服务器支付解决方案 阿里云国际站代理商代充值与财务合规说明",
+        "author": "<name>xh2006000</name>\n\t\t<uri>https://www.v2ex.com/member/xh2006000</uri>",
+        "publishedAt": "2026-06-07T10:48:49.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.339Z"
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-06-04T07:32:48.078Z",
+    "lastUpdated": "2026-06-07T13:29:35.339Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -16669,11 +16691,11 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": ""
+      "amount": 0,
+      "unit": "unknown",
+      "description": "未提及"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -16681,7 +16703,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 97,
+    "mentionCount": 98,
     "priceHistory": [],
     "sources": [
       {
@@ -16947,10 +16969,18 @@
         "author": "sx931210",
         "publishedAt": "2026-06-05T13:20:20.000Z",
         "fetchedAt": "2026-06-06T11:00:37.972Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218576#reply0",
+        "title": "[推广] [FK Claude]max 号池 中转站",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-06-07T12:05:25.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.339Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-07T07:09:58.473Z",
+    "lastUpdated": "2026-06-07T13:29:35.339Z",
     "tags": [
       "Claude",
       "中转",
@@ -24511,13 +24541,13 @@
       },
       {
         "model": "codex",
-        "inputPrice": null,
+        "inputPrice": 1,
         "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "Claude (Kiro渠道)",
-        "inputPrice": null,
+        "inputPrice": 70,
         "outputPrice": null,
         "currency": "CNY"
       },
@@ -24528,7 +24558,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "token",
     "subscription": {
       "plans": [
         {
@@ -24559,8 +24589,8 @@
     "rateLimit": "Claude全模型0.1倍率",
     "status": "unknown",
     "lastChecked": "2026-05-17T10:28:46.331Z",
-    "heatScore": 59,
-    "mentionCount": 13,
+    "heatScore": 61,
+    "mentionCount": 14,
     "priceHistory": [],
     "sources": [
       {
@@ -24618,10 +24648,18 @@
         "author": "qw7624611",
         "publishedAt": "2026-05-25T03:57:05.000Z",
         "fetchedAt": "2026-05-25T12:29:12.239Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218580#reply0",
+        "title": "[推广] 小数点级别 中转站",
+        "author": "<name>qw7624611</name>\n\t\t<uri>https://www.v2ex.com/member/qw7624611</uri>",
+        "publishedAt": "2026-06-07T12:16:15.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.338Z"
       }
     ],
     "firstSeen": "2026-05-17T10:28:46.331Z",
-    "lastUpdated": "2026-05-27T22:37:13.937Z",
+    "lastUpdated": "2026-06-07T13:29:35.338Z",
     "tags": [
       "Claude",
       "API反代",
@@ -28839,20 +28877,16 @@
         "currency": "USD"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 735,
-      "unit": "MB",
-      "description": "注册即送735M动态住宅流量"
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-21T22:23:20.644Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 53,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -28886,10 +28920,18 @@
         "author": "<name>laotielaile</name>\n\t\t<uri>https://www.v2ex.com/member/laotielaile</uri>",
         "publishedAt": "2026-06-03T10:05:10.000Z",
         "fetchedAt": "2026-06-03T18:51:31.696Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218547#reply0",
+        "title": "[推广] 用 GPT image 2 做了一个解说视频生成器",
+        "author": "<name>leoncostazh</name>\n\t\t<uri>https://www.v2ex.com/member/leoncostazh</uri>",
+        "publishedAt": "2026-06-07T08:20:22.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.343Z"
       }
     ],
     "firstSeen": "2026-05-21T22:23:20.644Z",
-    "lastUpdated": "2026-06-03T18:51:31.696Z",
+    "lastUpdated": "2026-06-07T13:29:35.343Z",
     "tags": [
       "开源",
       "性能测评",
@@ -31724,16 +31766,16 @@
     },
     "freeQuota": {
       "amount": null,
-      "unit": "USD",
-      "description": "注册送站内试用额度（具体金额未在提供的文本中明确）"
+      "unit": null,
+      "description": "注册就送额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
-    "rateLimit": "未在提供内容中找到速率限制描述。",
+    "rateLimit": "超低倍率",
     "status": "unknown",
     "lastChecked": "2026-05-26T14:47:46.642Z",
     "heatScore": 100,
-    "mentionCount": 63,
+    "mentionCount": 64,
     "priceHistory": [],
     "sources": [
       {
@@ -31855,10 +31897,18 @@
         "author": "<name>443038716</name>\n\t\t<uri>https://www.v2ex.com/member/443038716</uri>",
         "publishedAt": "2026-06-05T07:06:35.000Z",
         "fetchedAt": "2026-06-05T07:16:31.103Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218553#reply0",
+        "title": "[推广] [开发者福利!] pointfixAPI：低倍率! 注册就送额度，主打满血和绝对稳定安全",
+        "author": "<name>443038716</name>\n\t\t<uri>https://www.v2ex.com/member/443038716</uri>",
+        "publishedAt": "2026-06-07T08:57:07.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.342Z"
       }
     ],
     "firstSeen": "2026-05-26T14:47:46.642Z",
-    "lastUpdated": "2026-06-07T07:09:58.471Z",
+    "lastUpdated": "2026-06-07T13:29:35.342Z",
     "tags": [
       "API中转",
       "多模型支持",
@@ -36107,8 +36157,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-01T20:02:02.771Z",
-    "heatScore": 46,
-    "mentionCount": 4,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -36126,10 +36176,18 @@
         "author": "<name>wtcoder</name>\n\t\t<uri>https://www.v2ex.com/member/wtcoder</uri>",
         "publishedAt": "2026-06-02T15:47:14.000Z",
         "fetchedAt": "2026-06-02T18:41:06.579Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1218587#reply0",
+        "title": "[推广] [全球顶级模型免费试用] 1000 份 $30 日订阅直送，仅限今日兑换",
+        "author": "<name>wtcoder</name>\n\t\t<uri>https://www.v2ex.com/member/wtcoder</uri>",
+        "publishedAt": "2026-06-07T13:20:05.000Z",
+        "fetchedAt": "2026-06-07T13:29:35.338Z"
       }
     ],
     "firstSeen": "2026-06-01T20:02:02.771Z",
-    "lastUpdated": "2026-06-02T23:05:01.373Z",
+    "lastUpdated": "2026-06-07T13:29:35.338Z",
     "tags": [
       "Codex",
       "GPT5.5",
