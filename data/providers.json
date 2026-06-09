@@ -36380,8 +36380,8 @@
       },
       {
         "model": "Claude-fable-5",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -36397,8 +36397,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-01T20:02:02.771Z",
-    "heatScore": 52,
-    "mentionCount": 7,
+    "heatScore": 54,
+    "mentionCount": 8,
     "priceHistory": [],
     "sources": [
       {
@@ -36443,7 +36443,7 @@
       }
     ],
     "firstSeen": "2026-06-01T20:02:02.771Z",
-    "lastUpdated": "2026-06-09T20:06:15.165Z",
+    "lastUpdated": "2026-06-09T22:31:30.235Z",
     "tags": [
       "Codex",
       "GPT5.5",
@@ -40438,7 +40438,7 @@
     "website": "https://github.com/code2rich/jpage",
     "contact": "",
     "models": [],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
@@ -40450,8 +40450,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-08T20:07:57.591Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -40461,10 +40461,18 @@
         "author": "<name>heyzen</name>\n\t\t<uri>https://www.v2ex.com/member/heyzen</uri>",
         "publishedAt": "2026-06-08T14:53:41.000Z",
         "fetchedAt": "2026-06-08T20:07:57.591Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1219199#reply0",
+        "title": "[分享创造] 即页 v1.4 正式发布：内容模板市场、Markdown 渲染模板、全文搜索、访问统计——AI 内容生成进入「风格化」时代",
+        "author": "<name>heyzen</name>\n\t\t<uri>https://www.v2ex.com/member/heyzen</uri>",
+        "publishedAt": "2026-06-09T16:05:33.000Z",
+        "fetchedAt": "2026-06-09T22:31:30.240Z"
       }
     ],
     "firstSeen": "2026-06-08T20:07:57.591Z",
-    "lastUpdated": "2026-06-08T20:07:57.591Z",
+    "lastUpdated": "2026-06-09T22:31:30.240Z",
     "tags": [
       "开源",
       "文件分享",
