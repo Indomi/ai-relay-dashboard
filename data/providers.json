@@ -16939,7 +16939,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "freeQuota": {
       "amount": null,
       "unit": "CNY",
@@ -16951,7 +16951,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 105,
+    "mentionCount": 106,
     "priceHistory": [],
     "sources": [
       {
@@ -17249,10 +17249,18 @@
         "author": "sx931210",
         "publishedAt": "2026-06-09T13:30:09.000Z",
         "fetchedAt": "2026-06-10T07:10:44.475Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1219467#reply0",
+        "title": "[推广] [FK Claude]上新 Claude Fable 5 模型",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-06-10T13:42:59.000Z",
+        "fetchedAt": "2026-06-10T18:01:36.690Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-10T07:10:44.475Z",
+    "lastUpdated": "2026-06-10T18:01:36.690Z",
     "tags": [
       "Claude",
       "中转",
@@ -25052,14 +25060,14 @@
     "models": [
       {
         "model": "codex pro",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.08,
+        "outputPrice": 0.08,
         "currency": "CNY"
       },
       {
         "model": "plus",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.08,
+        "outputPrice": 0.08,
         "currency": "CNY"
       },
       {
@@ -25067,9 +25075,15 @@
         "inputPrice": 0.2,
         "outputPrice": 0.2,
         "currency": "USD"
+      },
+      {
+        "model": "Claude Max",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
@@ -25080,8 +25094,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-17T12:59:40.218Z",
-    "heatScore": 48,
-    "mentionCount": 10,
+    "heatScore": 50,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -25115,10 +25129,18 @@
         "author": "mikaelalsam55",
         "publishedAt": "2026-06-06T06:38:37.000Z",
         "fetchedAt": "2026-06-06T11:00:37.973Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1219477#reply1",
+        "title": "[推广] 老板说，希望来点用户啦，本站直连且稳定！亏本搞活动， 0.08 活动价！活动结束后就不要用！",
+        "author": "<name>rubi</name>\n\t\t<uri>https://www.v2ex.com/member/rubi</uri>",
+        "publishedAt": "2026-06-10T15:40:00.000Z",
+        "fetchedAt": "2026-06-10T18:01:36.689Z"
       }
     ],
     "firstSeen": "2026-05-17T12:59:40.218Z",
-    "lastUpdated": "2026-06-07T07:09:58.473Z",
+    "lastUpdated": "2026-06-10T18:01:36.689Z",
     "tags": [
       "AI中转",
       "API网关",
@@ -25127,7 +25149,19 @@
       "API中转"
     ],
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "活动套餐",
+          "price": null,
+          "period": "month",
+          "features": [
+            "0.08倍率活动价",
+            "对公开票"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     }
   },
   {
