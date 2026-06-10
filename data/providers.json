@@ -25030,14 +25030,14 @@
     "models": [
       {
         "model": "codex pro",
-        "inputPrice": 0.3,
-        "outputPrice": 0.3,
+        "inputPrice": 0.08,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
         "model": "plus",
-        "inputPrice": 0.2,
-        "outputPrice": 0.2,
+        "inputPrice": 0.08,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -25053,7 +25053,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "freeQuota": {
       "amount": 10,
       "unit": "USD",
@@ -25064,8 +25064,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-17T12:59:40.218Z",
-    "heatScore": 52,
-    "mentionCount": 12,
+    "heatScore": 54,
+    "mentionCount": 13,
     "priceHistory": [],
     "sources": [
       {
@@ -25110,7 +25110,7 @@
       }
     ],
     "firstSeen": "2026-05-17T12:59:40.218Z",
-    "lastUpdated": "2026-06-10T20:17:18.108Z",
+    "lastUpdated": "2026-06-10T23:00:31.763Z",
     "tags": [
       "AI中转",
       "API网关",
@@ -41307,6 +41307,47 @@
       "合租",
       "骗局",
       "警告"
+    ]
+  },
+  {
+    "id": "pmq8o9g2ab06ig",
+    "name": "hoston.work",
+    "website": "https://hoston.work",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 2,
+      "unit": "devices",
+      "description": "免费用户支持 2 台设备"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-10T23:00:31.762Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1219479#reply1",
+        "title": "[分享创造] [送码] 做了一个集中式的 liux/mac 运维面板 支持网页/手机 也适合 vibe 编程",
+        "author": "<name>layman3612</name>\n\t\t<uri>https://www.v2ex.com/member/layman3612</uri>",
+        "publishedAt": "2026-06-10T15:42:13.000Z",
+        "fetchedAt": "2026-06-10T23:00:31.762Z"
+      }
+    ],
+    "firstSeen": "2026-06-10T23:00:31.762Z",
+    "lastUpdated": "2026-06-10T23:00:31.762Z",
+    "tags": [
+      "运维面板",
+      "SSH管理",
+      "Docker管理",
+      "文件管理",
+      "内网穿透"
     ]
   }
 ]
