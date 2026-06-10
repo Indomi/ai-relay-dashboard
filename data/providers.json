@@ -10717,58 +10717,20 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "未知",
     "subscription": {
-      "plans": [
-        {
-          "name": "入门体验卡",
-          "price": 2.8,
-          "period": "日",
-          "features": [
-            "35刀额度",
-            "Plus池"
-          ]
-        },
-        {
-          "name": "主力Coding plan",
-          "price": 99,
-          "period": "周",
-          "features": [
-            "1000刀额度",
-            "Plus池"
-          ]
-        },
-        {
-          "name": "超稳定首选",
-          "price": 200,
-          "period": "月",
-          "features": [
-            "1000刀额度",
-            "Pro20x池"
-          ]
-        },
-        {
-          "name": "每周五活动",
-          "price": 5,
-          "period": "周",
-          "features": [
-            "100刀额度"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 30,
       "unit": "USD",
       "description": "注册后跟帖留邮箱送15刀，加群再送15刀，总计30刀，不限时。"
     },
-    "paymentMethods": [
-      "卡网购买后兑换"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 64,
+    "mentionCount": 65,
     "priceHistory": [],
     "sources": [
       {
@@ -11074,10 +11036,18 @@
         "author": "bingoso",
         "publishedAt": "2026-06-08T04:06:46.000Z",
         "fetchedAt": "2026-06-10T07:10:44.451Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1219439#reply0",
+        "title": "[分享创造] Coding plan 用不完，翻译软件开放免费用了",
+        "author": "<name>skelton</name>\n\t\t<uri>https://www.v2ex.com/member/skelton</uri>",
+        "publishedAt": "2026-06-10T10:36:17.000Z",
+        "fetchedAt": "2026-06-10T20:17:18.109Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-06-10T07:10:44.451Z",
+    "lastUpdated": "2026-06-10T20:17:18.109Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -25060,14 +25030,14 @@
     "models": [
       {
         "model": "codex pro",
-        "inputPrice": 0.08,
-        "outputPrice": 0.08,
+        "inputPrice": 0.3,
+        "outputPrice": 0.3,
         "currency": "CNY"
       },
       {
         "model": "plus",
-        "inputPrice": 0.08,
-        "outputPrice": 0.08,
+        "inputPrice": 0.2,
+        "outputPrice": 0.2,
         "currency": "CNY"
       },
       {
@@ -25078,8 +25048,8 @@
       },
       {
         "model": "Claude Max",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "USD"
       }
     ],
@@ -25094,8 +25064,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-17T12:59:40.218Z",
-    "heatScore": 50,
-    "mentionCount": 11,
+    "heatScore": 52,
+    "mentionCount": 12,
     "priceHistory": [],
     "sources": [
       {
@@ -25140,7 +25110,7 @@
       }
     ],
     "firstSeen": "2026-05-17T12:59:40.218Z",
-    "lastUpdated": "2026-06-10T18:01:36.689Z",
+    "lastUpdated": "2026-06-10T20:17:18.108Z",
     "tags": [
       "AI中转",
       "API网关",
