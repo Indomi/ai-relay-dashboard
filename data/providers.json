@@ -12856,7 +12856,7 @@
     "website": "www.lingducloud.com",
     "contact": "tg:cloudcup",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
@@ -12872,7 +12872,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-08T05:34:16.187Z",
     "heatScore": 100,
-    "mentionCount": 37,
+    "mentionCount": 38,
     "priceHistory": [],
     "sources": [
       {
@@ -13037,7 +13037,7 @@
       }
     ],
     "firstSeen": "2026-05-08T05:34:16.187Z",
-    "lastUpdated": "2026-06-12T17:52:18.055Z",
+    "lastUpdated": "2026-06-12T20:06:47.017Z",
     "tags": [
       "云服务",
       "账号开通",
@@ -17249,8 +17249,8 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": null,
-      "unit": "CNY",
+      "amount": 0,
+      "unit": "",
       "description": ""
     },
     "paymentMethods": [],
@@ -17259,7 +17259,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 107,
+    "mentionCount": 108,
     "priceHistory": [],
     "sources": [
       {
@@ -17576,7 +17576,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-12T17:52:18.054Z",
+    "lastUpdated": "2026-06-12T20:06:47.016Z",
     "tags": [
       "Claude",
       "中转",
@@ -39974,8 +39974,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-05T17:19:34.393Z",
-    "heatScore": 50,
-    "mentionCount": 6,
+    "heatScore": 52,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -40004,7 +40004,7 @@
       }
     ],
     "firstSeen": "2026-06-05T17:19:34.393Z",
-    "lastUpdated": "2026-06-12T17:52:18.053Z",
+    "lastUpdated": "2026-06-12T20:06:47.015Z",
     "tags": [
       "MiniMax",
       "国产模型",
@@ -42911,6 +42911,46 @@
     ],
     "firstSeen": "2026-06-12T17:52:18.052Z",
     "lastUpdated": "2026-06-12T17:52:18.052Z",
+    "tags": [
+      "Emby",
+      "媒体库",
+      "海外华人",
+      "测试"
+    ]
+  },
+  {
+    "id": "pmqbcxplxvyyeo",
+    "name": "HKAIEmbyProxy",
+    "website": "",
+    "contact": "Telegram: @HKAIEmbyProxy_bot",
+    "models": [],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "提供有限的免费体验码，用于短期测试"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-12T20:06:47.013Z",
+    "heatScore": 35,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220074#reply1",
+        "title": "[海外留学] Emby 媒体库测试 AppleTV 效果更佳",
+        "author": "<name>EndlessJY</name>\n\t\t<uri>https://www.v2ex.com/member/EndlessJY</uri>",
+        "publishedAt": "2026-06-12T17:14:28.000Z",
+        "fetchedAt": "2026-06-12T20:06:47.013Z"
+      }
+    ],
+    "firstSeen": "2026-06-12T20:06:47.013Z",
+    "lastUpdated": "2026-06-12T20:06:47.013Z",
     "tags": [
       "Emby",
       "媒体库",
