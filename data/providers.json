@@ -17298,7 +17298,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 109,
+    "mentionCount": 110,
     "priceHistory": [],
     "sources": [
       {
@@ -17615,7 +17615,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-12T22:31:16.134Z",
+    "lastUpdated": "2026-06-13T02:12:04.162Z",
     "tags": [
       "Claude",
       "中转",
@@ -40002,8 +40002,8 @@
       },
       {
         "model": "Sora2视频生成",
-        "inputPrice": 0.5,
-        "outputPrice": null,
+        "inputPrice": null,
+        "outputPrice": 500000,
         "currency": "CNY"
       },
       {
@@ -40013,15 +40013,15 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "freeQuota": {},
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-05T17:19:34.393Z",
-    "heatScore": 54,
-    "mentionCount": 8,
+    "heatScore": 56,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -40050,7 +40050,7 @@
       }
     ],
     "firstSeen": "2026-06-05T17:19:34.393Z",
-    "lastUpdated": "2026-06-12T22:31:16.134Z",
+    "lastUpdated": "2026-06-13T02:12:04.161Z",
     "tags": [
       "MiniMax",
       "国产模型",
