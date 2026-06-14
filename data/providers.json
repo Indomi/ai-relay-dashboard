@@ -15930,18 +15930,30 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "未知"
+      },
+      {
+        "model": "未知",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
-    "billingType": "未知",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
-    "paymentMethods": [],
+    "freeQuota": {
+      "amount": null,
+      "unit": "CNY",
+      "description": "未知"
+    },
+    "paymentMethods": [
+      "未知"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-09T15:54:08.086Z",
-    "heatScore": 73,
-    "mentionCount": 30,
+    "heatScore": 75,
+    "mentionCount": 31,
     "priceHistory": [],
     "sources": [
       {
@@ -16095,10 +16107,18 @@
         "author": "<name>ttkit</name>\n\t\t<uri>https://www.v2ex.com/member/ttkit</uri>",
         "publishedAt": "2026-06-13T12:58:44.000Z",
         "fetchedAt": "2026-06-13T19:19:28.732Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220303#reply2",
+        "title": "[OpenAI] 失业，想着赚点生活费，自己搭了个低倍率的 API 中转，结果根本没人买啊",
+        "author": "<name>yxbest</name>\n\t\t<uri>https://www.v2ex.com/member/yxbest</uri>",
+        "publishedAt": "2026-06-14T03:16:19.000Z",
+        "fetchedAt": "2026-06-14T07:24:11.956Z"
       }
     ],
     "firstSeen": "2026-05-09T15:54:08.086Z",
-    "lastUpdated": "2026-06-14T02:33:12.390Z",
+    "lastUpdated": "2026-06-14T07:24:11.956Z",
     "tags": [
       "统计工具",
       "token使用",
