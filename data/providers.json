@@ -731,8 +731,8 @@
       },
       {
         "model": "claude",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": 0.7,
+        "outputPrice": null,
         "currency": "USD"
       },
       {
@@ -766,7 +766,7 @@
         "currency": "USD"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
@@ -780,8 +780,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
-    "heatScore": 56,
-    "mentionCount": 9,
+    "heatScore": 58,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -823,10 +823,18 @@
         "author": "<name>kk2685803719</name>\n\t\t<uri>https://www.v2ex.com/member/kk2685803719</uri>",
         "publishedAt": "2026-05-12T01:17:32.000Z",
         "fetchedAt": "2026-05-12T01:43:20.092Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220428#reply0",
+        "title": "[推广] 平价 claude，低至 0.7，速来体验",
+        "author": "<name>kk2685803719</name>\n\t\t<uri>https://www.v2ex.com/member/kk2685803719</uri>",
+        "publishedAt": "2026-06-15T01:27:17.000Z",
+        "fetchedAt": "2026-06-15T02:26:24.367Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-05-12T01:43:20.092Z",
+    "lastUpdated": "2026-06-15T02:26:24.367Z",
     "tags": [
       "AI API Gateway",
       "稳定",
@@ -23273,8 +23281,8 @@
       },
       {
         "model": "GPT系列",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -23315,8 +23323,8 @@
       },
       {
         "model": "GPT-5.3",
-        "inputPrice": 0,
-        "outputPrice": 0,
+        "inputPrice": null,
+        "outputPrice": null,
         "currency": "CNY"
       },
       {
@@ -23338,14 +23346,55 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "新用户首充",
+          "price": 9.9,
+          "period": null,
+          "features": [
+            "到账¥20额度"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "充值¥100",
+          "price": 100,
+          "period": null,
+          "features": [
+            "赠送¥10"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "充值¥200",
+          "price": 200,
+          "period": null,
+          "features": [
+            "赠送¥40"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        },
+        {
+          "name": "充值¥500",
+          "price": 500,
+          "period": null,
+          "features": [
+            "赠送¥150"
+          ],
+          "autoRenew": false,
+          "refundRule": null
+        }
+      ]
     },
     "freeQuota": {
-      "amount": 20,
+      "amount": 50,
       "unit": "CNY",
-      "description": "新用户首充¥9.9，到账¥20额度。"
+      "description": "企业/团队审核通过后赠送的测试额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -23353,7 +23402,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-14T19:37:13.998Z",
     "heatScore": 100,
-    "mentionCount": 85,
+    "mentionCount": 86,
     "priceHistory": [],
     "sources": [
       {
@@ -23547,10 +23596,18 @@
         "author": "Johnhpure",
         "publishedAt": "2026-06-14T02:45:42.000Z",
         "fetchedAt": "2026-06-14T19:15:36.148Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220415#reply0",
+        "title": "[推广] 🚀 Claude360 福利活动来啦！ 首充 4.9/感受极限速度！",
+        "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
+        "publishedAt": "2026-06-15T00:52:03.000Z",
+        "fetchedAt": "2026-06-15T02:26:24.368Z"
       }
     ],
     "firstSeen": "2026-05-14T19:37:13.998Z",
-    "lastUpdated": "2026-06-14T22:12:50.772Z",
+    "lastUpdated": "2026-06-15T02:26:24.368Z",
     "tags": [
       "AI中转",
       "Claude",
@@ -44674,6 +44731,102 @@
       "Claude Pro",
       "账号共享",
       "封号风险"
+    ]
+  },
+  {
+    "id": "pmqeldm26lqr5y",
+    "name": "Rakumo",
+    "website": "https://rakumo.cn",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-15T02:26:24.366Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220445#reply0",
+        "title": "[分享发现] Rakumo 的视频下载功能",
+        "author": "<name>jianglibo</name>\n\t\t<uri>https://www.v2ex.com/member/jianglibo</uri>",
+        "publishedAt": "2026-06-15T02:05:54.000Z",
+        "fetchedAt": "2026-06-15T02:26:24.366Z"
+      }
+    ],
+    "firstSeen": "2026-06-15T02:26:24.366Z",
+    "lastUpdated": "2026-06-15T02:26:24.366Z",
+    "tags": [
+      "视频下载",
+      "大模型",
+      "playwright",
+      "自动化"
+    ]
+  },
+  {
+    "id": "pmqeldm2702v9w",
+    "name": "链动小铺",
+    "website": "https://www.v2ex.com/t/1219504",
+    "contact": "交流群（具体链接未提供）",
+    "models": [
+      {
+        "model": "gpt-5.5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "claude-fable-5",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "gemini-3.5-flash",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "hybrid",
+    "freeQuota": {
+      "amount": 50,
+      "unit": "USD",
+      "description": "新用户注册送$50永久额度（实际可能通过倍率实现）。"
+    },
+    "paymentMethods": [
+      "支付宝"
+    ],
+    "concurrencyLimit": 0,
+    "rateLimit": "不限并发",
+    "status": "unknown",
+    "lastChecked": "2026-06-15T02:26:24.367Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220435#reply0",
+        "title": "[推广] 又发福利了，自建中转，持续拉新。支持 GPT / Claude / Gemini 等全系列主流模型，之前很多 V 友收到 $10 刀请尽快使用哈，本次活动邀请好友充值双方返利！多充多得。",
+        "author": "<name>mndlr</name>\n\t\t<uri>https://www.v2ex.com/member/mndlr</uri>",
+        "publishedAt": "2026-06-14T21:41:22.000Z",
+        "fetchedAt": "2026-06-15T02:26:24.367Z"
+      }
+    ],
+    "firstSeen": "2026-06-15T02:26:24.367Z",
+    "lastUpdated": "2026-06-15T02:26:24.367Z",
+    "tags": [
+      "自建中转",
+      "邀请返利",
+      "高倍率",
+      "多档套餐"
     ]
   }
 ]
