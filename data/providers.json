@@ -43790,33 +43790,45 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "GPT系列所有模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
-          "name": "Pro20x合租套餐",
-          "price": 462,
-          "period": "月",
+          "name": "免费订阅（新用户福利）",
+          "price": 0,
+          "period": "month",
           "features": [
-            "一个号池只负载3人",
-            "承诺负载3人以追求极致稳定",
-            "用户自行决定如何设置限额"
-          ]
+            "每月$50免费额度",
+            "适用于日常翻译插件等场景"
+          ],
+          "autoRenew": false,
+          "refundRule": null
         }
       ]
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": null
+      "amount": 50,
+      "unit": "USD",
+      "description": "新用户注册即送价值12.5刀的迷你订阅，包含每月$50免费额度，但有使用限制（$15/日，$50/周，$50/月）。"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "支付宝",
+      "微信",
+      "USDT",
+      "信用卡"
+    ],
     "status": "unknown",
     "lastChecked": "2026-06-12T12:23:43.023Z",
-    "heatScore": 48,
-    "mentionCount": 5,
+    "heatScore": 50,
+    "mentionCount": 6,
     "priceHistory": [],
     "sources": [
       {
@@ -43834,17 +43846,26 @@
         "author": "<name>VibeHex</name>\n\t\t<uri>https://www.v2ex.com/member/VibeHex</uri>",
         "publishedAt": "2026-06-12T11:00:18.000Z",
         "fetchedAt": "2026-06-12T12:25:22.472Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220626#reply21",
+        "title": "[推广] GPT 中转。送一个月 12 刀额度。适合日常翻译插件啥的用。",
+        "author": "<name>VibeHex</name>\n\t\t<uri>https://www.v2ex.com/member/VibeHex</uri>",
+        "publishedAt": "2026-06-15T14:25:08.000Z",
+        "fetchedAt": "2026-06-15T15:07:53.172Z"
       }
     ],
     "firstSeen": "2026-06-12T12:23:43.023Z",
-    "lastUpdated": "2026-06-14T22:12:50.810Z",
+    "lastUpdated": "2026-06-15T15:07:53.172Z",
     "tags": [
       "合租",
       "Pro20",
       "GPT",
       "稳定",
       "低倍率"
-    ]
+    ],
+    "rateLimit": "免费订阅额度有日、周、月使用上限（$15/日，$50/周，$50/月）。"
   },
   {
     "id": "pmqawe7cgvxs8o",
@@ -44997,6 +45018,48 @@
       "AI API中转商评测",
       "价格对比",
       "服务推荐"
+    ]
+  },
+  {
+    "id": "pmqfckvrku95uw",
+    "name": "XProxy.Ai",
+    "website": "https://xproxy.ai",
+    "contact": "TG/QQ/微信",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 15,
+      "unit": "USD",
+      "description": "新用户注册即送$15（注册得$5，参与回帖得$10）"
+    },
+    "paymentMethods": [],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-15T15:07:53.168Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220642#reply25",
+        "title": "[推广] XProxy.Ai 中转站，给 V 送福利 回帖送 15 刀，没有订阅，没有套路 1:1 充值",
+        "author": "<name>XProxyAi</name>\n\t\t<uri>https://www.v2ex.com/member/XProxyAi</uri>",
+        "publishedAt": "2026-06-15T14:50:17.000Z",
+        "fetchedAt": "2026-06-15T15:07:53.168Z"
+      }
+    ],
+    "firstSeen": "2026-06-15T15:07:53.168Z",
+    "lastUpdated": "2026-06-15T15:07:53.168Z",
+    "tags": [
+      "中转站",
+      "API网关",
+      "按量计费",
+      "注册奖励"
     ]
   }
 ]
