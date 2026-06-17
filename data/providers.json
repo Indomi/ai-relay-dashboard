@@ -23529,26 +23529,14 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "团队试用计划",
-          "price": 0,
-          "period": null,
-          "features": [
-            "企业/工作室/创业团队申请",
-            "审核通过可获得50元团队测试额度"
-          ],
-          "autoRenew": false,
-          "refundRule": null
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 50,
+      "amount": 20,
       "unit": "CNY",
-      "description": "团队试用计划审核通过可获得50元测试额度"
+      "description": "新用户首充 ¥9.9 到账的额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
@@ -23556,7 +23544,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-14T19:37:13.998Z",
     "heatScore": 100,
-    "mentionCount": 92,
+    "mentionCount": 93,
     "priceHistory": [],
     "sources": [
       {
@@ -23774,10 +23762,18 @@
         "author": "Johnhpure",
         "publishedAt": "2026-06-15T00:52:03.000Z",
         "fetchedAt": "2026-06-16T08:46:16.065Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1220972#reply1",
+        "title": "[推广] 🚀 Claude360 GPT/Claude/Gemini 直连中转。留 ID 送体验额度。",
+        "author": "<name>Johnhpure</name>\n\t\t<uri>https://www.v2ex.com/member/Johnhpure</uri>",
+        "publishedAt": "2026-06-17T02:20:08.000Z",
+        "fetchedAt": "2026-06-17T02:25:11.337Z"
       }
     ],
     "firstSeen": "2026-05-14T19:37:13.998Z",
-    "lastUpdated": "2026-06-16T19:02:02.328Z",
+    "lastUpdated": "2026-06-17T02:25:11.337Z",
     "tags": [
       "AI中转",
       "Claude",
