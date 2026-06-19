@@ -17949,7 +17949,7 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": null,
+      "amount": 0,
       "unit": "",
       "description": ""
     },
@@ -17959,7 +17959,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 110,
+    "mentionCount": 111,
     "priceHistory": [],
     "sources": [
       {
@@ -18273,10 +18273,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-06-11T21:49:29.000Z",
         "fetchedAt": "2026-06-12T17:52:18.054Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221484#reply0",
+        "title": "[推广] FK Claude 就想卖卖 Claude",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-06-18T09:34:35.000Z",
+        "fetchedAt": "2026-06-19T02:50:57.218Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-13T02:12:04.162Z",
+    "lastUpdated": "2026-06-19T02:50:57.218Z",
     "tags": [
       "Claude",
       "中转",
@@ -19675,24 +19683,21 @@
     "subscription": {
       "plans": [
         {
-          "name": "专业版终身订阅",
+          "name": "专业版（Lifetime）",
           "price": 128,
-          "period": "LifeTime",
+          "period": "终身",
           "features": [
-            "内置 Tailscale",
             "Remote Codex",
-            "SSH 访问",
-            "内网访问",
-            "系统监控",
-            "iCloud 同步"
+            "iCloud同步",
+            "多主机管理"
           ]
         }
       ]
     },
     "freeQuota": {
-      "amount": 0,
+      "amount": 1,
       "unit": "CNY",
-      "description": "免费用户可能有配额限制，但具体未明确"
+      "description": "免费用户可能对基础功能有配额限制"
     },
     "paymentMethods": [
       "未提及"
@@ -19700,7 +19705,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-11T06:55:10.618Z",
     "heatScore": 100,
-    "mentionCount": 44,
+    "mentionCount": 45,
     "priceHistory": [],
     "sources": [
       {
@@ -19974,10 +19979,18 @@
         "author": "<name>fortitudeZDY</name>\n\t\t<uri>https://www.v2ex.com/member/fortitudeZDY</uri>",
         "publishedAt": "2026-06-18T14:52:49.000Z",
         "fetchedAt": "2026-06-18T18:07:19.710Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221446#reply1",
+        "title": "[分享创造] 分享下最近为自己内置 Tailscale 的 iOS App 增加的 Remote Codex 功能",
+        "author": "<name>fortitudeZDY</name>\n\t\t<uri>https://www.v2ex.com/member/fortitudeZDY</uri>",
+        "publishedAt": "2026-06-18T15:52:49.000Z",
+        "fetchedAt": "2026-06-19T02:50:57.223Z"
       }
     ],
     "firstSeen": "2026-05-11T06:55:10.618Z",
-    "lastUpdated": "2026-06-18T18:07:19.710Z",
+    "lastUpdated": "2026-06-19T02:50:57.223Z",
     "tags": [
       "Claude",
       "API代理",
@@ -45877,22 +45890,24 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "CNY"
+      },
+      {
+        "model": "kiro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 5,
-      "unit": "USD",
-      "description": "注册签到及跟帖留用户名/ID可获赠免费额度。"
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-15T19:13:31.037Z",
-    "heatScore": 59,
-    "mentionCount": 8,
+    "heatScore": 61,
+    "mentionCount": 9,
     "priceHistory": [],
     "sources": [
       {
@@ -45929,7 +45944,7 @@
       }
     ],
     "firstSeen": "2026-06-15T19:13:31.037Z",
-    "lastUpdated": "2026-06-18T23:04:31.338Z",
+    "lastUpdated": "2026-06-19T02:50:57.221Z",
     "tags": [
       "中转站",
       "GPT",
@@ -46907,22 +46922,22 @@
     "website": "https://a6api.com",
     "contact": "",
     "models": [],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": null,
-      "unit": null,
-      "description": "新用户注册即送免费体验额度"
+      "unit": "CNY/USD",
+      "description": "新用户注册即可获得免费体验额度"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-18T18:07:19.709Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -46940,10 +46955,18 @@
         "author": "<name>sengchuary</name>\n\t\t<uri>https://www.v2ex.com/member/sengchuary</uri>",
         "publishedAt": "2026-06-18T18:38:08.000Z",
         "fetchedAt": "2026-06-18T23:04:31.339Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221460#reply7",
+        "title": "[推广] 你还在为 AI 模型价格高、渠道不稳定、接口切换麻烦头疼吗？",
+        "author": "<name>sengchuary</name>\n\t\t<uri>https://www.v2ex.com/member/sengchuary</uri>",
+        "publishedAt": "2026-06-18T18:38:08.000Z",
+        "fetchedAt": "2026-06-19T02:50:57.222Z"
       }
     ],
     "firstSeen": "2026-06-18T18:07:19.709Z",
-    "lastUpdated": "2026-06-18T23:04:31.339Z",
+    "lastUpdated": "2026-06-19T02:50:57.222Z",
     "tags": [
       "多商家入驻",
       "智能优选",
@@ -46977,22 +47000,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "hybrid",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": null,
-      "unit": "USD",
-      "description": "通过GitHub贡献、发布Skill、邀请好友、排行榜等活动赚取API积分，用于兑换模型额度。"
+      "unit": "积分",
+      "description": "通过验证GitHub公开仓库并按星标数获取积分，可用于兑换API用量。"
     },
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-18T18:07:19.711Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -47005,7 +47028,7 @@
       }
     ],
     "firstSeen": "2026-06-18T18:07:19.711Z",
-    "lastUpdated": "2026-06-18T23:04:31.344Z",
+    "lastUpdated": "2026-06-19T02:50:57.226Z",
     "tags": [
       "开源贡献者计划",
       "API积分奖励",
