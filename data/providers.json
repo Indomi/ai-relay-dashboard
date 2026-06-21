@@ -18334,21 +18334,19 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "freeQuota": {
       "amount": null,
-      "unit": "unknown",
-      "description": "无"
+      "unit": "",
+      "description": ""
     },
-    "paymentMethods": [
-      "无"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "CC专用模型限制客户端（Claude Code Cli 或 CC 插件）",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 114,
+    "mentionCount": 115,
     "priceHistory": [],
     "sources": [
       {
@@ -18681,7 +18679,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-21T16:38:33.800Z",
+    "lastUpdated": "2026-06-21T19:23:12.721Z",
     "tags": [
       "Claude",
       "中转",
@@ -44369,8 +44367,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-11T07:38:38.870Z",
-    "heatScore": 55,
-    "mentionCount": 6,
+    "heatScore": 57,
+    "mentionCount": 7,
     "priceHistory": [],
     "sources": [
       {
@@ -44399,7 +44397,7 @@
       }
     ],
     "firstSeen": "2026-06-11T07:38:38.870Z",
-    "lastUpdated": "2026-06-21T16:38:33.799Z",
+    "lastUpdated": "2026-06-21T19:23:12.721Z",
     "tags": [
       "API聚合",
       "国内直连",
@@ -45099,20 +45097,92 @@
     "website": "",
     "contact": "微信：Jack_Napier__；Telegram：@gethercloud；QQ：3590687243",
     "models": [],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "99元境外VPS (硅谷/首尔)",
+          "price": 99,
+          "period": "年",
+          "features": [
+            "2核心",
+            "2GB内存",
+            "30M带宽",
+            "CN2线路(硅谷)"
+          ]
+        },
+        {
+          "name": "199元境外VPS (同价续费)",
+          "price": 199,
+          "period": "年",
+          "features": [
+            "2核心",
+            "4GB内存",
+            "30M带宽",
+            "支持同价续费"
+          ]
+        },
+        {
+          "name": "99元境内VPS (配置1)",
+          "price": 99,
+          "period": "年",
+          "features": [
+            "2核心",
+            "2GB内存",
+            "4M带宽",
+            "上海/广州/北京/成都可选",
+            "支持同价续费"
+          ]
+        },
+        {
+          "name": "188元境内VPS (配置2)",
+          "price": 188,
+          "period": "年",
+          "features": [
+            "2核心",
+            "4GB内存",
+            "5M带宽",
+            "上海/广州/北京/成都可选",
+            "支持同价续费"
+          ]
+        },
+        {
+          "name": "199元境内VPS (配置3)",
+          "price": 199,
+          "period": "年",
+          "features": [
+            "2核心",
+            "4GB内存",
+            "6M带宽",
+            "上海/广州/北京/成都可选",
+            "支持同价续费"
+          ]
+        },
+        {
+          "name": "528元境内VPS (3年期)",
+          "price": 528,
+          "period": "年",
+          "features": [
+            "2核心",
+            "4GB内存",
+            "6M带宽",
+            "平均每年176元"
+          ]
+        }
+      ]
     },
     "freeQuota": {
       "amount": 0,
-      "unit": "",
-      "description": ""
+      "unit": "CNY",
+      "description": "未提及免费额度。"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "未在内容中明确提供"
+    ],
     "status": "unknown",
     "lastChecked": "2026-06-12T07:26:41.479Z",
-    "heatScore": 15,
-    "mentionCount": 1,
+    "heatScore": 17,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -45122,15 +45192,24 @@
         "author": "<name>gether1ner</name>\n\t\t<uri>https://www.v2ex.com/member/gether1ner</uri>",
         "publishedAt": "2026-06-12T07:06:55.000Z",
         "fetchedAt": "2026-06-12T07:26:41.479Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221820#reply0",
+        "title": "[推广] 活动即将结束： 99 元 CN2 硅谷 VPS 3 年/528 元国内 VPS 另有续费代金券",
+        "author": "<name>id7368</name>\n\t\t<uri>https://www.v2ex.com/member/id7368</uri>",
+        "publishedAt": "2026-06-21T16:29:10.000Z",
+        "fetchedAt": "2026-06-21T19:23:12.718Z"
       }
     ],
     "firstSeen": "2026-06-12T07:26:41.479Z",
-    "lastUpdated": "2026-06-12T07:26:41.479Z",
+    "lastUpdated": "2026-06-21T19:23:12.718Z",
     "tags": [
       "腾讯云代理",
       "云服务器",
       "CDN",
-      "对象存储"
+      "对象存储",
+      "云计算"
     ]
   },
   {
@@ -48986,6 +49065,60 @@
       "Agent编排",
       "TypeScript",
       "NestJS"
+    ]
+  },
+  {
+    "id": "pmqo6ccen6dovz",
+    "name": "cc-ding",
+    "website": "https://github.com/yihuineng/cc-ding",
+    "contact": "",
+    "models": [
+      {
+        "model": "Anthropic Claude",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "OpenAI Codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": "该项目是开源工具，其本身不提供付费额度或配额。使用 Claude 或 Codex 等模型可能需要用户自行获取 API 密钥并承担相关费用。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-21T19:23:12.719Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221811#reply6",
+        "title": "[Claude Code] 手机指挥 AI 干活 — 把 Claude Code 装进钉钉",
+        "author": "<name>xiangwu</name>\n\t\t<uri>https://www.v2ex.com/member/xiangwu</uri>",
+        "publishedAt": "2026-06-21T17:10:02.000Z",
+        "fetchedAt": "2026-06-21T19:23:12.719Z"
+      }
+    ],
+    "firstSeen": "2026-06-21T19:23:12.719Z",
+    "lastUpdated": "2026-06-21T19:23:12.719Z",
+    "tags": [
+      "开源项目",
+      "AI编码助手",
+      "钉钉集成",
+      "Claude",
+      "Codex"
     ]
   }
 ]
