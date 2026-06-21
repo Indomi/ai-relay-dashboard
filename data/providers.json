@@ -18325,15 +18325,21 @@
         "currency": "USD"
       }
     ],
-    "billingType": "token",
-    "freeQuota": {},
-    "paymentMethods": [],
+    "billingType": "unknown",
+    "freeQuota": {
+      "amount": null,
+      "unit": "unknown",
+      "description": "无"
+    },
+    "paymentMethods": [
+      "无"
+    ],
     "concurrencyLimit": null,
     "rateLimit": "CC专用模型限制客户端（Claude Code Cli 或 CC 插件）",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 112,
+    "mentionCount": 113,
     "priceHistory": [],
     "sources": [
       {
@@ -18655,10 +18661,18 @@
         "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
         "publishedAt": "2026-06-18T09:34:35.000Z",
         "fetchedAt": "2026-06-19T02:50:57.218Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221804#reply0",
+        "title": "[推广] FK Claude 「Kiro 0.5 倍率」",
+        "author": "<name>sx931210</name>\n\t\t<uri>https://www.v2ex.com/member/sx931210</uri>",
+        "publishedAt": "2026-06-20T21:27:43.000Z",
+        "fetchedAt": "2026-06-21T13:45:46.409Z"
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-19T08:37:15.100Z",
+    "lastUpdated": "2026-06-21T13:45:46.409Z",
     "tags": [
       "Claude",
       "中转",
@@ -44203,26 +44217,26 @@
       },
       {
         "model": "gemini-2.5-flash-lite",
+        "inputPrice": 1.5,
+        "outputPrice": 5,
+        "currency": "CNY"
+      },
+      {
+        "model": "gemini-2.5-flash",
         "inputPrice": 4,
         "outputPrice": 26,
         "currency": "CNY"
       },
       {
-        "model": "gemini-2.5-flash",
-        "inputPrice": 1.5,
-        "outputPrice": null,
-        "currency": "CNY"
-      },
-      {
         "model": "GPT-5.5",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 621,
+        "outputPrice": 2798,
         "currency": "CNY"
       },
       {
         "model": "Claude Opus 4.8",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 65,
+        "outputPrice": 260,
         "currency": "CNY"
       },
       {
@@ -44230,9 +44244,21 @@
         "inputPrice": null,
         "outputPrice": null,
         "currency": "CNY"
+      },
+      {
+        "model": "Gemini 2.5 Pro",
+        "inputPrice": 13,
+        "outputPrice": 104,
+        "currency": "CNY"
+      },
+      {
+        "model": "Gemini 3 Flash Preview",
+        "inputPrice": 6,
+        "outputPrice": 32,
+        "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "freeQuota": {
       "amount": 3,
       "unit": "次",
@@ -44245,8 +44271,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-11T07:38:38.870Z",
-    "heatScore": 51,
-    "mentionCount": 4,
+    "heatScore": 53,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -44264,10 +44290,18 @@
         "author": "<name>johnson654254827</name>\n\t\t<uri>https://www.v2ex.com/member/johnson654254827</uri>",
         "publishedAt": "2026-06-16T15:10:44.000Z",
         "fetchedAt": "2026-06-16T19:04:12.419Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221805#reply0",
+        "title": "[分享发现] 分享一个国内直连的 AI 模型 API 平台 - AI 太空站",
+        "author": "<name>johnson654254827</name>\n\t\t<uri>https://www.v2ex.com/member/johnson654254827</uri>",
+        "publishedAt": "2026-06-21T13:28:29.000Z",
+        "fetchedAt": "2026-06-21T13:45:46.408Z"
       }
     ],
     "firstSeen": "2026-06-11T07:38:38.870Z",
-    "lastUpdated": "2026-06-16T19:04:12.422Z",
+    "lastUpdated": "2026-06-21T13:45:46.408Z",
     "tags": [
       "API聚合",
       "国内直连",
@@ -48817,6 +48851,43 @@
       "稳定性",
       "GPT-Pro",
       "Claude-MAX"
+    ]
+  },
+  {
+    "id": "pmqnuae97fo1my",
+    "name": "gongzhaoman0426/agent",
+    "website": "https://github.com/gongzhaoman0426/agent",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {},
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-21T13:45:46.411Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221780#reply0",
+        "title": "[开源软件] 开源了一个自托管的 Agent 编排项目，不想再用拖拽画工作流了",
+        "author": "<name>gongzhaoman</name>\n\t\t<uri>https://www.v2ex.com/member/gongzhaoman</uri>",
+        "publishedAt": "2026-06-21T10:14:39.000Z",
+        "fetchedAt": "2026-06-21T13:45:46.411Z"
+      }
+    ],
+    "firstSeen": "2026-06-21T13:45:46.411Z",
+    "lastUpdated": "2026-06-21T13:45:46.411Z",
+    "tags": [
+      "开源",
+      "自托管",
+      "Agent编排",
+      "TypeScript",
+      "NestJS"
     ]
   }
 ]
