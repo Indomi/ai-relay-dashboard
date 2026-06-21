@@ -31387,18 +31387,42 @@
         "inputPrice": 0.8,
         "outputPrice": 4,
         "currency": "CNY"
+      },
+      {
+        "model": "GPT-Pro",
+        "inputPrice": "未提供具体价格，采用倍率计费",
+        "outputPrice": "未提供具体价格，采用倍率计费",
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude-MAX",
+        "inputPrice": "未提供具体价格，采用倍率计费",
+        "outputPrice": "未提供具体价格，采用倍率计费",
+        "currency": "CNY"
+      },
+      {
+        "model": "GPT-4/Codex",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
-    "paymentMethods": [],
+    "freeQuota": {
+      "amount": 0,
+      "unit": "CNY",
+      "description": "暂不提供测试额度"
+    },
+    "paymentMethods": [
+      "未提供"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-21T22:23:20.644Z",
-    "heatScore": 81,
-    "mentionCount": 19,
+    "heatScore": 85,
+    "mentionCount": 21,
     "priceHistory": [],
     "sources": [
       {
@@ -31512,10 +31536,26 @@
         "author": "<name>limusi</name>\n\t\t<uri>https://www.v2ex.com/member/limusi</uri>",
         "publishedAt": "2026-06-19T14:26:29.000Z",
         "fetchedAt": "2026-06-19T22:10:30.727Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221743#reply4",
+        "title": "[推广] AI-dns 最稳的中转服务(只做 GPT-Pro 和 Claude-MAX)",
+        "author": "<name>yangzhi88118</name>\n\t\t<uri>https://www.v2ex.com/member/yangzhi88118</uri>",
+        "publishedAt": "2026-06-21T07:44:49.000Z",
+        "fetchedAt": "2026-06-21T07:37:01.786Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221741#reply0",
+        "title": "[推广] [源头 API] 极速 GPT $10 刀 Codex/GPT 免费体验 欢迎参与!",
+        "author": "<name>443038716</name>\n\t\t<uri>https://www.v2ex.com/member/443038716</uri>",
+        "publishedAt": "2026-06-20T14:11:43.000Z",
+        "fetchedAt": "2026-06-21T07:37:01.789Z"
       }
     ],
     "firstSeen": "2026-05-21T22:23:20.644Z",
-    "lastUpdated": "2026-06-20T11:25:58.145Z",
+    "lastUpdated": "2026-06-21T07:37:01.789Z",
     "tags": [
       "开源",
       "性能测评",
@@ -47101,33 +47141,22 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "token",
     "subscription": {
-      "plans": [
-        {
-          "name": "父亲节特别套餐",
-          "price": 5,
-          "period": "once",
-          "features": [
-            "30刀额度（约等于30人民币额度）"
-          ],
-          "autoRenew": false,
-          "refundRule": "未提及"
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": 2,
-      "unit": "USD",
-      "description": "注册赠送2美元试用额度"
+      "amount": 5,
+      "unit": "CNY",
+      "description": "5元人民币可购买30刀的token，作为父亲节特别套餐"
     },
     "paymentMethods": [
       "Stripe"
     ],
     "status": "unknown",
     "lastChecked": "2026-06-17T22:41:36.797Z",
-    "heatScore": 68,
-    "mentionCount": 15,
+    "heatScore": 70,
+    "mentionCount": 16,
     "priceHistory": [],
     "sources": [
       {
@@ -47177,10 +47206,18 @@
         "author": "<name>liuxm6</name>\n\t\t<uri>https://www.v2ex.com/member/liuxm6</uri>",
         "publishedAt": "2026-06-20T10:19:54.000Z",
         "fetchedAt": "2026-06-21T02:26:10.443Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221680#reply4",
+        "title": "[推广] aitokensflux（token 中转站）|明天就是父亲节了，大家都记得情人节，母亲节，父爱伟大，伟大到我们自己的节日都变的很无声",
+        "author": "<name>liuxm6</name>\n\t\t<uri>https://www.v2ex.com/member/liuxm6</uri>",
+        "publishedAt": "2026-06-20T11:19:54.000Z",
+        "fetchedAt": "2026-06-21T07:37:01.807Z"
       }
     ],
     "firstSeen": "2026-06-17T22:41:36.797Z",
-    "lastUpdated": "2026-06-21T02:26:10.443Z",
+    "lastUpdated": "2026-06-21T07:37:01.807Z",
     "tags": [
       "中转站",
       "AI API",
@@ -48538,6 +48575,157 @@
       "拼团",
       "稳定",
       "合规"
+    ]
+  },
+  {
+    "id": "pmqnh46smxf46e",
+    "name": "Empty",
+    "website": "https://empty-78c.pages.dev",
+    "contact": "GitHub Issue / Discussion: https://github.com/DaviRain-Su/empty",
+    "models": [
+      {
+        "model": "Apple Foundation Models (本地)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "N/A"
+      },
+      {
+        "model": "OpenAI兼容 (DeepSeek预设，云端BYOK)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "N/A"
+      },
+      {
+        "model": "Anthropic兼容 (Kimi Code预设，云端BYOK)",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "N/A"
+      }
+    ],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": null,
+      "unit": "N/A",
+      "description": "本地AI功能（Apple Foundation Models）免费、离线可用。云端AI功能需用户自带API密钥（BYOK）。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-21T07:37:01.798Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221737#reply0",
+        "title": "[分享创造] Empty · 空：一个尊重剧情边界的 AI 阅读伴侣",
+        "author": "<name>davirain</name>\n\t\t<uri>https://www.v2ex.com/member/davirain</uri>",
+        "publishedAt": "2026-06-21T05:42:51.000Z",
+        "fetchedAt": "2026-06-21T07:37:01.798Z"
+      }
+    ],
+    "firstSeen": "2026-06-21T07:37:01.798Z",
+    "lastUpdated": "2026-06-21T07:37:01.798Z",
+    "tags": [
+      "AI阅读伴侣",
+      "防剧透",
+      "本地优先",
+      "开源",
+      "EPUB/PDF阅读器"
+    ]
+  },
+  {
+    "id": "pmqnh46spxxf1q",
+    "name": "Sidefy",
+    "website": "官网链接在帖子中未明确给出具体URL，但提到有‘官网’和‘Mac App Store’链接。",
+    "contact": "未明确提供联系方式。",
+    "models": [],
+    "billingType": "subscription",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-21T07:37:01.801Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221735#reply0",
+        "title": "[分享创造] Sidefy 增加 MCP，接入 Agent 用 AI 一句话配置效率工具",
+        "author": "<name>spike0100</name>\n\t\t<uri>https://www.v2ex.com/member/spike0100</uri>",
+        "publishedAt": "2026-06-21T05:24:20.000Z",
+        "fetchedAt": "2026-06-21T07:37:01.801Z"
+      }
+    ],
+    "firstSeen": "2026-06-21T07:37:01.801Z",
+    "lastUpdated": "2026-06-21T07:37:01.801Z",
+    "tags": [
+      "时间线工具",
+      "MCP",
+      "Agent集成",
+      "macOS",
+      "买断制"
+    ]
+  },
+  {
+    "id": "pmqnh46ss8c85a",
+    "name": "二狗 API",
+    "website": "https://ergouapi.com/",
+    "contact": "站内留言",
+    "models": [
+      {
+        "model": "GPT全系列",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude全系列",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "CNY",
+      "description": "在评论区留言用户名可获得"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-21T07:37:01.804Z",
+    "heatScore": 45,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1221728#reply17",
+        "title": "[推广] 二狗 API｜ GPT/Claude 纯血模型 0.1x~0.2x 低价 API",
+        "author": "<name>rocododd</name>\n\t\t<uri>https://www.v2ex.com/member/rocododd</uri>",
+        "publishedAt": "2026-06-21T07:29:29.000Z",
+        "fetchedAt": "2026-06-21T07:37:01.804Z"
+      }
+    ],
+    "firstSeen": "2026-06-21T07:37:01.804Z",
+    "lastUpdated": "2026-06-21T07:37:01.804Z",
+    "tags": [
+      "GPT",
+      "Claude",
+      "原生模型",
+      "低价API",
+      "开票服务"
     ]
   }
 ]
