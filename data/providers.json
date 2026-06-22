@@ -119,7 +119,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
     "heatScore": 100,
-    "mentionCount": 165,
+    "mentionCount": 166,
     "priceHistory": [],
     "sources": [
       {
@@ -769,10 +769,18 @@
         "author": "",
         "publishedAt": "2026-06-22T02:30:33.461Z",
         "fetchedAt": "2026-06-22T02:39:52.025Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222071#reply1",
+        "title": "[程序员] 小米股价没眼看； Codex-MIMO-Shim 还是叫 Codex-Shim 吧。",
+        "author": "<name>enrolls</name>\n\t\t<uri>https://www.v2ex.com/member/enrolls</uri>",
+        "publishedAt": "2026-06-22T13:39:05.000Z",
+        "fetchedAt": "2026-06-22T14:36:22.949Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-06-22T02:39:52.027Z",
+    "lastUpdated": "2026-06-22T14:36:22.949Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -34077,7 +34085,7 @@
         "currency": "CNY/USD"
       }
     ],
-    "billingType": "token",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
@@ -34085,8 +34093,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-25T07:14:18.436Z",
-    "heatScore": 41,
-    "mentionCount": 4,
+    "heatScore": 43,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -34120,10 +34128,18 @@
         "author": "<name>Acode</name>\n\t\t<uri>https://www.v2ex.com/member/Acode</uri>",
         "publishedAt": "2026-06-17T13:55:38.000Z",
         "fetchedAt": "2026-06-17T20:10:14.777Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222084#reply4",
+        "title": "[分享发现] 小米 MiMo Pro 月度套餐快到期了，额度还剩不少，想用的可以体验一下",
+        "author": "<name>parwaltz</name>\n\t\t<uri>https://www.v2ex.com/member/parwaltz</uri>",
+        "publishedAt": "2026-06-22T14:11:24.000Z",
+        "fetchedAt": "2026-06-22T14:36:22.947Z"
       }
     ],
     "firstSeen": "2026-05-25T07:14:18.436Z",
-    "lastUpdated": "2026-06-17T20:10:14.777Z",
+    "lastUpdated": "2026-06-22T14:36:22.947Z",
     "tags": [
       "AI中转",
       "订阅服务",
@@ -47189,15 +47205,15 @@
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": "CNY",
-      "description": "新用户注册即送测试额度，具体金额未明确说明。"
+      "amount": 10,
+      "unit": "USD",
+      "description": "回帖送$10刀"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-16T08:46:16.074Z",
-    "heatScore": 45,
-    "mentionCount": 1,
+    "heatScore": 47,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -47207,16 +47223,26 @@
         "author": "443038716",
         "publishedAt": "2026-06-11T11:34:30.000Z",
         "fetchedAt": "2026-06-16T08:46:16.074Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222081#reply1",
+        "title": "[推广] 给 V 友 送福利， PointFix.Ai 中转站， 回帖送 $10 刀 ，超低倍率 主打满血稳定，按量计费，没有套路",
+        "author": "<name>443038716</name>\n\t\t<uri>https://www.v2ex.com/member/443038716</uri>",
+        "publishedAt": "2026-06-21T20:30:20.000Z",
+        "fetchedAt": "2026-06-22T14:36:22.949Z"
       }
     ],
     "firstSeen": "2026-06-16T08:46:16.074Z",
-    "lastUpdated": "2026-06-16T08:46:16.074Z",
+    "lastUpdated": "2026-06-22T14:36:22.949Z",
     "tags": [
       "API中转",
       "开发者",
       "测试额度",
-      "多模型"
-    ]
+      "多模型",
+      "按量计费"
+    ],
+    "rateLimit": "超低倍率"
   },
   {
     "id": "pmqgeg132liidp",
