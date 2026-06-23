@@ -11731,27 +11731,18 @@
     ],
     "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "Pro",
-          "price": null,
-          "period": "月",
-          "features": []
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
       "amount": 0,
-      "unit": "CNY",
-      "description": "未提及"
+      "unit": "unknown",
+      "description": "首次接入可申请专属的测试额度"
     },
-    "paymentMethods": [
-      "咸鱼转账"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 91,
+    "mentionCount": 92,
     "priceHistory": [],
     "sources": [
       {
@@ -12177,10 +12168,18 @@
         "author": "<name>justdoitzZ</name>\n\t\t<uri>https://www.v2ex.com/member/justdoitzZ</uri>",
         "publishedAt": "2026-06-23T09:03:25.000Z",
         "fetchedAt": "2026-06-23T14:29:42.429Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222345#reply2",
+        "title": "[推广] 我对于 Token 的消耗监控方案",
+        "author": "<name>yanwei19892000</name>\n\t\t<uri>https://www.v2ex.com/member/yanwei19892000</uri>",
+        "publishedAt": "2026-06-23T12:43:21.000Z",
+        "fetchedAt": "2026-06-23T17:28:37.194Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-06-23T14:29:42.429Z",
+    "lastUpdated": "2026-06-23T17:28:37.194Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -28036,12 +28035,16 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 3,
+      "unit": "USD",
+      "description": "注册马上送$3"
+    },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-18T12:39:04.635Z",
-    "heatScore": 41,
-    "mentionCount": 4,
+    "heatScore": 43,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -28075,10 +28078,18 @@
         "author": "<name>liangguo2021</name>\n\t\t<uri>https://www.v2ex.com/member/liangguo2021</uri>",
         "publishedAt": "2026-06-23T07:19:17.000Z",
         "fetchedAt": "2026-06-23T12:04:06.268Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222337#reply3",
+        "title": "[程序员] 欢迎使用 token 中转站-注册马上送$3",
+        "author": "<name>liangguo2021</name>\n\t\t<uri>https://www.v2ex.com/member/liangguo2021</uri>",
+        "publishedAt": "2026-06-23T10:19:17.000Z",
+        "fetchedAt": "2026-06-23T17:28:37.195Z"
       }
     ],
     "firstSeen": "2026-05-18T12:39:04.635Z",
-    "lastUpdated": "2026-06-23T12:04:06.268Z",
+    "lastUpdated": "2026-06-23T17:28:37.195Z",
     "tags": [
       "国内友好",
       "无需翻墙",
@@ -50235,6 +50246,52 @@
     "tags": [
       "AI中转",
       "API中转"
+    ]
+  },
+  {
+    "id": "pmqqx4ojt5g8o0",
+    "name": "多元探索",
+    "website": "https://apibrg.duoyuanx.net/",
+    "contact": "微信：QUlYQVBJODg4 （解码）",
+    "models": [
+      {
+        "model": "GPT、Claude、Gemini、DeepSeek、Qwen等主流模型",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "freeQuota": null,
+    "paymentMethods": [
+      "企业开票",
+      "合同采购",
+      "对公付款"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-23T17:28:37.193Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222374#reply1",
+        "title": "[推广] AI 应用月消耗过万的团队，可以聊聊模型成本优化",
+        "author": "<name>googlejlj</name>\n\t\t<uri>https://www.v2ex.com/member/googlejlj</uri>",
+        "publishedAt": "2026-06-23T15:04:07.000Z",
+        "fetchedAt": "2026-06-23T17:28:37.193Z"
+      }
+    ],
+    "firstSeen": "2026-06-23T17:28:37.193Z",
+    "lastUpdated": "2026-06-23T17:28:37.193Z",
+    "tags": [
+      "企业服务",
+      "API聚合",
+      "成本优化",
+      "高并发"
     ]
   }
 ]
