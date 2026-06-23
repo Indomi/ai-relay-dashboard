@@ -11717,20 +11717,20 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": "CNY",
-      "description": ""
+      "amount": 0,
+      "unit": "unknown",
+      "description": "提供基础测试包供开发者验证性能"
     },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-07T14:16:59.898Z",
     "heatScore": 100,
-    "mentionCount": 89,
+    "mentionCount": 90,
     "priceHistory": [],
     "sources": [
       {
@@ -12140,10 +12140,18 @@
         "author": "LucasMartine",
         "publishedAt": "2026-06-18T04:16:14.000Z",
         "fetchedAt": "2026-06-21T22:20:15.247Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222330#reply0",
+        "title": "[推广] 告别接口焦虑：如何构建一个稳定、纯净的 AI 调用环境？",
+        "author": "<name>yanwei19892000</name>\n\t\t<uri>https://www.v2ex.com/member/yanwei19892000</uri>",
+        "publishedAt": "2026-06-23T10:08:19.000Z",
+        "fetchedAt": "2026-06-23T12:04:06.276Z"
       }
     ],
     "firstSeen": "2026-05-07T14:16:59.898Z",
-    "lastUpdated": "2026-06-23T06:59:56.798Z",
+    "lastUpdated": "2026-06-23T12:04:06.276Z",
     "tags": [
       "个人开发者",
       "行业分析",
@@ -27975,20 +27983,16 @@
     "website": "",
     "contact": "",
     "models": [],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {
-      "amount": 0,
-      "unit": "unknown",
-      "description": ""
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-18T12:39:04.635Z",
-    "heatScore": 39,
-    "mentionCount": 3,
+    "heatScore": 41,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -28014,10 +28018,18 @@
         "author": "<name>liangguo2021</name>\n\t\t<uri>https://www.v2ex.com/member/liangguo2021</uri>",
         "publishedAt": "2026-06-17T07:02:15.000Z",
         "fetchedAt": "2026-06-17T08:34:11.234Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222337#reply0",
+        "title": "[程序员] 欢迎使用 token 中转站-注册马上送$3",
+        "author": "<name>liangguo2021</name>\n\t\t<uri>https://www.v2ex.com/member/liangguo2021</uri>",
+        "publishedAt": "2026-06-23T07:19:17.000Z",
+        "fetchedAt": "2026-06-23T12:04:06.268Z"
       }
     ],
     "firstSeen": "2026-05-18T12:39:04.635Z",
-    "lastUpdated": "2026-06-17T08:34:11.234Z",
+    "lastUpdated": "2026-06-23T12:04:06.268Z",
     "tags": [
       "国内友好",
       "无需翻墙",
@@ -44886,14 +44898,14 @@
       },
       {
         "model": "gemini-2.5-flash",
-        "inputPrice": 16,
-        "outputPrice": 94,
+        "inputPrice": 4,
+        "outputPrice": 26,
         "currency": "CNY"
       },
       {
         "model": "GPT-5.5",
-        "inputPrice": 104,
-        "outputPrice": 467,
+        "inputPrice": 621,
+        "outputPrice": 2798,
         "currency": "CNY"
       },
       {
@@ -44923,19 +44935,19 @@
     ],
     "billingType": "token",
     "freeQuota": {
-      "amount": 3,
-      "unit": "次",
-      "description": "每日免费3次DeepSeek Flash模型调用"
+      "amount": 1,
+      "unit": "CNY",
+      "description": "新用户注册送¥1体验金"
     },
     "paymentMethods": [
       "微信"
     ],
     "concurrencyLimit": null,
-    "rateLimit": null,
+    "rateLimit": "<10ms超空间延迟",
     "status": "unknown",
     "lastChecked": "2026-06-11T07:38:38.870Z",
-    "heatScore": 63,
-    "mentionCount": 10,
+    "heatScore": 65,
+    "mentionCount": 11,
     "priceHistory": [],
     "sources": [
       {
@@ -44969,10 +44981,18 @@
         "author": "johnson654254827",
         "publishedAt": "2026-06-21T13:31:29.000Z",
         "fetchedAt": "2026-06-21T22:20:15.239Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222281#reply10",
+        "title": "[分享创造] 国内终于有靠谱的 AI 模型聚合平台了！",
+        "author": "<name>johnson654254827</name>\n\t\t<uri>https://www.v2ex.com/member/johnson654254827</uri>",
+        "publishedAt": "2026-06-23T08:48:03.000Z",
+        "fetchedAt": "2026-06-23T12:04:06.278Z"
       }
     ],
     "firstSeen": "2026-06-11T07:38:38.870Z",
-    "lastUpdated": "2026-06-22T18:50:38.012Z",
+    "lastUpdated": "2026-06-23T12:04:06.278Z",
     "tags": [
       "API聚合",
       "国内直连",
@@ -44981,7 +45001,68 @@
       "PWA"
     ],
     "subscription": {
-      "plans": []
+      "plans": [
+        {
+          "name": "探索者",
+          "price": 20,
+          "period": "month",
+          "features": [
+            "按量计费，用完即停"
+          ],
+          "autoRenew": false,
+          "refundRule": "不支持退款"
+        },
+        {
+          "name": "领航员",
+          "price": 50,
+          "period": "month",
+          "features": [
+            "按量计费，用完即停"
+          ],
+          "autoRenew": false,
+          "refundRule": "不支持退款"
+        },
+        {
+          "name": "指挥官",
+          "price": 100,
+          "period": "month",
+          "features": [
+            "按量计费，用完即停"
+          ],
+          "autoRenew": false,
+          "refundRule": "不支持退款"
+        },
+        {
+          "name": "舰队司令",
+          "price": 200,
+          "period": "month",
+          "features": [
+            "按量计费，用完即停"
+          ],
+          "autoRenew": false,
+          "refundRule": "不支持退款"
+        },
+        {
+          "name": "星际总督",
+          "price": 500,
+          "period": "month",
+          "features": [
+            "按量计费，用完即停"
+          ],
+          "autoRenew": false,
+          "refundRule": "不支持退款"
+        },
+        {
+          "name": "银河霸主",
+          "price": 1000,
+          "period": "month",
+          "features": [
+            "按量计费，用完即停"
+          ],
+          "autoRenew": false,
+          "refundRule": "不支持退款"
+        }
+      ]
     }
   },
   {
@@ -50015,6 +50096,56 @@
       "AI优化",
       "多模态大模型",
       "像素画"
+    ]
+  },
+  {
+    "id": "pmqqljcp0a90dg",
+    "name": "Orca (Blade AI)",
+    "website": "https://orcaagent.dev",
+    "contact": "GitHub: https://github.com/echoVic/blade-deepseek",
+    "models": [
+      {
+        "model": "deepseek-v4-pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      },
+      {
+        "model": "deepseek-v4-flash",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "USD"
+      }
+    ],
+    "billingType": "unknown",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": null,
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-23T12:04:06.276Z",
+    "heatScore": 15,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222331#reply2",
+        "title": "[程序员] 押注 DeepSeek，再次出发做 Agent",
+        "author": "<name>echoVic</name>\n\t\t<uri>https://www.v2ex.com/member/echoVic</uri>",
+        "publishedAt": "2026-06-23T11:33:26.000Z",
+        "fetchedAt": "2026-06-23T12:04:06.276Z"
+      }
+    ],
+    "firstSeen": "2026-06-23T12:04:06.276Z",
+    "lastUpdated": "2026-06-23T12:04:06.276Z",
+    "tags": [
+      "AI Agent",
+      "Coding Agent",
+      "DeepSeek",
+      "Terminal",
+      "Rust"
     ]
   }
 ]
