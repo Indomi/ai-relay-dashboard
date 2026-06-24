@@ -18787,8 +18787,8 @@
       },
       {
         "model": "kiro",
-        "inputPrice": null,
-        "outputPrice": null,
+        "inputPrice": 0.5,
+        "outputPrice": 0.5,
         "currency": "CNY"
       },
       {
@@ -18817,18 +18817,14 @@
       }
     ],
     "billingType": "token",
-    "freeQuota": {
-      "amount": 0,
-      "unit": "",
-      "description": ""
-    },
+    "freeQuota": {},
     "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": "0.5倍率，有缓存",
     "status": "unknown",
     "lastChecked": "2026-05-10T12:59:28.095Z",
     "heatScore": 100,
-    "mentionCount": 120,
+    "mentionCount": 121,
     "priceHistory": [],
     "sources": [
       {
@@ -19185,7 +19181,7 @@
       }
     ],
     "firstSeen": "2026-05-10T12:59:28.095Z",
-    "lastUpdated": "2026-06-24T17:12:01.741Z",
+    "lastUpdated": "2026-06-24T19:36:57.413Z",
     "tags": [
       "Claude",
       "中转",
@@ -22224,41 +22220,20 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "Team Standard",
-          "price": 250,
-          "period": "月",
-          "features": [
-            "是官方Pro套餐额度的1.25倍",
-            "全系列产品可用（包括Claude模型、Claude Code等）"
-          ]
-        },
-        {
-          "name": "Team Premium",
-          "price": 1200,
-          "period": "月",
-          "features": [
-            "是官方Pro套餐额度的6.25倍",
-            "全系列产品可用（包括Claude模型、Claude Code等）"
-          ]
-        }
-      ]
+      "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": null,
-      "description": "未提及免费额度"
+      "amount": 0,
+      "unit": "unknown",
+      "description": "未提及"
     },
-    "paymentMethods": [
-      "未明确提及"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-12T13:44:47.651Z",
-    "heatScore": 70,
-    "mentionCount": 21,
+    "heatScore": 72,
+    "mentionCount": 22,
     "priceHistory": [],
     "sources": [
       {
@@ -22404,10 +22379,18 @@
         "author": "limusi",
         "publishedAt": "2026-06-19T14:26:29.000Z",
         "fetchedAt": "2026-06-24T14:12:02.087Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222634#reply3",
+        "title": "[酷工作] [兼职] 给 AI 做编程能力“阅卷人”，单题 800 元，时间自由",
+        "author": "<name>Starkay</name>\n\t\t<uri>https://www.v2ex.com/member/Starkay</uri>",
+        "publishedAt": "2026-06-24T16:38:17.000Z",
+        "fetchedAt": "2026-06-24T19:36:57.412Z"
       }
     ],
     "firstSeen": "2026-05-12T13:44:47.651Z",
-    "lastUpdated": "2026-06-24T14:12:02.087Z",
+    "lastUpdated": "2026-06-24T19:36:57.412Z",
     "tags": [
       "OpenAI",
       "GPT Plus",
@@ -51372,33 +51355,36 @@
         "inputPrice": 2,
         "outputPrice": 12,
         "currency": "USD"
+      },
+      {
+        "model": "GPT5.4",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
+      },
+      {
+        "model": "sonnet 4.6",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
       "amount": null,
-      "unit": "USD",
-      "description": "每个新账户注册时获得免费欢迎额度，无需信用卡。"
+      "unit": "CNY",
+      "description": "免费试用3天"
     },
-    "paymentMethods": [
-      "Visa",
-      "Mastercard",
-      "PayPal",
-      "Apple Pay",
-      "Google Pay",
-      "WeChat Pay",
-      "USDT",
-      "Bitcoin"
-    ],
+    "paymentMethods": [],
     "concurrencyLimit": null,
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-06-24T14:14:02.428Z",
-    "heatScore": 47,
-    "mentionCount": 2,
+    "heatScore": 49,
+    "mentionCount": 3,
     "priceHistory": [],
     "sources": [
       {
@@ -51419,7 +51405,7 @@
       }
     ],
     "firstSeen": "2026-06-24T14:14:02.428Z",
-    "lastUpdated": "2026-06-24T17:12:01.747Z",
+    "lastUpdated": "2026-06-24T19:36:57.414Z",
     "tags": [
       "API中转",
       "多模型统一API",
