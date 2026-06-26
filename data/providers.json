@@ -16579,20 +16579,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "subscription",
     "subscription": {
       "plans": []
     },
     "freeQuota": {
-      "amount": null,
-      "unit": "unknown",
-      "description": "通过兑换码提供体验额度。"
+      "amount": 0,
+      "unit": "USD",
+      "description": "未提及免费额度"
     },
-    "paymentMethods": [],
+    "paymentMethods": [
+      "Stripe"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-09T10:13:29.595Z",
     "heatScore": 100,
-    "mentionCount": 59,
+    "mentionCount": 60,
     "priceHistory": [],
     "sources": [
       {
@@ -16906,10 +16908,18 @@
         "author": "prince2333",
         "publishedAt": "2026-06-25T08:03:02.000Z",
         "fetchedAt": "2026-06-25T22:25:17.053Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222940#reply12",
+        "title": "[推广] 手机流量用不完，但开个人热点又慢、又发热、又被运营商当 tethering 限速",
+        "author": "<name>guchengyehai1</name>\n\t\t<uri>https://www.v2ex.com/member/guchengyehai1</uri>",
+        "publishedAt": "2026-06-26T01:41:07.000Z",
+        "fetchedAt": "2026-06-26T02:10:19.723Z"
       }
     ],
     "firstSeen": "2026-05-09T10:13:29.595Z",
-    "lastUpdated": "2026-06-25T22:25:17.053Z",
+    "lastUpdated": "2026-06-26T02:10:19.723Z",
     "tags": [
       "Amazon数据采集",
       "API服务",
@@ -53141,6 +53151,64 @@
       "官方代理",
       "合规",
       "可开票"
+    ]
+  },
+  {
+    "id": "pmquanb2k4h873",
+    "name": "Easymax",
+    "website": "https://easymax.ai",
+    "contact": "",
+    "models": [
+      {
+        "model": "GPT-4o",
+        "inputPrice": 3,
+        "outputPrice": 3,
+        "currency": "CNY"
+      },
+      {
+        "model": "Claude-3.5-sonnet",
+        "inputPrice": 3,
+        "outputPrice": 3,
+        "currency": "CNY"
+      }
+    ],
+    "billingType": "hybrid",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD",
+      "description": "回帖活动赠送5美元体验额度"
+    },
+    "paymentMethods": [
+      "支付宝"
+    ],
+    "concurrencyLimit": null,
+    "rateLimit": null,
+    "status": "unknown",
+    "lastChecked": "2026-06-26T02:10:19.724Z",
+    "heatScore": 47,
+    "mentionCount": 2,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1222937#reply19",
+        "title": "[推广] [Easymax] 聚合 APi 入驻，只做满血 5.5 和 cc---回帖送 5u 体验",
+        "author": "<name>kanzel</name>\n\t\t<uri>https://www.v2ex.com/member/kanzel</uri>",
+        "publishedAt": "2026-06-26T01:55:32.000Z",
+        "fetchedAt": "2026-06-26T02:10:19.724Z"
+      }
+    ],
+    "firstSeen": "2026-06-26T02:10:19.724Z",
+    "lastUpdated": "2026-06-26T02:10:19.726Z",
+    "tags": [
+      "API聚合",
+      "企业服务",
+      "按量付费",
+      "支持开票",
+      "聚合API"
     ]
   }
 ]
