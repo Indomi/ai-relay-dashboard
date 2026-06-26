@@ -135,7 +135,7 @@
     "status": "unknown",
     "lastChecked": "2026-05-06T16:52:10.264Z",
     "heatScore": 100,
-    "mentionCount": 181,
+    "mentionCount": 182,
     "priceHistory": [],
     "sources": [
       {
@@ -849,10 +849,18 @@
         "author": "",
         "publishedAt": "2026-06-26T06:57:44.991Z",
         "fetchedAt": "2026-06-26T07:05:36.047Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1223216#reply2",
+        "title": "[程序员] 不用 Python 也能搞 AI Agent —— 一个纯 Go 实现的 SDK 和 Agent 平台",
+        "author": "<name>Ifade</name>\n\t\t<uri>https://www.v2ex.com/member/Ifade</uri>",
+        "publishedAt": "2026-06-26T16:47:27.000Z",
+        "fetchedAt": "2026-06-26T17:07:00.269Z"
       }
     ],
     "firstSeen": "2026-05-06T16:52:10.264Z",
-    "lastUpdated": "2026-06-26T14:14:31.099Z",
+    "lastUpdated": "2026-06-26T17:07:00.269Z",
     "tags": [
       "AI中转",
       "Codex",
@@ -21807,16 +21815,22 @@
         "currency": "USD"
       }
     ],
-    "billingType": "unknown",
+    "billingType": "token",
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
-    "paymentMethods": [],
+    "freeQuota": {
+      "amount": 5,
+      "unit": "USD",
+      "description": "新用户注册可获得5美元免费额度，无需信用卡。"
+    },
+    "paymentMethods": [
+      "信用卡"
+    ],
     "status": "unknown",
     "lastChecked": "2026-05-11T14:35:06.925Z",
-    "heatScore": 59,
-    "mentionCount": 9,
+    "heatScore": 61,
+    "mentionCount": 10,
     "priceHistory": [],
     "sources": [
       {
@@ -21850,10 +21864,18 @@
         "author": "<name>cxd8190102</name>\n\t\t<uri>https://www.v2ex.com/member/cxd8190102</uri>",
         "publishedAt": "2026-06-20T14:33:43.000Z",
         "fetchedAt": "2026-06-20T19:19:11.771Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1223185#reply1",
+        "title": "[程序员] 分享一些 RAG 工作的排查经验",
+        "author": "<name>cxd8190102</name>\n\t\t<uri>https://www.v2ex.com/member/cxd8190102</uri>",
+        "publishedAt": "2026-06-26T10:26:00.000Z",
+        "fetchedAt": "2026-06-26T17:07:00.285Z"
       }
     ],
     "firstSeen": "2026-05-11T14:35:06.925Z",
-    "lastUpdated": "2026-06-21T02:26:10.447Z",
+    "lastUpdated": "2026-06-26T17:07:00.285Z",
     "tags": [
       "文档解析",
       "AI幻觉",
@@ -21861,7 +21883,7 @@
       "开源",
       "SaaS"
     ],
-    "rateLimit": "企业版可提供自定义速率限制"
+    "rateLimit": "企业客户可协商自定义速率限制。"
   },
   {
     "id": "pmp1azx9qq8jmt",
@@ -52655,7 +52677,7 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "token",
+    "billingType": "unknown",
     "subscription": {
       "plans": []
     },
@@ -52667,8 +52689,8 @@
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-25T06:47:35.993Z",
-    "heatScore": 83,
-    "mentionCount": 20,
+    "heatScore": 85,
+    "mentionCount": 21,
     "priceHistory": [],
     "sources": [
       {
@@ -52745,7 +52767,7 @@
       }
     ],
     "firstSeen": "2026-06-25T06:47:35.993Z",
-    "lastUpdated": "2026-06-26T14:05:58.678Z",
+    "lastUpdated": "2026-06-26T17:07:00.281Z",
     "tags": [
       "API中转",
       "OpenAI兼容",
@@ -53571,7 +53593,7 @@
       {
         "model": "GPT",
         "inputPrice": 0.15,
-        "outputPrice": 0.15,
+        "outputPrice": null,
         "currency": "CNY"
       }
     ],
@@ -53579,12 +53601,16 @@
     "subscription": {
       "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": null,
+      "unit": null,
+      "description": ""
+    },
     "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-06-26T14:05:58.679Z",
-    "heatScore": 35,
-    "mentionCount": 1,
+    "heatScore": 37,
+    "mentionCount": 2,
     "priceHistory": [],
     "sources": [
       {
@@ -53597,11 +53623,13 @@
       }
     ],
     "firstSeen": "2026-06-26T14:05:58.679Z",
-    "lastUpdated": "2026-06-26T14:05:58.679Z",
+    "lastUpdated": "2026-06-26T17:07:00.284Z",
     "tags": [
       "GPT",
       "中转站",
-      "新人"
+      "新人",
+      "AI中转",
+      "新商家"
     ]
   },
   {
