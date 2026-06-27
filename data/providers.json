@@ -20099,41 +20099,22 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "subscription",
+    "billingType": "unknown",
     "subscription": {
-      "plans": [
-        {
-          "name": "ChatGPT Pro 5X",
-          "price": "见商品链接",
-          "period": "未知",
-          "features": [
-            "质保订阅",
-            "封号不质保",
-            "支持覆盖升级",
-            "卡密自助充值"
-          ]
-        },
-        {
-          "name": "ChatGPT Pro 20X",
-          "price": "见商品链接",
-          "period": "未知",
-          "features": [
-            "质保订阅",
-            "封号不质保",
-            "支持覆盖升级",
-            "卡密自助充值"
-          ]
-        }
-      ]
+      "plans": []
     },
-    "freeQuota": {},
+    "freeQuota": {
+      "amount": 0,
+      "unit": "unknown",
+      "description": "未提及"
+    },
     "paymentMethods": [
-      "卡密自助充值"
+      "未提及"
     ],
     "status": "unknown",
     "lastChecked": "2026-05-11T02:02:19.114Z",
     "heatScore": 100,
-    "mentionCount": 43,
+    "mentionCount": 44,
     "priceHistory": [],
     "sources": [
       {
@@ -20263,10 +20244,18 @@
         "author": "<name>Ai2You</name>\n\t\t<uri>https://www.v2ex.com/member/Ai2You</uri>",
         "publishedAt": "2026-06-23T03:38:34.000Z",
         "fetchedAt": "2026-06-23T06:50:01.093Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1223284#reply19",
+        "title": "[推广] 抽 5 个智友社的 GPTPLUS 稳定渠道成品号（满月测试稳定度 99% ）",
+        "author": "<name>Ai2You</name>\n\t\t<uri>https://www.v2ex.com/member/Ai2You</uri>",
+        "publishedAt": "2026-06-27T06:14:49.000Z",
+        "fetchedAt": "2026-06-27T06:31:38.929Z"
       }
     ],
     "firstSeen": "2026-05-11T02:02:19.114Z",
-    "lastUpdated": "2026-06-23T06:50:01.093Z",
+    "lastUpdated": "2026-06-27T06:31:38.929Z",
     "tags": [
       "GPT",
       "订阅",
@@ -29229,33 +29218,37 @@
         "currency": "CNY"
       }
     ],
-    "billingType": "hybrid",
+    "billingType": "subscription",
     "subscription": {
       "plans": [
         {
           "name": "动态住宅代理",
-          "price": 5,
+          "price": 3.8,
           "period": "GB",
           "features": [
             "动态轮转/粘性会话",
-            "HTTP(s)/SOCKS5",
-            "全球190+国家",
-            "城市级定位"
+            "数据采集",
+            "市场调研",
+            "广告投放",
+            "全球190+地区",
+            "无有效期"
           ],
           "autoRenew": false,
-          "refundRule": "详见官网说明"
+          "refundRule": "充值金额永久有效，可购买任意产品，随时可退款"
         },
         {
           "name": "静态长效住宅",
           "price": 9.9,
-          "period": "IP/7天",
+          "period": "IP",
           "features": [
             "原生独享IP",
-            "更稳定会话",
+            "社交媒体",
+            "电商",
+            "更稳定、更长的会话时长",
             "支持IP续费"
           ],
           "autoRenew": false,
-          "refundRule": "详见官网说明"
+          "refundRule": "充值金额永久有效，可购买任意产品，随时可退款"
         },
         {
           "name": "不限量住宅代理-带宽",
@@ -29263,39 +29256,38 @@
           "period": "天",
           "features": [
             "独享服务器",
-            "不限连接和IP",
-            "高带宽",
-            "适合AI等大流量业务"
+            "不限连接",
+            "不受流量和IP限制",
+            "高带宽适合AI等高任务量业务"
           ],
           "autoRenew": false,
-          "refundRule": "详见官网说明"
+          "refundRule": "充值金额永久有效，可购买任意产品，随时可退款"
         },
         {
-          "name": "不限量住宅代理-端口",
+          "name": "不限流量住宅代理-端口",
           "price": 2.5,
           "period": "个/天",
           "features": [
             "多端口",
-            "不限流量和IP"
+            "不限流量和IP",
+            "问卷调查",
+            "注册业务"
           ],
           "autoRenew": false,
-          "refundRule": "详见官网说明"
+          "refundRule": "充值金额永久有效，可购买任意产品，随时可退款"
         }
       ]
     },
     "freeQuota": {
       "amount": 2,
       "unit": "GB",
-      "description": "新用户注册赠送2GB动态住宅流量"
+      "description": "新用户注册赠送2GB动态住宅代理流量"
     },
-    "paymentMethods": [
-      "支付宝",
-      "微信"
-    ],
+    "paymentMethods": [],
     "status": "unknown",
     "lastChecked": "2026-05-19T02:09:52.504Z",
-    "heatScore": 49,
-    "mentionCount": 3,
+    "heatScore": 51,
+    "mentionCount": 4,
     "priceHistory": [],
     "sources": [
       {
@@ -29321,10 +29313,18 @@
         "author": "<name>loving29cn</name>\n\t\t<uri>https://www.v2ex.com/member/loving29cn</uri>",
         "publishedAt": "2026-06-10T01:37:50.000Z",
         "fetchedAt": "2026-06-10T02:14:55.985Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1223280#reply0",
+        "title": "[推广] 🌶️ 辣椒 HTTP｜开发者友好+API 集成+指纹浏览器全兼容｜年中大促送 CDK（动态/静态 IP 随机）",
+        "author": "<name>loving29cn</name>\n\t\t<uri>https://www.v2ex.com/member/loving29cn</uri>",
+        "publishedAt": "2026-06-27T03:52:49.000Z",
+        "fetchedAt": "2026-06-27T06:31:38.931Z"
       }
     ],
     "firstSeen": "2026-05-19T02:09:52.504Z",
-    "lastUpdated": "2026-06-10T02:14:55.985Z",
+    "lastUpdated": "2026-06-27T06:31:38.931Z",
     "tags": [
       "代理服务",
       "住宅IP",
@@ -31402,6 +31402,12 @@
         "inputPrice": 0,
         "outputPrice": 0,
         "currency": "USD"
+      },
+      {
+        "model": "gemini-3-image-pro",
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "currency": "CNY"
       }
     ],
     "billingType": "token",
@@ -31414,8 +31420,8 @@
     "rateLimit": null,
     "status": "unknown",
     "lastChecked": "2026-05-20T14:52:35.149Z",
-    "heatScore": 46,
-    "mentionCount": 4,
+    "heatScore": 48,
+    "mentionCount": 5,
     "priceHistory": [],
     "sources": [
       {
@@ -31425,10 +31431,18 @@
         "author": "",
         "publishedAt": "2026-05-20T14:43:59.492Z",
         "fetchedAt": "2026-05-20T14:52:35.149Z"
+      },
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1223292#reply4",
+        "title": "[问与答] 有的时候为啥调用 AI 的 API 炼出来的图会成这样？",
+        "author": "<name>Srande</name>\n\t\t<uri>https://www.v2ex.com/member/Srande</uri>",
+        "publishedAt": "2026-06-27T05:19:53.000Z",
+        "fetchedAt": "2026-06-27T06:31:38.925Z"
       }
     ],
     "firstSeen": "2026-05-20T14:52:35.149Z",
-    "lastUpdated": "2026-06-17T13:06:04.957Z",
+    "lastUpdated": "2026-06-27T06:31:38.925Z",
     "tags": [
       "API网关",
       "多模型",
@@ -53766,6 +53780,45 @@
       "AI生图工具",
       "工作台",
       "Prompt整理"
+    ]
+  },
+  {
+    "id": "pmqvzf7vzcdjry",
+    "name": "ZooProxy",
+    "website": "https://zooproxy.com/?kwd=LQ-v2ex",
+    "contact": "",
+    "models": [],
+    "billingType": "token",
+    "subscription": {
+      "plans": []
+    },
+    "freeQuota": {
+      "amount": 0,
+      "unit": "",
+      "description": "提供动态住宅IP大额流量免费试用，不限制使用的IP数量。"
+    },
+    "paymentMethods": [],
+    "status": "unknown",
+    "lastChecked": "2026-06-27T06:31:38.927Z",
+    "heatScore": 40,
+    "mentionCount": 1,
+    "priceHistory": [],
+    "sources": [
+      {
+        "platform": "v2ex",
+        "url": "https://www.v2ex.com/t/1223285#reply0",
+        "title": "[推广] [社区福利] ZooProxy 优质稳定住宅代理，低丢包高纯净，免费体验+专属优惠🎉",
+        "author": "<name>solongbus</name>\n\t\t<uri>https://www.v2ex.com/member/solongbus</uri>",
+        "publishedAt": "2026-06-27T04:19:31.000Z",
+        "fetchedAt": "2026-06-27T06:31:38.927Z"
+      }
+    ],
+    "firstSeen": "2026-06-27T06:31:38.927Z",
+    "lastUpdated": "2026-06-27T06:31:38.927Z",
+    "tags": [
+      "住宅代理",
+      "IP代理",
+      "免费试用"
     ]
   }
 ]
